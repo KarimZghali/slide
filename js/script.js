@@ -17,21 +17,10 @@ const prevBtn = document.getElementById('prev-btn');
 const nextBtn = document.getElementById('next-btn');
 
 // Initialisation
-async function init() {
-    await loadThemes();
+function init() {
+    // Charger les thèmes depuis les données embarquées
+    themes = THEMES_DATA.themes;
     renderThemeList();
-}
-
-// Charger le fichier JSON des thèmes
-async function loadThemes() {
-    try {
-        const response = await fetch('themes.json');
-        const data = await response.json();
-        themes = data.themes;
-    } catch (error) {
-        console.error('Erreur lors du chargement des thèmes:', error);
-        themeList.innerHTML = '<p class="error">Erreur de chargement des thèmes</p>';
-    }
 }
 
 // Afficher la liste des thèmes
@@ -46,22 +35,12 @@ function renderThemeList() {
 }
 
 // Sélectionner un thème et charger ses slides
-async function selectTheme(themeId) {
+function selectTheme(themeId) {
     currentTheme = themes.find(t => t.id === themeId);
     if (!currentTheme) return;
 
-    // Charger toutes les slides du thème
-    slidesContent = [];
-    for (const slideFile of currentTheme.slides) {
-        try {
-            const response = await fetch(`themes/${themeId}/${slideFile}`);
-            const html = await response.text();
-            slidesContent.push(html);
-        } catch (error) {
-            console.error(`Erreur de chargement: ${slideFile}`, error);
-            slidesContent.push('<p class="error">Erreur de chargement de la slide</p>');
-        }
-    }
+    // Les slides sont déjà dans les données
+    slidesContent = currentTheme.slides;
 
     // Afficher le diaporama
     currentSlideIndex = 0;
