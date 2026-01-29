@@ -14,29 +14,35 @@ body {
     align-items: center;
     justify-content: center;
     color: #eee;
+    overflow: hidden;
 }
 
 /* Container principal */
 .slideshow-container {
-    width: 90%;
-    max-width: 900px;
+    width: 96%;
+    height: 92vh;
+    max-width: none;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 16px;
     padding: 40px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Slides */
 .slide {
     display: none;
     animation: fadeIn 0.4s ease-in-out;
-    min-height: 300px;
+    flex: 1;
+    overflow-y: auto;
 }
 
 .slide.active {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes fadeIn {
@@ -95,9 +101,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 32px;
+    margin-top: auto;
     padding-top: 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
 }
 
 .nav-controls button {
@@ -129,12 +136,11 @@ body {
 
 /* Barre de progression */
 .progress-bar {
-    width: 90%;
-    max-width: 900px;
+    width: 96%;
     height: 4px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 2px;
-    margin-top: 20px;
+    margin-top: 12px;
     overflow: hidden;
 }
 
