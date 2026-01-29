@@ -66,32 +66,32 @@ const THEMES_DATA = {
     <div class="market-share">
         <div class="share-bar">
             <span class="share-label">Google</span>
-            <div class="share-fill" style="width: 90%; background: linear-gradient(90deg, #4285f4, #34a853);"></div>
+            <div class="share-fill" style="width: 100%; background: linear-gradient(90deg, #4285f4, #34a853);"></div>
             <span class="share-value">90%</span>
         </div>
         <div class="share-bar">
             <span class="share-label">Bing</span>
-            <div class="share-fill" style="width: 40%; background: #00a4ef;"></div>
+            <div class="share-fill" style="width: 4.4%; background: #00a4ef;"></div>
             <span class="share-value">4%</span>
         </div>
         <div class="share-bar">
             <span class="share-label">Yandex</span>
-            <div class="share-fill" style="width: 25%; background: #ff0000;"></div>
+            <div class="share-fill" style="width: 2.8%; background: #ff0000;"></div>
             <span class="share-value">2,5%</span>
         </div>
         <div class="share-bar">
             <span class="share-label">Yahoo!</span>
-            <div class="share-fill" style="width: 13%; background: #720e9e;"></div>
+            <div class="share-fill" style="width: 1.4%; background: #720e9e;"></div>
             <span class="share-value">1,3%</span>
         </div>
         <div class="share-bar">
             <span class="share-label">DuckDuckGo</span>
-            <div class="share-fill" style="width: 8%; background: #de5833;"></div>
+            <div class="share-fill" style="width: 0.9%; background: #de5833;"></div>
             <span class="share-value">0,8%</span>
         </div>
         <div class="share-bar">
             <span class="share-label">Baidu</span>
-            <div class="share-fill" style="width: 6%; background: #2932e1;"></div>
+            <div class="share-fill" style="width: 0.7%; background: #2932e1;"></div>
             <span class="share-value">0,6%</span>
         </div>
     </div>
