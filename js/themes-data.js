@@ -99,6 +99,32 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
+    <h1>⚡ Avant de commencer...</h1>
+    <h2>SEO vs SEA : quelle différence ?</h2>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>🌱 SEO (Référencement Naturel)</h3>
+            <ul>
+                <li><strong>Gratuit</strong> : pas de coût au clic</li>
+                <li><strong>Long terme</strong> : résultats en 3-6 mois</li>
+                <li><strong>Durable</strong> : le trafic reste même sans effort continu</li>
+                <li><strong>Crédibilité</strong> : les utilisateurs font plus confiance aux résultats naturels</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>💰 SEA (Référencement Payant)</h3>
+            <ul>
+                <li><strong>Payant</strong> : coût par clic (CPC)</li>
+                <li><strong>Immédiat</strong> : résultats dès l'activation</li>
+                <li><strong>Éphémère</strong> : le trafic s'arrête quand on coupe le budget</li>
+                <li><strong>Marqué "Annonce"</strong> : certains utilisateurs l'évitent</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>L'idéal ?</strong> Combiner les deux ! SEA pour les résultats rapides, SEO pour construire un actif durable.</p>
+</div>`,
+
+                `<div class="slide-seo">
     <h1>📚 Chapitre 1</h1>
     <h2>Comprendre l'écosystème des moteurs de recherche</h2>
     <p style="color: #aaa; margin-bottom: 24px;">Avant d'optimiser, il faut comprendre la machine. Comment Google trouve-t-il vos pages ? Comment décide-t-il de leur pertinence ? Et surtout, qu'attend-il de vous ?</p>
