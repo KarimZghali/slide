@@ -1,0 +1,16 @@
+{
+  "themes": [
+    {
+      "id": "introduction",
+      "title": "Introduction",
+      "description": "Présentation générale du cours",
+      "slides": ["slide1.html", "slide2.html", "slide3.html"]
+    },
+    {
+      "id": "chapitre1",
+      "title": "Chapitre 1",
+      "description": "Premier chapitre du cours",
+      "slides": ["slide1.html", "slide2.html"]
+    }
+  ]
+}
