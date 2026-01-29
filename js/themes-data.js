@@ -56,7 +56,46 @@ const THEMES_DATA = {
     <h1>🚀 Formation SEO</h1>
     <h2>Jour 1 – Fondations & Architecture Technique</h2>
     <p class="slide-subtitle">Comprendre comment Google voit le monde</p>
-    <p style="margin-top: 30px; color: #888; font-size: 1rem;">Chaque jour, <strong>8,5 milliards de recherches</strong> sont effectuées sur Google.<br>Le SEO, c'est l'art de capter une part de ce trafic... gratuitement.</p>
+    <p style="margin-top: 24px; color: #7eb8ff; font-size: 1.1rem;"><strong>SEO</strong> = <em>Search Engine Optimization</em><br><span style="color: #aaa;">(Optimisation pour les Moteurs de Recherche)</span></p>
+    <p style="margin-top: 20px; color: #888; font-size: 1rem;">Chaque jour, <strong>8,5 milliards de recherches</strong> sont effectuées sur Google.<br>Le SEO, c'est l'art de capter une part de ce trafic... gratuitement.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Parts de marché des moteurs (2025)</h1>
+    <h2>Google domine, mais il n'est pas seul</h2>
+    <div class="market-share">
+        <div class="share-bar">
+            <span class="share-label">Google</span>
+            <div class="share-fill" style="width: 90%; background: linear-gradient(90deg, #4285f4, #34a853);"></div>
+            <span class="share-value">90%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Bing</span>
+            <div class="share-fill" style="width: 40%; background: #00a4ef;"></div>
+            <span class="share-value">4%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Yandex</span>
+            <div class="share-fill" style="width: 25%; background: #ff0000;"></div>
+            <span class="share-value">2,5%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Yahoo!</span>
+            <div class="share-fill" style="width: 13%; background: #720e9e;"></div>
+            <span class="share-value">1,3%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">DuckDuckGo</span>
+            <div class="share-fill" style="width: 8%; background: #de5833;"></div>
+            <span class="share-value">0,8%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Baidu</span>
+            <div class="share-fill" style="width: 6%; background: #2932e1;"></div>
+            <span class="share-value">0,6%</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 En SEO, on se concentre sur Google. Mais Bing progresse grâce à l'IA (Copilot), et Yandex reste incontournable en Russie.</p>
 </div>`,
 
                 `<div class="slide-seo">
