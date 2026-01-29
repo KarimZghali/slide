@@ -414,28 +414,94 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🤖 Robots.txt : Le videur du site</h1>
-    <h2>Contrôler ce que Google peut explorer</h2>
-    <p style="color: #aaa; margin-bottom: 16px;">Le fichier <code>robots.txt</code> est placé à la racine de votre site. C'est une liste d'instructions pour les robots : "tu peux entrer ici, mais pas là".</p>
+    <h1>🤖 Qu'est-ce que le fichier robots.txt ?</h1>
+    <h2>Le premier fichier que les robots consultent</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Le fichier <strong>robots.txt</strong> est un simple fichier texte que les webmasters créent pour indiquer aux robots des moteurs de recherche (aussi appelés <em>bots</em> ou <em>crawlers</em>) comment explorer et indexer les pages de leur site.</p>
+    <ul>
+        <li><strong>Emplacement</strong> : toujours à la racine du site → <code>https://monsite.fr/robots.txt</code></li>
+        <li><strong>Format</strong> : texte brut, pas de HTML ni de code complexe</li>
+        <li><strong>Rôle</strong> : donner des instructions aux robots <em>avant</em> qu'ils explorent</li>
+    </ul>
+    <p class="slide-tip">💡 C'est comme un panneau à l'entrée d'un bâtiment : "Visiteurs autorisés ici, zone privée là-bas".</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 La directive User-agent</h1>
+    <h2>Cibler un robot spécifique ou tous les robots</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">La directive <code>User-agent</code> spécifie à <strong>quel robot</strong> les instructions suivantes s'appliquent. Chaque moteur de recherche a son propre robot avec un nom unique.</p>
     <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.9rem; margin: 16px 0;">
-        <span style="color: #888;"># Exemple de robots.txt</span><br>
+        <span style="color: #888;"># S'applique à TOUS les robots</span><br>
+        <span style="color: #7eb8ff;">User-agent:</span> *<br><br>
+        <span style="color: #888;"># S'applique uniquement à Google</span><br>
+        <span style="color: #7eb8ff;">User-agent:</span> Googlebot<br><br>
+        <span style="color: #888;"># S'applique uniquement à Bing</span><br>
+        <span style="color: #7eb8ff;">User-agent:</span> Bingbot
+    </div>
+    <p class="slide-tip">💡 Utilisez <code>*</code> pour des règles générales, et des User-agents spécifiques pour des exceptions.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 Les directives : Disallow, Allow, Sitemap</h1>
+    <h2>Les 3 instructions principales</h2>
+    <div style="margin: 16px 0;">
+        <p style="margin-bottom: 12px;"><span style="color: #ea4335; font-weight: bold;">Disallow</span> — Interdit l'accès à un chemin</p>
+        <div style="background: #1a1a2e; padding: 10px 16px; border-radius: 6px; font-family: monospace; font-size: 0.85rem; margin-bottom: 16px;">
+            <span style="color: #7eb8ff;">Disallow:</span> /admin/ <span style="color: #888;">← bloque tout le dossier admin</span>
+        </div>
+        
+        <p style="margin-bottom: 12px;"><span style="color: #34a853; font-weight: bold;">Allow</span> — Autorise l'accès (utile pour créer des exceptions)</p>
+        <div style="background: #1a1a2e; padding: 10px 16px; border-radius: 6px; font-family: monospace; font-size: 0.85rem; margin-bottom: 16px;">
+            <span style="color: #7eb8ff;">Allow:</span> /admin/public/ <span style="color: #888;">← exception dans un dossier bloqué</span>
+        </div>
+        
+        <p style="margin-bottom: 12px;"><span style="color: #4285f4; font-weight: bold;">Sitemap</span> — Indique l'emplacement du sitemap XML</p>
+        <div style="background: #1a1a2e; padding: 10px 16px; border-radius: 6px; font-family: monospace; font-size: 0.85rem;">
+            <span style="color: #7eb8ff;">Sitemap:</span> https://monsite.fr/sitemap.xml
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 Exemple complet de robots.txt</h1>
+    <h2>Un fichier bien structuré</h2>
+    <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.85rem; margin: 16px 0;">
+        <span style="color: #888;"># Règles pour tous les robots</span><br>
         <span style="color: #7eb8ff;">User-agent:</span> *<br>
         <span style="color: #7eb8ff;">Disallow:</span> /admin/<br>
         <span style="color: #7eb8ff;">Disallow:</span> /panier/<br>
-        <span style="color: #7eb8ff;">Allow:</span> /<br><br>
+        <span style="color: #7eb8ff;">Disallow:</span> /compte/<br>
+        <span style="color: #7eb8ff;">Allow:</span> /admin/produits-publics/<br><br>
+        <span style="color: #888;"># Règle spécifique pour Googlebot Images</span><br>
+        <span style="color: #7eb8ff;">User-agent:</span> Googlebot-Image<br>
+        <span style="color: #7eb8ff;">Disallow:</span> /images/privees/<br><br>
+        <span style="color: #888;"># Sitemap</span><br>
         <span style="color: #7eb8ff;">Sitemap:</span> https://monsite.fr/sitemap.xml
     </div>
-    <p class="slide-warning">⚠️ Attention : <code>Disallow</code> n'empêche pas l'indexation ! Une page peut être indexée sans être crawlée (via des liens externes).</p>
+    <p style="color: #aaa; font-size: 0.9rem;">Les règles se lisent de haut en bas. La première correspondance l'emporte.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ Note importante sur robots.txt</h1>
+    <h2>Une directive, pas une règle absolue</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Le fichier robots.txt est une <strong>convention</strong>, pas une barrière technique. Les robots "respectueux" (Google, Bing, etc.) suivront vos instructions, mais...</p>
+    <ul>
+        <li><strong>Certains robots peuvent l'ignorer</strong> : bots malveillants, scrapers, etc.</li>
+        <li><strong>Ce n'est PAS une sécurité</strong> : ne mettez jamais de données sensibles derrière un simple Disallow</li>
+        <li><strong>Le fichier est public</strong> : n'importe qui peut lire votre robots.txt</li>
+        <li><strong>Disallow ≠ désindexation</strong> : une page bloquée peut quand même apparaître dans Google (sans contenu)</li>
+    </ul>
+    <p class="slide-warning">⚠️ Pour vraiment protéger une page : utilisez une authentification, pas robots.txt !</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>🤖 Erreurs courantes avec robots.txt</h1>
     <h2>Ce qu'il ne faut surtout pas faire</h2>
     <ul>
-        <li><strong>Bloquer tout le site par erreur</strong> : <code>Disallow: /</code> = plus aucune page indexée</li>
+        <li><strong>Bloquer tout le site par erreur</strong> : <code>Disallow: /</code> = plus aucune page crawlée</li>
         <li><strong>Bloquer le CSS/JS</strong> : Google doit pouvoir rendre vos pages correctement</li>
         <li><strong>Oublier le fichier</strong> : sans robots.txt, tout est crawlable (parfois trop)</li>
-        <li><strong>Penser que c'est une sécurité</strong> : robots.txt est public et ne protège rien</li>
+        <li><strong>Confondre avec noindex</strong> : robots.txt bloque le crawl, pas l'indexation</li>
+        <li><strong>Syntaxe incorrecte</strong> : une faute de frappe peut tout casser</li>
     </ul>
     <p class="slide-tip">💡 <strong>Astuce :</strong> Testez votre robots.txt dans la Google Search Console > Paramètres > robots.txt</p>
 </div>`,
