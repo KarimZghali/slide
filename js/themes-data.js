@@ -56,21 +56,24 @@ const THEMES_DATA = {
     <h1>🚀 Formation SEO</h1>
     <h2>Jour 1 – Fondations & Architecture Technique</h2>
     <p class="slide-subtitle">Comprendre comment Google voit le monde</p>
+    <p style="margin-top: 30px; color: #888; font-size: 1rem;">Chaque jour, <strong>8,5 milliards de recherches</strong> sont effectuées sur Google.<br>Le SEO, c'est l'art de capter une part de ce trafic... gratuitement.</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>📚 Chapitre 1</h1>
     <h2>Comprendre l'écosystème des moteurs de recherche</h2>
+    <p style="color: #aaa; margin-bottom: 24px;">Avant d'optimiser, il faut comprendre la machine. Comment Google trouve-t-il vos pages ? Comment décide-t-il de leur pertinence ? Et surtout, qu'attend-il de vous ?</p>
     <div class="slide-agenda">
         <p>🔍 Le triptyque : Crawl, Indexation, Classement</p>
-        <p>📈 L'évolution des algorithmes</p>
-        <p>🎯 L'intention de recherche</p>
+        <p>📈 L'évolution des algorithmes (de 1998 à l'IA)</p>
+        <p>🎯 L'intention de recherche : le nerf de la guerre</p>
     </div>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>🔍 Le triptyque fondamental</h1>
-    <h2>Comment Google découvre et classe votre site</h2>
+    <h2>Les 3 étapes que traverse chaque page web</h2>
+    <p style="color: #aaa; margin-bottom: 20px;">Imaginez Google comme un bibliothécaire géant. Il doit d'abord <em>découvrir</em> les livres (crawl), les <em>lire et cataloguer</em> (indexation), puis décider <em>lesquels recommander</em> en premier (classement).</p>
     <div class="slide-diagram">
         <span class="step">1. CRAWL</span>
         <span class="arrow">→</span>
@@ -78,129 +81,259 @@ const THEMES_DATA = {
         <span class="arrow">→</span>
         <span class="step">3. CLASSEMENT</span>
     </div>
+    <p class="slide-tip">💡 Si l'une de ces étapes échoue, votre page reste invisible. Un site non crawlé n'existe pas pour Google.</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>🕷️ Étape 1 : Le Crawl</h1>
     <h2>L'exploration du web par les robots</h2>
+    <p style="color: #aaa; margin-bottom: 16px;"><strong>Googlebot</strong>, c'est le nom du robot d'exploration de Google. Tel une araignée (d'où le terme "spider"), il parcourt le web en suivant les liens d'une page à l'autre, 24h/24.</p>
     <ul>
-        <li><strong>Googlebot</strong> parcourt le web de lien en lien</li>
-        <li>Il découvre les nouvelles pages et les mises à jour</li>
-        <li>Crawl budget : nombre de pages explorées par session</li>
+        <li><strong>Point de départ</strong> : les sitemaps soumis + les liens déjà connus</li>
+        <li><strong>Fréquence</strong> : les sites actifs sont recrawlés plus souvent</li>
+        <li><strong>Crawl budget</strong> : Google n'a pas un temps infini — il priorise</li>
     </ul>
-    <p class="slide-tip">💡 Un site rapide et bien structuré = plus de pages crawlées</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🕷️ Le Crawl en pratique</h1>
+    <h2>Comment faciliter le travail de Googlebot ?</h2>
+    <ul>
+        <li><strong>Sitemap XML</strong> : une carte de votre site à soumettre dans la Search Console</li>
+        <li><strong>Maillage interne</strong> : des liens entre vos pages pour guider le robot</li>
+        <li><strong>Temps de chargement</strong> : un site lent = moins de pages crawlées</li>
+        <li><strong>Robots.txt</strong> : un fichier pour dire ce qu'il peut (ou ne peut pas) explorer</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Anecdote :</strong> En 2008, Google a découvert que certains sites généraient des URLs infinies (calendriers sans fin, filtres combinables à l'infini). Ils ont dû créer des règles pour éviter les "spider traps" !</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>📦 Étape 2 : L'Indexation</h1>
-    <h2>Le stockage dans la base de données Google</h2>
+    <h2>Le stockage dans la bibliothèque de Google</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Une fois la page crawlée, Google l'analyse en profondeur. Il lit le texte, regarde les images, comprend la structure... puis décide si elle mérite d'entrer dans son <strong>index</strong> (sa base de données géante).</p>
     <ul>
-        <li>Analyse du contenu de la page</li>
-        <li>Extraction des mots-clés et du contexte sémantique</li>
-        <li>Stockage dans l'index (bibliothèque géante)</li>
+        <li><strong>Analyse du contenu</strong> : de quoi parle cette page ?</li>
+        <li><strong>Extraction sémantique</strong> : quels sont les thèmes, entités, mots-clés ?</li>
+        <li><strong>Détection des doublons</strong> : cette page apporte-t-elle quelque chose de nouveau ?</li>
     </ul>
-    <p class="slide-tip">💡 Page indexée ≠ page bien positionnée</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📦 L'Indexation en chiffres</h1>
+    <h2>Une bibliothèque à l'échelle planétaire</h2>
+    <ul>
+        <li>L'index de Google contient des <strong>centaines de milliards de pages</strong></li>
+        <li>Il pèse plus de <strong>100 pétaoctets</strong> (100 millions de Go)</li>
+        <li>Pourtant, <strong>toutes les pages crawlées ne sont pas indexées</strong></li>
+    </ul>
+    <p style="color: #aaa; margin-top: 20px;">Google peut refuser d'indexer une page s'il juge qu'elle n'apporte pas assez de valeur, qu'elle est trop similaire à une autre, ou qu'elle présente des problèmes techniques.</p>
+    <p class="slide-warning">⚠️ Vérifiez vos pages indexées dans la <strong>Google Search Console</strong> > Indexation</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>🏆 Étape 3 : Le Classement</h1>
-    <h2>L'algorithme décide de votre position</h2>
+    <h2>L'algorithme entre en scène</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Vous êtes indexé ? Parfait. Mais être dans l'index ne suffit pas — il faut apparaître <strong>en haut des résultats</strong>. C'est là que l'algorithme de classement intervient.</p>
     <ul>
-        <li>Analyse de <strong>200+ facteurs</strong> de ranking</li>
-        <li>Comparaison avec les pages concurrentes</li>
-        <li>Attribution d'une position dans les SERP</li>
+        <li>Google analyse <strong>200+ facteurs</strong> pour chaque requête</li>
+        <li>Il compare votre page à <strong>toutes les autres</strong> sur le même sujet</li>
+        <li>Le classement est <strong>dynamique</strong> : il peut changer chaque jour</li>
     </ul>
-    <p class="slide-tip">💡 L'objectif : être dans le top 10 (1ère page)</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏆 Les facteurs de classement</h1>
+    <h2>Ce qui influence votre position (non exhaustif)</h2>
+    <ul>
+        <li><strong>Pertinence</strong> : votre contenu répond-il à la requête ?</li>
+        <li><strong>Autorité</strong> : votre site est-il reconnu comme fiable ? (backlinks)</li>
+        <li><strong>Expérience utilisateur</strong> : vitesse, mobile-friendly, navigation</li>
+        <li><strong>Fraîcheur</strong> : pour certaines requêtes, le contenu récent est privilégié</li>
+        <li><strong>Engagement</strong> : les utilisateurs restent-ils sur votre page ?</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Le saviez-vous ?</strong> 75% des utilisateurs ne vont jamais au-delà de la 1ère page. Être en page 2, c'est presque être invisible.</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>📈 L'évolution des algorithmes</h1>
-    <h2>De 1998 à aujourd'hui</h2>
+    <h2>Comment Google est devenu (beaucoup) plus intelligent</h2>
+    <p style="color: #aaa; margin-bottom: 20px;">En 25 ans, Google est passé d'un simple compteur de liens à une intelligence artificielle capable de comprendre le langage humain. Retour sur les grandes étapes.</p>
     <div class="timeline">
-        <p><strong>1998</strong> – Naissance de Google et du PageRank</p>
-        <p><strong>2011</strong> – Panda (qualité du contenu)</p>
-        <p><strong>2012</strong> – Penguin (qualité des liens)</p>
-        <p><strong>2015</strong> – RankBrain (machine learning)</p>
-        <p><strong>2019</strong> – BERT (compréhension du langage)</p>
-        <p><strong>2023+</strong> – L'ère de l'IA générative</p>
+        <p><strong>1998</strong> – PageRank : les liens comme votes</p>
+        <p><strong>2011</strong> – Panda : guerre au contenu de faible qualité</p>
+        <p><strong>2012</strong> – Penguin : chasse aux liens artificiels</p>
+        <p><strong>2015</strong> – RankBrain : l'IA entre dans la danse</p>
+        <p><strong>2019</strong> – BERT : compréhension du langage naturel</p>
+        <p><strong>2023+</strong> – SGE : l'IA générative dans les résultats</p>
     </div>
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🔗 Le PageRank originel</h1>
-    <h2>L'idée révolutionnaire de Larry Page</h2>
+    <h1>🔗 1998 : Le PageRank</h1>
+    <h2>L'idée de génie de Larry Page</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Tout commence dans un dortoir de Stanford. Larry Page et Sergey Brin ont une intuition : <strong>les liens entre pages web ressemblent aux citations académiques</strong>. Plus un article est cité, plus il est important.</p>
     <ul>
-        <li>Un lien = un vote de confiance</li>
-        <li>Plus une page reçoit de liens, plus elle a d'autorité</li>
-        <li>La qualité du site source compte aussi</li>
+        <li>Un lien = un vote de confiance envers la page cible</li>
+        <li>Un lien depuis un site autoritaire vaut plus qu'un lien lambda</li>
+        <li>Le "jus de lien" (link juice) se transmet de page en page</li>
     </ul>
-    <p class="slide-quote">"Le web est un graphe de citations"</p>
+    <p class="slide-quote">"PageRank" = Page comme Larry Page + Rank comme classement. Le nom parfait.</p>
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🤖 L'ère de l'Intelligence Artificielle</h1>
-    <h2>Google comprend désormais le sens, pas juste les mots</h2>
+    <h1>🐼 2011 : Google Panda</h1>
+    <h2>La qualité du contenu devient centrale</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Avant Panda, le web était envahi de "fermes de contenu" : des sites qui publiaient des milliers d'articles de faible qualité bourrés de mots-clés. Google a dit stop.</p>
     <ul>
-        <li><strong>RankBrain</strong> : interprète les requêtes ambiguës</li>
-        <li><strong>BERT</strong> : comprend le contexte des phrases</li>
-        <li><strong>MUM</strong> : analyse multimodale (texte, image, vidéo)</li>
+        <li><strong>Cibles</strong> : contenus dupliqués, thin content, pages sans valeur ajoutée</li>
+        <li><strong>Impact</strong> : certains sites ont perdu 80% de leur trafic du jour au lendemain</li>
+        <li><strong>Message</strong> : écrivez pour les humains, pas pour les robots</li>
     </ul>
-    <p class="slide-tip">💡 Écrire pour les humains est devenu la meilleure stratégie SEO</p>
+    <p class="slide-tip">💡 <strong>Victime célèbre :</strong> Demand Media (eHow) a perdu des millions de visiteurs. Ils produisaient 7 000 articles/jour, souvent rédigés en 15 minutes.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🐧 2012 : Google Penguin</h1>
+    <h2>La chasse aux liens artificiels</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Le PageRank a créé un effet pervers : certains achetaient des liens ou créaient des réseaux de sites factices pour manipuler le classement. Penguin a changé la donne.</p>
+    <ul>
+        <li><strong>Cibles</strong> : achat de liens, échanges de liens massifs, ancres sur-optimisées</li>
+        <li><strong>Pénalités</strong> : les sites pris la main dans le sac ont été déclassés</li>
+        <li><strong>Nouvelle règle</strong> : les liens doivent être "naturels" et éditoriaux</li>
+    </ul>
+    <p class="slide-warning">⚠️ Aujourd'hui encore, un mauvais profil de backlinks peut vous valoir une pénalité manuelle de Google.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 2015 : RankBrain</h1>
+    <h2>Le machine learning entre dans l'algorithme</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Pour la première fois, Google intègre une IA dans son moteur de classement. RankBrain apprend à interpréter les requêtes <strong>jamais vues auparavant</strong> (15% des recherches quotidiennes !).</p>
+    <ul>
+        <li><strong>Fonction</strong> : comprendre l'intention derrière des requêtes ambiguës ou nouvelles</li>
+        <li><strong>Exemple</strong> : "le truc pour ouvrir les PDF" → comprend qu'on cherche Adobe Reader</li>
+        <li><strong>Révolution</strong> : l'algo s'améliore tout seul en apprenant des comportements utilisateurs</li>
+    </ul>
+    <p class="slide-tip">💡 Google a déclaré que RankBrain était devenu le 3ème facteur de classement le plus important.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 2019 : BERT</h1>
+    <h2>Google comprend enfin le contexte</h2>
+    <p style="color: #aaa; margin-bottom: 16px;"><strong>BERT</strong> (Bidirectional Encoder Representations from Transformers) est un modèle de langage qui analyse les mots <strong>dans leur contexte</strong>, pas isolément.</p>
+    <ul>
+        <li><strong>Avant BERT</strong> : "vol Paris New York pas cher" → Google voyait des mots séparés</li>
+        <li><strong>Avec BERT</strong> : il comprend que vous cherchez un billet d'avion économique</li>
+        <li><strong>Impact</strong> : 10% de toutes les requêtes ont vu leurs résultats améliorés</li>
+    </ul>
+    <p class="slide-quote">"Pour" dans "crème pour le visage" vs "pour" dans "recette pour 4 personnes" → BERT sait faire la différence.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 2023+ : L'ère de l'IA générative</h1>
+    <h2>Google SGE et la révolution des résultats</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Avec l'arrivée de ChatGPT, Google a accéléré. <strong>SGE</strong> (Search Generative Experience) intègre des réponses générées par IA directement dans les résultats de recherche.</p>
+    <ul>
+        <li><strong>Réponses synthétisées</strong> : l'IA résume plusieurs sources en une réponse</li>
+        <li><strong>Conversations</strong> : possibilité de poser des questions de suivi</li>
+        <li><strong>Enjeu SEO</strong> : comment apparaître quand l'IA répond à la place des sites ?</li>
+    </ul>
+    <p class="slide-warning">⚠️ Le SEO de demain : être la <strong>source citée</strong> par l'IA, pas juste le premier lien bleu.</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>🎯 L'intention de recherche</h1>
-    <h2>La clé de voûte du SEO moderne</h2>
-    <p class="slide-highlight">Google ne cherche plus des mots-clés.<br>Il cherche à <strong>satisfaire une intention</strong>.</p>
+    <h2>Le concept le plus important du SEO moderne</h2>
+    <p style="color: #aaa; margin-bottom: 20px;">Oubliez un instant les mots-clés. Ce que Google cherche vraiment à comprendre, c'est : <strong>que veut l'utilisateur ?</strong></p>
+    <p class="slide-highlight">Google ne classe plus des pages qui contiennent des mots.<br>Il classe des pages qui <strong>satisfont une intention</strong>.</p>
+    <p style="margin-top: 24px; color: #888;">Deux personnes qui tapent le même mot-clé peuvent chercher des choses très différentes. L'algorithme doit deviner laquelle vous êtes.</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>🎯 Les 4 types d'intention</h1>
+    <h2>Chaque recherche a un objectif</h2>
     <div class="intent-grid">
         <div class="intent-card">
             <h3>🔍 Informationnelle</h3>
-            <p>"Comment faire..."</p>
-            <p>"Qu'est-ce que..."</p>
+            <p>"Comment faire une mayonnaise"</p>
+            <p>"Qui a inventé Internet"</p>
+            <p style="color: #00d4aa; margin-top: 8px;">→ L'utilisateur veut <strong>apprendre</strong></p>
         </div>
         <div class="intent-card">
             <h3>🧭 Navigationnelle</h3>
-            <p>"Facebook login"</p>
-            <p>"YouTube"</p>
+            <p>"Facebook connexion"</p>
+            <p>"Amazon France"</p>
+            <p style="color: #00d4aa; margin-top: 8px;">→ L'utilisateur veut <strong>aller quelque part</strong></p>
         </div>
         <div class="intent-card">
             <h3>🛒 Transactionnelle</h3>
-            <p>"Acheter iPhone 15"</p>
-            <p>"Prix Nike Air Max"</p>
+            <p>"Acheter AirPods Pro"</p>
+            <p>"Réserver hôtel Barcelone"</p>
+            <p style="color: #00d4aa; margin-top: 8px;">→ L'utilisateur veut <strong>agir/acheter</strong></p>
         </div>
         <div class="intent-card">
             <h3>🔎 Commerciale</h3>
-            <p>"Meilleur aspirateur 2026"</p>
-            <p>"Avis Samsung vs Apple"</p>
+            <p>"Meilleur VPN 2026"</p>
+            <p>"iPhone vs Samsung avis"</p>
+            <p style="color: #00d4aa; margin-top: 8px;">→ L'utilisateur veut <strong>comparer avant d'acheter</strong></p>
         </div>
     </div>
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>💡 Pourquoi c'est crucial ?</h1>
-    <h2>Aligner contenu et intention</h2>
+    <h1>🎯 Exemple concret : "Jaguar"</h1>
+    <h2>Un mot, plusieurs intentions possibles</h2>
+    <p style="color: #aaa; margin-bottom: 20px;">Tapez "jaguar" dans Google. Que voulez-vous ?</p>
     <ul>
-        <li>Requête info → Article de blog, guide, tutoriel</li>
-        <li>Requête transactionnelle → Page produit, landing page</li>
-        <li>Requête commerciale → Comparatif, test, avis</li>
+        <li>🐆 L'animal (intention informationnelle)</li>
+        <li>🚗 La marque de voitures (intention navigationnelle ou commerciale)</li>
+        <li>🏈 L'équipe de football américain de Jacksonville (navigationnelle)</li>
+        <li>💻 Le système d'exploitation macOS Jaguar... pour les nostalgiques</li>
     </ul>
-    <p class="slide-warning">⚠️ Mauvaise intention = mauvais classement, même avec un bon contenu</p>
+    <p style="color: #aaa; margin-top: 20px;">Google analyse le <strong>contexte</strong> (localisation, historique, tendances) pour deviner votre intention. Et il affiche des résultats mixtes pour couvrir plusieurs cas.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>💡 Pourquoi c'est crucial pour le SEO ?</h1>
+    <h2>Aligner votre contenu avec l'intention</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Si votre page ne correspond pas à l'intention dominante d'une requête, elle ne se positionnera <strong>jamais</strong> — même avec un contenu excellent.</p>
+    <ul>
+        <li><strong>Requête info</strong> → Proposez un article de blog, un guide, un tutoriel</li>
+        <li><strong>Requête transactionnelle</strong> → Proposez une page produit, une landing page</li>
+        <li><strong>Requête commerciale</strong> → Proposez un comparatif, des tests, des avis</li>
+        <li><strong>Requête navigationnelle</strong> → Assurez-vous que votre marque est bien positionnée sur son propre nom !</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>💡 L'erreur classique à éviter</h1>
+    <h2>Vouloir vendre quand l'utilisateur veut apprendre</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Imaginez : quelqu'un cherche "comment choisir un matelas". Google comprend que c'est une requête <strong>informationnelle</strong>.</p>
+    <p style="color: #ccc;">Si vous positionnez votre page produit "Matelas XYZ – 599€" sur cette requête, elle ne remontera pas. Google affichera des <strong>guides d'achat</strong>, pas des fiches produits.</p>
+    <p class="slide-tip">💡 <strong>La solution ?</strong> Créez un article "Comment choisir son matelas : le guide complet" qui renvoie ensuite vers vos produits. C'est le principe du funnel de contenu.</p>
 </div>`,
 
                 `<div class="slide-seo">
     <h1>✅ Récap' Chapitre 1</h1>
-    <h2>Ce qu'il faut retenir</h2>
+    <h2>Ce qu'il faut absolument retenir</h2>
     <ul>
-        <li>🕷️ <strong>Crawl</strong> : Google explore votre site</li>
-        <li>📦 <strong>Indexation</strong> : vos pages entrent dans l'index</li>
-        <li>🏆 <strong>Classement</strong> : l'algo décide de votre position</li>
-        <li>🤖 <strong>L'IA</strong> a révolutionné la compréhension des requêtes</li>
-        <li>🎯 <strong>L'intention</strong> prime sur les mots-clés</li>
+        <li>🕷️ <strong>Crawl</strong> : Googlebot explore le web de lien en lien. Facilitez-lui la tâche.</li>
+        <li>📦 <strong>Indexation</strong> : Seules les pages jugées utiles entrent dans l'index.</li>
+        <li>🏆 <strong>Classement</strong> : 200+ facteurs décident de votre position. La qualité prime.</li>
+        <li>📈 <strong>Évolution</strong> : De PageRank à l'IA, Google est devenu un expert en compréhension du langage.</li>
+        <li>🎯 <strong>Intention</strong> : Comprenez ce que veut l'utilisateur avant de créer du contenu.</li>
     </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Questions de réflexion</h1>
+    <h2>Pour aller plus loin</h2>
+    <ul>
+        <li>Votre site est-il entièrement crawlable ? Avez-vous vérifié la Search Console ?</li>
+        <li>Vos pages les plus importantes sont-elles bien indexées ?</li>
+        <li>Pour vos mots-clés cibles, quel type de contenu Google affiche-t-il en première page ?</li>
+        <li>Votre contenu correspond-il à l'intention de recherche dominante ?</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Exercice :</strong> Tapez votre mot-clé principal dans Google. Analysez les 10 premiers résultats. Sont-ils des articles ? Des pages produits ? Des vidéos ? C'est ce que Google attend de vous.</p>
 </div>`
             ]
         }
