@@ -514,23 +514,56 @@ const THEMES_DATA = {
         <li><strong>Facilite la découverte</strong> : surtout pour les nouvelles pages ou les sites volumineux</li>
         <li><strong>Indique la priorité</strong> : quelles pages sont les plus importantes ?</li>
         <li><strong>Signale les mises à jour</strong> : date de dernière modification</li>
+        <li><strong>Définit la fréquence</strong> : à quelle fréquence la page change-t-elle ?</li>
     </ul>
     <p style="color: #888; margin-top: 16px;">Emplacement standard : <code>https://votresite.fr/sitemap.xml</code></p>
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🗺️ Anatomie d'un Sitemap</h1>
-    <h2>Structure XML typique</h2>
-    <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.85rem; margin: 16px 0; overflow-x: auto;">
+    <h1>🗺️ Structure d'un Sitemap XML</h1>
+    <h2>Exemple complet avec toutes les balises</h2>
+    <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.8rem; margin: 16px 0; overflow-x: auto;">
         <span style="color: #888;">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br>
         <span style="color: #7eb8ff;">&lt;urlset</span> xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"<span style="color: #7eb8ff;">&gt;</span><br>
         &nbsp;&nbsp;<span style="color: #00d4aa;">&lt;url&gt;</span><br>
         &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;loc&gt;</span>https://monsite.fr/<span style="color: #ffaa00;">&lt;/loc&gt;</span><br>
         &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;lastmod&gt;</span>2026-01-15<span style="color: #ffaa00;">&lt;/lastmod&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;changefreq&gt;</span>weekly<span style="color: #ffaa00;">&lt;/changefreq&gt;</span><br>
         &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;priority&gt;</span>1.0<span style="color: #ffaa00;">&lt;/priority&gt;</span><br>
+        &nbsp;&nbsp;<span style="color: #00d4aa;">&lt;/url&gt;</span><br>
+        &nbsp;&nbsp;<span style="color: #00d4aa;">&lt;url&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;loc&gt;</span>https://monsite.fr/blog/<span style="color: #ffaa00;">&lt;/loc&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;lastmod&gt;</span>2026-01-28<span style="color: #ffaa00;">&lt;/lastmod&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;changefreq&gt;</span>daily<span style="color: #ffaa00;">&lt;/changefreq&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;priority&gt;</span>0.8<span style="color: #ffaa00;">&lt;/priority&gt;</span><br>
         &nbsp;&nbsp;<span style="color: #00d4aa;">&lt;/url&gt;</span><br>
         <span style="color: #7eb8ff;">&lt;/urlset&gt;</span>
     </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗺️ Les balises du Sitemap expliquées</h1>
+    <h2>À quoi sert chaque élément ?</h2>
+    <ul>
+        <li><strong>&lt;urlset&gt;</strong> — Conteneur principal qui englobe toutes les URLs. Définit le namespace XML du protocole sitemap.</li>
+        <li><strong>&lt;url&gt;</strong> — Conteneur pour chaque URL individuelle et ses métadonnées.</li>
+        <li><strong>&lt;loc&gt;</strong> — <span style="color: #00d4aa;">(obligatoire)</span> L'URL complète de la page. Doit être absolue (avec https://).</li>
+        <li><strong>&lt;lastmod&gt;</strong> — Date de dernière modification de la page (format : YYYY-MM-DD).</li>
+        <li><strong>&lt;changefreq&gt;</strong> — Fréquence estimée de modification : <code>always</code>, <code>hourly</code>, <code>daily</code>, <code>weekly</code>, <code>monthly</code>, <code>yearly</code>, <code>never</code>.</li>
+        <li><strong>&lt;priority&gt;</strong> — Importance relative de la page (0.0 à 1.0). Par défaut : 0.5.</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ Note importante sur les Sitemaps</h1>
+    <h2>Des indications, pas des commandes</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Comme pour robots.txt, les informations du sitemap sont des <strong>suggestions</strong> aux moteurs de recherche, pas des ordres.</p>
+    <ul>
+        <li><strong>changefreq</strong> : Google peut ignorer cette valeur et crawler selon sa propre logique</li>
+        <li><strong>priority</strong> : Utile pour indiquer l'importance <em>relative</em> entre vos pages, mais n'influence pas le classement global</li>
+        <li><strong>lastmod</strong> : Respecté uniquement si la date est fiable (Google vérifie !)</li>
+    </ul>
+    <p class="slide-warning">⚠️ Google a officiellement déclaré ignorer <code>changefreq</code> et <code>priority</code> dans la plupart des cas. Seuls <code>loc</code> et <code>lastmod</code> sont vraiment pris en compte.</p>
     <p class="slide-tip">💡 <strong>Soumettez votre sitemap</strong> dans la Search Console > Sitemaps pour un crawl plus rapide.</p>
 </div>`,
 
