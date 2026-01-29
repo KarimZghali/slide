@@ -399,6 +399,364 @@ const THEMES_DATA = {
         <li>Votre contenu correspond-il à l'intention de recherche dominante ?</li>
     </ul>
     <p class="slide-tip">💡 <strong>Exercice :</strong> Tapez votre mot-clé principal dans Google. Analysez les 10 premiers résultats. Sont-ils des articles ? Des pages produits ? Des vidéos ? C'est ce que Google attend de vous.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔧 Chapitre 2</h1>
+    <h2>L'Audit Technique : La base de l'édifice</h2>
+    <p style="color: #aaa; margin-bottom: 24px;">Un contenu excellent sur un site techniquement défaillant, c'est comme un chef étoilé qui cuisine dans une cuisine insalubre. Personne n'y goûtera jamais.</p>
+    <div class="slide-agenda">
+        <p>🤖 Explorabilité et indexabilité (Robots.txt, Sitemap)</p>
+        <p>⚡ Performance et Core Web Vitals</p>
+        <p>📱 Mobile-First : l'ergonomie mobile</p>
+        <p>🏗️ Architecture du site et structure des URLs</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 Robots.txt : Le videur du site</h1>
+    <h2>Contrôler ce que Google peut explorer</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Le fichier <code>robots.txt</code> est placé à la racine de votre site. C'est une liste d'instructions pour les robots : "tu peux entrer ici, mais pas là".</p>
+    <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.9rem; margin: 16px 0;">
+        <span style="color: #888;"># Exemple de robots.txt</span><br>
+        <span style="color: #7eb8ff;">User-agent:</span> *<br>
+        <span style="color: #7eb8ff;">Disallow:</span> /admin/<br>
+        <span style="color: #7eb8ff;">Disallow:</span> /panier/<br>
+        <span style="color: #7eb8ff;">Allow:</span> /<br><br>
+        <span style="color: #7eb8ff;">Sitemap:</span> https://monsite.fr/sitemap.xml
+    </div>
+    <p class="slide-warning">⚠️ Attention : <code>Disallow</code> n'empêche pas l'indexation ! Une page peut être indexée sans être crawlée (via des liens externes).</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 Erreurs courantes avec robots.txt</h1>
+    <h2>Ce qu'il ne faut surtout pas faire</h2>
+    <ul>
+        <li><strong>Bloquer tout le site par erreur</strong> : <code>Disallow: /</code> = plus aucune page indexée</li>
+        <li><strong>Bloquer le CSS/JS</strong> : Google doit pouvoir rendre vos pages correctement</li>
+        <li><strong>Oublier le fichier</strong> : sans robots.txt, tout est crawlable (parfois trop)</li>
+        <li><strong>Penser que c'est une sécurité</strong> : robots.txt est public et ne protège rien</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Astuce :</strong> Testez votre robots.txt dans la Google Search Console > Paramètres > robots.txt</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗺️ Le Sitemap XML</h1>
+    <h2>La carte routière de votre site</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Un sitemap est un fichier XML qui liste toutes les URLs importantes de votre site. C'est comme donner un GPS à Googlebot au lieu de le laisser errer.</p>
+    <ul>
+        <li><strong>Facilite la découverte</strong> : surtout pour les nouvelles pages ou les sites volumineux</li>
+        <li><strong>Indique la priorité</strong> : quelles pages sont les plus importantes ?</li>
+        <li><strong>Signale les mises à jour</strong> : date de dernière modification</li>
+    </ul>
+    <p style="color: #888; margin-top: 16px;">Emplacement standard : <code>https://votresite.fr/sitemap.xml</code></p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗺️ Anatomie d'un Sitemap</h1>
+    <h2>Structure XML typique</h2>
+    <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.85rem; margin: 16px 0; overflow-x: auto;">
+        <span style="color: #888;">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br>
+        <span style="color: #7eb8ff;">&lt;urlset</span> xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"<span style="color: #7eb8ff;">&gt;</span><br>
+        &nbsp;&nbsp;<span style="color: #00d4aa;">&lt;url&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;loc&gt;</span>https://monsite.fr/<span style="color: #ffaa00;">&lt;/loc&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;lastmod&gt;</span>2026-01-15<span style="color: #ffaa00;">&lt;/lastmod&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: #ffaa00;">&lt;priority&gt;</span>1.0<span style="color: #ffaa00;">&lt;/priority&gt;</span><br>
+        &nbsp;&nbsp;<span style="color: #00d4aa;">&lt;/url&gt;</span><br>
+        <span style="color: #7eb8ff;">&lt;/urlset&gt;</span>
+    </div>
+    <p class="slide-tip">💡 <strong>Soumettez votre sitemap</strong> dans la Search Console > Sitemaps pour un crawl plus rapide.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏷️ Les balises d'indexation</h1>
+    <h2>Contrôle fin page par page</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Au-delà du robots.txt global, vous pouvez contrôler l'indexation de chaque page individuellement avec la balise <code>meta robots</code>.</p>
+    <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.9rem; margin: 16px 0;">
+        <span style="color: #888;">&lt;!-- Dans le &lt;head&gt; de la page --&gt;</span><br>
+        <span style="color: #7eb8ff;">&lt;meta</span> name="robots" content="<span style="color: #00d4aa;">noindex, nofollow</span>"<span style="color: #7eb8ff;">&gt;</span>
+    </div>
+    <ul style="margin-top: 16px;">
+        <li><strong>index / noindex</strong> : autoriser ou interdire l'indexation</li>
+        <li><strong>follow / nofollow</strong> : suivre ou ignorer les liens de la page</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏷️ Quand utiliser noindex ?</h1>
+    <h2>Les cas d'usage légitimes</h2>
+    <ul>
+        <li><strong>Pages de remerciement</strong> après un formulaire (merci pour votre inscription)</li>
+        <li><strong>Pages de résultats de recherche interne</strong> (souvent du contenu dupliqué)</li>
+        <li><strong>Pages de filtres/tri</strong> sur un e-commerce (variations infinies)</li>
+        <li><strong>Pages légales</strong> peu utiles pour le SEO (CGV, mentions légales)</li>
+        <li><strong>Pages en staging/test</strong> avant mise en production</li>
+    </ul>
+    <p class="slide-warning">⚠️ Ne mettez jamais vos pages importantes en noindex par erreur. Vérifiez régulièrement dans la Search Console !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚡ Core Web Vitals</h1>
+    <h2>Les 3 métriques de performance selon Google</h2>
+    <p style="color: #aaa; margin-bottom: 20px;">Depuis 2021, Google intègre officiellement la performance dans ses critères de classement. Trois métriques clés mesurent l'expérience utilisateur.</p>
+    <div class="slide-diagram" style="flex-direction: column; gap: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <span class="step" style="background: #4285f4;">LCP</span>
+            <span style="color: #ccc;">Largest Contentful Paint – Temps d'affichage du contenu principal</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <span class="step" style="background: #ea4335;">INP</span>
+            <span style="color: #ccc;">Interaction to Next Paint – Réactivité aux interactions</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px;">
+            <span class="step" style="background: #34a853;">CLS</span>
+            <span style="color: #ccc;">Cumulative Layout Shift – Stabilité visuelle de la page</span>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚡ LCP : Largest Contentful Paint</h1>
+    <h2>À quelle vitesse le contenu principal apparaît-il ?</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Le LCP mesure le temps de chargement du plus grand élément visible (souvent une image hero ou un bloc de texte).</p>
+    <div class="market-share" style="margin: 20px 0;">
+        <div class="share-bar">
+            <span class="share-label">Bon</span>
+            <div class="share-fill" style="width: 50%; background: #34a853;"></div>
+            <span class="share-value">≤ 2,5s</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">À améliorer</span>
+            <div class="share-fill" style="width: 30%; background: #fbbc04;"></div>
+            <span class="share-value">≤ 4s</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Mauvais</span>
+            <div class="share-fill" style="width: 20%; background: #ea4335;"></div>
+            <span class="share-value">&gt; 4s</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Optimisations</strong> : compression d'images, lazy loading, CDN, cache navigateur</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚡ INP : Interaction to Next Paint</h1>
+    <h2>Le site réagit-il vite aux clics ?</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">INP (qui a remplacé FID en 2024) mesure le temps entre une interaction utilisateur (clic, tap, touche) et la réponse visuelle de la page.</p>
+    <div class="market-share" style="margin: 20px 0;">
+        <div class="share-bar">
+            <span class="share-label">Bon</span>
+            <div class="share-fill" style="width: 50%; background: #34a853;"></div>
+            <span class="share-value">≤ 200ms</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">À améliorer</span>
+            <div class="share-fill" style="width: 30%; background: #fbbc04;"></div>
+            <span class="share-value">≤ 500ms</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Mauvais</span>
+            <div class="share-fill" style="width: 20%; background: #ea4335;"></div>
+            <span class="share-value">&gt; 500ms</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Optimisations</strong> : réduire le JavaScript, différer les scripts non critiques, utiliser des Web Workers</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚡ CLS : Cumulative Layout Shift</h1>
+    <h2>La page bouge-t-elle de façon inattendue ?</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Vous avez déjà cliqué sur un bouton... et une pub s'est chargée, décalant tout ? C'est exactement ce que mesure le CLS.</p>
+    <div class="market-share" style="margin: 20px 0;">
+        <div class="share-bar">
+            <span class="share-label">Bon</span>
+            <div class="share-fill" style="width: 50%; background: #34a853;"></div>
+            <span class="share-value">≤ 0,1</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">À améliorer</span>
+            <div class="share-fill" style="width: 30%; background: #fbbc04;"></div>
+            <span class="share-value">≤ 0,25</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Mauvais</span>
+            <div class="share-fill" style="width: 20%; background: #ea4335;"></div>
+            <span class="share-value">&gt; 0,25</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Optimisations</strong> : dimensions fixes pour images/vidéos, réserver l'espace des pubs, éviter les insertions dynamiques</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Outils pour mesurer la performance</h1>
+    <h2>Diagnostiquer avant d'optimiser</h2>
+    <ul>
+        <li><strong>Google PageSpeed Insights</strong> : analyse une URL et donne des recommandations détaillées</li>
+        <li><strong>Lighthouse</strong> : intégré à Chrome DevTools (F12 > Lighthouse)</li>
+        <li><strong>Search Console</strong> : rapport "Expérience sur la page" avec données réelles</li>
+        <li><strong>GTmetrix</strong> : analyse approfondie avec cascade de chargement</li>
+        <li><strong>WebPageTest</strong> : tests multi-localisations et multi-navigateurs</li>
+    </ul>
+    <p class="slide-warning">⚠️ PageSpeed donne des données lab (simulées). La Search Console donne des données terrain (vrais utilisateurs). Les deux sont utiles !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📱 Mobile-First Indexing</h1>
+    <h2>Google crawle d'abord la version mobile</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Depuis 2019, Google utilise principalement la <strong>version mobile</strong> de votre site pour l'indexation et le classement. La version desktop est secondaire.</p>
+    <ul>
+        <li><strong>60%+ du trafic web</strong> vient des mobiles</li>
+        <li>Si votre site mobile est moins riche que le desktop, vous perdez du contenu indexé</li>
+        <li>Un site non responsive est pénalisé dans les résultats mobiles</li>
+    </ul>
+    <p class="slide-highlight" style="margin-top: 20px;">Règle d'or : ce qui n'est pas sur mobile n'existe pas pour Google.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📱 Responsive vs Adaptive vs m.site</h1>
+    <h2>Quelle approche choisir ?</h2>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>✅ Responsive (recommandé)</h3>
+            <ul>
+                <li>Une seule URL pour tous les appareils</li>
+                <li>Le CSS adapte l'affichage</li>
+                <li>Maintenance simplifiée</li>
+                <li>Préféré par Google</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>⚠️ Site mobile séparé (m.)</h3>
+            <ul>
+                <li>URLs différentes (m.site.fr)</li>
+                <li>Contenu parfois différent</li>
+                <li>Risque de duplication</li>
+                <li>Configuration canonique nécessaire</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 En 2026, le responsive design est le standard. Les sites "m." sont considérés comme obsolètes.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📱 Checklist Mobile-Friendly</h1>
+    <h2>Votre site passe-t-il le test ?</h2>
+    <ul>
+        <li>✅ Texte lisible sans zoomer (min. 16px recommandé)</li>
+        <li>✅ Boutons et liens assez grands pour le doigt (min. 48x48px)</li>
+        <li>✅ Pas de scroll horizontal</li>
+        <li>✅ Viewport configuré : <code>&lt;meta name="viewport" content="width=device-width"&gt;</code></li>
+        <li>✅ Contenu identique entre mobile et desktop</li>
+        <li>✅ Pop-ups non intrusives (sinon pénalité Google)</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Testez votre site</strong> : search.google.com/test/mobile-friendly</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏗️ Architecture du site</h1>
+    <h2>La structure qui plaît à Google (et aux humains)</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Une bonne architecture facilite le crawl, distribue le "jus de lien" équitablement, et aide les utilisateurs à trouver ce qu'ils cherchent.</p>
+    <div class="slide-diagram" style="flex-direction: column; gap: 8px; align-items: center;">
+        <span class="step" style="width: 120px;">Accueil</span>
+        <span style="color: #7eb8ff;">↓</span>
+        <div style="display: flex; gap: 20px;">
+            <span class="step">Catégorie A</span>
+            <span class="step">Catégorie B</span>
+            <span class="step">Catégorie C</span>
+        </div>
+        <span style="color: #7eb8ff;">↓</span>
+        <div style="display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;">
+            <span class="step" style="font-size: 0.8rem; padding: 6px 12px;">Page 1</span>
+            <span class="step" style="font-size: 0.8rem; padding: 6px 12px;">Page 2</span>
+            <span class="step" style="font-size: 0.8rem; padding: 6px 12px;">Page 3</span>
+            <span class="step" style="font-size: 0.8rem; padding: 6px 12px;">...</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Règle des 3 clics</strong> : toute page importante devrait être accessible en 3 clics max depuis l'accueil.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏗️ Structure des URLs</h1>
+    <h2>Des URLs propres et compréhensibles</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Une bonne URL est à la fois parlante pour l'utilisateur et optimisée pour le SEO.</p>
+    <div style="margin: 20px 0;">
+        <p style="color: #ea4335; margin-bottom: 8px;">❌ <code>monsite.fr/p?id=12847&cat=3&ref=nav</code></p>
+        <p style="color: #34a853;">✅ <code>monsite.fr/chaussures/baskets-running-homme</code></p>
+    </div>
+    <ul>
+        <li><strong>Mots-clés dans l'URL</strong> : oui, mais sans sur-optimiser</li>
+        <li><strong>Tirets (-)</strong> pour séparer les mots, pas d'underscores (_)</li>
+        <li><strong>Tout en minuscules</strong> : évite les problèmes de duplication</li>
+        <li><strong>Courte et descriptive</strong> : idéalement < 75 caractères</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔗 Les URLs canoniques</h1>
+    <h2>Éviter le contenu dupliqué</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Un même contenu peut être accessible via plusieurs URLs (avec/sans www, avec paramètres de tri, etc.). La balise <strong>canonical</strong> indique à Google quelle URL est "la vraie".</p>
+    <div style="background: #1a1a2e; padding: 16px; border-radius: 8px; font-family: monospace; font-size: 0.9rem; margin: 16px 0;">
+        <span style="color: #888;">&lt;!-- Dans le &lt;head&gt; --&gt;</span><br>
+        <span style="color: #7eb8ff;">&lt;link</span> rel="canonical" href="https://monsite.fr/page-principale"<span style="color: #7eb8ff;">&gt;</span>
+    </div>
+    <ul style="margin-top: 16px;">
+        <li>Consolidation du "jus de lien" sur une seule URL</li>
+        <li>Évite les pénalités pour contenu dupliqué</li>
+        <li>Google peut ignorer votre canonical s'il juge qu'une autre URL est meilleure</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔒 HTTPS : Non négociable</h1>
+    <h2>La sécurité comme facteur de classement</h2>
+    <p style="color: #aaa; margin-bottom: 16px;">Depuis 2014, Google favorise les sites en HTTPS. Depuis 2018, Chrome affiche "Non sécurisé" pour les sites HTTP.</p>
+    <ul>
+        <li><strong>Signal de classement</strong> : léger boost SEO pour les sites HTTPS</li>
+        <li><strong>Confiance utilisateur</strong> : le cadenas vert rassure</li>
+        <li><strong>Données protégées</strong> : formulaires, paiements, connexions</li>
+        <li><strong>HTTP/2</strong> : protocole plus rapide, nécessite HTTPS</li>
+    </ul>
+    <p class="slide-warning">⚠️ Un site e-commerce sans HTTPS en 2026 ? C'est rédhibitoire pour Google ET pour vos clients.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Checklist Audit Technique</h1>
+    <h2>Les points à vérifier systématiquement</h2>
+    <ul>
+        <li>☐ <strong>robots.txt</strong> bien configuré (pas de blocage accidentel)</li>
+        <li>☐ <strong>Sitemap XML</strong> soumis dans la Search Console</li>
+        <li>☐ <strong>Core Web Vitals</strong> dans le vert (LCP, INP, CLS)</li>
+        <li>☐ <strong>Mobile-friendly</strong> vérifié avec l'outil Google</li>
+        <li>☐ <strong>HTTPS</strong> activé sur tout le site</li>
+        <li>☐ <strong>Canonicals</strong> en place pour éviter les doublons</li>
+        <li>☐ <strong>Erreurs 404</strong> identifiées et corrigées (ou redirigées)</li>
+        <li>☐ <strong>Redirections 301</strong> pour les anciennes URLs</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Récap' Chapitre 2</h1>
+    <h2>Ce qu'il faut absolument retenir</h2>
+    <ul>
+        <li>🤖 <strong>Robots.txt & Sitemap</strong> : guidez Googlebot, ne le bloquez pas.</li>
+        <li>⚡ <strong>Core Web Vitals</strong> : LCP < 2,5s, INP < 200ms, CLS < 0,1.</li>
+        <li>📱 <strong>Mobile-First</strong> : votre site mobile EST votre site pour Google.</li>
+        <li>🏗️ <strong>Architecture</strong> : structure claire, URLs propres, 3 clics max.</li>
+        <li>🔒 <strong>HTTPS</strong> : obligatoire, point final.</li>
+    </ul>
+    <p class="slide-tip">💡 Un audit technique est le <strong>premier pas</strong> de toute stratégie SEO. Sans fondations solides, rien ne tient.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Exercice pratique</h1>
+    <h2>Auditez votre propre site</h2>
+    <ul>
+        <li><strong>1.</strong> Allez sur <code>votresite.fr/robots.txt</code> — est-il bien configuré ?</li>
+        <li><strong>2.</strong> Testez une page sur PageSpeed Insights — quels sont vos Core Web Vitals ?</li>
+        <li><strong>3.</strong> Utilisez le test mobile-friendly de Google — des problèmes détectés ?</li>
+        <li><strong>4.</strong> Vérifiez dans la Search Console > Indexation — combien de pages indexées vs soumises ?</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> La recherche de mots-clés et l'étude sémantique — comment choisir les batailles à mener.</p>
 </div>`
             ]
         }
