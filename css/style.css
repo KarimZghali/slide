@@ -270,6 +270,194 @@ body {
     transition: width 0.3s ease;
 }
 
+/* ==================== THEME SEO ==================== */
+.slide-seo {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slide-seo h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #00d4aa 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-bottom: none;
+    margin-bottom: 16px;
+}
+
+.slide-seo h2 {
+    font-size: 1.5rem;
+    color: #a78bfa;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+.slide-seo h3 {
+    font-size: 1.2rem;
+    color: #00d4aa;
+    margin-bottom: 8px;
+}
+
+.slide-subtitle {
+    font-size: 1.3rem !important;
+    color: #888 !important;
+    margin-top: 20px;
+}
+
+.slide-agenda p {
+    font-size: 1.2rem !important;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.slide-agenda p:last-child {
+    border-bottom: none;
+}
+
+/* Diagramme triptyque */
+.slide-diagram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.slide-diagram .step {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.2) 0%, rgba(124, 58, 237, 0.2) 100%);
+    border: 2px solid #00d4aa;
+    padding: 20px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.slide-diagram .arrow {
+    font-size: 2rem;
+    color: #7c3aed;
+}
+
+/* Timeline */
+.timeline {
+    margin-top: 20px;
+}
+
+.timeline p {
+    padding: 12px 0 12px 20px;
+    border-left: 3px solid #7c3aed;
+    margin-left: 20px;
+    position: relative;
+}
+
+.timeline p::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    background: #00d4aa;
+    border-radius: 50%;
+}
+
+/* Tips, warnings, quotes */
+.slide-tip {
+    background: rgba(0, 212, 170, 0.15);
+    border-left: 4px solid #00d4aa;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 24px;
+    font-size: 1rem !important;
+}
+
+.slide-warning {
+    background: rgba(251, 146, 60, 0.15);
+    border-left: 4px solid #fb923c;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin-top: 24px;
+    font-size: 1rem !important;
+    color: #fbbf24 !important;
+}
+
+.slide-quote {
+    text-align: center;
+    font-style: italic;
+    font-size: 1.3rem !important;
+    color: #a78bfa !important;
+    margin-top: 32px;
+    padding: 20px;
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    border-radius: 12px;
+}
+
+.slide-highlight {
+    font-size: 1.4rem !important;
+    text-align: center;
+    line-height: 2;
+    margin-top: 40px;
+}
+
+/* Grille des intentions */
+.intent-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+}
+
+.intent-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.intent-card:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #00d4aa;
+}
+
+.intent-card h3 {
+    margin-bottom: 12px;
+}
+
+.intent-card p {
+    font-size: 0.95rem !important;
+    color: #888 !important;
+    margin-bottom: 4px !important;
+}
+
+/* Listes SEO */
+.slide-seo ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.slide-seo ul li {
+    padding: 12px 0;
+    padding-left: 28px;
+    position: relative;
+    font-size: 1.15rem;
+    color: #ddd;
+}
+
+.slide-seo ul li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: #00d4aa;
+    font-weight: bold;
+}
+
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
     .theme-menu h1 {
