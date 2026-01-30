@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<!--
+    ============================================
+    EXEMPLE DE SITE OPTIMISÉ SEO - PAGE SERVICES
+    ============================================
+    
+    Cette page démontre les bonnes pratiques SEO pour une page intérieure.
+    Notez les différences avec la page d'accueil :
+    - Title et meta description uniques
+    - H1 spécifique à cette page
+    - Breadcrumbs mis à jour
+    - Contenu unique et pertinent
+-->
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        TITLE UNIQUE POUR CETTE PAGE
+        ============================
+        Chaque page doit avoir un title unique et descriptif.
+        Structure recommandée : Sujet de la page | Nom du site
+    -->
+    <title>Services de Livraison et Commandes | Boulangerie Le Pain Doré Paris</title>
+
+    <!--
+        META DESCRIPTION UNIQUE
+        =======================
+        Résumé spécifique au contenu de cette page.
+        Doit inciter au clic et contenir les mots-clés pertinents.
+    -->
+    <meta name="description" content="Découvrez nos services : livraison de pain frais à domicile à Paris, commandes en ligne, traiteur pour événements et ateliers de boulangerie. Livraison gratuite dès 25€.">
+
+    <meta name="robots" content="index, follow">
+
+    <!--
+        URL CANONIQUE DE CETTE PAGE
+        ===========================
+        URL unique pour cette page spécifique.
+    -->
+    <link rel="canonical" href="https://www.lepaindore.fr/services.html">
+
+    <!-- Open Graph spécifique à cette page -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Services de Livraison et Commandes | Le Pain Doré">
+    <meta property="og:description" content="Livraison de pain frais à domicile à Paris. Commandes en ligne et services traiteur.">
+    <meta property="og:image" content="https://www.lepaindore.fr/images/livraison-og.jpg">
+    <meta property="og:url" content="https://www.lepaindore.fr/services.html">
+    <meta property="og:site_name" content="Le Pain Doré">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Services de Livraison | Le Pain Doré Paris">
+    <meta name="twitter:description" content="Livraison de pain frais à domicile à Paris. Livraison gratuite dès 25€.">
+    <meta name="twitter:image" content="https://www.lepaindore.fr/images/livraison-twitter.jpg">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Données structurées Breadcrumb pour cette page -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://www.lepaindore.fr/"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Services",
+                "item": "https://www.lepaindore.fr/services.html"
+            }
+        ]
+    }
+    </script>
+
+    <!--
+        DONNÉES STRUCTURÉES - SERVICE
+        =============================
+        Schema.org permet de décrire les services proposés.
+        Peut améliorer la visibilité dans les résultats locaux.
+    -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "serviceType": "Livraison de boulangerie",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "Boulangerie Le Pain Doré"
+        },
+        "areaServed": {
+            "@type": "City",
+            "name": "Paris"
+        },
+        "description": "Service de livraison de pains frais, viennoiseries et pâtisseries à domicile dans Paris et proche banlieue.",
+        "offers": {
+            "@type": "Offer",
+            "description": "Livraison gratuite dès 25€ d'achat",
+            "eligibleRegion": {
+                "@type": "Place",
+                "name": "Paris et proche banlieue"
+            }
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <header role="banner">
+        <a href="/" title="Retour à l'accueil">
+            <img src="/images/logo.png" 
+                 alt="Le Pain Doré - Boulangerie Artisanale Paris" 
+                 width="200" 
+                 height="80"
+                 loading="eager">
+        </a>
+
+        <nav role="navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <!--
+                    PAGE ACTUELLE MARQUÉE
+                    =====================
+                    aria-current="page" indique la page active.
+                    Utile pour l'accessibilité et le style CSS.
+                -->
+                <li><a href="/services.html" aria-current="page">Nos Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+        BREADCRUMBS MIS À JOUR
+        ======================
+        Le fil d'Ariane reflète la position dans la hiérarchie du site.
+    -->
+    <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+        <ol>
+            <li><a href="/">Accueil</a></li>
+            <!--
+                SÉPARATEUR ARIA-HIDDEN
+                ======================
+                Les séparateurs visuels doivent être cachés des lecteurs d'écran.
+            -->
+            <li aria-hidden="true">/</li>
+            <li><span aria-current="page">Services</span></li>
+        </ol>
+    </nav>
+
+    <main id="main-content" role="main">
+        
+        <!--
+            H1 UNIQUE POUR CETTE PAGE
+            =========================
+            Différent de la page d'accueil, spécifique au contenu de cette page.
+            Contient les mots-clés principaux : services, livraison, Paris.
+        -->
+        <h1>Nos Services : Livraison de Pain Frais à Paris</h1>
+
+        <p class="lead">
+            La <strong>Boulangerie Le Pain Doré</strong> vous propose plusieurs services pour 
+            profiter de nos produits artisanaux : <strong>livraison à domicile</strong>, 
+            <strong>commandes en ligne</strong>, <strong>service traiteur</strong> et 
+            <strong>ateliers de boulangerie</strong>.
+        </p>
+
+        <!--
+            ANCRES INTERNES (JUMP LINKS)
+            ============================
+            Les ID permettent de créer des liens directs vers des sections.
+            Utile pour :
+            - La navigation interne
+            - Les liens depuis d'autres pages
+            - Les featured snippets (Google peut lier directement à une section)
+        -->
+        <nav class="page-nav" aria-label="Navigation de la page">
+            <h2>Sur cette page</h2>
+            <ul>
+                <li><a href="#livraison">Livraison à domicile</a></li>
+                <li><a href="#commandes">Commandes en ligne</a></li>
+                <li><a href="#traiteur">Service traiteur</a></li>
+                <li><a href="#ateliers">Ateliers de boulangerie</a></li>
+            </ul>
+        </nav>
+
+        <!--
+            SECTION AVEC ID POUR ANCRAGE
+            ============================
+            L'ID "livraison" permet les liens directs : /services.html#livraison
+        -->
+        <section id="livraison" aria-labelledby="livraison-title">
+            <h2 id="livraison-title">Livraison à Domicile</h2>
+            
+            <img src="/images/livraison-velo.webp" 
+                 alt="Livreur à vélo cargo avec des pains frais - Livraison écologique Le Pain Doré"
+                 width="600"
+                 height="400"
+                 loading="lazy"
+                 decoding="async">
+
+            <p>
+                Recevez vos <strong>pains frais</strong>, <strong>viennoiseries</strong> et 
+                <strong>pâtisseries</strong> directement chez vous ! Notre service de 
+                <strong>livraison à vélo cargo</strong> dessert tout Paris et la proche banlieue.
+            </p>
+
+            <!--
+                LISTES POUR LE CONTENU STRUCTURÉ
+                ================================
+                Les listes sont bien comprises par les moteurs de recherche.
+                Elles peuvent apparaître dans les featured snippets.
+            -->
+            <h3>Conditions de livraison</h3>
+            <ul>
+                <li><strong>Zone de livraison :</strong> Paris intra-muros et communes limitrophes</li>
+                <li><strong>Frais de livraison :</strong> 3,90€ (gratuit dès 25€ d'achat)</li>
+                <li><strong>Délai :</strong> Livraison le lendemain pour toute commande avant 18h</li>
+                <li><strong>Créneaux :</strong> 7h-9h ou 17h-19h</li>
+            </ul>
+
+            <!--
+                TABLEAU POUR DONNÉES STRUCTURÉES
+                ================================
+                Les tableaux sont utiles pour présenter des données comparatives.
+                Toujours inclure <caption> et <th> pour l'accessibilité et le SEO.
+            -->
+            <h3>Tarifs selon les zones</h3>
+            <table>
+                <caption>Grille tarifaire de livraison par zone géographique</caption>
+                <!--
+                    CAPTION
+                    =======
+                    Décrit le tableau pour les moteurs et l'accessibilité.
+                    Aide Google à comprendre le contenu du tableau.
+                -->
+                <thead>
+                    <tr>
+                        <th scope="col">Zone</th>
+                        <th scope="col">Délai</th>
+                        <th scope="col">Frais</th>
+                        <th scope="col">Franco</th>
+                    </tr>
+                    <!--
+                        SCOPE="COL" OU SCOPE="ROW"
+                        ==========================
+                        Indique si l'en-tête s'applique à la colonne ou à la ligne.
+                        Important pour l'accessibilité (lecteurs d'écran).
+                    -->
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Paris 11ème (quartier)</td>
+                        <td>2h</td>
+                        <td>Gratuit</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>Paris intra-muros</td>
+                        <td>J+1</td>
+                        <td>3,90€</td>
+                        <td>25€</td>
+                    </tr>
+                    <tr>
+                        <td>Proche banlieue</td>
+                        <td>J+1</td>
+                        <td>5,90€</td>
+                        <td>40€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="commandes" aria-labelledby="commandes-title">
+            <h2 id="commandes-title">Commandes en Ligne</h2>
+
+            <p>
+                Passez vos <strong>commandes en ligne</strong> 24h/24 et récupérez-les 
+                en boutique ou faites-vous livrer. Notre système de 
+                <strong>click & collect</strong> vous permet de gagner du temps.
+            </p>
+
+            <!--
+                CALL-TO-ACTION AVEC LIEN INTERNE
+                ================================
+                Les liens avec texte d'ancrage descriptif améliorent le SEO.
+            -->
+            <a href="/commander.html" class="cta-button cta-primary">
+                Commander en ligne maintenant
+            </a>
+
+            <h3>Comment ça marche ?</h3>
+            <!--
+                LISTE ORDONNÉE POUR LES ÉTAPES
+                ==============================
+                Utiliser <ol> pour les listes où l'ordre est important.
+                Peut apparaître comme featured snippet "How-to".
+            -->
+            <ol>
+                <li>Choisissez vos produits sur notre boutique en ligne</li>
+                <li>Sélectionnez le créneau de retrait ou de livraison</li>
+                <li>Payez en ligne de manière sécurisée</li>
+                <li>Récupérez votre commande chaude et prête !</li>
+            </ol>
+        </section>
+
+        <section id="traiteur" aria-labelledby="traiteur-title">
+            <h2 id="traiteur-title">Service Traiteur pour Événements</h2>
+
+            <img src="/images/buffet-traiteur.webp" 
+                 alt="Buffet petit-déjeuner traiteur avec viennoiseries et pains - Le Pain Doré Paris"
+                 width="600"
+                 height="400"
+                 loading="lazy"
+                 decoding="async">
+
+            <p>
+                Pour vos <strong>événements professionnels</strong>, <strong>réunions</strong>, 
+                <strong>séminaires</strong> ou <strong>fêtes privées</strong>, notre 
+                <strong>service traiteur</strong> vous propose des formules sur mesure.
+            </p>
+
+            <h3>Nos formules traiteur</h3>
+            
+            <!--
+                DESCRIPTION LIST (DL, DT, DD)
+                =============================
+                Parfait pour les définitions, glossaires ou paires terme/description.
+                Sémantiquement approprié pour les formules et leurs détails.
+            -->
+            <dl>
+                <dt><strong>Petit-déjeuner Continental</strong></dt>
+                <dd>Viennoiseries, pains variés, confitures maison, jus de fruits. À partir de 12€/personne.</dd>
+
+                <dt><strong>Pause Gourmande</strong></dt>
+                <dd>Assortiment de mini-pâtisseries et mignardises. À partir de 8€/personne.</dd>
+
+                <dt><strong>Brunch Complet</strong></dt>
+                <dd>Formule complète sucrée et salée. À partir de 25€/personne.</dd>
+            </dl>
+
+            <p>
+                <a href="/contact.html">Contactez-nous</a> pour un devis personnalisé adapté à vos besoins.
+            </p>
+        </section>
+
+        <section id="ateliers" aria-labelledby="ateliers-title">
+            <h2 id="ateliers-title">Ateliers de Boulangerie</h2>
+
+            <p>
+                Apprenez les secrets de la <strong>boulangerie artisanale</strong> avec nos 
+                <strong>ateliers de fabrication de pain</strong>. Encadrés par notre chef boulanger, 
+                ces ateliers sont accessibles à tous les niveaux.
+            </p>
+
+            <h3>Prochains ateliers</h3>
+
+            <!--
+                ÉVÉNEMENTS AVEC DATES
+                =====================
+                Utiliser <time> avec datetime pour les dates.
+                Peut générer des rich snippets "Event".
+            -->
+            <article class="event">
+                <h4>Atelier Pain au Levain</h4>
+                <p>
+                    <time datetime="2026-02-15T10:00">Samedi 15 février 2026 à 10h</time>
+                </p>
+                <p>Durée : 3h | Tarif : 75€ | Places : 8 maximum</p>
+                <a href="/ateliers/pain-levain-fevrier.html">En savoir plus et réserver</a>
+            </article>
+
+            <article class="event">
+                <h4>Atelier Viennoiseries</h4>
+                <p>
+                    <time datetime="2026-02-22T14:00">Samedi 22 février 2026 à 14h</time>
+                </p>
+                <p>Durée : 4h | Tarif : 90€ | Places : 6 maximum</p>
+                <a href="/ateliers/viennoiseries-fevrier.html">En savoir plus et réserver</a>
+            </article>
+
+            <!--
+                DONNÉES STRUCTURÉES EVENT
+                =========================
+                Pour que les ateliers apparaissent dans les résultats "Événements".
+            -->
+            <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Event",
+                "name": "Atelier Pain au Levain",
+                "startDate": "2026-02-15T10:00:00+01:00",
+                "endDate": "2026-02-15T13:00:00+01:00",
+                "location": {
+                    "@type": "Place",
+                    "name": "Boulangerie Le Pain Doré",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "42 Rue du Pain",
+                        "addressLocality": "Paris",
+                        "postalCode": "75011",
+                        "addressCountry": "FR"
+                    }
+                },
+                "description": "Apprenez à fabriquer votre propre pain au levain avec notre chef boulanger.",
+                "offers": {
+                    "@type": "Offer",
+                    "price": "75",
+                    "priceCurrency": "EUR",
+                    "availability": "https://schema.org/InStock",
+                    "url": "https://www.lepaindore.fr/ateliers/pain-levain-fevrier.html"
+                },
+                "organizer": {
+                    "@type": "Organization",
+                    "name": "Boulangerie Le Pain Doré",
+                    "url": "https://www.lepaindore.fr"
+                }
+            }
+            </script>
+        </section>
+
+        <!--
+            SECTION CTA EN FIN DE PAGE
+            ==========================
+            Incite à l'action après avoir lu le contenu.
+        -->
+        <section class="cta-section" aria-labelledby="cta-services-title">
+            <h2 id="cta-services-title">Une question sur nos services ?</h2>
+            <p>Notre équipe est à votre disposition pour répondre à toutes vos questions.</p>
+            <!--
+                LIENS MULTIPLES VERS LA MÊME PAGE
+                =================================
+                Utiliser des textes d'ancrage variés pour les différents liens
+                vers une même page (éviter la répétition exacte).
+            -->
+            <a href="/contact.html" class="cta-button">
+                Nous contacter
+            </a>
+        </section>
+
+    </main>
+
+    <aside role="complementary" aria-label="Informations complémentaires">
+        <section class="sidebar-widget">
+            <h3>Besoin d'aide ?</h3>
+            <p>Appelez-nous au <a href="tel:+33123456789">01 23 45 67 89</a></p>
+            <p>Du lundi au samedi, 8h-18h</p>
+        </section>
+    </aside>
+
+    <footer role="contentinfo">
+        <section class="footer-contact">
+            <h3>Contact</h3>
+            <address>
+                <strong>Boulangerie Le Pain Doré</strong><br>
+                42 Rue du Pain<br>
+                75011 Paris, France<br>
+                <a href="tel:+33123456789">01 23 45 67 89</a><br>
+                <a href="mailto:contact@lepaindore.fr">contact@lepaindore.fr</a>
+            </address>
+        </section>
+
+        <nav aria-label="Navigation secondaire">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="/mentions-legales.html">Mentions légales</a></li>
+                <li><a href="/politique-confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="/cgv.html">CGV</a></li>
+                <li><a href="/sitemap.html">Plan du site</a></li>
+            </ul>
+        </nav>
+
+        <p class="copyright">
+            © <time datetime="2026">2026</time> Le Pain Doré. Tous droits réservés.
+        </p>
+    </footer>
+
+</body>
+</html>

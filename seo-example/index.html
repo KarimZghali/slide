@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<!--
+    ============================================
+    EXEMPLE DE SITE OPTIMISÉ SEO - PAGE D'ACCUEIL
+    ============================================
+    
+    Ce site a été créé comme support pédagogique pour un cours de SEO.
+    Chaque élément d'optimisation est commenté pour faciliter la compréhension.
+    
+    Auteur: Cortana pour Karim
+    Date: Janvier 2026
+-->
+
+<!-- 
+    DÉCLARATION DE LA LANGUE
+    ========================
+    L'attribut "lang" aide les moteurs de recherche à comprendre la langue du contenu.
+    Cela améliore le référencement local et l'accessibilité (lecteurs d'écran).
+    Format: code ISO 639-1 (fr, en, es, de, etc.)
+-->
+<html lang="fr">
+
+<head>
+    <!--
+        ENCODAGE DES CARACTÈRES
+        =======================
+        UTF-8 est le standard universel qui supporte tous les caractères.
+        Doit être déclaré en premier dans le <head> pour éviter les problèmes d'affichage.
+    -->
+    <meta charset="UTF-8">
+
+    <!--
+        VIEWPORT POUR LE RESPONSIVE (MOBILE-FIRST)
+        ==========================================
+        CRUCIAL pour le SEO mobile ! Google utilise l'indexation "Mobile-First".
+        - width=device-width : adapte la largeur à l'écran
+        - initial-scale=1.0 : pas de zoom initial
+        Sans cette balise, le site sera pénalisé sur mobile.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        BALISE TITLE - L'ÉLÉMENT SEO LE PLUS IMPORTANT
+        ==============================================
+        Règles d'or :
+        - Entre 50-60 caractères (sinon tronqué dans les résultats Google)
+        - Mot-clé principal au début
+        - Nom de marque à la fin (séparé par | ou -)
+        - Unique pour chaque page
+        - Doit donner envie de cliquer (CTR)
+    -->
+    <title>Boulangerie Artisanale Le Pain Doré | Pains Bio à Paris</title>
+
+    <!--
+        META DESCRIPTION
+        ================
+        Résumé de la page qui apparaît dans les résultats de recherche.
+        Règles :
+        - Entre 150-160 caractères
+        - Inclure le mot-clé principal naturellement
+        - Call-to-action pour améliorer le taux de clic
+        - Unique pour chaque page
+        Note : Google peut choisir d'afficher un autre extrait de la page.
+    -->
+    <meta name="description" content="Découvrez notre boulangerie artisanale à Paris. Pains bio au levain, viennoiseries maison et pâtisseries traditionnelles. Livraison gratuite dès 25€.">
+
+    <!--
+        META KEYWORDS (OBSOLÈTE MAIS INFORMATIF)
+        ========================================
+        Google ignore cette balise depuis 2009, mais certains autres moteurs
+        peuvent encore la considérer. On la laisse à titre éducatif.
+        Ne pas en abuser (keyword stuffing = pénalité).
+    -->
+    <meta name="keywords" content="boulangerie paris, pain bio, pain au levain, viennoiseries artisanales, pâtisserie traditionnelle">
+
+    <!--
+        META ROBOTS
+        ===========
+        Contrôle le comportement des robots d'indexation.
+        Valeurs courantes :
+        - index : autoriser l'indexation
+        - follow : suivre les liens de la page
+        - noindex : ne pas indexer (pages admin, merci, etc.)
+        - nofollow : ne pas suivre les liens
+        - noarchive : ne pas mettre en cache
+        - nosnippet : ne pas afficher de description
+    -->
+    <meta name="robots" content="index, follow">
+
+    <!--
+        URL CANONIQUE
+        =============
+        TRÈS IMPORTANT pour éviter le contenu dupliqué !
+        Indique l'URL "officielle" de la page.
+        Utile quand une même page est accessible via plusieurs URLs :
+        - http vs https
+        - avec ou sans www
+        - avec paramètres de tracking (?utm_source=...)
+        - pagination
+    -->
+    <link rel="canonical" href="https://www.lepaindore.fr/">
+
+    <!--
+        BALISES OPEN GRAPH (FACEBOOK, LINKEDIN)
+        =======================================
+        Contrôlent l'apparence du site quand il est partagé sur les réseaux sociaux.
+        Impact indirect sur le SEO via le trafic social et les signaux d'engagement.
+    -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Boulangerie Artisanale Le Pain Doré | Paris">
+    <meta property="og:description" content="Pains bio au levain, viennoiseries maison et pâtisseries traditionnelles. Livraison gratuite dès 25€.">
+    <meta property="og:image" content="https://www.lepaindore.fr/images/og-image.jpg">
+    <meta property="og:url" content="https://www.lepaindore.fr/">
+    <meta property="og:site_name" content="Le Pain Doré">
+    <meta property="og:locale" content="fr_FR">
+    <!-- 
+        og:image recommandations :
+        - Taille idéale : 1200x630 pixels
+        - Format : JPG ou PNG
+        - Taille max : 8MB
+    -->
+
+    <!--
+        TWITTER CARDS
+        =============
+        Similaire à Open Graph mais spécifique à Twitter/X.
+        Types : summary, summary_large_image, app, player
+    -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lepaindore">
+    <meta name="twitter:title" content="Boulangerie Artisanale Le Pain Doré | Paris">
+    <meta name="twitter:description" content="Pains bio au levain, viennoiseries maison et pâtisseries traditionnelles.">
+    <meta name="twitter:image" content="https://www.lepaindore.fr/images/twitter-card.jpg">
+
+    <!--
+        FAVICON
+        =======
+        Petite icône affichée dans l'onglet du navigateur et les favoris.
+        Améliore la reconnaissance de marque et l'UX.
+        Plusieurs formats pour compatibilité maximale.
+    -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <!-- Apple Touch Icon : icône pour les appareils iOS quand on ajoute le site à l'écran d'accueil -->
+
+    <!--
+        PRECONNECT ET DNS-PREFETCH
+        ==========================
+        Optimisation des performances (facteur SEO depuis Core Web Vitals).
+        Établit une connexion anticipée vers les domaines externes utilisés.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    <!--
+        FEUILLE DE STYLES CSS
+        =====================
+        Fichier externe pour les styles (meilleure pratique).
+        Le CSS inline peut ralentir le chargement initial.
+    -->
+    <link rel="stylesheet" href="style.css">
+
+    <!--
+        DONNÉES STRUCTURÉES JSON-LD (SCHEMA.ORG)
+        ========================================
+        TRÈS IMPORTANT POUR LE SEO MODERNE !
+        
+        Les données structurées aident Google à comprendre le contenu.
+        Elles peuvent générer des "Rich Snippets" dans les résultats :
+        - Étoiles de notation
+        - Prix des produits
+        - FAQ
+        - Breadcrumbs
+        - Événements
+        - Recettes
+        - etc.
+        
+        Outil de test : https://search.google.com/test/rich-results
+    -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://www.lepaindore.fr/#organization",
+        "name": "Boulangerie Le Pain Doré",
+        "description": "Boulangerie artisanale proposant des pains bio au levain, viennoiseries et pâtisseries traditionnelles à Paris.",
+        "url": "https://www.lepaindore.fr",
+        "logo": "https://www.lepaindore.fr/images/logo.png",
+        "image": "https://www.lepaindore.fr/images/facade.jpg",
+        "telephone": "+33-1-23-45-67-89",
+        "email": "contact@lepaindore.fr",
+        "priceRange": "€€",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "42 Rue du Pain",
+            "addressLocality": "Paris",
+            "postalCode": "75011",
+            "addressCountry": "FR"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "48.8566",
+            "longitude": "2.3522"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "07:00",
+                "closes": "19:30"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday", "Sunday"],
+                "opens": "07:30",
+                "closes": "13:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/lepaindore",
+            "https://www.instagram.com/lepaindore",
+            "https://twitter.com/lepaindore"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "247"
+        }
+    }
+    </script>
+
+    <!--
+        DONNÉES STRUCTURÉES - BREADCRUMBS (FIL D'ARIANE)
+        ================================================
+        Aide à la navigation et peut apparaître dans les résultats Google.
+    -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Accueil",
+                "item": "https://www.lepaindore.fr/"
+            }
+        ]
+    }
+    </script>
+
+    <!--
+        DONNÉES STRUCTURÉES - WEBSITE (SITELINKS SEARCHBOX)
+        ===================================================
+        Permet d'afficher une barre de recherche dans les résultats Google
+        pour les sites ayant une fonction de recherche interne.
+    -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Le Pain Doré",
+        "url": "https://www.lepaindore.fr/",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://www.lepaindore.fr/recherche?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+</head>
+
+<body>
+    <!--
+        STRUCTURE HTML5 SÉMANTIQUE
+        ==========================
+        L'utilisation des balises sémantiques (header, nav, main, article, section, aside, footer)
+        aide les moteurs de recherche à comprendre la structure et l'importance du contenu.
+        C'est aussi crucial pour l'accessibilité.
+    -->
+
+    <!--
+        SKIP LINK (LIEN D'ÉVITEMENT)
+        ============================
+        Améliore l'accessibilité en permettant aux utilisateurs de clavier
+        de sauter directement au contenu principal.
+        L'accessibilité est un facteur SEO indirect.
+    -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!--
+        HEADER - EN-TÊTE DU SITE
+        ========================
+        Contient généralement le logo et la navigation principale.
+        Balise sémantique qui indique l'en-tête de la page.
+    -->
+    <header role="banner">
+        <!--
+            LOGO AVEC ATTRIBUT ALT DESCRIPTIF
+            =================================
+            - L'attribut "alt" décrit l'image pour les moteurs et l'accessibilité
+            - Inclure le nom de l'entreprise dans le alt du logo
+            - Le logo doit être un lien vers l'accueil
+        -->
+        <a href="/" title="Retour à l'accueil">
+            <img src="/images/logo.png" 
+                 alt="Le Pain Doré - Boulangerie Artisanale Paris" 
+                 width="200" 
+                 height="80"
+                 loading="eager">
+            <!--
+                ATTRIBUTS WIDTH ET HEIGHT
+                =========================
+                Spécifier les dimensions évite le "layout shift" (CLS)
+                qui est un facteur Core Web Vitals important pour le SEO.
+                
+                LOADING="EAGER"
+                ===============
+                Pour les éléments au-dessus de la ligne de flottaison,
+                utiliser eager (ou ne pas mettre l'attribut) pour charger immédiatement.
+            -->
+        </a>
+
+        <!--
+            NAVIGATION PRINCIPALE
+            =====================
+            - Utiliser <nav> pour la navigation principale
+            - Liens internes avec texte d'ancrage descriptif (pas "cliquez ici")
+            - Structure de liens cohérente sur toutes les pages
+        -->
+        <nav role="navigation" aria-label="Navigation principale">
+            <ul>
+                <!--
+                    ATTRIBUT ARIA-CURRENT
+                    =====================
+                    Indique la page actuelle pour l'accessibilité.
+                -->
+                <li><a href="/" aria-current="page">Accueil</a></li>
+                
+                <!--
+                    TEXTE D'ANCRAGE OPTIMISÉ
+                    ========================
+                    Le texte des liens doit être descriptif et contenir des mots-clés pertinents.
+                    MAUVAIS : "Cliquez ici", "En savoir plus", "Lire la suite"
+                    BON : "Nos services de livraison", "Découvrir nos pains bio"
+                -->
+                <li><a href="/services.html">Nos Services</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--
+        BREADCRUMBS (FIL D'ARIANE)
+        ==========================
+        Navigation secondaire montrant le chemin hiérarchique.
+        - Améliore l'UX et la navigation
+        - Peut apparaître dans les résultats Google (avec Schema.org)
+        - Aide les moteurs à comprendre la structure du site
+    -->
+    <nav aria-label="Fil d'Ariane" class="breadcrumbs">
+        <ol>
+            <li>
+                <a href="/">Accueil</a>
+            </li>
+            <!-- Sur les autres pages, ajouter les niveaux intermédiaires -->
+        </ol>
+    </nav>
+
+    <!--
+        CONTENU PRINCIPAL
+        =================
+        La balise <main> indique le contenu principal unique de la page.
+        Il ne doit y avoir qu'un seul <main> par page.
+        L'ID permet le skip link.
+    -->
+    <main id="main-content" role="main">
+        
+        <!--
+            SECTION HERO / EN-TÊTE DE PAGE
+            ==============================
+        -->
+        <section class="hero" aria-labelledby="hero-title">
+            <!--
+                BALISE H1 - TITRE PRINCIPAL
+                ===========================
+                RÈGLES CRUCIALES :
+                - UN SEUL H1 par page
+                - Doit contenir le mot-clé principal
+                - Différent du <title> mais cohérent
+                - Entre 20-70 caractères idéalement
+                - Doit résumer le contenu de la page
+            -->
+            <h1 id="hero-title">Boulangerie Artisanale à Paris : Pains Bio au Levain</h1>
+            
+            <!--
+                PARAGRAPHE D'INTRODUCTION
+                =========================
+                Les premiers paragraphes ont plus de poids SEO.
+                Inclure les mots-clés naturellement dans les 100 premiers mots.
+            -->
+            <p class="lead">
+                Depuis 1985, <strong>Le Pain Doré</strong> perpétue la tradition boulangère française 
+                au cœur du 11ème arrondissement de <strong>Paris</strong>. Nos <strong>pains bio 
+                au levain naturel</strong>, nos <strong>viennoiseries artisanales</strong> et nos 
+                <strong>pâtisseries maison</strong> sont préparés chaque jour avec passion.
+            </p>
+            <!--
+                BALISES <STRONG> ET <EM>
+                ========================
+                - <strong> : importance forte (anciennement bold, mais sémantique)
+                - <em> : emphase (anciennement italic, mais sémantique)
+                Utiliser avec parcimonie pour les mots-clés importants.
+                Ne pas en abuser (keyword stuffing).
+            -->
+        </section>
+
+        <!--
+            SECTION PRODUITS/SERVICES
+            =========================
+            Utiliser <section> pour grouper du contenu thématique.
+            Chaque section devrait avoir un titre (H2, H3, etc.)
+        -->
+        <section class="products" aria-labelledby="products-title">
+            <!--
+                HIÉRARCHIE DES TITRES
+                =====================
+                Respecter l'ordre : H1 > H2 > H3 > H4 > H5 > H6
+                Ne jamais sauter de niveau (pas de H1 puis H3).
+                Utiliser les titres pour structurer, pas pour le style.
+            -->
+            <h2 id="products-title">Nos Spécialités Artisanales</h2>
+
+            <!--
+                ARTICLES INDIVIDUELS
+                ====================
+                <article> représente un contenu autonome et redistribuable.
+                Parfait pour : articles de blog, produits, commentaires, etc.
+            -->
+            <article class="product-card">
+                <h3>Pain au Levain Bio</h3>
+                <!--
+                    IMAGES OPTIMISÉES POUR LE SEO
+                    =============================
+                    Checklist images :
+                    1. Attribut ALT descriptif et unique
+                    2. Nom de fichier avec mots-clés (pain-levain-bio.jpg pas IMG_1234.jpg)
+                    3. Compression optimale (WebP > JPEG > PNG pour les photos)
+                    4. Dimensions appropriées (pas d'images 4000px affichées en 400px)
+                    5. Lazy loading pour les images sous la ligne de flottaison
+                    6. Attributs width/height pour éviter le layout shift
+                -->
+                <img src="/images/pain-levain-bio.webp" 
+                     alt="Pain au levain bio cuit au feu de bois - Boulangerie Le Pain Doré Paris"
+                     width="400"
+                     height="300"
+                     loading="lazy"
+                     decoding="async">
+                <!--
+                    LOADING="LAZY"
+                    ==============
+                    Charge l'image uniquement quand elle entre dans le viewport.
+                    Améliore les performances et le LCP (Largest Contentful Paint).
+                    Ne pas utiliser pour les images au-dessus de la ligne de flottaison.
+                    
+                    DECODING="ASYNC"
+                    ================
+                    Permet au navigateur de décoder l'image de manière asynchrone,
+                    sans bloquer le rendu de la page.
+                -->
+                <p>Notre pain signature, préparé avec de la <strong>farine bio locale</strong> 
+                   et un <strong>levain naturel de 30 ans</strong>. Cuisson au four à bois.</p>
+                
+                <!--
+                    LIENS INTERNES CONTEXTUELS
+                    ==========================
+                    Les liens internes dans le contenu ont plus de valeur que ceux en navigation.
+                    Utiliser un texte d'ancrage descriptif et varié.
+                -->
+                <a href="/services.html#livraison" class="cta-button">
+                    Commander avec livraison gratuite
+                </a>
+            </article>
+
+            <article class="product-card">
+                <h3>Croissants Pur Beurre</h3>
+                <img src="/images/croissants-pur-beurre.webp" 
+                     alt="Croissants pur beurre feuilletés - Viennoiserie artisanale Paris"
+                     width="400"
+                     height="300"
+                     loading="lazy"
+                     decoding="async">
+                <p>Feuilletage traditionnel avec du <strong>beurre AOP Charentes-Poitou</strong>. 
+                   Croustillants à l'extérieur, moelleux à l'intérieur.</p>
+                <a href="/services.html" class="cta-button">
+                    Découvrir nos viennoiseries
+                </a>
+            </article>
+
+            <article class="product-card">
+                <h3>Tartes aux Fruits de Saison</h3>
+                <!--
+                    ATTRIBUT SRCSET POUR IMAGES RESPONSIVE
+                    ======================================
+                    Permet de servir différentes tailles d'images selon l'écran.
+                    Optimise les performances sur mobile (images plus légères).
+                -->
+                <img src="/images/tarte-fruits-400.webp"
+                     srcset="/images/tarte-fruits-400.webp 400w,
+                             /images/tarte-fruits-800.webp 800w,
+                             /images/tarte-fruits-1200.webp 1200w"
+                     sizes="(max-width: 600px) 400px,
+                            (max-width: 1200px) 800px,
+                            1200px"
+                     alt="Tarte aux fruits frais de saison - Pâtisserie artisanale Le Pain Doré"
+                     width="400"
+                     height="300"
+                     loading="lazy"
+                     decoding="async">
+                <p>Pâte sablée maison garnie de <strong>fruits frais du marché</strong> 
+                   et de crème pâtissière à la vanille bourbon.</p>
+            </article>
+        </section>
+
+        <!--
+            SECTION TÉMOIGNAGES/AVIS
+            ========================
+            Les avis clients sont importants pour le SEO local
+            et peuvent générer des rich snippets avec Schema.org.
+        -->
+        <section class="testimonials" aria-labelledby="testimonials-title">
+            <h2 id="testimonials-title">Ce que disent nos clients</h2>
+            
+            <!--
+                BLOCKQUOTE POUR LES CITATIONS
+                =============================
+                Utiliser <blockquote> pour les citations.
+                <cite> pour l'attribution de la source.
+            -->
+            <blockquote>
+                <p>"Le meilleur pain au levain de Paris ! Je n'achète plus mon pain ailleurs 
+                   depuis que j'ai découvert Le Pain Doré."</p>
+                <footer>
+                    <cite>— Marie L., cliente fidèle depuis 2018</cite>
+                </footer>
+            </blockquote>
+
+            <!--
+                DONNÉES STRUCTURÉES POUR LES AVIS
+                =================================
+                Peuvent être ajoutées en JSON-LD pour chaque avis individuel
+                pour obtenir des étoiles dans les résultats de recherche.
+            -->
+        </section>
+
+        <!--
+            SECTION FAQ
+            ===========
+            Les FAQ sont excellentes pour le SEO :
+            - Répondent aux questions des utilisateurs
+            - Peuvent apparaître dans les featured snippets
+            - Ciblent les recherches vocales et questions longues
+        -->
+        <section class="faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">Questions Fréquentes</h2>
+            
+            <!--
+                UTILISATION DE <DETAILS> ET <SUMMARY>
+                =====================================
+                Balises HTML natives pour les accordéons FAQ.
+                Accessibles et sans JavaScript.
+            -->
+            <details>
+                <summary>
+                    <h3>Quels sont vos horaires d'ouverture ?</h3>
+                </summary>
+                <p>Nous sommes ouverts du <strong>lundi au vendredi de 7h à 19h30</strong>, 
+                   et le <strong>week-end de 7h30 à 13h</strong>. Fermé les jours fériés.</p>
+            </details>
+
+            <details>
+                <summary>
+                    <h3>Proposez-vous la livraison à domicile ?</h3>
+                </summary>
+                <p>Oui ! Nous livrons dans tout Paris et proche banlieue. 
+                   <strong>Livraison gratuite dès 25€ d'achat</strong>. 
+                   Consultez notre <a href="/services.html#livraison">page services</a> pour plus de détails.</p>
+            </details>
+
+            <details>
+                <summary>
+                    <h3>Vos produits sont-ils bio ?</h3>
+                </summary>
+                <p>Tous nos pains sont préparés avec de la <strong>farine bio certifiée</strong>. 
+                   Nous privilégions les ingrédients locaux et de saison pour l'ensemble de nos produits.</p>
+            </details>
+        </section>
+
+        <!--
+            DONNÉES STRUCTURÉES FAQ
+            =======================
+            À ajouter pour que les FAQ apparaissent dans les résultats Google.
+        -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+                {
+                    "@type": "Question",
+                    "name": "Quels sont vos horaires d'ouverture ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Nous sommes ouverts du lundi au vendredi de 7h à 19h30, et le week-end de 7h30 à 13h. Fermé les jours fériés."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Proposez-vous la livraison à domicile ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Oui ! Nous livrons dans tout Paris et proche banlieue. Livraison gratuite dès 25€ d'achat."
+                    }
+                },
+                {
+                    "@type": "Question",
+                    "name": "Vos produits sont-ils bio ?",
+                    "acceptedAnswer": {
+                        "@type": "Answer",
+                        "text": "Tous nos pains sont préparés avec de la farine bio certifiée. Nous privilégions les ingrédients locaux et de saison pour l'ensemble de nos produits."
+                    }
+                }
+            ]
+        }
+        </script>
+
+        <!--
+            CALL-TO-ACTION (CTA)
+            ====================
+            Section incitant à l'action pour améliorer les conversions.
+        -->
+        <section class="cta-section" aria-labelledby="cta-title">
+            <h2 id="cta-title">Venez nous rendre visite !</h2>
+            <p>Découvrez l'authenticité de nos produits artisanaux directement en boutique, 
+               ou passez commande pour une <a href="/services.html#livraison">livraison à domicile</a>.</p>
+            <a href="/contact.html" class="cta-button cta-primary">
+                Nous trouver
+            </a>
+        </section>
+
+    </main>
+
+    <!--
+        ASIDE - CONTENU COMPLÉMENTAIRE
+        ==============================
+        <aside> pour le contenu tangentiellement lié au contenu principal.
+        Ex: sidebar, encarts promotionnels, liens connexes.
+        Les moteurs comprennent que ce n'est pas le contenu principal.
+    -->
+    <aside role="complementary" aria-label="Informations complémentaires">
+        <section class="sidebar-widget">
+            <h3>Nos Actualités</h3>
+            <ul>
+                <li>
+                    <a href="/blog/nouvelle-gamme-pains-speciaux.html">
+                        Nouvelle gamme de pains spéciaux
+                    </a>
+                    <time datetime="2026-01-15">15 janvier 2026</time>
+                    <!--
+                        BALISE <TIME> AVEC DATETIME
+                        ===========================
+                        La balise <time> avec l'attribut datetime aide les moteurs
+                        à comprendre les dates dans un format standardisé (ISO 8601).
+                    -->
+                </li>
+                <li>
+                    <a href="/blog/atelier-pain-fevrier.html">
+                        Atelier fabrication de pain - Février
+                    </a>
+                    <time datetime="2026-01-10">10 janvier 2026</time>
+                </li>
+            </ul>
+        </section>
+
+        <!--
+            LIENS VERS RÉSEAUX SOCIAUX
+            ==========================
+            Les signaux sociaux sont un facteur SEO indirect.
+            Toujours utiliser rel="noopener noreferrer" sur les liens externes target="_blank".
+        -->
+        <section class="social-links">
+            <h3>Suivez-nous</h3>
+            <ul>
+                <li>
+                    <a href="https://facebook.com/lepaindore" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Suivez-nous sur Facebook">
+                        <!--
+                            REL="NOOPENER NOREFERRER"
+                            =========================
+                            - noopener : sécurité, empêche la page liée d'accéder à window.opener
+                            - noreferrer : ne pas envoyer le referer header
+                            IMPORTANT pour les liens target="_blank" vers sites externes.
+                            
+                            ARIA-LABEL
+                            ==========
+                            Fournit un label accessible quand le contenu visible
+                            n'est pas suffisamment descriptif (ex: icône seule).
+                        -->
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/lepaindore" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Suivez-nous sur Instagram">
+                        Instagram
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </aside>
+
+    <!--
+        FOOTER - PIED DE PAGE
+        =====================
+        Contient généralement :
+        - Informations de contact
+        - Liens de navigation secondaire
+        - Mentions légales
+        - Copyright
+    -->
+    <footer role="contentinfo">
+        <!--
+            INFORMATIONS DE CONTACT
+            =======================
+            Utiliser <address> pour les informations de contact.
+            Important pour le SEO local.
+        -->
+        <section class="footer-contact">
+            <h3>Contact</h3>
+            <address>
+                <!--
+                    BALISE <ADDRESS>
+                    ================
+                    Utilisée pour les coordonnées de contact.
+                    Aide les moteurs à identifier les informations de contact.
+                -->
+                <strong>Boulangerie Le Pain Doré</strong><br>
+                42 Rue du Pain<br>
+                75011 Paris, France<br>
+                <!--
+                    LIENS TÉLÉPHONE ET EMAIL
+                    ========================
+                    - tel: pour les numéros de téléphone (clickable sur mobile)
+                    - mailto: pour les emails
+                    Format international pour le téléphone (+33...)
+                -->
+                <a href="tel:+33123456789">01 23 45 67 89</a><br>
+                <a href="mailto:contact@lepaindore.fr">contact@lepaindore.fr</a>
+            </address>
+        </section>
+
+        <!--
+            NAVIGATION SECONDAIRE
+            =====================
+            Liens importants mais secondaires.
+        -->
+        <nav aria-label="Navigation secondaire">
+            <h3>Liens utiles</h3>
+            <ul>
+                <li><a href="/mentions-legales.html">Mentions légales</a></li>
+                <li><a href="/politique-confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="/cgv.html">CGV</a></li>
+                <!--
+                    PAGES LÉGALES
+                    =============
+                    Obligatoires légalement et attendues par les utilisateurs.
+                    Google peut pénaliser les sites sans pages légales.
+                -->
+                <li><a href="/sitemap.html">Plan du site</a></li>
+                <!--
+                    PLAN DU SITE HTML
+                    =================
+                    Différent du sitemap.xml.
+                    Aide les utilisateurs et les moteurs à naviguer sur le site.
+                -->
+            </ul>
+        </nav>
+
+        <!--
+            COPYRIGHT
+            =========
+            Indication de propriété et année.
+        -->
+        <p class="copyright">
+            © <time datetime="2026">2026</time> Le Pain Doré. Tous droits réservés.
+        </p>
+    </footer>
+
+    <!--
+        SCRIPTS EN FIN DE PAGE
+        ======================
+        Charger les scripts à la fin du body pour ne pas bloquer le rendu.
+        Utiliser defer ou async selon les besoins.
+        
+        DEFER vs ASYNC
+        ==============
+        - defer : exécuté après le parsing HTML, dans l'ordre
+        - async : exécuté dès que téléchargé, ordre non garanti
+        
+        Utiliser defer pour les scripts qui dépendent du DOM.
+        Utiliser async pour les scripts indépendants (analytics, etc.)
+    -->
+    
+    <!-- Exemple de script analytics (ne pas copier sans adapter) -->
+    <!--
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        // Google Analytics 4
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+    -->
+
+</body>
+</html>

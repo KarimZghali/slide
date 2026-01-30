@@ -1,0 +1,961 @@
+/*
+============================================
+FEUILLE DE STYLES - SITE OPTIMISÉ SEO
+============================================
+
+Ce fichier CSS accompagne l'exemple de site SEO.
+Bien que le CSS n'affecte pas directement le référencement,
+il impacte l'expérience utilisateur et les Core Web Vitals.
+
+IMPACT SEO DU CSS :
+- Performance (temps de chargement)
+- Core Web Vitals (CLS, LCP, FID)
+- Mobile-friendliness
+- Accessibilité
+- Lisibilité du contenu
+
+============================================
+*/
+
+/* ==========================================
+   CSS RESET / NORMALISATION
+   ==========================================
+   Un reset CSS assure une base cohérente
+   sur tous les navigateurs.
+   Impact : meilleure UX, moins de bugs visuels.
+*/
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   VARIABLES CSS (CUSTOM PROPERTIES)
+   ==========================================
+   Facilite la maintenance et la cohérence.
+   Les changements de thème sont plus simples.
+*/
+
+:root {
+    /* Couleurs principales */
+    --color-primary: #8B4513;      /* Marron boulangerie */
+    --color-secondary: #D2691E;    /* Chocolat */
+    --color-accent: #F4A460;       /* Sable */
+    --color-background: #FFF8DC;   /* Crème */
+    --color-text: #333333;         /* Texte principal */
+    --color-text-light: #666666;   /* Texte secondaire */
+    --color-white: #FFFFFF;
+    --color-error: #D32F2F;
+    --color-success: #388E3C;
+
+    /* Typographie */
+    --font-primary: 'Georgia', 'Times New Roman', serif;
+    --font-secondary: 'Arial', 'Helvetica Neue', sans-serif;
+    
+    /* Espacements */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Largeurs */
+    --max-width: 1200px;
+    --content-width: 800px;
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 300ms ease;
+
+    /* Ombres */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ==========================================
+   BASE / TYPOGRAPHIE
+   ==========================================
+   
+   IMPORTANCE SEO DE LA TYPOGRAPHIE :
+   - Lisibilité = meilleur engagement
+   - Taille minimale 16px recommandée sur mobile
+   - Contraste suffisant (WCAG AA minimum)
+*/
+
+html {
+    /* 
+    SCROLL-BEHAVIOR: SMOOTH
+    =======================
+    Animation fluide pour les ancres (#section).
+    Améliore l'UX lors de la navigation interne.
+    */
+    scroll-behavior: smooth;
+    
+    /* Taille de base pour les rem */
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    line-height: 1.6; /* Hauteur de ligne pour la lisibilité */
+    color: var(--color-text);
+    background-color: var(--color-background);
+    
+    /*
+    FONT-DISPLAY ET PERFORMANCE
+    ===========================
+    Si vous utilisez des polices web (@font-face),
+    utilisez font-display: swap pour éviter le FOIT
+    (Flash of Invisible Text) qui nuit au LCP.
+    */
+}
+
+/* ==========================================
+   SKIP LINK (LIEN D'ÉVITEMENT)
+   ==========================================
+   
+   ACCESSIBILITÉ = SEO INDIRECT
+   Ce lien permet aux utilisateurs de clavier
+   de sauter la navigation et aller au contenu.
+   Caché visuellement mais accessible au focus.
+*/
+
+.skip-link {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-md);
+    z-index: 1000;
+    transition: top var(--transition-fast);
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* ==========================================
+   EN-TÊTE (HEADER)
+   ==========================================
+*/
+
+header {
+    background: var(--color-white);
+    padding: var(--spacing-md) var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    /* Flexbox pour disposition logo + nav */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+
+header img {
+    /*
+    DIMENSIONS EXPLICITES SUR LES IMAGES
+    ====================================
+    Définir width et height évite le "layout shift" (CLS).
+    Le navigateur réserve l'espace avant le chargement.
+    */
+    max-width: 150px;
+    height: auto;
+}
+
+/* ==========================================
+   NAVIGATION
+   ==========================================
+*/
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 4px;
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+nav a:hover,
+nav a:focus {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Page active */
+nav a[aria-current="page"] {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* ==========================================
+   BREADCRUMBS (FIL D'ARIANE)
+   ==========================================
+*/
+
+.breadcrumbs {
+    background: var(--color-white);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 0.875rem;
+}
+
+.breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.breadcrumbs a {
+    color: var(--color-primary);
+}
+
+.breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs [aria-current="page"] {
+    color: var(--color-text-light);
+}
+
+/* ==========================================
+   CONTENU PRINCIPAL
+   ==========================================
+*/
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-lg);
+}
+
+/* ==========================================
+   TITRES
+   ==========================================
+   
+   HIÉRARCHIE DES TITRES
+   =====================
+   La hiérarchie visuelle doit correspondre
+   à la hiérarchie sémantique (H1 > H2 > H3).
+   Aide les utilisateurs ET les moteurs.
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    color: var(--color-primary);
+    line-height: 1.3;
+    margin-bottom: var(--spacing-md);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: var(--spacing-xl);
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-top: var(--spacing-lg);
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1.125rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* ==========================================
+   PARAGRAPHES ET TEXTE
+   ==========================================
+*/
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+.lead {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    line-height: 1.7;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* ==========================================
+   LIENS
+   ==========================================
+   
+   ACCESSIBILITÉ DES LIENS
+   =======================
+   - Couleur contrastée
+   - Soulignement (ou autre indicateur visuel)
+   - État :focus visible pour navigation clavier
+*/
+
+a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-secondary);
+}
+
+a:focus {
+    /*
+    OUTLINE VISIBLE AU FOCUS
+    ========================
+    JAMAIS outline: none sans alternative !
+    Crucial pour l'accessibilité clavier.
+    */
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* ==========================================
+   BOUTONS CTA
+   ==========================================
+*/
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+    border: none;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+.cta-button:focus {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+}
+
+.cta-primary {
+    background-color: var(--color-secondary);
+    font-size: 1.125rem;
+}
+
+.cta-primary:hover {
+    background-color: var(--color-primary);
+}
+
+/* ==========================================
+   IMAGES
+   ==========================================
+   
+   IMAGES RESPONSIVE
+   =================
+   max-width: 100% empêche les images de déborder.
+   height: auto maintient le ratio.
+   Crucial pour le mobile.
+*/
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==========================================
+   SECTIONS
+   ==========================================
+*/
+
+section {
+    margin-bottom: var(--spacing-xl);
+}
+
+/* ==========================================
+   CARTES PRODUITS
+   ==========================================
+*/
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.product-card {
+    background: var(--color-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.product-card img {
+    width: 100%;
+    /*
+    ASPECT-RATIO
+    ============
+    Nouvelle propriété CSS pour maintenir le ratio.
+    Alternative moderne à la technique padding-top.
+    Évite le layout shift (CLS).
+    */
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.product-card h3,
+.product-card p,
+.product-card a {
+    padding: 0 var(--spacing-md);
+}
+
+.product-card h3 {
+    padding-top: var(--spacing-md);
+}
+
+.product-card .cta-button {
+    margin: var(--spacing-md);
+}
+
+/* ==========================================
+   TÉMOIGNAGES
+   ==========================================
+*/
+
+blockquote {
+    background: var(--color-white);
+    border-left: 4px solid var(--color-primary);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-lg) 0;
+    font-style: italic;
+}
+
+blockquote p {
+    font-size: 1.125rem;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: var(--spacing-md);
+    font-style: normal;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+/* ==========================================
+   FAQ (ACCORDÉONS)
+   ==========================================
+*/
+
+details {
+    background: var(--color-white);
+    border-radius: 4px;
+    margin-bottom: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+}
+
+summary {
+    padding: var(--spacing-md);
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary:hover {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+summary h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+details[open] summary {
+    border-bottom: 1px solid var(--color-background);
+}
+
+details p {
+    padding: var(--spacing-md);
+}
+
+/* ==========================================
+   TABLEAUX
+   ==========================================
+   
+   TABLEAUX ACCESSIBLES
+   ====================
+   - caption pour décrire le tableau
+   - scope sur les th
+   - Contraste suffisant
+   - Responsive sur mobile
+*/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--spacing-lg) 0;
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+caption {
+    padding: var(--spacing-md);
+    font-weight: 600;
+    text-align: left;
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+th, td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 1px solid var(--color-background);
+}
+
+th {
+    background: rgba(139, 69, 19, 0.1);
+    font-weight: 600;
+}
+
+/* Alternance de couleurs pour lisibilité */
+tbody tr:nth-child(even) {
+    background: rgba(0, 0, 0, 0.02);
+}
+
+tbody tr:hover {
+    background: rgba(139, 69, 19, 0.05);
+}
+
+/* ==========================================
+   FORMULAIRES
+   ==========================================
+   
+   FORMULAIRES ACCESSIBLES
+   =======================
+   - Labels visibles et associés
+   - Taille de clic minimum 44x44px sur mobile
+   - États :focus clairement visibles
+   - Messages d'erreur explicites
+*/
+
+.contact-form {
+    max-width: var(--content-width);
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    box-shadow: var(--shadow-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-weight: 500;
+}
+
+.required {
+    color: var(--color-error);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color var(--transition-fast);
+    
+    /*
+    TAILLE MINIMUM POUR LE TOUCH
+    ============================
+    padding suffisant pour atteindre ~44px de hauteur,
+    recommandé par Google pour les éléments tactiles.
+    */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.2);
+}
+
+/* Validation visuelle */
+input:valid {
+    border-color: var(--color-success);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: var(--color-error);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-checkbox {
+    display: flex;
+    gap: var(--spacing-sm);
+    align-items: flex-start;
+}
+
+.form-checkbox input {
+    width: auto;
+    margin-top: 4px;
+}
+
+.form-checkbox label {
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.form-note {
+    font-size: 0.875rem;
+    color: var(--color-text-light);
+}
+
+/* ==========================================
+   SIDEBAR / ASIDE
+   ==========================================
+*/
+
+aside {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    margin-top: var(--spacing-lg);
+}
+
+.sidebar-widget {
+    margin-bottom: var(--spacing-lg);
+}
+
+.sidebar-widget:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-widget h3 {
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.sidebar-widget ul {
+    list-style: none;
+}
+
+.sidebar-widget li {
+    margin-bottom: var(--spacing-sm);
+}
+
+/* ==========================================
+   FOOTER
+   ==========================================
+*/
+
+footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--spacing-xl) var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+}
+
+footer h3 {
+    color: var(--color-white);
+    font-size: 1.125rem;
+}
+
+footer a {
+    color: var(--color-accent);
+}
+
+footer a:hover {
+    color: var(--color-white);
+}
+
+footer address {
+    font-style: normal;
+}
+
+footer nav ul {
+    list-style: none;
+    display: block;
+}
+
+footer nav li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.copyright {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+/* ==========================================
+   CARTE GOOGLE MAPS
+   ==========================================
+*/
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    margin: var(--spacing-lg) 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* ==========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ==========================================
+   
+   MOBILE-FIRST
+   ============
+   Google utilise l'indexation Mobile-First.
+   Le site doit être parfaitement utilisable sur mobile.
+   Les styles de base sont pour mobile, on ajoute
+   pour les écrans plus grands.
+*/
+
+/* Tablettes et plus */
+@media (min-width: 768px) {
+    header {
+        padding: var(--spacing-md) var(--spacing-xl);
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .lead {
+        font-size: 1.375rem;
+    }
+
+    main {
+        padding: var(--spacing-xl);
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--spacing-xl);
+    }
+
+    .copyright {
+        grid-column: 1 / -1;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    /* Layout avec sidebar */
+    .page-with-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: var(--spacing-xl);
+    }
+
+    aside {
+        margin-top: 0;
+    }
+}
+
+/* ==========================================
+   PRÉFÉRENCES UTILISATEUR
+   ==========================================
+   
+   RESPECT DES PRÉFÉRENCES
+   =======================
+   Respecter les choix d'accessibilité de l'utilisateur
+   améliore l'UX et potentiellement le SEO.
+*/
+
+/* Mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Mode sombre (si supporté) */
+@media (prefers-color-scheme: dark) {
+    /*
+    DARK MODE
+    =========
+    De plus en plus d'utilisateurs préfèrent le mode sombre.
+    À implémenter si pertinent pour votre audience.
+    
+    :root {
+        --color-background: #1a1a1a;
+        --color-text: #e0e0e0;
+        etc.
+    }
+    */
+}
+
+/* ==========================================
+   IMPRESSION
+   ==========================================
+   
+   STYLES D'IMPRESSION
+   ===================
+   Permet d'imprimer la page proprement.
+   Utile pour les utilisateurs qui impriment
+   les recettes, horaires, etc.
+*/
+
+@media print {
+    header,
+    footer,
+    nav,
+    aside,
+    .cta-button,
+    .no-print {
+        display: none !important;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: #000;
+        background: #fff;
+    }
+
+    a {
+        color: #000;
+        text-decoration: underline;
+    }
+
+    /* Afficher les URLs des liens */
+    a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+    }
+
+    /* Éviter les coupures de page inappropriées */
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+
+    img, table, figure {
+        page-break-inside: avoid;
+    }
+}
+
+/* ==========================================
+   UTILITAIRES
+   ==========================================
+*/
+
+/* Visually Hidden (caché visuellement mais accessible) */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* ==========================================
+   FIN DU FICHIER CSS
+   ==========================================
+   
+   RÉCAPITULATIF DES BONNES PRATIQUES CSS POUR LE SEO :
+   
+   1. Performance
+      - Minimiser le CSS en production
+      - Éviter les sélecteurs trop complexes
+      - Utiliser le lazy loading pour les ressources non critiques
+   
+   2. Core Web Vitals
+      - Éviter le layout shift (CLS) avec des dimensions fixes
+      - Optimiser le LCP avec du CSS critique inline
+      - Réduire le blocking time avec du CSS non bloquant
+   
+   3. Mobile-First
+      - Design responsive obligatoire
+      - Éléments tactiles de 44px minimum
+      - Texte lisible sans zoom (16px minimum)
+   
+   4. Accessibilité
+      - Contraste suffisant (WCAG AA)
+      - Focus visible sur tous les éléments interactifs
+      - Respect des préférences utilisateur (reduced-motion, etc.)
+   
+   5. Maintenabilité
+      - Variables CSS pour la cohérence
+      - Code commenté et organisé
+      - Conventions de nommage claires
+*/

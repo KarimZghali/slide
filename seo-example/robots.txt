@@ -1,0 +1,167 @@
+# ============================================
+# FICHIER ROBOTS.TXT - EXEMPLE SEO
+# ============================================
+#
+# Le fichier robots.txt indique aux robots d'indexation
+# quelles parties du site ils peuvent ou ne peuvent pas explorer.
+#
+# IMPORTANT :
+# - Ce fichier DOIT être à la racine du site (https://example.com/robots.txt)
+# - C'est une INDICATION, pas une obligation (les bots malveillants l'ignorent)
+# - Ne pas utiliser pour cacher du contenu sensible (utiliser l'authentification)
+# - Tester avec Google Search Console avant mise en production
+#
+# DOCUMENTATION OFFICIELLE :
+# https://developers.google.com/search/docs/crawling-indexing/robots/intro
+#
+# ============================================
+
+# ============================================
+# RÈGLES POUR TOUS LES ROBOTS
+# ============================================
+
+User-agent: *
+# User-agent: * s'applique à tous les robots d'indexation
+
+# ============================================
+# PAGES À NE PAS INDEXER
+# ============================================
+
+# Pages d'administration
+Disallow: /admin/
+Disallow: /wp-admin/
+# Les pages d'admin ne doivent jamais être indexées
+
+# Pages de panier et compte utilisateur
+Disallow: /panier/
+Disallow: /checkout/
+Disallow: /mon-compte/
+# Ces pages sont personnalisées et n'ont pas de valeur SEO
+
+# Pages de recherche interne
+Disallow: /recherche?
+Disallow: /search?
+# Évite l'indexation de milliers de pages de résultats
+
+# Pages de filtres et tri (contenu dupliqué)
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?page=
+# Les paramètres de tri créent du contenu dupliqué
+
+# Pages de tracking et UTM
+Disallow: /*?utm_
+Disallow: /*?ref=
+Disallow: /*?source=
+# Évite l'indexation de la même page avec différents paramètres
+
+# Pages techniques
+Disallow: /cgi-bin/
+Disallow: /scripts/
+Disallow: /includes/
+# Fichiers techniques sans intérêt pour l'indexation
+
+# Pages de test
+Disallow: /test/
+Disallow: /staging/
+Disallow: /dev/
+# Environnements de développement
+
+# Fichiers sensibles
+Disallow: /private/
+Disallow: /*.pdf$
+# Note : le $ indique "se termine par" (syntaxe étendue)
+
+# Pages de confirmation et remerciement
+Disallow: /merci
+Disallow: /confirmation
+Disallow: /thank-you
+# Pages sans valeur SEO, accessibles après action
+
+# ============================================
+# PAGES AUTORISÉES (EXPLICITEMENT)
+# ============================================
+
+# Par défaut, tout ce qui n'est pas Disallow est autorisé
+# Mais on peut être explicite :
+Allow: /images/
+Allow: /css/
+Allow: /js/
+# Permettre l'accès aux ressources pour le rendu
+
+# ============================================
+# RÈGLES SPÉCIFIQUES PAR ROBOT
+# ============================================
+
+# Googlebot (robot principal de Google)
+User-agent: Googlebot
+# Pas de règles spécifiques supplémentaires pour cet exemple
+# Googlebot suit les règles générales ci-dessus
+
+# Google Images
+User-agent: Googlebot-Image
+Allow: /images/
+# Autoriser explicitement l'indexation des images
+
+# Bingbot (Microsoft/Bing)
+User-agent: Bingbot
+# Mêmes règles que pour tout le monde
+
+# Robots de réseaux sociaux
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: LinkedInBot
+Allow: /
+# Autoriser l'accès pour les previews de partage
+
+# ============================================
+# CRAWL-DELAY (OPTIONNEL)
+# ============================================
+
+# Crawl-delay: 10
+# Demande au robot d'attendre 10 secondes entre chaque requête
+# ATTENTION : Google ignore ce paramètre, utiliser Search Console à la place
+# Utile pour Bing et autres moteurs si le serveur est lent
+
+# ============================================
+# SITEMAP
+# ============================================
+
+# IMPORTANT : Toujours indiquer l'emplacement du sitemap
+Sitemap: https://www.lepaindore.fr/sitemap.xml
+
+# On peut avoir plusieurs sitemaps :
+# Sitemap: https://www.lepaindore.fr/sitemap-pages.xml
+# Sitemap: https://www.lepaindore.fr/sitemap-posts.xml
+# Sitemap: https://www.lepaindore.fr/sitemap-images.xml
+
+# ============================================
+# EXEMPLES DE BLOCAGE AVANCÉ
+# ============================================
+
+# Bloquer un robot spécifique complètement
+# User-agent: BadBot
+# Disallow: /
+
+# Bloquer l'indexation mais permettre de suivre les liens
+# (utiliser meta robots noindex à la place, plus fiable)
+
+# ============================================
+# NOTES IMPORTANTES
+# ============================================
+#
+# 1. Le robots.txt est PUBLIC - tout le monde peut le voir
+#    Ne jamais y lister des URLs sensibles !
+#
+# 2. Pour vraiment bloquer l'indexation d'une page :
+#    - Utiliser <meta name="robots" content="noindex">
+#    - Ou X-Robots-Tag dans les headers HTTP
+#
+# 3. Tester votre robots.txt :
+#    - Google Search Console > Outil de test du robots.txt
+#    - https://www.google.com/webmasters/tools/robots-testing-tool
+#
+# 4. Après modification, demander une nouvelle exploration
+#    dans Google Search Console
+#
+# ============================================
