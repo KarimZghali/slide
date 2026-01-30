@@ -1,49 +1,57 @@
 # CLAUDE.md
 
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 ## Project Overview
 
-A minimalist slideshow viewer for course content, built with vanilla HTML/CSS/JS. No dependencies, no build step, works directly in the browser.
+Viewer de diaporama minimaliste pour contenu de cours, construit en HTML/CSS/JS vanilla. Aucune dépendance, aucune étape de build, fonctionne directement dans le navigateur.
 
-## Structure
+## Commandes
+
+Aucune commande build/lint/test - ouvrir `index.html` directement dans un navigateur.
+
+## Architecture
 
 ```
-├── index.html              # Entry point
-├── css/style.css           # Styles (dark theme, responsive)
+├── index.html          # Point d'entrée, structure DOM
+├── css/style.css       # Dark theme, composants SEO, responsive
 └── js/
-    ├── themes-data.js      # Theme and slide content (edit this to add content)
-    └── script.js           # Navigation logic
+    ├── themes-data.js  # Données : THEMES_DATA.themes[] avec slides HTML
+    └── script.js       # Navigation, clavier, sélecteur de slide
 ```
 
-## Key Files
+**Flux de données :** `THEMES_DATA` (global) → `selectTheme()` → `showSlide()` → DOM
 
-- **js/themes-data.js**: Contains all themes and slides as embedded HTML strings. Edit this file to add/modify course content.
-- **js/script.js**: Handles theme selection, slide navigation, and keyboard shortcuts.
-- **css/style.css**: Dark gradient theme, card-based theme menu, fullscreen slide container.
+**État global dans script.js :** `themes`, `currentTheme`, `currentSlideIndex`, `slidesContent`
 
-## How It Works
+## Ajouter du contenu
 
-1. User opens `index.html` → sees theme selection menu
-2. Clicking a theme loads its slides from `THEMES_DATA`
-3. Navigation via buttons or keyboard (←/→, Space, Escape)
-
-## Adding Content
-
-Add a new theme in `js/themes-data.js`:
+Ajouter un thème dans `js/themes-data.js` :
 
 ```javascript
 {
     "id": "unique-id",
-    "title": "Theme Title",
-    "description": "Short description",
+    "title": "Titre",
+    "description": "Description courte",
     "slides": [
-        `<h1>Slide 1</h1><p>Content...</p>`,
-        `<h1>Slide 2</h1><p>Content...</p>`
+        `<div class="slide-seo"><h1>Slide 1</h1></div>`,
+        `<div class="slide-seo"><h1>Slide 2</h1></div>`
     ]
 }
 ```
 
-## Design Decisions
+Les slides utilisent des classes CSS spécifiques définies dans `style.css` (`.slide-seo`, `.slide-tip`, `.slide-warning`, `.comparison-table`, etc.).
 
-- **No server required**: Data embedded in JS to avoid CORS issues with `file://`
-- **No framework**: Pure vanilla JS for simplicity and zero dependencies
-- **Keyboard-first**: Full navigation without mouse
+## Raccourcis clavier
+
+- `→` / `Espace` / `Enter` : slide suivante
+- `←` / `Backspace` : slide précédente
+- `Home` / `End` : première / dernière slide
+- `Escape` : retour au menu
+- `G` : sélecteur de slide (go to)
+
+## Décisions de conception
+
+- **Pas de serveur** : données embarquées en JS pour éviter les problèmes CORS avec `file://`
+- **Pas de framework** : JS vanilla pour simplicité et zéro dépendance
+- **Navigation clavier-first** : navigation complète sans souris

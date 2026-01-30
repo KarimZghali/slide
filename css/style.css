@@ -1480,6 +1480,51 @@ body {
     color: #7eb8ff !important;
 }
 
+/* Lien outil */
+.tool-link {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.2), rgba(124, 58, 237, 0.2));
+    border: 1px solid #00d4aa;
+    color: #00d4aa;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tool-link:hover {
+    background: linear-gradient(135deg, rgba(0, 212, 170, 0.3), rgba(124, 58, 237, 0.3));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3);
+}
+
+/* Grille de mots-clés à tester */
+.keyword-test-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.keyword-chip {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+    transition: all 0.2s ease;
+}
+
+.keyword-chip:hover {
+    border-color: #7c3aed;
+    color: #a78bfa;
+    background: rgba(124, 58, 237, 0.1);
+}
+
 /* ==================== RESPONSIVE ==================== */
 @media (max-width: 768px) {
     .theme-menu h1 {

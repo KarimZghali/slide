@@ -1004,18 +1004,40 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
+    <h1>🧪 Exercice : Testez la difficulté !</h1>
+    <h2>Découvrez le KD de mots-clés concurrentiels</h2>
+    <p class="text-intro">Rendez-vous sur l'outil gratuit d'Ahrefs pour analyser la difficulté de ces mots-clés très disputés :</p>
+    <p class="mt-md"><a href="https://ahrefs.com/fr/keyword-difficulty" target="_blank" class="tool-link">🔗 ahrefs.com/fr/keyword-difficulty</a></p>
+    <div class="keyword-test-grid">
+        <span class="keyword-chip">assurance</span>
+        <span class="keyword-chip">assurance auto</span>
+        <span class="keyword-chip">crédit immobilier</span>
+        <span class="keyword-chip">mutuelle santé</span>
+        <span class="keyword-chip">hôtel Paris</span>
+        <span class="keyword-chip">rachat de crédit</span>
+        <span class="keyword-chip">plombier Paris</span>
+        <span class="keyword-chip">voiture occasion</span>
+        <span class="keyword-chip">formation en ligne</span>
+        <span class="keyword-chip">avocat divorce</span>
+        <span class="keyword-chip">site de rencontre</span>
+        <span class="keyword-chip">voyage pas cher</span>
+    </div>
+    <p class="slide-tip">💡 <strong>Observez :</strong> Ces mots-clés ont généralement un KD > 50. Ce sont des secteurs très concurrentiels où seuls les gros acteurs peuvent rivaliser en courte traîne.</p>
+</div>`,
+
+                `<div class="slide-seo">
     <h1>🛠️ Les outils gratuits</h1>
     <h2>Commencer sans budget</h2>
     <div class="tools-grid">
         <div class="tool-card">
             <h3>📊 Google Keyword Planner</h3>
             <p>L'outil officiel de Google, intégré à Google Ads. Donne les volumes de recherche et les tendances saisonnières.</p>
-            <p class="text-muted">✓ Gratuit avec un compte Google Ads</p>
+            <p class="text-muted">✓ Gratuit avec un compte Google Ads <i>(Google Ads/outils/outil de planification des mots clés)</i></p>
         </div>
         <div class="tool-card">
             <h3>📈 Google Trends</h3>
             <p>Analyse l'évolution de l'intérêt pour un terme dans le temps. Parfait pour détecter les tendances et la saisonnalité.</p>
-            <p class="text-muted">✓ 100% gratuit</p>
+            <p class="text-muted">✓ 100% gratuit. <i>Testez avec Avatar 3 pour mesurer l'intérêt suscité</i></p>
         </div>
         <div class="tool-card">
             <h3>🔍 Google Search Console</h3>
@@ -1075,12 +1097,12 @@ const THEMES_DATA = {
         </div>
         <div class="tool-card tool-premium">
             <h3>🟣 Moz Pro</h3>
-            <p>Interface intuitive, bon pour les débutants. Inventeur du "Domain Authority", métrique de référence.</p>
+            <p>Interface intuitive, bon pour les débutants.</p>
             <p class="text-accent">À partir de ~99$/mois</p>
         </div>
         <div class="tool-card tool-premium">
             <h3>🟢 Ubersuggest</h3>
-            <p>Version allégée et abordable, créé par Neil Patel. Bon rapport qualité/prix pour les petits budgets.</p>
+            <p>Version allégée et abordable. Bon rapport qualité/prix pour les petits budgets.</p>
             <p class="text-accent">À partir de ~29€/mois (ou achat à vie)</p>
         </div>
     </div>
