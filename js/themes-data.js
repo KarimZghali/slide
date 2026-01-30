@@ -809,6 +809,590 @@ const THEMES_DATA = {
         <li><strong>4.</strong> Vérifiez dans la Search Console > Indexation — combien de pages indexées vs soumises ?</li>
     </ul>
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> La recherche de mots-clés et l'étude sémantique — comment choisir les batailles à mener.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔑 Chapitre 3</h1>
+    <h2>La recherche de mots-clés et l'étude sémantique</h2>
+    <p class="text-intro">Avant de créer du contenu, il faut savoir sur quoi se positionner. La recherche de mots-clés est le <strong>GPS de votre stratégie SEO</strong> : elle vous dit où aller et comment y arriver.</p>
+    <div class="slide-agenda">
+        <p>📊 Typologie des mots-clés (courte traîne vs longue traîne)</p>
+        <p>🛠️ Outils de planification et analyse de la concurrence</p>
+        <p>🗺️ Cartographie de contenu (Keyword Mapping)</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔑 Qu'est-ce qu'un mot-clé ?</h1>
+    <h2>La base de toute stratégie SEO</h2>
+    <p class="text-intro">Un <strong>mot-clé</strong> (ou keyword) est le terme ou l'expression que les internautes tapent dans un moteur de recherche pour trouver une information, un produit ou un service.</p>
+    <ul>
+        <li><strong>Mot-clé simple</strong> : "chaussures" (1 mot)</li>
+        <li><strong>Expression-clé</strong> : "chaussures de running" (plusieurs mots)</li>
+        <li><strong>Requête de recherche</strong> : "quelles sont les meilleures chaussures de running pour marathon"</li>
+    </ul>
+    <p class="slide-tip">💡 En SEO, on parle souvent de "mots-clés" pour désigner toutes ces variations. L'objectif : comprendre ce que cherchent vos clients potentiels.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Courte traîne vs Longue traîne</h1>
+    <h2>Deux stratégies, deux philosophies</h2>
+    <p class="text-intro-lg">Les mots-clés se divisent en deux grandes familles, avec des caractéristiques opposées.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>🎯 Courte traîne (Head)</h3>
+            <ul>
+                <li><strong>1-2 mots</strong> maximum</li>
+                <li><strong>Volume élevé</strong> de recherches</li>
+                <li><strong>Concurrence féroce</strong></li>
+                <li><strong>Intention floue</strong></li>
+            </ul>
+            <p class="text-muted mt-sm">Ex : "chaussures", "SEO", "voyage"</p>
+        </div>
+        <div class="comparison-col">
+            <h3>🐍 Longue traîne (Long Tail)</h3>
+            <ul>
+                <li><strong>3+ mots</strong>, phrases complètes</li>
+                <li><strong>Volume faible</strong> individuellement</li>
+                <li><strong>Concurrence modérée</strong></li>
+                <li><strong>Intention précise</strong></li>
+            </ul>
+            <p class="text-muted mt-sm">Ex : "chaussures running femme pronateur"</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📈 Le concept de la longue traîne</h1>
+    <h2>Visualiser la distribution des recherches</h2>
+    <p class="text-intro">Le terme "longue traîne" vient de la forme de la courbe de distribution des recherches. Quelques mots-clés génèrent beaucoup de trafic, mais la majorité du trafic vient d'une multitude de requêtes spécifiques.</p>
+    <div class="longtail-diagram">
+        <div class="longtail-chart">
+            <div class="longtail-head">
+                <div class="longtail-bar longtail-bar-1"></div>
+                <div class="longtail-bar longtail-bar-2"></div>
+                <div class="longtail-bar longtail-bar-3"></div>
+            </div>
+            <div class="longtail-tail">
+                <div class="longtail-bar longtail-bar-4"></div>
+                <div class="longtail-bar longtail-bar-5"></div>
+                <div class="longtail-bar longtail-bar-6"></div>
+                <div class="longtail-bar longtail-bar-7"></div>
+                <div class="longtail-bar longtail-bar-8"></div>
+                <div class="longtail-bar longtail-bar-9"></div>
+                <div class="longtail-bar longtail-bar-10"></div>
+            </div>
+        </div>
+        <div class="longtail-labels">
+            <span class="longtail-label-head">Courte traîne<br><small>30% du trafic</small></span>
+            <span class="longtail-label-tail">Longue traîne<br><small>70% du trafic</small></span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Révélation :</strong> 70% du trafic de recherche provient de requêtes longue traîne. C'est là que se cachent les opportunités !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Exemple concret</h1>
+    <h2>Du générique au spécifique</h2>
+    <p class="text-intro">Observons comment le volume et la conversion évoluent selon la précision du mot-clé.</p>
+    <div class="keyword-funnel">
+        <div class="funnel-row">
+            <span class="funnel-keyword funnel-head">"ordinateur"</span>
+            <span class="funnel-stats">450 000 recherches/mois • Conversion ~0,5%</span>
+        </div>
+        <div class="funnel-row">
+            <span class="funnel-keyword funnel-mid">"ordinateur portable"</span>
+            <span class="funnel-stats">110 000 recherches/mois • Conversion ~1,5%</span>
+        </div>
+        <div class="funnel-row">
+            <span class="funnel-keyword funnel-mid2">"ordinateur portable gamer"</span>
+            <span class="funnel-stats">27 000 recherches/mois • Conversion ~3%</span>
+        </div>
+        <div class="funnel-row">
+            <span class="funnel-keyword funnel-tail">"ordinateur portable gamer pas cher 2026"</span>
+            <span class="funnel-stats">880 recherches/mois • Conversion ~8%</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Plus le mot-clé est précis, plus l'intention d'achat est claire. Moins de visiteurs, mais des visiteurs plus qualifiés !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚖️ Avantages et inconvénients</h1>
+    <h2>Courte traîne : les promesses et les pièges</h2>
+    <div class="pros-cons">
+        <div class="pros">
+            <h3>✅ Avantages</h3>
+            <ul>
+                <li>Volume de trafic potentiel énorme</li>
+                <li>Notoriété de marque renforcée</li>
+                <li>Impact visible si on réussit à se positionner</li>
+            </ul>
+        </div>
+        <div class="cons">
+            <h3>❌ Inconvénients</h3>
+            <ul>
+                <li>Concurrence extrême (Amazon, Wikipedia...)</li>
+                <li>Coût d'acquisition très élevé en SEA</li>
+                <li>Intention de recherche souvent floue</li>
+                <li>Taux de conversion généralement faible</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ Se positionner sur "chaussures" peut prendre des années et des milliers d'euros en contenu. Est-ce vraiment rentable pour vous ?</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚖️ Avantages et inconvénients</h1>
+    <h2>Longue traîne : l'arme secrète du SEO</h2>
+    <div class="pros-cons">
+        <div class="pros">
+            <h3>✅ Avantages</h3>
+            <ul>
+                <li>Concurrence modérée, plus accessible</li>
+                <li>Intention de recherche claire et qualifiée</li>
+                <li>Taux de conversion nettement supérieur</li>
+                <li>Effet cumulatif : des centaines de petits ruisseaux font une rivière</li>
+            </ul>
+        </div>
+        <div class="cons">
+            <h3>❌ Inconvénients</h3>
+            <ul>
+                <li>Volume individuel faible</li>
+                <li>Nécessite de produire beaucoup de contenu</li>
+                <li>Résultats moins spectaculaires à court terme</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Stratégie recommandée :</strong> Commencez par la longue traîne pour générer du trafic qualifié, puis attaquez progressivement les termes plus concurrentiels.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Le volume de recherche</h1>
+    <h2>Comprendre les métriques clés</h2>
+    <p class="text-intro">Le <strong>volume de recherche</strong> indique combien de fois un mot-clé est recherché par mois. C'est une moyenne mensuelle, souvent calculée sur 12 mois.</p>
+    <ul>
+        <li><strong>Volume élevé</strong> (>10 000/mois) : mots-clés très demandés, forte concurrence</li>
+        <li><strong>Volume moyen</strong> (1 000-10 000/mois) : sweet spot pour de nombreux sites</li>
+        <li><strong>Volume faible</strong> (<1 000/mois) : niches, mais souvent très qualifiées</li>
+    </ul>
+     <p class="slide-tip">💡 <strong>Le "sweet spot"</strong> est l'équilibre stratégique idéal entre un volume de recherche suffisant pour générer du trafic et une concurrence assez faible pour permettre un positionnement rapide.</p>
+    <p class="slide-warning">⚠️ Un volume de 0 ne signifie pas qu'il n'y a pas de recherches ! Les outils ont des seuils de détection. Un mot-clé à "0" peut générer 10-50 recherches/mois.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 La difficulté de mot-clé (KD)</h1>
+    <h2>Mesurer la concurrence</h2>
+    <p class="text-intro">La <strong>Keyword Difficulty</strong> (KD) est un score de 0 à 100 qui estime à quel point il sera difficile de se positionner en première page pour un mot-clé donné.</p>
+    <div class="kd-scale">
+        <div class="kd-item kd-easy">
+            <span class="kd-score">0-30</span>
+            <span class="kd-label">Facile</span>
+            <p class="kd-desc">Sites récents, peu de backlinks nécessaires</p>
+        </div>
+        <div class="kd-item kd-medium">
+            <span class="kd-score">31-60</span>
+            <span class="kd-label">Moyen</span>
+            <p class="kd-desc">Contenu de qualité + quelques backlinks</p>
+        </div>
+        <div class="kd-item kd-hard">
+            <span class="kd-score">61-100</span>
+            <span class="kd-label">Difficile</span>
+            <p class="kd-desc">Sites établis, stratégie backlinks intensive</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Le KD varie selon les outils (Ahrefs, SEMrush, Moz). Utilisez-le comme indicateur relatif, pas absolu.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Les outils gratuits</h1>
+    <h2>Commencer sans budget</h2>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📊 Google Keyword Planner</h3>
+            <p>L'outil officiel de Google, intégré à Google Ads. Donne les volumes de recherche et les tendances saisonnières.</p>
+            <p class="text-muted">✓ Gratuit avec un compte Google Ads</p>
+        </div>
+        <div class="tool-card">
+            <h3>📈 Google Trends</h3>
+            <p>Analyse l'évolution de l'intérêt pour un terme dans le temps. Parfait pour détecter les tendances et la saisonnalité.</p>
+            <p class="text-muted">✓ 100% gratuit</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔍 Google Search Console</h3>
+            <p>Montre les requêtes réelles qui amènent du trafic sur votre site. Une mine d'or souvent sous-exploitée !</p>
+            <p class="text-muted">✓ Gratuit pour votre propre site</p>
+        </div>
+        <div class="tool-card">
+            <h3>💡 AnswerThePublic</h3>
+            <p>Visualise les questions que les gens posent autour d'un sujet. Idéal pour trouver des idées de contenu.</p>
+            <p class="text-muted">✓ 3 recherches gratuites/jour</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Google Keyword Planner</h1>
+    <h2>L'outil de référence, mode d'emploi</h2>
+    <p class="text-intro">Le Keyword Planner est accessible via Google Ads (gratuit, pas besoin de dépenser en pub). Il propose deux fonctionnalités principales :</p>
+    <ul>
+        <li><strong>Découvrir de nouveaux mots-clés</strong> : entrez un sujet ou une URL, l'outil suggère des centaines de mots-clés associés</li>
+        <li><strong>Obtenir le volume de recherche</strong> : entrez une liste de mots-clés, obtenez leurs statistiques</li>
+    </ul>
+    <div class="metrics-list mt-lg">
+        <p><span class="metric-label">Volume moyen mensuel</span> Nombre de recherches par mois (fourchette ou chiffre exact si vous avez des campagnes actives)</p>
+        <p><span class="metric-label">Concurrence</span> Niveau de compétition publicitaire (Faible/Moyenne/Forte)</p>
+        <p><span class="metric-label">Enchère suggérée</span> Coût par clic estimé en SEA — indicateur indirect de la valeur commerciale</p>
+    </div>
+    <p class="slide-tip">💡 <strong>Astuce :</strong> Une enchère élevée = mot-clé à forte valeur commerciale. Même si vous faites du SEO, c'est un signal intéressant !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Google Trends</h1>
+    <h2>Détecter les tendances et la saisonnalité</h2>
+    <p class="text-intro">Google Trends ne donne pas de volumes absolus, mais montre l'<strong>évolution de l'intérêt</strong> pour un terme dans le temps et par zone géographique.</p>
+    <ul>
+        <li><strong>Comparer des termes</strong> : "SEO" vs "référencement naturel" — lequel est le plus recherché ?</li>
+        <li><strong>Détecter la saisonnalité</strong> : "maillot de bain" explose en juin, "doudoune" en novembre</li>
+        <li><strong>Identifier les tendances émergentes</strong> : un terme qui monte = opportunité à saisir</li>
+        <li><strong>Analyser par région</strong> : le terme est-il populaire dans votre zone de chalandise ?</li>
+    </ul>
+    <p class="slide-warning">⚠️ L'échelle de Trends est relative (0-100). Un score de 50 signifie "moitié moins de recherches que le pic", pas "50 recherches".</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Les outils payants</h1>
+    <h2>Passer au niveau supérieur</h2>
+    <div class="tools-grid">
+        <div class="tool-card tool-premium">
+            <h3>🔷 SEMrush</h3>
+            <p>Suite complète : mots-clés, audit technique, suivi de positions, analyse concurrentielle. Le couteau suisse du SEO.</p>
+            <p class="text-accent">À partir de ~120€/mois</p>
+        </div>
+        <div class="tool-card tool-premium">
+            <h3>🟠 Ahrefs</h3>
+            <p>Référence pour l'analyse de backlinks, mais aussi excellent pour la recherche de mots-clés et l'audit de contenu.</p>
+            <p class="text-accent">À partir de ~99$/mois</p>
+        </div>
+        <div class="tool-card tool-premium">
+            <h3>🟣 Moz Pro</h3>
+            <p>Interface intuitive, bon pour les débutants. Inventeur du "Domain Authority", métrique de référence.</p>
+            <p class="text-accent">À partir de ~99$/mois</p>
+        </div>
+        <div class="tool-card tool-premium">
+            <h3>🟢 Ubersuggest</h3>
+            <p>Version allégée et abordable, créé par Neil Patel. Bon rapport qualité/prix pour les petits budgets.</p>
+            <p class="text-accent">À partir de ~29€/mois (ou achat à vie)</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Analyse de la concurrence</h1>
+    <h2>Espionner (légalement) vos concurrents</h2>
+    <p class="text-intro">Pourquoi réinventer la roue ? Vos concurrents ont déjà fait le travail de recherche de mots-clés. Analysez leurs positions pour identifier des opportunités.</p>
+    <ul>
+        <li><strong>Identifier les concurrents SEO</strong> : ce ne sont pas forcément vos concurrents commerciaux ! Cherchez qui se positionne sur vos mots-clés cibles.</li>
+        <li><strong>Analyser leur trafic organique</strong> : SEMrush et Ahrefs estiment le trafic de n'importe quel site</li>
+        <li><strong>Lister leurs mots-clés</strong> : sur quels termes sont-ils positionnés que vous avez ratés ?</li>
+        <li><strong>Étudier leur contenu</strong> : quel format utilisent-ils ? Quelle longueur ? Quels angles ?</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Content Gap Analysis :</strong> Cette technique consiste à trouver les mots-clés sur lesquels vos concurrents rankent... mais pas vous. C'est de l'or en barre !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Méthode d'analyse concurrentielle</h1>
+    <h2>Les 5 étapes clés</h2>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Identifier 3-5 concurrents SEO</strong>
+                <p>Tapez vos mots-clés principaux et notez qui apparaît systématiquement en page 1</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Analyser leur profil de mots-clés</strong>
+                <p>Utilisez Ahrefs/SEMrush pour exporter la liste de leurs mots-clés positionnés</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Identifier les opportunités</strong>
+                <p>Filtrez les mots-clés à volume correct et difficulté accessible</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Analyser les pages qui rankent</strong>
+                <p>Étudiez le format, la longueur, la structure des contenus gagnants</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">5</span>
+            <div class="step-content">
+                <strong>Créer du contenu supérieur</strong>
+                <p>Technique du "Skyscraper" : faites mieux, plus complet, plus à jour</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏗️ La technique Skyscraper</h1>
+    <h2>Surpasser les contenus existants</h2>
+    <p class="text-intro">Inventée par Brian Dean (Backlinko), la technique du <strong>Skyscraper</strong> (gratte-ciel) consiste à créer le contenu le plus complet et le plus qualitatif sur un sujet donné.</p>
+    <div class="skyscraper-steps">
+        <div class="skyscraper-step">
+            <span class="emoji">🔍</span>
+            <p><strong>1. Trouvez</strong> un contenu populaire qui génère des backlinks</p>
+        </div>
+        <div class="skyscraper-step">
+            <span class="emoji">📝</span>
+            <p><strong>2. Créez</strong> une version nettement supérieure (plus longue, plus à jour, mieux illustrée)</p>
+        </div>
+        <div class="skyscraper-step">
+            <span class="emoji">📧</span>
+            <p><strong>3. Contactez</strong> les sites qui ont fait des liens vers l'original pour leur proposer votre version</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Un contenu "10x" (10 fois meilleur) a naturellement plus de chances d'attirer des backlinks et des partages.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗺️ Le Keyword Mapping</h1>
+    <h2>Qu'est-ce que la cartographie de mots-clés ?</h2>
+    <p class="text-intro">Le <strong>Keyword Mapping</strong> (ou cartographie de mots-clés) est le processus d'attribution de mots-clés spécifiques à des pages spécifiques de votre site.</p>
+    <p class="slide-highlight mt-lg">1 page = 1 intention = 1 groupe de mots-clés</p>
+    <ul class="mt-lg">
+        <li><strong>Évite la cannibalisation</strong> : deux pages qui ciblent le même mot-clé se font concurrence</li>
+        <li><strong>Structure le contenu</strong> : chaque page a un objectif SEO clair</li>
+        <li><strong>Facilite le suivi</strong> : on sait quelle page doit ranker sur quel terme</li>
+        <li><strong>Identifie les lacunes</strong> : quels mots-clés n'ont pas encore de page dédiée ?</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ La cannibalisation de mots-clés</h1>
+    <h2>Quand vos pages se battent entre elles</h2>
+    <p class="text-intro">La <strong>cannibalisation</strong> se produit quand plusieurs pages de votre site ciblent le même mot-clé. Google ne sait plus laquelle afficher, et souvent... il n'en affiche aucune correctement.</p>
+    <div class="cannibalization-example">
+        <div class="cannibal-bad">
+            <h4>❌ Mauvaise approche</h4>
+            <p><code>/blog/seo-guide</code> → "guide SEO"</p>
+            <p><code>/blog/seo-debutant</code> → "guide SEO"</p>
+            <p><code>/services/seo</code> → "guide SEO"</p>
+            <p class="result">Résultat : les 3 pages se cannibalisent</p>
+        </div>
+        <div class="cannibal-good">
+            <h4>✅ Bonne approche</h4>
+            <p><code>/blog/seo-guide</code> → "guide SEO complet"</p>
+            <p><code>/blog/seo-debutant</code> → "SEO pour débutant"</p>
+            <p><code>/services/seo</code> → "agence SEO Lyon"</p>
+            <p class="result">Résultat : chaque page a son territoire</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗺️ Créer son Keyword Map</h1>
+    <h2>La méthodologie pas à pas</h2>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Inventorier les pages existantes</strong>
+                <p>Listez toutes les URLs de votre site (utilisez Screaming Frog ou une extraction de sitemap)</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Exporter vos données Search Console</strong>
+                <p>Pour chaque page, identifiez les requêtes qui génèrent déjà des impressions</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Regrouper les mots-clés par intention</strong>
+                <p>Créez des clusters sémantiques : mots-clés principaux + secondaires + variations</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Attribuer à chaque page son cluster</strong>
+                <p>1 page = 1 mot-clé principal + 3-5 mots-clés secondaires</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">5</span>
+            <div class="step-content">
+                <strong>Identifier les gaps</strong>
+                <p>Quels clusters importants n'ont pas encore de page ? → contenu à créer</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Exemple de Keyword Map</h1>
+    <h2>Un tableau structuré</h2>
+    <div class="keyword-map-table">
+        <div class="km-header">
+            <span>URL</span>
+            <span>Mot-clé principal</span>
+            <span>Volume</span>
+            <span>KD</span>
+            <span>Mots-clés secondaires</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">/chaussures-running/</span>
+            <span class="km-kw">chaussures running</span>
+            <span class="km-vol">18 000</span>
+            <span class="km-kd kd-hard-sm">72</span>
+            <span class="km-sec">basket running, chaussures course à pied</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">/blog/choisir-running/</span>
+            <span class="km-kw">comment choisir chaussures running</span>
+            <span class="km-vol">2 400</span>
+            <span class="km-kd kd-medium-sm">41</span>
+            <span class="km-sec">guide chaussures running, quelle chaussure running</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">/running-pronateur/</span>
+            <span class="km-kw">chaussures running pronateur</span>
+            <span class="km-vol">1 600</span>
+            <span class="km-kd kd-easy-sm">28</span>
+            <span class="km-sec">running pronation, chaussures surpronation</span>
+        </div>
+        <div class="km-row km-row-gap">
+            <span class="km-url">⚠️ À créer</span>
+            <span class="km-kw">chaussures running femme</span>
+            <span class="km-vol">8 100</span>
+            <span class="km-kd kd-medium-sm">55</span>
+            <span class="km-sec">running femme, basket running femme</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Ce tableau peut être réalisé sur Excel, Google Sheets, ou dans des outils comme Ahrefs/SEMrush qui proposent des fonctionnalités de mapping intégrées.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Les clusters sémantiques</h1>
+    <h2>Organiser les mots-clés par thématique</h2>
+    <p class="text-intro">Un <strong>cluster sémantique</strong> est un groupe de mots-clés qui partagent la même intention de recherche. Google comprend que ces termes sont liés et s'attend à les trouver ensemble.</p>
+    <div class="cluster-diagram">
+        <div class="cluster-center">
+            <span class="cluster-main">chaussures running</span>
+        </div>
+        <div class="cluster-satellites">
+            <span class="cluster-sat">basket running</span>
+            <span class="cluster-sat">chaussures course</span>
+            <span class="cluster-sat">running shoes</span>
+            <span class="cluster-sat">chaussures jogging</span>
+            <span class="cluster-sat">sneakers running</span>
+            <span class="cluster-sat">chaussures pour courir</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Astuce :</strong> Utilisez les "recherches associées" en bas de page Google et les suggestions de saisie pour enrichir vos clusters.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📐 Architecture en Topic Clusters</h1>
+    <h2>La structure moderne du contenu SEO</h2>
+    <p class="text-intro">L'approche <strong>Topic Cluster</strong> (ou Pillar/Cluster) organise votre contenu autour de pages piliers (sujets principaux) et de pages satellites (sous-sujets) liées entre elles.</p>
+    <div class="topic-cluster-diagram">
+        <div class="pillar-page">
+            <strong>PAGE PILIER</strong>
+            <p>Guide complet du running</p>
+            <p class="text-muted">(3000+ mots, couvre tout le sujet)</p>
+        </div>
+        <div class="cluster-links">
+            <span class="link-line">↔</span>
+            <span class="link-line">↔</span>
+            <span class="link-line">↔</span>
+        </div>
+        <div class="cluster-pages">
+            <div class="cluster-page">Choisir ses chaussures</div>
+            <div class="cluster-page">Programme débutant</div>
+            <div class="cluster-page">Nutrition du coureur</div>
+            <div class="cluster-page">Éviter les blessures</div>
+            <div class="cluster-page">Préparer un marathon</div>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Les pages satellites font des liens vers la page pilier (et vice-versa). Cela renforce l'autorité thématique de l'ensemble.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Bonnes pratiques du Keyword Mapping</h1>
+    <h2>Les règles d'or à respecter</h2>
+    <ul>
+        <li><strong>1 mot-clé principal par page</strong> — Ne dispersez pas vos efforts</li>
+        <li><strong>Évitez la sur-optimisation</strong> — Le mot-clé dans le titre, 1-2 fois dans le contenu, c'est suffisant</li>
+        <li><strong>Privilégiez l'intention sur le volume</strong> — 100 visiteurs qualifiés > 10 000 visiteurs perdus</li>
+        <li><strong>Mettez à jour régulièrement</strong> — Les volumes changent, de nouvelles opportunités apparaissent</li>
+        <li><strong>Documentez vos décisions</strong> — Un Google Sheet partagé évite les doublons dans l'équipe</li>
+        <li><strong>Pensez parcours utilisateur</strong> — Du contenu informatif (blog) vers le transactionnel (produits)</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Prioriser ses mots-clés</h1>
+    <h2>La matrice Opportunité / Effort</h2>
+    <p class="text-intro">Tous les mots-clés ne méritent pas le même investissement. Utilisez une matrice pour prioriser vos actions.</p>
+    <div class="priority-matrix">
+        <div class="matrix-quadrant matrix-q1">
+            <h4>🎯 Priorité 1</h4>
+            <p>Volume correct + KD faible</p>
+            <p class="text-muted">Quick wins à saisir !</p>
+        </div>
+        <div class="matrix-quadrant matrix-q2">
+            <h4>📈 Priorité 2</h4>
+            <p>Volume élevé + KD moyen</p>
+            <p class="text-muted">Investissement rentable</p>
+        </div>
+        <div class="matrix-quadrant matrix-q3">
+            <h4>🔬 Priorité 3</h4>
+            <p>Volume faible + KD faible</p>
+            <p class="text-muted">Niches à explorer</p>
+        </div>
+        <div class="matrix-quadrant matrix-q4">
+            <h4>⏳ Priorité 4</h4>
+            <p>Volume élevé + KD très élevé</p>
+            <p class="text-muted">Long terme, besoin d'autorité</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Récap' Chapitre 3</h1>
+    <h2>Ce qu'il faut absolument retenir</h2>
+    <ul>
+        <li>📊 <strong>Courte vs Longue traîne</strong> : commencez par la longue traîne (moins de concurrence, meilleure conversion)</li>
+        <li>🛠️ <strong>Outils</strong> : Keyword Planner et Search Console en gratuit, SEMrush/Ahrefs pour aller plus loin</li>
+        <li>🔍 <strong>Analyse concurrentielle</strong> : étudiez vos concurrents SEO, identifiez les opportunités (Content Gap)</li>
+        <li>🗺️ <strong>Keyword Mapping</strong> : 1 page = 1 intention = 1 cluster de mots-clés</li>
+        <li>📐 <strong>Topic Clusters</strong> : organisez votre contenu en piliers + satellites pour l'autorité thématique</li>
+    </ul>
+    <p class="slide-tip">💡 La recherche de mots-clés n'est pas un exercice ponctuel. C'est un processus continu qui évolue avec votre marché.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Exercice pratique</h1>
+    <h2>Créez votre premier Keyword Map</h2>
+    <ul>
+        <li><strong>1.</strong> Listez 3 pages importantes de votre site</li>
+        <li><strong>2.</strong> Pour chaque page, identifiez le mot-clé principal (utilisez Keyword Planner)</li>
+        <li><strong>3.</strong> Trouvez 3-5 mots-clés secondaires par page</li>
+        <li><strong>4.</strong> Vérifiez qu'il n'y a pas de cannibalisation (2 pages sur le même mot-clé)</li>
+        <li><strong>5.</strong> Identifiez 1 opportunité de contenu à créer (mot-clé sans page dédiée)</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> L'optimisation on-page — comment structurer vos pages pour maximiser leur potentiel de classement.</p>
 </div>`
             ]
         }
