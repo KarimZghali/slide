@@ -2110,6 +2110,7 @@ const THEMES_DATA = {
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> La rédaction SEO et le content marketing — créer du contenu qui convertit.</p>
 </div>`,
 
+
                 `<div class="slide-seo">
     <h1>✍️ Chapitre 2</h1>
     <h2>Stratégie de contenu et Copywriting SEO</h2>
@@ -2387,33 +2388,6 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🛠️ Outils pour enrichir votre sémantique</h1>
-    <h2>Trouver les termes associés</h2>
-    <div class="tools-grid">
-        <div class="tool-card">
-            <h3>🔍 Recherches associées Google</h3>
-            <p>En bas de la page de résultats, Google suggère des recherches liées. Mine d'or gratuite !</p>
-            <p class="text-muted">100% gratuit</p>
-        </div>
-        <div class="tool-card">
-            <h3>💡 People Also Ask</h3>
-            <p>Les "Autres questions posées" révèlent les interrogations fréquentes sur votre sujet.</p>
-            <p class="text-muted">100% gratuit</p>
-        </div>
-        <div class="tool-card">
-            <h3>📊 1.fr</h3>
-            <p>Outil français qui analyse les pages top 10 et suggère les termes manquants dans votre contenu.</p>
-            <p class="text-muted">Freemium</p>
-        </div>
-        <div class="tool-card">
-            <h3>🟣 Surfer SEO / Clearscope</h3>
-            <p>Outils premium qui calculent un "score de contenu" basé sur l'analyse sémantique des concurrents.</p>
-            <p class="text-muted">Payant (~100€/mois)</p>
-        </div>
-    </div>
-</div>`,
-
-                `<div class="slide-seo">
     <h1>⚠️ Le keyword stuffing : l'erreur à éviter</h1>
     <h2>Quand l'optimisation devient sur-optimisation</h2>
     <p class="text-intro">Le <strong>keyword stuffing</strong> (bourrage de mots-clés) consiste à répéter excessivement un mot-clé dans l'espoir d'améliorer le classement. C'est une technique "Black Hat" pénalisée par Google.</p>
@@ -2494,15 +2468,15 @@ const THEMES_DATA = {
     <p class="text-intro">Vos clients potentiels passent par différentes étapes avant d'acheter. Votre contenu doit les accompagner à <strong>chaque phase</strong> de ce parcours.</p>
     <div class="slide-diagram flex-col gap-md">
         <div class="cwv-item">
-            <span class="step cwv-lcp" style="width: 120px;">Découverte</span>
+            <span class="step cwv-lcp" style="width: 170px;">Découverte</span>
             <span class="text-light">L'utilisateur prend conscience d'un besoin → Contenu éducatif, articles de blog</span>
         </div>
         <div class="cwv-item">
-            <span class="step cwv-inp" style="width: 120px; background: #fbbc04;">Considération</span>
+            <span class="step cwv-inp" style="width: 170px; background: #fbbc04;">Considération</span>
             <span class="text-light">Il compare les solutions → Guides comparatifs, études de cas, avis</span>
         </div>
         <div class="cwv-item">
-            <span class="step cwv-cls" style="width: 120px;">Décision</span>
+            <span class="step cwv-cls" style="width: 170px;">Décision</span>
             <span class="text-light">Il est prêt à acheter → Pages produits, démos, offres, témoignages</span>
         </div>
     </div>
@@ -2802,6 +2776,561 @@ const THEMES_DATA = {
         <li><strong>4.</strong> Rédigez l'introduction en utilisant la formule AIDA ou PAS</li>
         <li><strong>5.</strong> Enrichissez le champ sémantique avec 1.fr ou les recherches associées</li>
         <li><strong>6.</strong> Ajoutez un CTA adapté à l'intention de recherche</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Les nouveaux formats et la recherche moderne — recherche vocale, vidéo, IA et E-E-A-T.</p>
+</div>`,
+
+                // ==================== CHAPITRE 3 : LES NOUVEAUX FORMATS ET LA RECHERCHE MODERNE ====================
+
+                `<div class="slide-seo">
+    <h1>🚀 Chapitre 3</h1>
+    <h2>Les nouveaux formats et la recherche moderne</h2>
+    <p class="text-intro">Le SEO évolue constamment. Au-delà des résultats textuels classiques, Google propose désormais de <strong>nombreux formats</strong> qui transforment la manière dont les utilisateurs trouvent l'information. Maîtriser ces nouveaux canaux est essentiel pour rester compétitif.</p>
+    <div class="slide-agenda">
+        <p>🎤 La recherche vocale et les assistants virtuels</p>
+        <p>🎬 Le SEO vidéo et YouTube</p>
+        <p>📰 Google Discover et Google News</p>
+        <p>🏆 L'E-E-A-T et les critères de qualité</p>
+        <p>🤖 L'IA générative et la Search Generative Experience (SGE)</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎤 La recherche vocale</h1>
+    <h2>Une révolution dans les comportements de recherche</h2>
+    <p class="text-intro">La <strong>recherche vocale</strong> permet aux utilisateurs de parler à leur appareil au lieu de taper. Avec Siri, Google Assistant, Alexa et Cortana, plus de <strong>50% des recherches</strong> intègrent désormais une composante vocale.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>⌨️ Recherche textuelle</h3>
+            <ul>
+                <li>"météo Paris"</li>
+                <li>"restaurant italien Lyon"</li>
+                <li>"prix iPhone 15"</li>
+                <li>"horaires SNCF"</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>🎤 Recherche vocale</h3>
+            <ul>
+                <li>"Quel temps fait-il à Paris ?"</li>
+                <li>"Trouve-moi un bon italien près de moi"</li>
+                <li>"Combien coûte le nouvel iPhone ?"</li>
+                <li>"À quelle heure part le prochain train ?"</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Différence clé :</strong> Les requêtes vocales sont plus longues, conversationnelles et souvent formulées sous forme de questions.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗣️ Caractéristiques de la recherche vocale</h1>
+    <h2>Comprendre pour mieux optimiser</h2>
+    <p class="text-intro">La recherche vocale présente des caractéristiques distinctes qui influencent directement votre stratégie SEO.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>💬 Langage naturel</h3>
+            <p>Phrases complètes et conversationnelles</p>
+            <p class="text-accent mt-sm">→ Optimisez pour le langage parlé</p>
+        </div>
+        <div class="intent-card">
+            <h3>❓ Questions fréquentes</h3>
+            <p>Qui, quoi, où, quand, comment, pourquoi</p>
+            <p class="text-accent mt-sm">→ Créez du contenu FAQ</p>
+        </div>
+        <div class="intent-card">
+            <h3>📍 Recherche locale</h3>
+            <p>"Près de moi", "à proximité"</p>
+            <p class="text-accent mt-sm">→ SEO local indispensable</p>
+        </div>
+        <div class="intent-card">
+            <h3>📱 Mobile-first</h3>
+            <p>80% des recherches vocales sur mobile</p>
+            <p class="text-accent mt-sm">→ Site mobile optimisé obligatoire</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Optimiser pour la recherche vocale</h1>
+    <h2>Stratégies concrètes</h2>
+    <p class="text-intro">Pour capter le trafic vocal, adaptez votre contenu aux spécificités de ce canal.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Ciblez les questions longue traîne</strong>
+                <p>"Comment faire une tarte aux pommes maison" plutôt que "recette tarte pomme"</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Répondez directement et concisément</strong>
+                <p>La réponse idéale fait 29 mots en moyenne (format Featured Snippet)</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Créez des pages FAQ structurées</strong>
+                <p>Questions en H2, réponses courtes en paragraphe, balisage Schema FAQ</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Optimisez votre fiche Google Business</strong>
+                <p>40% des recherches vocales sont locales : adresse, horaires, téléphone à jour</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏆 La Position Zéro (Featured Snippet)</h1>
+    <h2>Le Graal de la recherche vocale</h2>
+    <p class="text-intro">Le <strong>Featured Snippet</strong> est l'encadré qui apparaît au-dessus des résultats organiques. Il répond directement à la question de l'utilisateur et est souvent <strong>lu par les assistants vocaux</strong>.</p>
+    <div class="slide-diagram flex-col gap-md items-center">
+        <div class="featured-snippet-demo" style="background: rgba(255,255,255,0.05); border: 2px solid #4285f4; border-radius: 12px; padding: 20px; width: 100%; max-width: 600px;">
+            <p style="color: #888; font-size: 0.85rem; margin-bottom: 8px !important;">www.exemple.com › guide-seo</p>
+            <p style="color: #fff; font-weight: 600; margin-bottom: 12px !important;">Qu'est-ce que le SEO ?</p>
+            <p style="color: #ccc; font-size: 0.95rem !important;">Le SEO (Search Engine Optimization) désigne l'ensemble des techniques visant à améliorer la visibilité d'un site web dans les résultats naturels des moteurs de recherche comme Google.</p>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ <strong>Paradoxe du Featured Snippet :</strong> Il peut réduire les clics (l'info est déjà visible), mais il capte 100% des réponses vocales et renforce votre autorité.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Types de Featured Snippets</h1>
+    <h2>Adapter son contenu au format recherché</h2>
+    <p class="text-intro">Google affiche différents types de Featured Snippets selon la nature de la requête. Identifiez le format dominant pour votre mot-clé et structurez votre contenu en conséquence.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📝 Paragraphe</h3>
+            <p>Définitions, explications courtes (40-60 mots)</p>
+            <p class="text-muted">"Qu'est-ce que...", "Pourquoi..."</p>
+        </div>
+        <div class="tool-card">
+            <h3>📋 Liste à puces</h3>
+            <p>Étapes, caractéristiques, éléments</p>
+            <p class="text-muted">"Comment faire...", "Les meilleurs..."</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔢 Liste numérotée</h3>
+            <p>Processus étape par étape, classements</p>
+            <p class="text-muted">"Étapes pour...", "Top 10..."</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Tableau</h3>
+            <p>Comparaisons, données structurées</p>
+            <p class="text-muted">"Comparatif...", "Prix de..."</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Astuce :</strong> Tapez votre mot-clé dans Google et observez le type de Featured Snippet affiché. Reproduisez ce format dans votre contenu.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎬 Le SEO Vidéo</h1>
+    <h2>YouTube : le 2ème moteur de recherche mondial</h2>
+    <p class="text-intro">YouTube compte plus de <strong>2 milliards d'utilisateurs</strong> actifs mensuels. C'est le 2ème site le plus visité au monde après Google. Ignorer la vidéo, c'est ignorer un canal de trafic massif.</p>
+    <div class="market-share">
+        <div class="share-bar">
+            <span class="share-label">Google</span>
+            <span class="share-fill share-fill-google" style="width: 92%;"></span>
+            <span class="share-value">92%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">YouTube</span>
+            <span class="share-fill" style="width: 79%; background: linear-gradient(90deg, #ff0000, #cc0000);"></span>
+            <span class="share-value">2ème</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Facebook</span>
+            <span class="share-fill" style="width: 65%; background: #1877f2;"></span>
+            <span class="share-value">3ème</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Double visibilité :</strong> Les vidéos YouTube apparaissent aussi dans les résultats Google, sous forme de carrousels vidéo et de Featured Snippets vidéo.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎥 Optimisation YouTube SEO</h1>
+    <h2>Les facteurs de classement sur YouTube</h2>
+    <p class="text-intro">L'algorithme YouTube évalue des critères spécifiques pour classer les vidéos. Voici les éléments à optimiser pour maximiser votre visibilité.</p>
+    <ul>
+        <li><strong>Titre optimisé</strong> : mot-clé principal au début, < 60 caractères, accrocheur</li>
+        <li><strong>Description détaillée</strong> : 200-300 mots, mots-clés naturels, liens, timestamps</li>
+        <li><strong>Tags pertinents</strong> : 5-10 tags mélangeant termes génériques et spécifiques</li>
+        <li><strong>Miniature (thumbnail)</strong> : visage, texte lisible, contraste fort, format 16:9</li>
+        <li><strong>Sous-titres (CC)</strong> : ajoutez-les manuellement pour plus de précision</li>
+        <li><strong>Chapitres (timestamps)</strong> : facilitent la navigation et génèrent des "Key Moments"</li>
+        <li><strong>Cards et écrans de fin</strong> : encouragent l'engagement et le visionnage continu</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📈 Métriques d'engagement YouTube</h1>
+    <h2>Ce que l'algorithme mesure vraiment</h2>
+    <p class="text-intro">YouTube privilégie les vidéos qui <strong>retiennent l'attention</strong>. Les métriques d'engagement sont cruciales pour le classement.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>⏱️ Watch Time</h3>
+            <p>Temps de visionnage total</p>
+            <p class="text-accent mt-sm">→ Le facteur n°1 de l'algorithme</p>
+        </div>
+        <div class="intent-card">
+            <h3>📊 Rétention</h3>
+            <p>% de la vidéo regardée en moyenne</p>
+            <p class="text-accent mt-sm">→ Visez > 50% de rétention</p>
+        </div>
+        <div class="intent-card">
+            <h3>👍 Engagement</h3>
+            <p>Likes, commentaires, partages</p>
+            <p class="text-accent mt-sm">→ Incitez à interagir</p>
+        </div>
+        <div class="intent-card">
+            <h3>🔄 Session Watch Time</h3>
+            <p>Temps passé sur YouTube après votre vidéo</p>
+            <p class="text-accent mt-sm">→ Recommandez d'autres vidéos</p>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ <strong>Attention au "Clickbait" :</strong> Un titre accrocheur qui déçoit = taux de rétention faible = vidéo pénalisée.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Vidéos dans les résultats Google</h1>
+    <h2>Apparaître dans les SERPs avec vos vidéos</h2>
+    <p class="text-intro">Google intègre de plus en plus de vidéos dans ses résultats de recherche. Voici comment maximiser vos chances d'y apparaître.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Ciblez des requêtes "vidéo-friendly"</strong>
+                <p>Tutoriels, how-to, reviews, démonstrations → Google affiche souvent des vidéos</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Utilisez le balisage Schema VideoObject</strong>
+                <p>Permet à Google de comprendre et d'afficher les métadonnées de votre vidéo</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Intégrez la vidéo dans un article optimisé</strong>
+                <p>La vidéo YouTube + contenu textuel SEO = double visibilité</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Créez des "Key Moments"</strong>
+                <p>Les timestamps apparaissent comme liens cliquables dans Google</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📰 Google Discover</h1>
+    <h2>Le flux personnalisé qui vous trouve</h2>
+    <p class="text-intro"><strong>Google Discover</strong> est un flux de contenu personnalisé qui apparaît sur la page d'accueil de l'app Google et sur Chrome mobile. Contrairement à la recherche classique, l'utilisateur ne cherche pas : <strong>le contenu vient à lui</strong>.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>🔍 Google Search</h3>
+            <ul>
+                <li>L'utilisateur tape une requête</li>
+                <li>Intention explicite</li>
+                <li>Résultats basés sur les mots-clés</li>
+                <li>Trafic prévisible et stable</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>📱 Google Discover</h3>
+            <ul>
+                <li>Le contenu est suggéré automatiquement</li>
+                <li>Basé sur les centres d'intérêt</li>
+                <li>Résultats basés sur l'historique utilisateur</li>
+                <li>Trafic volatile mais massif</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Potentiel énorme :</strong> Un article qui "prend" sur Discover peut générer des dizaines de milliers de visites en quelques heures.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Optimiser pour Google Discover</h1>
+    <h2>Les critères de visibilité</h2>
+    <p class="text-intro">Google Discover favorise le contenu qui suscite l'intérêt et l'engagement. Voici les leviers d'optimisation.</p>
+    <ul>
+        <li><strong>Images de haute qualité</strong> : minimum 1200px de large, format 16:9, visuellement attractives</li>
+        <li><strong>Titres engageants</strong> : suscitent la curiosité sans être "clickbait"</li>
+        <li><strong>Contenu frais et original</strong> : actualités, tendances, sujets d'intérêt</li>
+        <li><strong>E-E-A-T solide</strong> : expertise démontrée, auteur identifié, sources citées</li>
+        <li><strong>Pas de contenu trompeur</strong> : le titre doit refléter fidèlement le contenu</li>
+        <li><strong>Site rapide et mobile-friendly</strong> : Core Web Vitals optimisés</li>
+    </ul>
+    <p class="slide-warning">⚠️ <strong>Attention :</strong> Discover est imprévisible. Ne construisez pas votre stratégie uniquement sur ce canal. C'est un bonus, pas une base.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📰 Google News</h1>
+    <h2>Le référencement pour les éditeurs d'actualité</h2>
+    <p class="text-intro"><strong>Google News</strong> est un agrégateur d'actualités qui compile les articles de milliers de sources. Être référencé sur Google News offre une visibilité considérable pour les contenus d'actualité.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>✅ Critères d'éligibilité</h3>
+            <p>Contenu original, actualités fraîches, rédaction professionnelle</p>
+            <p class="text-accent mt-sm">→ Pas de contenu sponsorisé</p>
+        </div>
+        <div class="intent-card">
+            <h3>📝 Exigences techniques</h3>
+            <p>URLs propres, dates claires, sitemap News</p>
+            <p class="text-accent mt-sm">→ Balisage Article structuré</p>
+        </div>
+        <div class="intent-card">
+            <h3>🏢 Politique éditoriale</h3>
+            <p>Mentions légales, équipe identifiée, contact visible</p>
+            <p class="text-accent mt-sm">→ Transparence obligatoire</p>
+        </div>
+        <div class="intent-card">
+            <h3>⚡ Fraîcheur</h3>
+            <p>Publication rapide, mises à jour fréquentes</p>
+            <p class="text-accent mt-sm">→ Actualité = rapidité</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔧 Sitemap Google News</h1>
+    <h2>Déclarer vos articles d'actualité</h2>
+    <p class="text-intro">Un <strong>sitemap News</strong> est un fichier XML spécifique qui signale vos articles récents à Google News. Il ne contient que les articles des <strong>2 derniers jours</strong>.</p>
+    <div class="code-block">
+        <span class="code-comment">&lt;!-- Structure d'un sitemap News --&gt;</span><br>
+        <span class="code-keyword">&lt;urlset</span> xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"<span class="code-keyword">&gt;</span><br>
+        &nbsp;&nbsp;<span class="code-keyword">&lt;url&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;loc&gt;</span><span class="code-value-blue">https://exemple.com/article-actu</span><span class="code-keyword">&lt;/loc&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;news:news&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;news:publication_date&gt;</span><span class="code-value-green">2025-01-30</span><span class="code-keyword">&lt;/news:publication_date&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;news:title&gt;</span>Titre de l'article<span class="code-keyword">&lt;/news:title&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword">&lt;/news:news&gt;</span><br>
+        &nbsp;&nbsp;<span class="code-keyword">&lt;/url&gt;</span><br>
+        <span class="code-keyword">&lt;/urlset&gt;</span>
+    </div>
+    <p class="slide-tip">💡 <strong>Automatisation :</strong> La plupart des CMS (WordPress, Drupal) génèrent automatiquement le sitemap News avec les bons plugins.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 L'IA générative et le SEO</h1>
+    <h2>ChatGPT, Claude, Gemini : la nouvelle donne</h2>
+    <p class="text-intro">L'émergence des <strong>IA génératives</strong> bouleverse la recherche d'information. Les utilisateurs posent désormais leurs questions à des chatbots qui synthétisent les réponses au lieu de lister des liens.</p>
+    <div class="slide-diagram flex-col gap-sm items-center mt-lg">
+        <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center;">
+            <span class="step" style="background: rgba(16, 163, 127, 0.3); border-color: #10a37f;">ChatGPT</span>
+            <span class="step" style="background: rgba(204, 120, 50, 0.3); border-color: #cc7832;">Claude</span>
+            <span class="step" style="background: rgba(66, 133, 244, 0.3); border-color: #4285f4;">Gemini</span>
+            <span class="step" style="background: rgba(244, 114, 182, 0.3); border-color: #f472b6;">Perplexity</span>
+        </div>
+    </div>
+    <p class="slide-warning mt-lg">⚠️ <strong>Impact SEO :</strong> Si l'IA répond directement à la question, l'utilisateur ne clique plus sur votre site. Le trafic "zéro-clic" s'accélère.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔮 SGE : Search Generative Experience</h1>
+    <h2>La réponse IA intégrée à Google</h2>
+    <p class="text-intro">La <strong>SGE</strong> (Search Generative Experience) est la fonctionnalité de Google qui génère des réponses IA directement dans les résultats de recherche, au-dessus des liens organiques.</p>
+    <div class="cannibalization-example">
+        <div class="cannibal-bad">
+            <h4>📉 Impact potentiel</h4>
+            <p style="font-family: inherit !important;">Les réponses IA cannibalisent les clics</p>
+            <p style="font-family: inherit !important;">Moins de trafic vers les sites sources</p>
+            <p style="font-family: inherit !important;">Position 1 organique perd de la valeur</p>
+        </div>
+        <div class="cannibal-good">
+            <h4>📈 Opportunités</h4>
+            <p style="font-family: inherit !important;">Être cité comme source dans la réponse IA</p>
+            <p style="font-family: inherit !important;">Les requêtes complexes nécessitent toujours des clics</p>
+            <p style="font-family: inherit !important;">Le contenu approfondi reste indispensable</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Adaptation :</strong> Créez du contenu si complet et unique que l'IA devra citer votre source. Le contenu générique sera absorbé ; le contenu expert sera référencé.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Optimiser pour l'ère de l'IA</h1>
+    <h2>Stratégies d'adaptation</h2>
+    <p class="text-intro">Face à l'IA générative, le SEO évolue. Voici comment adapter votre stratégie pour rester visible dans ce nouveau paradigme.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Créez du contenu "non-résumable"</strong>
+                <p>Outils interactifs, calculateurs, configurateurs, données exclusives</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Développez votre marque</strong>
+                <p>Les utilisateurs rechercheront directement "votre marque + sujet"</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Misez sur l'expérience personnelle</strong>
+                <p>L'IA ne peut pas avoir VÉCU l'expérience que vous décrivez</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Construisez une communauté</strong>
+                <p>Newsletter, forum, Discord → trafic direct, indépendant de Google</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📱 Les "Zero-Click Searches"</h1>
+    <h2>Quand Google répond sans clic</h2>
+    <p class="text-intro">Les <strong>recherches zéro-clic</strong> sont des requêtes pour lesquelles l'utilisateur obtient sa réponse directement dans les SERPs, sans visiter aucun site. Ce phénomène s'amplifie avec l'IA.</p>
+    <div class="market-share">
+        <div class="share-bar">
+            <span class="share-label">Zéro-clic</span>
+            <span class="share-fill share-fill-bad" style="width: 65%;"></span>
+            <span class="share-value">~65%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Clics organiques</span>
+            <span class="share-fill share-fill-good" style="width: 25%;"></span>
+            <span class="share-value">~25%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Clics payants</span>
+            <span class="share-fill share-fill-ok" style="width: 10%;"></span>
+            <span class="share-value">~10%</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Stratégie :</strong> Visez les requêtes complexes qui nécessitent des clics (comparatifs, guides approfondis, tutoriels) plutôt que les définitions simples.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Les données structurées avancées</h1>
+    <h2>Alimenter les résultats enrichis et l'IA</h2>
+    <p class="text-intro">Les <strong>données structurées</strong> (Schema.org) permettent à Google de mieux comprendre votre contenu et d'afficher des résultats enrichis (rich snippets). Elles deviennent cruciales pour être cité par l'IA.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>❓ FAQPage</h3>
+            <p>Questions/réponses affichées dans les SERPs</p>
+            <p class="text-muted">Visibilité + Featured Snippets</p>
+        </div>
+        <div class="tool-card">
+            <h3>📝 HowTo</h3>
+            <p>Étapes d'un tutoriel avec images</p>
+            <p class="text-muted">Carrousel d'étapes dans Google</p>
+        </div>
+        <div class="tool-card">
+            <h3>⭐ Review</h3>
+            <p>Notes et avis avec étoiles</p>
+            <p class="text-muted">CTR boosté par les étoiles</p>
+        </div>
+        <div class="tool-card">
+            <h3>📅 Event</h3>
+            <p>Événements avec dates et lieux</p>
+            <p class="text-muted">Apparition dans Google Events</p>
+        </div>
+    </div>
+    <p class="slide-note">📝 <strong>Outil :</strong> Utilisez le <a href="https://search.google.com/test/rich-results" style="color: #00d4aa;">Rich Results Test</a> de Google pour valider vos données structurées.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🌐 Le Knowledge Graph</h1>
+    <h2>Devenir une entité reconnue par Google</h2>
+    <p class="text-intro">Le <strong>Knowledge Graph</strong> est la base de données de Google qui relie les entités (personnes, entreprises, lieux, concepts) entre elles. Y figurer augmente considérablement votre visibilité.</p>
+    <div class="slide-diagram flex-col gap-md items-center">
+        <div style="background: rgba(255,255,255,0.05); border: 2px solid #7c3aed; border-radius: 12px; padding: 20px; width: 100%; max-width: 500px;">
+            <p style="color: #a78bfa; font-size: 0.9rem; margin-bottom: 8px !important;">Knowledge Panel</p>
+            <p style="color: #fff; font-weight: 600; font-size: 1.3rem; margin-bottom: 8px !important;">Votre Entreprise</p>
+            <p style="color: #888; font-size: 0.9rem !important; margin-bottom: 4px !important;">📍 Siège social : Paris, France</p>
+            <p style="color: #888; font-size: 0.9rem !important; margin-bottom: 4px !important;">👤 Fondateur : Jean Dupont</p>
+            <p style="color: #888; font-size: 0.9rem !important; margin-bottom: 4px !important;">🌐 Site : www.exemple.com</p>
+            <p style="color: #888; font-size: 0.9rem !important;">📱 Réseaux : LinkedIn, Twitter</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Comment y entrer :</strong> Wikipedia, Wikidata, Google Business Profile, données structurées Organization, mentions cohérentes sur le web.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Tendances SEO 2025-2026</h1>
+    <h2>Ce qui arrive et comment s'y préparer</h2>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>🤖 IA omniprésente</h3>
+            <p>SGE déployée mondialement</p>
+            <p class="text-accent mt-sm">→ Contenu unique et expert</p>
+        </div>
+        <div class="intent-card">
+            <h3>🎤 Multimodal</h3>
+            <p>Recherche par image, voix, vidéo combinées</p>
+            <p class="text-accent mt-sm">→ Optimisez tous les formats</p>
+        </div>
+        <div class="intent-card">
+            <h3>📱 Mobile-only</h3>
+            <p>Index mobile-first total</p>
+            <p class="text-accent mt-sm">→ Expérience mobile parfaite</p>
+        </div>
+        <div class="intent-card">
+            <h3>🔒 Privacy-first</h3>
+            <p>Fin des cookies tiers, moins de données</p>
+            <p class="text-accent mt-sm">→ SEO + first-party data (informations collectées sur vos utilisateurs)</p>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ <strong>Le SEO ne meurt pas, il évolue.</strong> Les fondamentaux (contenu de qualité, technique propre, autorité) restent valables. Seuls les formats et canaux changent.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛡️ Checklist : Nouveaux formats</h1>
+    <h2>Vérifiez votre présence sur tous les canaux</h2>
+    <ul>
+        <li>☐ <strong>Recherche vocale</strong> : contenu FAQ, langage naturel, SEO local</li>
+        <li>☐ <strong>Featured Snippets</strong> : réponses directes, listes, tableaux</li>
+        <li>☐ <strong>YouTube</strong> : titres optimisés, miniatures, timestamps, sous-titres</li>
+        <li>☐ <strong>Google Discover</strong> : images HD, titres engageants, contenu frais</li>
+        <li>☐ <strong>Google News</strong> : sitemap News, dates, auteurs identifiés</li>
+        <li>☐ <strong>E-E-A-T</strong> : pages auteur, sources, transparence, expertise visible</li>
+        <li>☐ <strong>Données structurées</strong> : FAQPage, HowTo, Review, Organization</li>
+        <li>☐ <strong>Knowledge Graph</strong> : Wikidata, Google Business, mentions cohérentes</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Récap' Chapitre 3 (Jour 2)</h1>
+    <h2>Ce qu'il faut absolument retenir</h2>
+    <ul>
+        <li>🎤 <strong>Recherche vocale</strong> : questions longues, langage naturel, SEO local</li>
+        <li>🏆 <strong>Featured Snippets</strong> : position zéro = réponse vocale + visibilité maximale</li>
+        <li>🎬 <strong>YouTube SEO</strong> : watch time, rétention, miniatures, descriptions optimisées</li>
+        <li>📱 <strong>Discover & News</strong> : images HD, fraîcheur, engagement (bonus de trafic)</li>
+        <li>🏅 <strong>E-E-A-T</strong> : Experience, Expertise, Authority, Trust — critères de qualité Google</li>
+        <li>🤖 <strong>IA générative</strong> : SGE arrive, créez du contenu "non-résumable" et unique</li>
+        <li>📊 <strong>Données structurées</strong> : indispensables pour les rich snippets et l'IA</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Exercice pratique</h1>
+    <h2>Auditez votre présence multiformat</h2>
+    <ul>
+        <li><strong>1.</strong> Recherchez votre marque/produit sur Google : avez-vous un Knowledge Panel ?</li>
+        <li><strong>2.</strong> Tapez une question clé de votre secteur : qui a le Featured Snippet ?</li>
+        <li><strong>3.</strong> Recherchez sur YouTube : vos vidéos sont-elles optimisées ? Quels concurrents dominent ?</li>
+        <li><strong>4.</strong> Testez vos pages avec le <a href="https://search.google.com/test/rich-results" style="color: #00d4aa;">Rich Results Test</a></li>
+        <li><strong>5.</strong> Vérifiez vos pages auteur : expertise visible ? Bio complète ?</li>
+        <li><strong>6.</strong> Posez une question de votre secteur à ChatGPT : cite-t-il votre site ?</li>
     </ul>
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Le netlinking et l'autorité de domaine — comment obtenir des backlinks de qualité.</p>
 </div>`
