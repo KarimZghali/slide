@@ -1415,6 +1415,1395 @@ const THEMES_DATA = {
         <li><strong>5.</strong> Identifiez 1 opportunité de contenu à créer (mot-clé sans page dédiée)</li>
     </ul>
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> L'optimisation on-page — comment structurer vos pages pour maximiser leur potentiel de classement.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🚀 Formation SEO</h1>
+    <h2>Jour 2 – Optimisation & Contenu</h2>
+    <p class="slide-subtitle">Du technique au créatif : faire briller vos pages</p>
+    <p class="mt-xl text-info">Maintenant que les fondations sont posées, il est temps de <strong>construire</strong>.</p>
+    <p class="mt-lg text-muted">Aujourd'hui, nous allons apprendre à optimiser chaque page pour qu'elle atteigne son plein potentiel dans les résultats de recherche.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Programme du Jour 2</h1>
+    <h2>Ce que nous allons couvrir</h2>
+    <div class="slide-agenda">
+        <p>📝 <strong>Chapitre 1 :</strong> L'optimisation on-page (balises, structure, contenu)</p>
+        <p>✍️ <strong>Chapitre 2 :</strong> La rédaction SEO et le content marketing</p>
+        <p>🔗 <strong>Chapitre 3 :</strong> Le netlinking et l'autorité de domaine</p>
+    </div>
+    <p class="slide-tip">💡 L'optimisation on-page, c'est tout ce que vous contrôlez directement sur votre site. C'est la base de votre stratégie SEO.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Chapitre 1</h1>
+    <h2>L'optimisation on-page</h2>
+    <p class="text-intro">L'optimisation on-page (ou "on-site") regroupe toutes les techniques d'optimisation appliquées <strong>directement sur vos pages web</strong>. C'est le premier levier d'action du SEO car vous en avez le contrôle total.</p>
+    <div class="slide-agenda">
+        <p>🏷️ Les balises Title et Meta Description</p>
+        <p>📐 La hiérarchie des titres (H1-H6)</p>
+        <p>🖼️ L'optimisation des images</p>
+        <p>🔗 Le maillage interne</p>
+        <p>📊 Les données structurées (Schema.org)</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Qu'est-ce que l'optimisation on-page ?</h1>
+    <h2>Définition et périmètre</h2>
+    <p class="text-intro">L'optimisation on-page consiste à optimiser les <strong>éléments individuels de chaque page</strong> pour améliorer leur pertinence et leur lisibilité, tant pour les moteurs de recherche que pour les utilisateurs.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>✅ Ce qui est on-page</h3>
+            <ul>
+                <li>Balises Title et Meta Description</li>
+                <li>Contenu textuel et mots-clés</li>
+                <li>Structure des titres (H1-H6)</li>
+                <li>Images et attributs alt</li>
+                <li>URLs et liens internes</li>
+                <li>Données structurées</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>❌ Ce qui est off-page</h3>
+            <ul>
+                <li>Backlinks (liens entrants)</li>
+                <li>Mentions de marque</li>
+                <li>Réseaux sociaux</li>
+                <li>Avis clients externes</li>
+                <li>Relations presse</li>
+                <li>Réputation en ligne</li>
+            </ul>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏷️ La balise Title</h1>
+    <h2>L'élément le plus important du SEO on-page</h2>
+    <p class="text-intro">La balise <code>&lt;title&gt;</code> définit le titre de votre page. C'est ce qui apparaît dans l'onglet du navigateur et, surtout, comme <strong>lien cliquable bleu</strong> dans les résultats de recherche.</p>
+    <div class="code-block">
+        <span class="code-comment">&lt;!-- Dans le &lt;head&gt; de votre page --&gt;</span><br>
+        <span class="code-keyword">&lt;title&gt;</span>Chaussures Running Homme | Livraison Gratuite | MonSite<span class="code-keyword">&lt;/title&gt;</span>
+    </div>
+    <ul class="mt-md">
+        <li><strong>Facteur de classement direct</strong> : Google analyse le titre pour comprendre le sujet</li>
+        <li><strong>Impact sur le CTR</strong> : un bon titre = plus de clics</li>
+        <li><strong>Premier contact</strong> : c'est souvent la première chose que l'utilisateur lit</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏷️ Anatomie d'un bon Title</h1>
+    <h2>Les règles d'or à respecter</h2>
+    <ul>
+        <li><strong>Longueur idéale : 50-60 caractères</strong> — Au-delà, Google tronque avec "..."</li>
+        <li><strong>Mot-clé principal au début</strong> — Les premiers mots ont plus de poids</li>
+        <li><strong>Unique pour chaque page</strong> — Pas de titres dupliqués sur le site</li>
+        <li><strong>Attractif et incitatif</strong> — Donnez envie de cliquer !</li>
+        <li><strong>Marque à la fin</strong> — Format : "Sujet | Marque" ou "Sujet - Marque"</li>
+    </ul>
+    <div class="mt-lg">
+        <p class="url-bad">❌ <code>Accueil - MonSite.fr</code> <span class="text-muted">(vide de sens, pas de mot-clé)</span></p>
+        <p class="url-good">✅ <code>Chaussures Running Homme : Guide d'Achat 2026 | MonSite</code></p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🏷️ Exemples de bons Titles</h1>
+    <h2>Différents formats selon l'intention</h2>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">🛒</span>
+            <div class="step-content">
+                <strong>Page produit / catégorie</strong>
+                <p>"Chaussures Running Homme Nike | Livraison 24h | SportShop"</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">📝</span>
+            <div class="step-content">
+                <strong>Article de blog</strong>
+                <p>"Comment Choisir ses Chaussures de Running en 2026 [Guide Complet]"</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">🔍</span>
+            <div class="step-content">
+                <strong>Page service / landing</strong>
+                <p>"Agence SEO Paris | +150% de Trafic Garanti | WebAgency"</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">❓</span>
+            <div class="step-content">
+                <strong>FAQ / Question</strong>
+                <p>"Combien de Temps pour Courir un Marathon ? Temps Moyen par Niveau"</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📄 La Meta Description</h1>
+    <h2>Votre argumentaire de vente en 155 caractères</h2>
+    <p class="text-intro">La <strong>meta description</strong> est le petit texte qui apparaît sous le titre dans les résultats de recherche. Elle ne compte pas directement pour le classement, mais influence fortement le <strong>taux de clic (CTR)</strong>.</p>
+    <div class="code-block">
+        <span class="code-keyword">&lt;meta</span> name="description" content="<span class="code-value-green">Découvrez notre sélection de chaussures running homme. Livraison gratuite dès 50€. Retours sous 30 jours. Nike, Adidas, Asics...</span>"<span class="code-keyword">&gt;</span>
+    </div>
+    <p class="slide-warning">⚠️ Google peut choisir d'afficher un autre texte s'il juge que votre meta description ne correspond pas à la requête de l'utilisateur. C'est normal !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📄 Rédiger une Meta Description efficace</h1>
+    <h2>Les bonnes pratiques</h2>
+    <ul>
+        <li><strong>Longueur : 150-160 caractères</strong> — Au-delà, elle sera tronquée</li>
+        <li><strong>Inclure le mot-clé principal</strong> — Il sera mis en gras par Google</li>
+        <li><strong>Call-to-action clair</strong> — "Découvrez", "Comparez", "Achetez", "Apprenez"...</li>
+        <li><strong>Unique pour chaque page</strong> — Comme le title, pas de duplication</li>
+        <li><strong>Valeur ajoutée</strong> — Pourquoi cliquer sur VOUS plutôt qu'un concurrent ?</li>
+    </ul>
+    <div class="slide-tip">💡 <strong>Astuce CTR :</strong> Utilisez des chiffres ("Top 10", "+50% de réduction"), des dates ("Guide 2026"), ou des symboles Unicode (✓, ★) pour attirer l'œil.</div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Le CTR : Pourquoi c'est crucial</h1>
+    <h2>Un signal indirect de qualité</h2>
+    <p class="text-intro">Le <strong>CTR (Click-Through Rate)</strong> mesure le pourcentage d'utilisateurs qui cliquent sur votre résultat par rapport au nombre d'impressions. Un CTR élevé suggère à Google que votre page répond bien à la requête.</p>
+    <div class="market-share mt-lg">
+        <div class="share-bar">
+            <span class="share-label">Position 1</span>
+            <div class="share-fill w-50 share-fill-google"></div>
+            <span class="share-value">~28% CTR</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Position 2</span>
+            <div class="share-fill w-20 share-fill-bing"></div>
+            <span class="share-value">~15% CTR</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Position 3</span>
+            <div class="share-fill w-4 share-fill-yandex"></div>
+            <span class="share-value">~11% CTR</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Positions 4-10</span>
+            <div class="share-fill w-3 share-fill-yahoo"></div>
+            <span class="share-value">2-7% CTR</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Améliorer votre CTR de 2% peut avoir autant d'impact que gagner une position dans le classement !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📐 La hiérarchie des titres (Hn)</h1>
+    <h2>Structurer le contenu pour Google et les lecteurs</h2>
+    <p class="text-intro">Les balises de titre <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code> structurent votre contenu comme un plan de document. Google les utilise pour <strong>comprendre la hiérarchie de l'information</strong>.</p>
+    <div class="code-block">
+        <span class="code-keyword">&lt;h1&gt;</span>Guide Complet du Running<span class="code-keyword">&lt;/h1&gt;</span> <span class="code-comment">← Titre principal (1 seul par page)</span><br>
+        &nbsp;&nbsp;<span class="code-value-orange">&lt;h2&gt;</span>Choisir son équipement<span class="code-value-orange">&lt;/h2&gt;</span> <span class="code-comment">← Section principale</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-value-green">&lt;h3&gt;</span>Les chaussures<span class="code-value-green">&lt;/h3&gt;</span> <span class="code-comment">← Sous-section</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-value-green">&lt;h3&gt;</span>Les vêtements<span class="code-value-green">&lt;/h3&gt;</span><br>
+        &nbsp;&nbsp;<span class="code-value-orange">&lt;h2&gt;</span>S'entraîner efficacement<span class="code-value-orange">&lt;/h2&gt;</span><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-value-green">&lt;h3&gt;</span>Programme débutant<span class="code-value-green">&lt;/h3&gt;</span>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📐 Les règles des balises Hn</h1>
+    <h2>Ce qu'il faut absolument respecter</h2>
+    <ul>
+        <li><strong>Un seul H1 par page</strong> — C'est le titre principal, unique et descriptif</li>
+        <li><strong>Hiérarchie logique</strong> — H2 sous H1, H3 sous H2... pas de saut de niveau</li>
+        <li><strong>Mots-clés naturels</strong> — Intégrez vos mots-clés dans les titres, sans forcing</li>
+        <li><strong>Descriptif, pas décoratif</strong> — Les Hn servent à structurer, pas à styliser</li>
+        <li><strong>Pensez accessibilité</strong> — Les lecteurs d'écran utilisent les Hn pour naviguer</li>
+    </ul>
+    <div class="mt-lg">
+        <p class="url-bad">❌ <code>&lt;h1&gt;Bienvenue&lt;/h1&gt;</code> suivi de <code>&lt;h4&gt;Nos produits&lt;/h4&gt;</code></p>
+        <p class="url-good">✅ <code>&lt;h1&gt;Chaussures Running Homme&lt;/h1&gt;</code> suivi de <code>&lt;h2&gt;Nos meilleures ventes&lt;/h2&gt;</code></p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📐 H1 vs Title : quelle différence ?</h1>
+    <h2>Deux éléments complémentaires mais distincts</h2>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>🏷️ Balise Title</h3>
+            <ul>
+                <li>Apparaît dans les <strong>résultats de recherche</strong></li>
+                <li>Visible dans l'<strong>onglet du navigateur</strong></li>
+                <li>Peut inclure le nom de marque</li>
+                <li>Optimisé pour le <strong>CTR</strong></li>
+                <li>Max ~60 caractères</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>📝 Balise H1</h3>
+            <ul>
+                <li>Apparaît <strong>sur la page</strong> elle-même</li>
+                <li>Visible par le visiteur directement</li>
+                <li>Généralement sans la marque</li>
+                <li>Optimisé pour la <strong>clarté</strong></li>
+                <li>Pas de limite stricte de longueur</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Le Title et le H1 peuvent être similaires, mais pas forcément identiques. Le Title peut être plus "marketing", le H1 plus descriptif.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🖼️ L'optimisation des images</h1>
+    <h2>Un potentiel SEO souvent négligé</h2>
+    <p class="text-intro">Les images représentent en moyenne <strong>50% du poids</strong> d'une page web. Bien les optimiser impacte à la fois la performance (Core Web Vitals) et le référencement (Google Images).</p>
+    <ul>
+        <li><strong>Nom de fichier</strong> : descriptif avec mots-clés (<code>chaussures-running-nike-pegasus.jpg</code>)</li>
+        <li><strong>Attribut alt</strong> : description textuelle de l'image pour l'accessibilité et le SEO</li>
+        <li><strong>Compression</strong> : réduire le poids sans perte visible de qualité</li>
+        <li><strong>Format moderne</strong> : WebP offre une meilleure compression que JPG/PNG</li>
+        <li><strong>Dimensions adaptées</strong> : pas d'image 4000px affichée en 400px</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🖼️ L'attribut Alt en détail</h1>
+    <h2>Accessible, informatif, optimisé</h2>
+    <p class="text-intro">L'attribut <code>alt</code> (texte alternatif) décrit le contenu de l'image. Il est lu par les <strong>lecteurs d'écran</strong> (accessibilité) et par <strong>Googlebot</strong> (SEO).</p>
+    <div class="code-block">
+        <span class="code-comment">&lt;!-- Mauvais exemples --&gt;</span><br>
+        <span class="code-keyword">&lt;img</span> src="img1.jpg" alt=""<span class="code-keyword">&gt;</span> <span class="code-comment">← Vide</span><br>
+        <span class="code-keyword">&lt;img</span> src="photo.jpg" alt="chaussures chaussures running running nike"<span class="code-keyword">&gt;</span> <span class="code-comment">← Bourrage</span><br><br>
+        <span class="code-comment">&lt;!-- Bon exemple --&gt;</span><br>
+        <span class="code-keyword">&lt;img</span> src="nike-pegasus-40.jpg" alt="<span class="code-value-green">Nike Pegasus 40 bleue, chaussure de running sur fond blanc</span>"<span class="code-keyword">&gt;</span>
+    </div>
+    <p class="slide-tip">💡 <strong>Règle :</strong> Décrivez l'image comme si vous l'expliquiez à quelqu'un qui ne peut pas la voir. Soyez précis mais concis (125 caractères max recommandés).</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🖼️ Formats d'image et compression</h1>
+    <h2>Choisir le bon format pour chaque usage</h2>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📸 JPEG / JPG</h3>
+            <p>Idéal pour les <strong>photos</strong> avec beaucoup de couleurs et de détails.</p>
+            <p class="text-muted">Compression avec perte • Pas de transparence</p>
+        </div>
+        <div class="tool-card">
+            <h3>🎨 PNG</h3>
+            <p>Parfait pour les <strong>logos, icônes, graphiques</strong> avec peu de couleurs.</p>
+            <p class="text-muted">Sans perte • Transparence supportée</p>
+        </div>
+        <div class="tool-card">
+            <h3>🌐 WebP</h3>
+            <p>Format moderne de Google : <strong>30% plus léger</strong> que JPEG à qualité égale.</p>
+            <p class="text-muted">Supporté par tous les navigateurs modernes</p>
+        </div>
+        <div class="tool-card">
+            <h3>🎬 SVG</h3>
+            <p>Pour les <strong>icônes et illustrations vectorielles</strong>. Redimensionnable sans perte.</p>
+            <p class="text-muted">Très léger • Parfait pour les logos</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Outils gratuits :</strong> TinyPNG, Squoosh.app, ImageOptim pour compresser vos images avant upload.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🖼️ Lazy Loading : charger malin</h1>
+    <h2>Ne chargez que ce qui est visible</h2>
+    <p class="text-intro">Le <strong>lazy loading</strong> (chargement différé) consiste à ne charger les images que lorsqu'elles arrivent dans le viewport (la zone visible de l'écran). Cela améliore drastiquement le temps de chargement initial.</p>
+    <div class="code-block">
+        <span class="code-comment">&lt;!-- Lazy loading natif HTML (recommandé) --&gt;</span><br>
+        <span class="code-keyword">&lt;img</span> src="photo.jpg" alt="Description" <span class="code-value-green">loading="lazy"</span><span class="code-keyword">&gt;</span><br><br>
+        <span class="code-comment">&lt;!-- Pour les images importantes (LCP), ne PAS utiliser lazy --&gt;</span><br>
+        <span class="code-keyword">&lt;img</span> src="hero-banner.jpg" alt="Description" <span class="code-value-orange">loading="eager"</span><span class="code-keyword">&gt;</span>
+    </div>
+    <p class="slide-warning">⚠️ N'appliquez pas le lazy loading aux images "above the fold" (visibles sans scroller) car cela dégrade le LCP (Core Web Vitals).</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔗 Le maillage interne</h1>
+    <h2>Tisser la toile de votre site</h2>
+    <p class="text-intro">Le <strong>maillage interne</strong> désigne l'ensemble des liens qui connectent vos pages entre elles. C'est un levier SEO puissant et souvent sous-exploité.</p>
+    <ul>
+        <li><strong>Facilite le crawl</strong> : Googlebot suit les liens pour découvrir vos pages</li>
+        <li><strong>Distribue le "jus de lien"</strong> : les pages liées héritent d'une partie de l'autorité</li>
+        <li><strong>Guide l'utilisateur</strong> : réduit le taux de rebond, augmente les pages vues</li>
+        <li><strong>Définit les priorités</strong> : plus une page reçoit de liens internes, plus elle est "importante"</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Concept clé :</strong> Le "jus de lien" (link juice) est la valeur SEO transmise d'une page à une autre via un lien. Plus une page a d'autorité, plus elle en transmet.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔗 Stratégies de maillage interne</h1>
+    <h2>Comment lier intelligemment vos pages</h2>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Lien contextuel dans le contenu</strong>
+                <p>Insérez des liens naturels dans vos paragraphes, vers des pages thématiquement liées</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Ancres descriptives</strong>
+                <p>Utilisez des textes d'ancrage explicites : "guide des chaussures running" plutôt que "cliquez ici"</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Liens depuis les pages fortes</strong>
+                <p>Identifiez vos pages avec le plus de trafic/backlinks et ajoutez-y des liens vers vos pages stratégiques</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Structure en silo</strong>
+                <p>Regroupez les pages par thématique et liez-les entre elles (Topic Clusters vus au Jour 1)</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔗 Les ancres de lien</h1>
+    <h2>Le texte cliquable compte !</h2>
+    <p class="text-intro">L'<strong>ancre de lien</strong> (anchor text) est le texte visible et cliquable d'un hyperlien. Google l'utilise pour comprendre le sujet de la page cible.</p>
+    <div class="mt-lg">
+        <p class="url-bad">❌ <code>Pour en savoir plus, &lt;a href="..."&gt;cliquez ici&lt;/a&gt;</code></p>
+        <p class="url-bad">❌ <code>&lt;a href="..."&gt;https://monsite.fr/chaussures&lt;/a&gt;</code></p>
+        <p class="url-good">✅ <code>Découvrez notre &lt;a href="..."&gt;guide complet des chaussures de running&lt;/a&gt;</code></p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔗 Visualiser son maillage interne</h1>
+    <h2>Cartographier les connexions</h2>
+    <p class="text-intro">Pour optimiser votre maillage, il faut d'abord le <strong>visualiser</strong>. Plusieurs outils permettent de créer une carte des liens internes de votre site.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>🕷️ Screaming Frog</h3>
+            <p>Crawle votre site et génère un rapport complet des liens internes. Export possible vers des outils de visualisation.</p>
+            <p class="text-muted">Gratuit jusqu'à 500 URLs</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Google Search Console</h3>
+            <p>Section "Liens" > "Liens internes" : liste les pages les plus liées en interne.</p>
+            <p class="text-muted">100% gratuit</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔷 Ahrefs / SEMrush</h3>
+            <p>Audit de site avec visualisation du maillage et détection des pages orphelines.</p>
+            <p class="text-muted">Payant</p>
+        </div>
+        <div class="tool-card">
+            <h3>🗺️ Gephi</h3>
+            <p>Logiciel gratuit de visualisation de graphes. Importez les données Screaming Frog pour créer des cartes visuelles.</p>
+            <p class="text-muted">Gratuit, open source</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ Les pages orphelines</h1>
+    <h2>Des pages invisibles pour Google</h2>
+    <p class="text-intro">Une <strong>page orpheline</strong> est une page qui n'est liée par aucune autre page de votre site. Elle est quasiment impossible à découvrir pour Googlebot (sauf via le sitemap).</p>
+    <ul>
+        <li><strong>Problème de crawl</strong> : si Googlebot ne trouve pas de lien vers la page, il ne la crawle pas</li>
+        <li><strong>Pas de transmission d'autorité</strong> : la page ne reçoit aucun "jus de lien"</li>
+        <li><strong>Mauvaise UX</strong> : les utilisateurs ne peuvent pas la trouver en naviguant</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Comment les trouver ?</strong> Comparez la liste des URLs de votre sitemap avec les URLs trouvées par un crawl (Screaming Frog). Les URLs absentes du crawl sont potentiellement orphelines.</p>
+    <p class="slide-warning">⚠️ Les pages orphelines sont souvent des anciennes pages oubliées, des pages de test, ou des pages mal intégrées après une refonte.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Les données structurées</h1>
+    <h2>Parler le langage de Google</h2>
+    <p class="text-intro">Les <strong>données structurées</strong> (ou schema markup) sont un code standardisé qui aide les moteurs de recherche à <strong>comprendre le contenu</strong> de vos pages. Elles permettent d'afficher des résultats enrichis (rich snippets).</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>⭐ Avis / Notes</h3>
+            <p>Étoiles dans les résultats</p>
+            <p class="text-muted">★★★★☆ 4.5/5 (127 avis)</p>
+        </div>
+        <div class="intent-card">
+            <h3>🛒 Produits</h3>
+            <p>Prix, disponibilité</p>
+            <p class="text-muted">89,99 € • En stock</p>
+        </div>
+        <div class="intent-card">
+            <h3>📅 Événements</h3>
+            <p>Date, lieu, billets</p>
+            <p class="text-muted">15 mars 2026 • Paris</p>
+        </div>
+        <div class="intent-card">
+            <h3>❓ FAQ</h3>
+            <p>Questions/réponses dépliables</p>
+            <p class="text-muted">Directement dans les SERP</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Schema.org : le vocabulaire standard</h1>
+    <h2>Un langage commun pour les moteurs</h2>
+    <p class="text-intro"><strong>Schema.org</strong> est un vocabulaire collaboratif créé par Google, Bing, Yahoo et Yandex. Il définit des centaines de types d'entités (Article, Product, Person, Organization...)</p>
+    <ul>
+        <li><strong>Article</strong> : articles de blog, actualités</li>
+        <li><strong>Product</strong> : produits e-commerce avec prix, avis, disponibilité</li>
+        <li><strong>LocalBusiness</strong> : entreprises locales avec adresse, horaires, téléphone</li>
+        <li><strong>FAQPage</strong> : pages de questions fréquentes</li>
+        <li><strong>HowTo</strong> : tutoriels étape par étape</li>
+        <li><strong>Recipe</strong> : recettes de cuisine avec ingrédients, temps de cuisson</li>
+        <li><strong>Event</strong> : événements avec date, lieu, prix des billets</li>
+        <li><strong>BreadcrumbList</strong> : fil d'Ariane pour la navigation</li>
+    </ul>
+    <p class="slide-note">🔗 Documentation complète : <a href="https://schema.org" style="color: white" target="_blank">schema.org</a></p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Exemple : Schema FAQ</h1>
+    <h2>Afficher des questions dans les SERP</h2>
+    <p class="text-intro">Le schema <strong>FAQPage</strong> permet d'afficher des questions/réponses directement dans les résultats de recherche, augmentant considérablement la visibilité de votre page.</p>
+    <div class="code-block">
+        <span class="code-keyword">&lt;script</span> type="application/ld+json"<span class="code-keyword">&gt;</span><br>
+        {<br>
+        &nbsp;&nbsp;"@context": "<span class="code-value-green">https://schema.org</span>",<br>
+        &nbsp;&nbsp;"@type": "<span class="code-value-orange">FAQPage</span>",<br>
+        &nbsp;&nbsp;"mainEntity": [{<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"@type": "Question",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"name": "<span class="code-value-blue">Quelle chaussure pour débuter le running ?</span>",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"acceptedAnswer": {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"@type": "Answer",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"text": "Pour débuter, privilégiez une chaussure avec un bon amorti..."<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+        &nbsp;&nbsp;}]<br>
+        }<br>
+        <span class="code-keyword">&lt;/script&gt;</span>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Exemple : Schema Product</h1>
+    <h2>Enrichir les résultats e-commerce</h2>
+    <div class="code-block">
+        <span class="code-keyword">&lt;script</span> type="application/ld+json"<span class="code-keyword">&gt;</span><br>
+        {<br>
+        &nbsp;&nbsp;"@context": "https://schema.org",<br>
+        &nbsp;&nbsp;"@type": "<span class="code-value-orange">Product</span>",<br>
+        &nbsp;&nbsp;"name": "<span class="code-value-blue">Nike Air Pegasus 40</span>",<br>
+        &nbsp;&nbsp;"image": "https://monsite.fr/images/pegasus-40.jpg",<br>
+        &nbsp;&nbsp;"description": "Chaussure de running polyvalente...",<br>
+        &nbsp;&nbsp;"brand": { "@type": "Brand", "name": "Nike" },<br>
+        &nbsp;&nbsp;"offers": {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"@type": "Offer",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"price": "<span class="code-value-green">129.99</span>",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"priceCurrency": "EUR",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"availability": "https://schema.org/<span class="code-value-green">InStock</span>"<br>
+        &nbsp;&nbsp;},<br>
+        &nbsp;&nbsp;"aggregateRating": {<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"@type": "AggregateRating",<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;"ratingValue": "<span class="code-value-orange">4.5</span>", "reviewCount": "127"<br>
+        &nbsp;&nbsp;}<br>
+        }<br>
+        <span class="code-keyword">&lt;/script&gt;</span>
+    </div>
+    <p class="slide-tip">💡 Le "@" indique une propriété technique obligatoire. Il oblige à utiliser des valeurs prédéfinies (comme @type: "Product") pour que Google comprenne instantanément la nature exacte de ta page.</p>
+    
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Outils pour les données structurées</h1>
+    <h2>Générer et valider votre schema</h2>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>✅ Rich Results Test</h3>
+            <p>Outil officiel de Google pour tester si votre page est éligible aux résultats enrichis.</p>
+            <p class="text-muted">search.google.com/test/rich-results</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔍 Schema Markup Validator</h3>
+            <p>Valide la syntaxe de votre schema et détecte les erreurs.</p>
+            <p class="text-muted">validator.schema.org</p>
+        </div>
+        <div class="tool-card">
+            <h3>🧰 Schema Markup Generator</h3>
+            <p>Génère le code JSON-LD à partir d'un formulaire simple. Idéal pour les débutants.</p>
+            <p class="text-muted">technicalseo.com/tools/schema-markup-generator</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Search Console</h3>
+            <p>Rapport "Améliorations" : liste les erreurs de données structurées détectées sur votre site.</p>
+            <p class="text-muted">Monitoring continu</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Impact des Rich Snippets</h1>
+    <h2>Pourquoi investir dans les données structurées ?</h2>
+    <p class="text-intro">Les pages avec des résultats enrichis se démarquent visuellement dans les SERP et captent plus l'attention. L'impact sur le CTR peut être significatif.</p>
+    <div class="market-share mt-lg">
+        <div class="share-bar">
+            <span class="share-label">Avec étoiles</span>
+            <div class="share-fill w-50 share-fill-good"></div>
+            <span class="share-value">+35% CTR</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Avec FAQ</span>
+            <div class="share-fill w-30 share-fill-ok"></div>
+            <span class="share-value">+25% CTR</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Avec prix</span>
+            <div class="share-fill w-30 share-fill-bing"></div>
+            <span class="share-value">+20% CTR</span>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ Attention : Google peut choisir de ne pas afficher vos rich snippets même si votre schema est correct. Il n'y a aucune garantie.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Optimisation du contenu textuel</h1>
+    <h2>Les bonnes pratiques rédactionnelles</h2>
+    <p class="text-intro">Au-delà des balises techniques, le <strong>contenu lui-même</strong> doit être optimisé. Voici les principes fondamentaux de la rédaction SEO-friendly.</p>
+    <ul>
+        <li><strong>Mot-clé principal dans les 100 premiers mots</strong> — Google accorde plus d'importance au début</li>
+        <li><strong>Densité naturelle</strong> — Le mot-clé apparaît naturellement, sans répétition forcée</li>
+        <li><strong>Champ sémantique riche</strong> — Utilisez des synonymes, termes associés, variations</li>
+        <li><strong>Paragraphes courts</strong> — 2-3 phrases max pour faciliter la lecture sur écran</li>
+        <li><strong>Listes à puces</strong> — Améliorent la lisibilité</li>
+        <li><strong>Longueur suffisante</strong> — Les contenus longs rankent souvent mieux (mais qualité > quantité)</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📏 Quelle longueur de contenu ?</h1>
+    <h2>La taille compte-t-elle vraiment ?</h2>
+    <p class="text-intro">Google ne définit pas de longueur minimale ou idéale. Cependant, des études montrent une corrélation entre <strong>longueur du contenu et positions dans les SERP</strong>.</p>
+    <div class="kd-scale">
+        <div class="kd-item kd-easy">
+            <span class="kd-score">300-500</span>
+            <span class="kd-label">Minimum</span>
+            <p class="kd-desc">Pages produits, fiches simples</p>
+        </div>
+        <div class="kd-item kd-medium">
+            <span class="kd-score">1000-1500</span>
+            <span class="kd-label">Standard</span>
+            <p class="kd-desc">Articles de blog, pages services</p>
+        </div>
+        <div class="kd-item kd-hard">
+            <span class="kd-score">2000+</span>
+            <span class="kd-label">Pilier</span>
+            <p class="kd-desc">Guides complets</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>La vraie règle :</strong> votre contenu doit être <strong>aussi long que nécessaire</strong> pour répondre complètement à la question de l'utilisateur. Pas plus, pas moins.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 E-E-A-T : les critères de qualité Google</h1>
+    <h2>Experience, Expertise, Authoritativeness, Trustworthiness</h2>
+    <p class="text-intro"><strong>E-E-A-T</strong> est un ensemble de critères que les Quality Raters de Google utilisent pour évaluer la qualité des pages. C'est particulièrement important pour les sujets YMYL (Your Money, Your Life).</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>👁️ Experience</h3>
+            <p>L'auteur a-t-il une expérience directe du sujet ?</p>
+            <p class="text-accent mt-sm">→ Témoignages, cas pratiques, photos personnelles</p>
+        </div>
+        <div class="intent-card">
+            <h3>🎓 Expertise</h3>
+            <p>L'auteur possède-t-il les compétences nécessaires ?</p>
+            <p class="text-accent mt-sm">→ Qualifications, formation, réalisations</p>
+        </div>
+        <div class="intent-card">
+            <h3>🏆 Authoritativeness</h3>
+            <p>Le site est-il reconnu comme une référence ?</p>
+            <p class="text-accent mt-sm">→ Backlinks, mentions, citations</p>
+        </div>
+        <div class="intent-card">
+            <h3>🔒 Trustworthiness</h3>
+            <p>Le contenu est-il fiable et transparent ?</p>
+            <p class="text-accent mt-sm">→ Sources, mentions légales, HTTPS</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ YMYL : les sujets sensibles</h1>
+    <h2>Your Money, Your Life</h2>
+    <p class="text-intro">Les pages <strong>YMYL</strong> traitent de sujets pouvant impacter la santé, la sécurité, le bien-être financier ou le bonheur des utilisateurs. Google y applique des critères E-E-A-T encore plus stricts.</p>
+    <ul>
+        <li><strong>Santé</strong> : symptômes, traitements, médicaments, maladies</li>
+        <li><strong>Finance</strong> : investissements, impôts, retraite, assurances, crédits</li>
+        <li><strong>Juridique</strong> : droits, procédures, conseils légaux</li>
+        <li><strong>Actualités</strong> : événements, politique, sciences</li>
+        <li><strong>E-commerce</strong> : transactions financières</li>
+        <li><strong>Groupes de personnes</strong> : contenu sur des groupes ethniques, religieux, etc.</li>
+    </ul>
+    <p class="slide-warning">⚠️ Sur ces sujets, un contenu amateur ou non sourcé sera sévèrement pénalisé. Faites appel à des experts et citez vos sources !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✍️ Les signaux de confiance on-page</h1>
+    <h2>Rassurer Google (et vos visiteurs)</h2>
+    <ul>
+        <li><strong>Page "À propos"</strong> : présentez votre entreprise, votre équipe, votre histoire</li>
+        <li><strong>Pages auteur</strong> : biographies avec qualifications pour les articles de blog</li>
+        <li><strong>Mentions légales complètes</strong> : CGV, politique de confidentialité, CGU</li>
+        <li><strong>Coordonnées visibles</strong> : adresse, téléphone, email (pas juste un formulaire)</li>
+        <li><strong>Sources et références</strong> : citez vos sources, linkez vers des études</li>
+        <li><strong>Date de publication/mise à jour</strong> : montrez que le contenu est maintenu</li>
+        <li><strong>Avis clients authentiques</strong> : témoignages, notes, badges de confiance</li>
+    </ul>
+    <p class="slide-tip">💡 Ces éléments ne sont pas des facteurs de classement directs, mais ils contribuent à la perception de confiance par les algorithmes.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Checklist Optimisation On-Page</h1>
+    <h2>Les points à vérifier pour chaque page</h2>
+    <ul>
+        <li>☐ <strong>Title</strong> unique, 50-60 caractères, mot-clé au début</li>
+        <li>☐ <strong>Meta description</strong> unique, 150-160 caractères, call-to-action</li>
+        <li>☐ <strong>H1</strong> unique, descriptif, contenant le mot-clé principal</li>
+        <li>☐ <strong>Hiérarchie Hn</strong> logique (H2, H3...) sans saut de niveau</li>
+        <li>☐ <strong>Images</strong> compressées, nommées correctement, avec alt descriptif</li>
+        <li>☐ <strong>Liens internes</strong> pertinents avec ancres descriptives</li>
+        <li>☐ <strong>Données structurées</strong> appropriées au type de contenu</li>
+        <li>☐ <strong>Contenu</strong> suffisamment long, structuré, avec champ sémantique riche</li>
+        <li>☐ <strong>URL</strong> courte, descriptive, avec mot-clé</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Récap' Chapitre 1 (Jour 2)</h1>
+    <h2>Ce qu'il faut absolument retenir</h2>
+    <ul>
+        <li>🏷️ <strong>Title & Meta Description</strong> : votre vitrine dans les SERP, optimisez le CTR</li>
+        <li>📐 <strong>Hiérarchie Hn</strong> : structurez logiquement, un seul H1, pas de saut de niveau</li>
+        <li>🖼️ <strong>Images</strong> : compression, format WebP, alt descriptif, lazy loading</li>
+        <li>🔗 <strong>Maillage interne</strong> : liens contextuels, ancres descriptives, pas de pages orphelines</li>
+        <li>📊 <strong>Données structurées</strong> : schema.org pour les rich snippets</li>
+        <li>🎯 <strong>E-E-A-T</strong> : Experience, Expertise, Autorité, Confiance — surtout pour YMYL</li>
+    </ul>
+    <p class="slide-tip">💡 L'optimisation on-page est le fondement de votre SEO. Sans elle, même les meilleurs backlinks ne suffiront pas.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Exercice pratique</h1>
+    <h2>Auditez une page de votre site</h2>
+    <ul>
+        <li><strong>1.</strong> Choisissez une page importante (page d'accueil, top produit, article clé)</li>
+        <li><strong>2.</strong> Vérifiez le Title et la Meta Description avec un outil comme Yoast ou SERP Simulator</li>
+        <li><strong>3.</strong> Analysez la structure Hn avec l'extension Chrome "HeadingsMap"</li>
+        <li><strong>4.</strong> Passez les images au crible : poids, format, attribut alt</li>
+        <li><strong>5.</strong> Comptez les liens internes sortants et entrants</li>
+        <li><strong>6.</strong> Testez les données structurées avec Rich Results Test</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> La rédaction SEO et le content marketing — créer du contenu qui convertit.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✍️ Chapitre 2</h1>
+    <h2>Stratégie de contenu et Copywriting SEO</h2>
+    <p class="text-intro">Créer du contenu optimisé ne suffit pas. Il faut créer du contenu qui <strong>captive, convainc et convertit</strong>. Le copywriting SEO est l'art de concilier les exigences des moteurs de recherche avec les attentes des humains.</p>
+    <div class="slide-agenda">
+        <p>📝 Les fondamentaux de la rédaction SEO</p>
+        <p>🎯 Le copywriting orienté conversion</p>
+        <p>📅 La stratégie éditoriale et le calendrier de contenu</p>
+        <p>🔄 Le recyclage et l'optimisation de contenu existant</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Qu'est-ce que le copywriting SEO ?</h1>
+    <h2>L'alliance de deux disciplines</h2>
+    <p class="text-intro">Le <strong>copywriting SEO</strong> combine l'art de la rédaction persuasive (copywriting) avec les techniques d'optimisation pour les moteurs de recherche (SEO). L'objectif : créer du contenu qui <strong>ranke ET convertit</strong>.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>✍️ Copywriting classique</h3>
+            <ul>
+                <li>Focus sur la persuasion</li>
+                <li>Déclencheur émotionnel</li>
+                <li>Appel à l'action clair</li>
+                <li>Bénéfices avant fonctionnalités</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>🔍 SEO classique</h3>
+            <ul>
+                <li>Focus sur les mots-clés</li>
+                <li>Structure technique</li>
+                <li>Densité et sémantique</li>
+                <li>Optimisation des balises</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-highlight mt-lg">Copywriting SEO = Persuader les humains + Satisfaire Google</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 L'intention avant les mots-clés</h1>
+    <h2>Écrire pour l'utilisateur, pas pour l'algorithme</h2>
+    <p class="text-intro">La première étape de toute rédaction SEO est de comprendre <strong>pourquoi</strong> l'utilisateur effectue cette recherche. Que veut-il vraiment ? Quel problème cherche-t-il à résoudre ?</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Identifier l'intention</strong>
+                <p>Informationnelle ? Transactionnelle ? Commerciale ? Navigationnelle ?</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Analyser les SERP</strong>
+                <p>Quel type de contenu Google affiche-t-il ? Articles ? Vidéos ? Pages produits ?</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Définir l'angle</strong>
+                <p>Comment apporter plus de valeur que les contenus existants ?</p>
+            </div>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Si vous écrivez un article "comment choisir un matelas" mais que l'utilisateur veut acheter immédiatement, vous avez raté l'intention.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📐 La structure d'un contenu SEO efficace</h1>
+    <h2>L'anatomie d'un article qui performe</h2>
+    <p class="text-intro">Un contenu bien structuré facilite la lecture humaine ET l'analyse par Google. Voici les éléments essentiels d'une structure gagnante.</p>
+    <ul>
+        <li><strong>Titre accrocheur (H1)</strong> : promet une valeur claire, inclut le mot-clé</li>
+        <li><strong>Introduction percutante</strong> : accroche + problème + promesse de solution (100-150 mots)</li>
+        <li><strong>Table des matières</strong> : facilite la navigation et génère des sitelinks</li>
+        <li><strong>Sections claires (H2/H3)</strong> : un sujet par section, titres explicites</li>
+        <li><strong>Paragraphes courts</strong> : 2-3 phrases max, une idée par paragraphe</li>
+        <li><strong>Éléments visuels</strong> : images, schémas, tableaux pour aérer</li>
+        <li><strong>Conclusion + CTA</strong> : résumé et appel à l'action</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎣 L'accroche : les premières secondes décisives</h1>
+    <h2>Capturer l'attention immédiatement</h2>
+    <p class="text-intro">Vous avez <strong>3 secondes</strong> pour convaincre le lecteur de rester. L'accroche (ou "hook") est le premier paragraphe qui décide si l'utilisateur continue ou repart.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>❓ La question</h3>
+            <p>"Vous perdez du trafic sans comprendre pourquoi ? Votre site souffre peut-être d'un problème invisible..."</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 La statistique choc</h3>
+            <p>"75% des utilisateurs ne vont jamais au-delà de la première page Google. Êtes-vous dans les 25% ?"</p>
+        </div>
+        <div class="tool-card">
+            <h3>😱 Le problème</h3>
+            <p>"Chaque jour, vous perdez des clients qui ne trouvent pas votre site. Voici comment y remédier."</p>
+        </div>
+        <div class="tool-card">
+            <h3>🎯 La promesse</h3>
+            <p>"Dans les 10 prochaines minutes, vous allez apprendre à doubler votre trafic organique."</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔺 La pyramide inversée</h1>
+    <h2>L'essentiel d'abord, les détails ensuite</h2>
+    <p class="text-intro">Empruntée au journalisme, la <strong>pyramide inversée</strong> consiste à présenter l'information la plus importante en premier, puis à développer progressivement les détails.</p>
+    <div class="slide-diagram flex-col gap-sm items-center">
+        <span class="step" style="width: 80%; background: linear-gradient(135deg, rgba(0, 212, 170, 0.4) 0%, rgba(124, 58, 237, 0.4) 100%);">🎯 Information clé / Réponse principale</span>
+        <span class="step" style="width: 65%; opacity: 0.8;">📋 Détails importants</span>
+        <span class="step step-sm" style="width: 50%; opacity: 0.6;">📝 Contexte et exemples</span>
+        <span class="step step-sm" style="width: 35%; opacity: 0.4;">🔍 Détails complémentaires</span>
+    </div>
+    <p class="slide-tip">💡 <strong>Pourquoi ?</strong> L'utilisateur trouve immédiatement sa réponse (satisfaction). S'il veut en savoir plus, il continue. Sinon, il a quand même eu ce qu'il cherchait.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Le format "Featured Snippet"</h1>
+    <h2>Viser la position zéro</h2>
+    <p class="text-intro">Le <strong>Featured Snippet</strong> (ou position zéro) est l'encadré qui apparaît au-dessus des résultats naturels. Il répond directement à la question de l'utilisateur. Voici comment l'obtenir :</p>
+    <ul>
+        <li><strong>Répondez directement</strong> : la réponse en 40-60 mots juste après la question en H2</li>
+        <li><strong>Utilisez des listes</strong> : Google adore les listes numérotées et à puces</li>
+        <li><strong>Créez des tableaux</strong> : comparatifs, données structurées</li>
+        <li><strong>Posez la question exacte</strong> : "Qu'est-ce que le SEO ?" puis répondez</li>
+        <li><strong>Soyez concis</strong> : le snippet affiche ~50 mots max</li>
+    </ul>
+    <p class="slide-warning">⚠️ Le Featured Snippet peut parfois réduire les clics (la réponse est déjà visible). Mais il renforce considérablement votre autorité.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✍️ Les techniques de copywriting SEO</h1>
+    <h2>Écrire pour convaincre</h2>
+    <p class="text-intro">Au-delà de la structure, le <strong>style d'écriture</strong> influence l'engagement et les conversions. Voici les principes fondamentaux du copywriting appliqués au SEO.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>🗣️ Voix active</h3>
+            <p>"Optimisez votre site" plutôt que "Votre site doit être optimisé"</p>
+            <p class="text-accent mt-sm">→ Plus direct, plus engageant</p>
+        </div>
+        <div class="intent-card">
+            <h3>👤 Le "vous"</h3>
+            <p>Adressez-vous directement au lecteur</p>
+            <p class="text-accent mt-sm">→ Crée une connexion personnelle</p>
+        </div>
+        <div class="intent-card">
+            <h3>💬 Langage simple</h3>
+            <p>Évitez le jargon, expliquez les termes techniques</p>
+            <p class="text-accent mt-sm">→ Accessible à tous</p>
+        </div>
+        <div class="intent-card">
+            <h3>🎯 Bénéfices</h3>
+            <p>"Gagnez du temps" plutôt que "Fonctionnalité d'automatisation"</p>
+            <p class="text-accent mt-sm">→ Ce que l'utilisateur y gagne</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧲 Les mots puissants (Power Words)</h1>
+    <h2>Déclencher l'émotion et l'action</h2>
+    <p class="text-intro">Les <strong>power words</strong> sont des mots qui déclenchent une réponse émotionnelle chez le lecteur. Ils augmentent le CTR dans les titres et l'engagement dans le contenu.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>⚡ Urgence / Rareté</h3>
+            <ul>
+                <li>Maintenant, Immédiatement</li>
+                <li>Limité, Exclusif, Dernier</li>
+                <li>Ne manquez pas, Urgent</li>
+                <li>Aujourd'hui seulement</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>✨ Valeur / Bénéfice</h3>
+            <ul>
+                <li>Gratuit, Bonus, Cadeau</li>
+                <li>Garanti, Prouvé, Testé</li>
+                <li>Secret, Révélé, Découvrez</li>
+                <li>Facile, Simple, Rapide</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Attention :</strong> n'abusez pas ! Trop de power words = spam. Utilisez-les stratégiquement dans les titres.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Les formules de copywriting éprouvées</h1>
+    <h2>AIDA, PAS, BAB : des structures qui fonctionnent</h2>
+    <p class="text-intro">Ces formules sont utilisées depuis des décennies en publicité. Elles structurent votre argumentaire pour maximiser l'impact.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">AIDA</span>
+            <div class="step-content">
+                <strong>Attention → Intérêt → Désir → Action</strong>
+                <p>Captez l'attention, suscitez l'intérêt, créez le désir, incitez à l'action</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">PAS</span>
+            <div class="step-content">
+                <strong>Problem → Agitation → Solution</strong>
+                <p>Identifiez le problème, amplifiez la douleur, présentez la solution</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">BAB</span>
+            <div class="step-content">
+                <strong>Before → After → Bridge</strong>
+                <p>Montrez la situation actuelle, la situation idéale, puis le chemin pour y arriver</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 AIDA en pratique</h1>
+    <h2>Exemple appliqué à une landing page SEO</h2>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">A</span>
+            <div class="step-content">
+                <strong>Attention (Titre)</strong>
+                <p>"Votre site est invisible sur Google ? Découvrez pourquoi 90% des sites n'atteignent jamais la première page."</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">I</span>
+            <div class="step-content">
+                <strong>Intérêt (Problème)</strong>
+                <p>"Chaque jour, des milliers de clients potentiels cherchent vos services... mais trouvent vos concurrents."</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">D</span>
+            <div class="step-content">
+                <strong>Désir (Solution + Bénéfices)</strong>
+                <p>"Notre audit SEO identifie les blocages et vous donne un plan d'action clair. Résultats visibles en 90 jours."</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">A</span>
+            <div class="step-content">
+                <strong>Action (CTA)</strong>
+                <p>"Demandez votre audit gratuit → Recevez votre rapport personnalisé sous 48h"</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Le champ sémantique</h1>
+    <h2>Au-delà du mot-clé principal</h2>
+    <p class="text-intro">Google ne cherche plus seulement votre mot-clé exact. Il analyse le <strong>champ sémantique</strong> complet de votre page pour évaluer sa pertinence et sa profondeur.</p>
+    <p class="text-light"><strong>💡 Champ sémantique :</strong> Ensemble des mots et expressions qui gravitent autour d'un sujet. Pour "running", le champ sémantique inclut : course à pied, jogging, footing, foulée, cardio, endurance, marathon, semi-marathon, chrono, etc.</p>
+    <div class="cluster-diagram mt-lg">
+        <div class="cluster-center">
+            <span class="cluster-main">chaussures running</span>
+        </div>
+        <div class="cluster-satellites">
+            <span class="cluster-sat">amorti</span>
+            <span class="cluster-sat">foulée</span>
+            <span class="cluster-sat">pronation</span>
+            <span class="cluster-sat">drop</span>
+            <span class="cluster-sat">semelle</span>
+            <span class="cluster-sat">stabilité</span>
+            <span class="cluster-sat">légèreté</span>
+            <span class="cluster-sat">respirabilité</span>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Outils pour enrichir votre sémantique</h1>
+    <h2>Trouver les termes associés</h2>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>🔍 Recherches associées Google</h3>
+            <p>En bas de la page de résultats, Google suggère des recherches liées. Mine d'or gratuite !</p>
+            <p class="text-muted">100% gratuit</p>
+        </div>
+        <div class="tool-card">
+            <h3>💡 People Also Ask</h3>
+            <p>Les "Autres questions posées" révèlent les interrogations fréquentes sur votre sujet.</p>
+            <p class="text-muted">100% gratuit</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 1.fr</h3>
+            <p>Outil français qui analyse les pages top 10 et suggère les termes manquants dans votre contenu.</p>
+            <p class="text-muted">Freemium</p>
+        </div>
+        <div class="tool-card">
+            <h3>🟣 Surfer SEO / Clearscope</h3>
+            <p>Outils premium qui calculent un "score de contenu" basé sur l'analyse sémantique des concurrents.</p>
+            <p class="text-muted">Payant (~100€/mois)</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ Le keyword stuffing : l'erreur à éviter</h1>
+    <h2>Quand l'optimisation devient sur-optimisation</h2>
+    <p class="text-intro">Le <strong>keyword stuffing</strong> (bourrage de mots-clés) consiste à répéter excessivement un mot-clé dans l'espoir d'améliorer le classement. C'est une technique "Black Hat" pénalisée par Google.</p>
+    <div class="cannibalization-example">
+        <div class="cannibal-bad">
+            <h4>❌ Keyword stuffing</h4>
+            <p>"Nos <strong>chaussures running</strong> sont les meilleures <strong>chaussures running</strong> du marché. Si vous cherchez des <strong>chaussures running</strong>, nos <strong>chaussures running</strong> sont faites pour vous."</p>
+            <p class="result">Résultat : pénalité Google, mauvaise expérience utilisateur</p>
+        </div>
+        <div class="cannibal-good">
+            <h4>✅ Rédaction naturelle</h4>
+            <p>"Découvrez notre collection de <strong>chaussures de running</strong>. Que vous soyez débutant ou marathonien confirmé, nos modèles offrent confort, amorti et légèreté pour chaque foulée."</p>
+            <p class="result">Résultat : lecture fluide, sémantique riche</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 La densité de mot-clé idéale</h1>
+    <h2>Mythe ou réalité ?</h2>
+    <p class="text-intro">Pendant longtemps, les SEO visaient une "densité de mot-clé" de 2-3%. Cette métrique est aujourd'hui <strong>obsolète</strong>. Google est bien plus sophistiqué.</p>
+    <ul>
+        <li><strong>Pas de pourcentage magique</strong> : Google ne compte pas les occurrences</li>
+        <li><strong>Pertinence contextuelle</strong> : le mot-clé doit apparaître naturellement</li>
+        <li><strong>Emplacements stratégiques</strong> : titre, H1, premier paragraphe, conclusion</li>
+        <li><strong>Variations et synonymes</strong> : plus importants que la répétition</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>La vraie règle :</strong> si en relisant votre texte à voix haute, le mot-clé semble forcé ou répétitif, c'est trop. Écrivez naturellement.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📅 La stratégie éditoriale</h1>
+    <h2>Planifier pour performer</h2>
+    <p class="text-intro">Une <strong>stratégie éditoriale</strong> est un plan qui définit quoi publier, quand, pour qui, et pourquoi. Sans stratégie, vous publiez au hasard. Avec, vous construisez une autorité thématique.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>🎯 Objectifs</h3>
+            <p>Que voulez-vous accomplir ?</p>
+            <p class="text-accent mt-sm">→ Trafic, leads, ventes, notoriété ?</p>
+        </div>
+        <div class="intent-card">
+            <h3>👥 Audience</h3>
+            <p>Pour qui écrivez-vous ?</p>
+            <p class="text-accent mt-sm">→ Personas, besoins, questions</p>
+        </div>
+        <div class="intent-card">
+            <h3>📝 Sujets</h3>
+            <p>Quels thèmes couvrir ?</p>
+            <p class="text-accent mt-sm">→ Clusters thématiques, mots-clés</p>
+        </div>
+        <div class="intent-card">
+            <h3>📊 KPIs</h3>
+            <p>Comment mesurer le succès ?</p>
+            <p class="text-accent mt-sm">→ Trafic, positions, conversions</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>👤 Les personas : connaître son audience</h1>
+    <h2>Écrire pour quelqu'un de précis</h2>
+    <p class="text-intro">Un <strong>persona</strong> est une représentation fictive de votre client idéal. Définir vos personas vous aide à créer du contenu qui résonne avec votre audience.</p>
+    <div class="code-block">
+        <span class="code-comment">/* Exemple de persona */</span><br>
+        <span class="code-keyword">Nom :</span> Marie, 35 ans<br>
+        <span class="code-keyword">Métier :</span> Responsable marketing PME<br>
+        <span class="code-keyword">Objectif :</span> Augmenter la visibilité de son entreprise en ligne<br>
+        <span class="code-keyword">Frustrations :</span> Budget limité, peu de temps, jargon technique<br>
+        <span class="code-keyword">Questions :</span> "Par où commencer ?", "Combien ça coûte ?", "Combien de temps pour voir des résultats ?"<br>
+        <span class="code-keyword">Canaux :</span> LinkedIn, Google, newsletters professionnelles
+    </div>
+    <p class="slide-tip">💡 Quand vous écrivez, imaginez que vous vous adressez directement à ce persona. Votre ton et votre contenu seront naturellement plus pertinents.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗺️ Le parcours utilisateur (Customer Journey)</h1>
+    <h2>Du contenu pour chaque étape</h2>
+    <p class="text-intro">Vos clients potentiels passent par différentes étapes avant d'acheter. Votre contenu doit les accompagner à <strong>chaque phase</strong> de ce parcours.</p>
+    <div class="slide-diagram flex-col gap-md">
+        <div class="cwv-item">
+            <span class="step cwv-lcp" style="width: 120px;">Découverte</span>
+            <span class="text-light">L'utilisateur prend conscience d'un besoin → Contenu éducatif, articles de blog</span>
+        </div>
+        <div class="cwv-item">
+            <span class="step cwv-inp" style="width: 120px; background: #fbbc04;">Considération</span>
+            <span class="text-light">Il compare les solutions → Guides comparatifs, études de cas, avis</span>
+        </div>
+        <div class="cwv-item">
+            <span class="step cwv-cls" style="width: 120px;">Décision</span>
+            <span class="text-light">Il est prêt à acheter → Pages produits, démos, offres, témoignages</span>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Créez du contenu pour chaque étape. Un blog attire en phase "Découverte", vos pages services convertissent en phase "Décision".</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📅 Le calendrier éditorial</h1>
+    <h2>Planifier pour ne jamais manquer d'idées</h2>
+    <p class="text-intro">Le <strong>calendrier éditorial</strong> est votre outil de planification. Il organise vos publications sur plusieurs semaines/mois et assure une cohérence dans votre stratégie.</p>
+    <div class="keyword-map-table">
+        <div class="km-header">
+            <span>Date</span>
+            <span>Titre prévu</span>
+            <span>Mot-clé</span>
+            <span>Format</span>
+            <span>Statut</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">15/02</span>
+            <span class="km-kw">Guide complet du SEO local</span>
+            <span class="km-vol">SEO local</span>
+            <span class="km-sec">Article pilier</span>
+            <span class="km-kd kd-easy-sm">Publié</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">22/02</span>
+            <span class="km-kw">Comment optimiser sa fiche Google Business</span>
+            <span class="km-vol">Google Business Profile</span>
+            <span class="km-sec">Tutoriel</span>
+            <span class="km-kd kd-medium-sm">En cours</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">01/03</span>
+            <span class="km-kw">Les avis clients : impact sur le SEO</span>
+            <span class="km-vol">avis clients SEO</span>
+            <span class="km-sec">Article</span>
+            <span class="km-kd kd-hard-sm">Planifié</span>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Les types de contenu SEO</h1>
+    <h2>Diversifier pour maximiser l'impact</h2>
+    <p class="text-intro">Tous les contenus ne servent pas le même objectif. Variez les formats pour toucher différentes audiences et intentions de recherche.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📚 Articles de blog</h3>
+            <p>Contenus informatifs, guides, tutoriels. Idéaux pour la longue traîne et le trafic organique.</p>
+            <p class="text-muted">Phase : Découverte</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Études de cas</h3>
+            <p>Démontrez vos résultats concrets. Preuves sociales puissantes pour convaincre.</p>
+            <p class="text-muted">Phase : Considération</p>
+        </div>
+        <div class="tool-card">
+            <h3>📋 Pages piliers</h3>
+            <p>Contenus exhaustifs (+3000 mots) sur un sujet central. Attirent des backlinks.</p>
+            <p class="text-muted">Phase : Découverte</p>
+        </div>
+        <div class="tool-card">
+            <h3>❓ FAQ</h3>
+            <p>Réponses aux questions fréquentes. Parfaites pour les Featured Snippets et People Also Ask.</p>
+            <p class="text-muted">Toutes phases</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Encore plus de formats de contenu</h1>
+    <h2>Au-delà du texte classique</h2>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📊 Infographies</h3>
+            <p>Données visuelles partageables. Excellent potentiel de backlinks naturels.</p>
+            <p class="text-muted">Trafic référent + social</p>
+        </div>
+        <div class="tool-card">
+            <h3>🎬 Vidéos</h3>
+            <p>YouTube est le 2ème moteur de recherche. Intégrez-les dans vos articles.</p>
+            <p class="text-muted">Engagement + SEO YouTube</p>
+        </div>
+        <div class="tool-card">
+            <h3>📥 Ebooks / Guides PDF</h3>
+            <p>Contenus premium en échange d'un email. Génération de leads.</p>
+            <p class="text-muted">Lead magnet</p>
+        </div>
+        <div class="tool-card">
+            <h3>🛠️ Outils gratuits</h3>
+            <p>Calculateurs, templates, checklist. Génèrent des backlinks et du trafic récurrent.</p>
+            <p class="text-muted">Linkbait + fidélisation</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Linkbait :</strong> Contenu spécialement conçu pour attirer des liens naturels. Les outils gratuits, études originales et infographies sont d'excellents linkbaits.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📈 La fréquence de publication</h1>
+    <h2>Qualité vs Quantité : le débat éternel</h2>
+    <p class="text-intro">Faut-il publier beaucoup ou publier bien ? La réponse dépend de vos ressources, mais une chose est certaine : la <strong>régularité</strong> est clé.</p>
+    <div class="kd-scale">
+        <div class="kd-item kd-easy">
+            <span class="kd-score">1-2/mois</span>
+            <span class="kd-label">Minimum viable</span>
+            <p class="kd-desc">Pour maintenir une présence. Contenus longs et approfondis.</p>
+        </div>
+        <div class="kd-item kd-medium">
+            <span class="kd-score">1/semaine</span>
+            <span class="kd-label">Rythme optimal</span>
+            <p class="kd-desc">Bon équilibre qualité/quantité pour la plupart des sites.</p>
+        </div>
+        <div class="kd-item kd-hard">
+            <span class="kd-score">3-5/semaine</span>
+            <span class="kd-label">Intensif</span>
+            <p class="kd-desc">Pour les médias et sites à forte audience. Équipe dédiée nécessaire.</p>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ Mieux vaut 1 article excellent par mois que 4 articles médiocres par semaine. Google privilégie la qualité.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔄 Le recyclage de contenu</h1>
+    <h2>Faire plus avec ce que vous avez déjà</h2>
+    <p class="text-intro">Créer du contenu from scratch est chronophage. Le <strong>recyclage</strong> consiste à réutiliser et adapter vos contenus existants pour maximiser leur impact.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">📝</span>
+            <div class="step-content">
+                <strong>Article → Infographie</strong>
+                <p>Transformez les données d'un article en visuel partageable</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">🎬</span>
+            <div class="step-content">
+                <strong>Article → Vidéo</strong>
+                <p>Convertissez un guide en tutoriel vidéo YouTube</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">📧</span>
+            <div class="step-content">
+                <strong>Articles → Newsletter</strong>
+                <p>Compilez vos meilleurs articles en digest hebdomadaire</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">📱</span>
+            <div class="step-content">
+                <strong>Article → Posts sociaux</strong>
+                <p>Découpez un article en 5-10 posts LinkedIn/Twitter</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔄 L'optimisation de contenu existant</h1>
+    <h2>Le ROI du content refresh</h2>
+    <p class="text-intro">Mettre à jour d'anciens contenus est souvent <strong>plus rentable</strong> que d'en créer de nouveaux. Un article qui a déjà de l'autorité peut rapidement remonter avec quelques optimisations.</p>
+    <ul>
+        <li><strong>Identifier les opportunités</strong> : articles en position 5-20 avec du potentiel</li>
+        <li><strong>Actualiser les informations</strong> : dates, statistiques, liens cassés</li>
+        <li><strong>Enrichir le contenu</strong> : nouvelles sections, questions fréquentes, exemples</li>
+        <li><strong>Améliorer l'optimisation</strong> : title, meta description, maillage interne</li>
+        <li><strong>Ajouter des médias</strong> : images, vidéos, infographies</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Astuce Search Console :</strong> Filtrez par position 5-15 et impressions élevées. Ce sont vos contenus avec le meilleur potentiel de "quick win".</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Mesurer la performance du contenu</h1>
+    <h2>Les KPIs à suivre</h2>
+    <p class="text-intro">Un bon contenu SEO doit être mesuré. Voici les métriques clés pour évaluer la performance de votre stratégie de contenu.</p>
+    <div class="metrics-list">
+        <p><span class="metric-label">Trafic organique</span> Nombre de visiteurs venant de Google (Search Console, Analytics)</p>
+        <p><span class="metric-label">Positions</span> Classement sur vos mots-clés cibles (SEMrush, Ahrefs, Search Console)</p>
+        <p><span class="metric-label">CTR</span> Taux de clic dans les résultats de recherche (Search Console)</p>
+        <p><span class="metric-label">Temps sur page</span> Engagement des lecteurs (Analytics)</p>
+        <p><span class="metric-label">Taux de rebond</span> % de visiteurs qui partent immédiatement (Analytics)</p>
+        <p><span class="metric-label">Conversions</span> Actions réalisées (formulaires, achats, inscriptions)</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Le CTA : l'appel à l'action</h1>
+    <h2>Transformer le lecteur en prospect</h2>
+    <p class="text-intro">Un contenu sans <strong>CTA</strong> (Call-to-Action) est une impasse. Chaque page doit guider l'utilisateur vers une action, qu'elle soit directe (achat) ou indirecte (inscription newsletter).</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📝 CTA informatif</h3>
+            <p>"Téléchargez notre guide gratuit"</p>
+            <p class="text-muted">Phase : Découverte</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔍 CTA comparatif</h3>
+            <p>"Demandez une démo personnalisée"</p>
+            <p class="text-muted">Phase : Considération</p>
+        </div>
+        <div class="tool-card">
+            <h3>🛒 CTA transactionnel</h3>
+            <p>"Ajouter au panier" / "Commencer maintenant"</p>
+            <p class="text-muted">Phase : Décision</p>
+        </div>
+        <div class="tool-card">
+            <h3>📧 CTA relationnel</h3>
+            <p>"Inscrivez-vous à notre newsletter"</p>
+            <p class="text-muted">Toutes phases</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 Un CTA efficace est visible, clair, et crée un sentiment d'urgence ou de bénéfice immédiat.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✍️ Les erreurs de copywriting à éviter</h1>
+    <h2>Ce qui tue vos conversions</h2>
+    <ul>
+        <li><strong>Parler de vous au lieu du client</strong> : "Nous sommes les meilleurs" → "Vous allez gagner du temps"</li>
+        <li><strong>Être trop technique</strong> : jargon incompréhensible pour votre cible</li>
+        <li><strong>Murs de texte</strong> : paragraphes trop longs, pas d'aération</li>
+        <li><strong>CTA flou</strong> : "En savoir plus" → "Recevez votre devis gratuit"</li>
+        <li><strong>Pas de preuve</strong> : affirmations sans témoignages, chiffres ou études</li>
+        <li><strong>Trop de CTAs</strong> : choix paralysant, l'utilisateur ne fait rien</li>
+        <li><strong>Oublier le mobile</strong> : texte illisible sur petit écran</li>
+    </ul>
+    <p class="slide-warning">⚠️ Relisez toujours vos contenus avec les yeux de votre persona. Comprendrait-il ? Serait-il convaincu ?</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤖 L'IA et la rédaction SEO</h1>
+    <h2>ChatGPT, Claude & co : menace ou opportunité ?</h2>
+    <p class="text-intro">Les outils d'IA générative révolutionnent la création de contenu. Mais attention : Google sait détecter (et potentiellement pénaliser) le contenu 100% généré par IA sans valeur ajoutée.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>✅ Bon usage de l'IA</h3>
+            <ul>
+                <li>Brainstorming et idéation</li>
+                <li>Création de structures/plans</li>
+                <li>Premier jet à améliorer</li>
+                <li>Réécriture et reformulation</li>
+                <li>Recherche d'angles</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>❌ Mauvais usage de l'IA</h3>
+            <ul>
+                <li>Publier sans relecture</li>
+                <li>Contenu générique sans expertise</li>
+                <li>Mass content sans valeur</li>
+                <li>Copier des concurrents</li>
+                <li>Ignorer les faits et sources</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 L'IA est un <strong>assistant</strong>, pas un remplaçant. Votre expertise, votre voix et votre vérification des faits restent indispensables.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Checklist Rédaction SEO</h1>
+    <h2>Avant de publier, vérifiez...</h2>
+    <ul>
+        <li>☐ <strong>Intention</strong> : le contenu répond-il à l'intention de recherche ?</li>
+        <li>☐ <strong>Titre</strong> : accrocheur, inclut le mot-clé, < 60 caractères</li>
+        <li>☐ <strong>Accroche</strong> : les 3 premières secondes donnent-elles envie de lire ?</li>
+        <li>☐ <strong>Structure</strong> : titres H2/H3 clairs, paragraphes courts</li>
+        <li>☐ <strong>Sémantique</strong> : champ lexical riche, pas de keyword stuffing</li>
+        <li>☐ <strong>Médias</strong> : images optimisées, vidéos si pertinent</li>
+        <li>☐ <strong>Liens</strong> : maillage interne vers contenus connexes</li>
+        <li>☐ <strong>CTA</strong> : appel à l'action clair et visible</li>
+        <li>☐ <strong>Relecture</strong> : orthographe, clarté, vérification des faits</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Récap' Chapitre 2 (Jour 2)</h1>
+    <h2>Ce qu'il faut absolument retenir</h2>
+    <ul>
+        <li>✍️ <strong>Copywriting SEO</strong> : écrire pour les humains ET pour Google, pas l'un ou l'autre</li>
+        <li>🎯 <strong>Intention d'abord</strong> : comprenez ce que veut l'utilisateur avant d'écrire</li>
+        <li>📐 <strong>Structure gagnante</strong> : accroche, pyramide inversée, featured snippet</li>
+        <li>🧲 <strong>Techniques de persuasion</strong> : AIDA, PAS, power words, bénéfices</li>
+        <li>📅 <strong>Stratégie éditoriale</strong> : personas, calendrier, diversité des formats</li>
+        <li>🔄 <strong>Content refresh</strong> : optimiser l'existant est souvent plus rentable que créer du neuf</li>
+        <li>🎯 <strong>CTA clair</strong> : chaque contenu doit mener à une action</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Exercice pratique</h1>
+    <h2>Rédigez un article optimisé</h2>
+    <ul>
+        <li><strong>1.</strong> Choisissez un mot-clé longue traîne de votre secteur</li>
+        <li><strong>2.</strong> Analysez les 5 premiers résultats Google : format, longueur, angles</li>
+        <li><strong>3.</strong> Créez un plan avec H1, H2, H3 incluant les questions "People Also Ask"</li>
+        <li><strong>4.</strong> Rédigez l'introduction en utilisant la formule AIDA ou PAS</li>
+        <li><strong>5.</strong> Enrichissez le champ sémantique avec 1.fr ou les recherches associées</li>
+        <li><strong>6.</strong> Ajoutez un CTA adapté à l'intention de recherche</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Le netlinking et l'autorité de domaine — comment obtenir des backlinks de qualité.</p>
 </div>`
             ]
         }

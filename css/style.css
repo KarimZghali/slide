@@ -557,7 +557,7 @@ body {
 }
 
 .slide-seo ul li {
-    padding: 12px 0;
+    padding: 6px 0;
     padding-left: 28px;
     position: relative;
     font-size: 1.15rem;
@@ -567,7 +567,7 @@ body {
 .slide-seo ul li::before {
     content: '▸';
     position: absolute;
-    left: 0;
+    left: -15px;
     color: #00d4aa;
     font-weight: bold;
 }
