@@ -4203,7 +4203,1767 @@ const THEMES_DATA = {
         <li><strong>5.</strong> Identifiez 3 sites de votre secteur où vous pourriez obtenir un lien</li>
         <li><strong>6.</strong> Recherchez votre marque sur Google : des mentions sans lien ?</li>
     </ul>
-    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Le SEO local et les stratégies de référencement géolocalisé.</p>
+    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Mesure de performance et outils d'analyse — comment savoir si vos efforts SEO portent leurs fruits.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Jour 3 – Chapitre 2</h1>
+    <h2>Mesure de performance et outils d'analyse</h2>
+    <p class="slide-subtitle">Ce qui ne se mesure pas ne s'améliore pas</p>
+    <p class="mt-xl text-info"><strong>Analytics SEO</strong> = Collecte et analyse des données pour évaluer et optimiser votre stratégie<br><span class="text-muted">Le tableau de bord de votre visibilité en ligne</span></p>
+    <p class="mt-lg text-muted">Le SEO sans mesure, c'est comme conduire les yeux fermés.<br>Les données vous montrent ce qui fonctionne... et ce qui doit changer.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📚 Au programme</h1>
+    <h2>Ce que vous allez apprendre</h2>
+    <div class="slide-agenda">
+        <p>📈 Les KPIs essentiels du SEO</p>
+        <p>🔍 Google Search Console : votre allié principal</p>
+        <p>📊 Google Analytics 4 : mesurer le comportement utilisateur</p>
+        <p>🛠️ Les outils SEO professionnels</p>
+        <p>📋 Construire un tableau de bord efficace</p>
+        <p>🔄 Mettre en place un reporting régulier</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Pourquoi mesurer ?</h1>
+    <h2>Les 4 raisons fondamentales</h2>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>✅ Valider vos actions</h3>
+            <p>Vos optimisations ont-elles réellement un impact ?</p>
+            <p class="text-accent mt-sm">→ Prouver le ROI du SEO</p>
+        </div>
+        <div class="intent-card">
+            <h3>🔍 Identifier les opportunités</h3>
+            <p>Quels mots-clés progressent ? Lesquels stagnent ?</p>
+            <p class="text-accent mt-sm">→ Prioriser les efforts</p>
+        </div>
+        <div class="intent-card">
+            <h3>⚠️ Détecter les problèmes</h3>
+            <p>Chute de trafic, erreurs d'indexation, pénalités...</p>
+            <p class="text-accent mt-sm">→ Réagir rapidement</p>
+        </div>
+        <div class="intent-card">
+            <h3>📊 Reporter aux parties prenantes</h3>
+            <p>Direction, clients, équipe marketing...</p>
+            <p class="text-accent mt-sm">→ Communiquer les résultats</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📈 Les KPIs essentiels du SEO</h1>
+    <h2>Les indicateurs clés de performance</h2>
+    <p class="text-intro">Un <strong>KPI</strong> (Key Performance Indicator) est une métrique qui permet de mesurer l'efficacité d'une action. En SEO, certains KPIs sont incontournables.</p>
+    <ul>
+        <li><strong>🔢 Positions</strong> : où se classent vos pages pour vos mots-clés cibles ?</li>
+        <li><strong>👀 Impressions</strong> : combien de fois vos pages apparaissent dans les résultats ?</li>
+        <li><strong>🖱️ Clics organiques</strong> : combien de visiteurs arrivent via la recherche ?</li>
+        <li><strong>📊 CTR (taux de clic)</strong> : quel pourcentage d'impressions devient des clics ?</li>
+        <li><strong>📄 Pages indexées</strong> : combien de vos pages sont dans l'index Google ?</li>
+        <li><strong>🔗 Domaines référents</strong> : combien de sites différents font des liens vers vous ?</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔢 Le suivi de positions</h1>
+    <h2>Où êtes-vous sur Google ?</h2>
+    <p class="text-intro">Le <strong>suivi de positions</strong> (rank tracking) consiste à surveiller où vos pages apparaissent dans les résultats de recherche pour vos mots-clés cibles.</p>
+    <div class="comparison-table">
+        <div class="comparison-col" style="border-color: rgba(0, 212, 170, 0.4);">
+            <h3 style="color: #00d4aa;">📍 Positions stratégiques</h3>
+            <ul>
+                <li><strong>Position 1-3</strong> : visibilité maximale (~60% des clics)</li>
+                <li><strong>Position 4-10</strong> : toujours sur la 1ère page</li>
+                <li><strong>Position 11-20</strong> : page 2, trafic très limité</li>
+                <li><strong>Position 20+</strong> : quasi invisible</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>⚠️ Points d'attention</h3>
+            <ul>
+                <li>Les positions varient selon la localisation</li>
+                <li>Les résultats sont personnalisés par utilisateur</li>
+                <li>Les fonctionnalités SERP impactent le CTR</li>
+                <li>Une position moyenne cache des variations</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Conseil :</strong> Suivez vos 50-100 mots-clés les plus importants, pas des milliers. La qualité du suivi prime sur la quantité.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🖱️ CTR : Le taux de clic</h1>
+    <h2>De l'impression au clic</h2>
+    <p class="text-intro">Le <strong>CTR</strong> (Click-Through Rate) mesure le pourcentage d'utilisateurs qui cliquent sur votre résultat après l'avoir vu. C'est un indicateur de l'attractivité de votre snippet.</p>
+    <div class="code-block">
+        <span class="code-comment">Formule du CTR :</span><br><br>
+        <span class="code-value-green">CTR</span> = (<span class="code-value-blue">Nombre de clics</span> ÷ <span class="code-value-orange">Nombre d'impressions</span>) × 100
+    </div>
+    <div class="market-share mt-lg">
+        <div class="share-bar">
+            <span class="share-label">Position 1</span>
+            <span class="share-fill share-fill-good" style="width: 32%;"></span>
+            <span class="share-value">~32%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Position 2</span>
+            <span class="share-fill share-fill-good" style="width: 17%;"></span>
+            <span class="share-value">~17%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Position 3</span>
+            <span class="share-fill share-fill-ok" style="width: 11%;"></span>
+            <span class="share-value">~11%</span>
+        </div>
+        <div class="share-bar">
+            <span class="share-label">Position 10</span>
+            <span class="share-fill share-fill-bad" style="width: 3%;"></span>
+            <span class="share-value">~2.5%</span>
+        </div>
+    </div>
+    <p class="slide-note">📊 Ces CTR moyens varient selon le secteur, le type de requête et la présence de fonctionnalités SERP (ads, featured snippets, etc.)</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 CTR faible : que faire ?</h1>
+    <h2>Améliorer l'attractivité de vos résultats</h2>
+    <p class="text-intro">Un CTR inférieur à la moyenne pour votre position ? Voici les leviers d'optimisation :</p>
+    <ul>
+        <li><strong>🏷️ Optimiser le Title</strong> : inclure le mot-clé, ajouter un élément différenciant (année, chiffres, émotions)</li>
+        <li><strong>📝 Réécrire la Meta Description</strong> : appel à l'action clair, bénéfice utilisateur, mots-clés en gras</li>
+        <li><strong>⭐ Données structurées</strong> : étoiles d'avis, prix, FAQ pour des rich snippets</li>
+        <li><strong>📅 Fraîcheur</strong> : date de mise à jour visible pour les contenus récents</li>
+        <li><strong>🎯 Intention de recherche</strong> : votre titre correspond-il à ce que cherche l'utilisateur ?</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Test A/B naturel :</strong> Changez votre title, attendez 2-3 semaines, comparez le CTR dans la Search Console. Itérez !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Google Search Console</h1>
+    <h2>L'outil gratuit indispensable</h2>
+    <p class="text-intro">La <strong>Google Search Console</strong> (GSC) est l'outil officiel de Google pour les webmasters. C'est votre ligne directe avec le moteur de recherche.</p>
+    <div class="slide-diagram">
+        <div class="step" style="background: rgba(66, 133, 244, 0.2); border-color: #4285f4;">Votre site</div>
+        <span class="arrow">↔</span>
+        <div class="step" style="background: rgba(52, 168, 83, 0.2); border-color: #34a853; font-size: 1rem;">Search Console</div>
+        <span class="arrow">↔</span>
+        <div class="step" style="background: rgba(234, 67, 53, 0.2); border-color: #ea4335;">Google</div>
+    </div>
+    <p class="text-intro mt-lg">Contrairement aux outils tiers, la GSC fournit les données <strong>réelles</strong> de Google : les vraies impressions, les vrais clics, les vraies positions.</p>
+    <p class="slide-warning">⚠️ <strong>Obligatoire :</strong> Si vous n'avez pas encore configuré la Search Console, faites-le immédiatement. C'est gratuit et indispensable.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Search Console : Performances</h1>
+    <h2>Le rapport le plus précieux</h2>
+    <p class="text-intro">Le rapport <strong>Performances</strong> vous montre comment votre site apparaît dans les résultats de recherche Google.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3 style="color: #4285f4;">🖱️ Clics</h3>
+            <p>Nombre de clics vers votre site depuis les résultats Google</p>
+            <p class="text-muted">= Trafic organique réel</p>
+        </div>
+        <div class="intent-card">
+            <h3 style="color: #a78bfa;">👀 Impressions</h3>
+            <p>Nombre de fois où votre site est apparu dans les résultats</p>
+            <p class="text-muted">= Visibilité potentielle</p>
+        </div>
+        <div class="intent-card">
+            <h3 style="color: #00d4aa;">📊 CTR moyen</h3>
+            <p>Pourcentage d'impressions converties en clics</p>
+            <p class="text-muted">= Attractivité des snippets</p>
+        </div>
+        <div class="intent-card">
+            <h3 style="color: #fbbc04;">📍 Position moyenne</h3>
+            <p>Position moyenne dans les résultats de recherche</p>
+            <p class="text-muted">= Ranking global</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Astuce :</strong> Filtrez par requête, page, pays, appareil ou date pour analyser des segments spécifiques.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Search Console : Indexation</h1>
+    <h2>Vos pages sont-elles dans Google ?</h2>
+    <p class="text-intro">Le rapport <strong>Pages</strong> (anciennement "Couverture") vous indique quelles pages sont indexées et lesquelles posent problème.</p>
+    <div class="comparison-table">
+        <div class="comparison-col" style="border-color: rgba(52, 168, 83, 0.4);">
+            <h3 style="color: #34a853;">✅ Statuts positifs</h3>
+            <ul>
+                <li><strong>Indexée</strong> : page dans l'index Google</li>
+                <li><strong>Indexée, non soumise</strong> : trouvée par Google, pas dans le sitemap</li>
+            </ul>
+            <p class="text-muted mt-md">→ Ces pages peuvent apparaître dans les résultats</p>
+        </div>
+        <div class="comparison-col" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">❌ Statuts problématiques</h3>
+            <ul>
+                <li><strong>Non indexée (crawlée)</strong> : trouvée mais pas indexée</li>
+                <li><strong>Bloquée par robots.txt</strong></li>
+                <li><strong>Erreur 404, 5xx</strong></li>
+                <li><strong>Soft 404</strong> : page vide perçue comme erreur</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ <strong>Attention :</strong> Une page "crawlée mais non indexée" signifie que Google l'a vue mais ne la juge pas assez pertinente. Améliorez le contenu !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Search Console : Inspection d'URL</h1>
+    <h2>Le diagnostic page par page</h2>
+    <p class="text-intro">L'outil <strong>Inspection d'URL</strong> permet d'analyser en détail une page spécifique : son état d'indexation, les données structurées détectées, et plus encore.</p>
+    <ul>
+        <li><strong>📄 Statut d'indexation</strong> : la page est-elle dans l'index ? Depuis quand ?</li>
+        <li><strong>🕷️ Dernier crawl</strong> : quand Googlebot a-t-il visité cette page ?</li>
+        <li><strong>📱 Ergonomie mobile</strong> : la page est-elle mobile-friendly ?</li>
+        <li><strong>📊 Données structurées</strong> : quels schemas sont détectés ? Y a-t-il des erreurs ?</li>
+        <li><strong>🔄 Demander l'indexation</strong> : forcer Google à recrawler une page mise à jour</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Workflow :</strong> Après une mise à jour importante d'une page, utilisez "Demander l'indexation" pour accélérer la prise en compte par Google.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Search Console : Core Web Vitals</h1>
+    <h2>La performance technique de vos pages</h2>
+    <p class="text-intro">Le rapport <strong>Signaux Web essentiels</strong> mesure l'expérience utilisateur réelle de vos visiteurs, basée sur les données Chrome (CrUX).</p>
+    <div class="kd-scale">
+        <div class="kd-item" style="background: rgba(66, 133, 244, 0.15); border: 1px solid rgba(66, 133, 244, 0.4);">
+            <span class="kd-score" style="color: #4285f4;">LCP</span>
+            <span class="kd-label">Largest Contentful Paint</span>
+            <p class="kd-desc">Temps de chargement du plus grand élément visible<br><strong class="text-accent">Bon : &lt; 2.5s</strong></p>
+        </div>
+        <div class="kd-item" style="background: rgba(234, 67, 53, 0.15); border: 1px solid rgba(234, 67, 53, 0.4);">
+            <span class="kd-score" style="color: #ea4335;">INP</span>
+            <span class="kd-label">Interaction to Next Paint</span>
+            <p class="kd-desc">Réactivité aux interactions utilisateur<br><strong class="text-accent">Bon : &lt; 200ms</strong></p>
+        </div>
+        <div class="kd-item" style="background: rgba(52, 168, 83, 0.15); border: 1px solid rgba(52, 168, 83, 0.4);">
+            <span class="kd-score" style="color: #34a853;">CLS</span>
+            <span class="kd-label">Cumulative Layout Shift</span>
+            <p class="kd-desc">Stabilité visuelle (décalages inattendus)<br><strong class="text-accent">Bon : &lt; 0.1</strong></p>
+        </div>
+    </div>
+    <p class="slide-note">📊 Ces métriques sont un facteur de classement depuis 2021. Des mauvais scores peuvent impacter votre SEO.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Search Console : Liens</h1>
+    <h2>Votre profil de backlinks selon Google</h2>
+    <p class="text-intro">Le rapport <strong>Liens</strong> montre les backlinks que Google connaît, le maillage interne et les ancres de texte.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>🔗 Liens externes</h3>
+            <ul>
+                <li><strong>Pages les plus liées</strong> : quelles pages reçoivent le plus de backlinks ?</li>
+                <li><strong>Sites avec le plus de liens</strong> : vos plus gros "supporters"</li>
+                <li><strong>Texte des liens</strong> : quelles ancres sont utilisées pour vous citer ?</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>🏠 Liens internes</h3>
+            <ul>
+                <li><strong>Pages les plus liées en interne</strong> : structure de votre maillage</li>
+                <li><strong>Pages orphelines</strong> : pages peu/pas liées (mauvais signal)</li>
+            </ul>
+            <p class="text-muted mt-md">Le maillage interne distribue l'autorité sur votre site.</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Limite :</strong> La GSC ne montre pas tous vos backlinks et ne donne pas de métrique d'autorité. Utilisez des outils tiers pour une analyse complète.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Google Analytics 4</h1>
+    <h2>Comprendre le comportement des visiteurs</h2>
+    <p class="text-intro"><strong>Google Analytics 4</strong> (GA4) mesure ce que font les visiteurs une fois sur votre site. C'est le complément parfait de la Search Console.</p>
+    <div class="slide-diagram">
+        <div class="step" style="background: rgba(66, 133, 244, 0.2); border-color: #4285f4; font-size: 0.9rem;">Search Console<br><small>Comment ils arrivent</small></div>
+        <span class="arrow">→</span>
+        <div class="step" style="background: rgba(251, 188, 4, 0.2); border-color: #fbbc04; font-size: 0.9rem;">Google Analytics<br><small>Ce qu'ils font</small></div>
+        <span class="arrow">→</span>
+        <div class="step" style="background: rgba(52, 168, 83, 0.2); border-color: #34a853; font-size: 0.9rem;">Conversions<br><small>S'ils convertissent</small></div>
+    </div>
+    <p class="text-intro mt-lg">GA4 est basé sur les <strong>événements</strong> : chaque interaction (clic, scroll, téléchargement, achat) est un événement traçable.</p>
+    <p class="slide-warning">⚠️ <strong>RGPD :</strong> GA4 nécessite le consentement des utilisateurs en Europe. Configurez correctement votre bandeau de cookies.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 GA4 : Métriques SEO clés</h1>
+    <h2>Ce qu'il faut suivre pour le référencement</h2>
+    <p class="text-intro">Voici les métriques GA4 les plus pertinentes pour évaluer la qualité de votre trafic organique.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>👥 Utilisateurs (Organic)</h3>
+            <p>Nombre de visiteurs uniques provenant de la recherche</p>
+            <p class="text-accent">Filtrer : Source/Medium = google/organic</p>
+        </div>
+        <div class="tool-card">
+            <h3>⏱️ Durée d'engagement</h3>
+            <p>Temps moyen passé activement sur vos pages</p>
+            <p class="text-accent">Indicateur de qualité du contenu</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Taux d'engagement</h3>
+            <p>% de sessions avec interaction significative</p>
+            <p class="text-accent">Remplace le "taux de rebond" inversé</p>
+        </div>
+        <div class="tool-card">
+            <h3>🎯 Conversions</h3>
+            <p>Objectifs atteints (achats, formulaires, inscriptions)</p>
+            <p class="text-accent">Le vrai ROI de votre SEO</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Rapport clé :</strong> Acquisition > Acquisition de trafic > Filtrer par "Organic Search" pour voir uniquement le trafic SEO.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 GA4 : Rapport Pages et écrans</h1>
+    <h2>Performance page par page</h2>
+    <p class="text-intro">Le rapport <strong>Pages et écrans</strong> vous montre quelles pages performent le mieux (ou le moins bien) en termes d'engagement et de conversions.</p>
+    <div class="keyword-map-table">
+        <div class="km-header">
+            <span>Page</span>
+            <span>Utilisateurs</span>
+            <span>Durée moy.</span>
+            <span>Taux eng.</span>
+            <span>Conversions</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">/guide-seo-complet</span>
+            <span class="km-kw">12,450</span>
+            <span class="km-vol">4:32</span>
+            <span class="km-kd kd-easy-sm">78%</span>
+            <span class="km-sec">234 leads</span>
+        </div>
+        <div class="km-row">
+            <span class="km-url">/blog/backlinks</span>
+            <span class="km-kw">8,320</span>
+            <span class="km-vol">3:15</span>
+            <span class="km-kd kd-easy-sm">72%</span>
+            <span class="km-sec">156 leads</span>
+        </div>
+        <div class="km-row km-row-gap">
+            <span class="km-url">/page-produit-xyz</span>
+            <span class="km-kw">2,100</span>
+            <span class="km-vol">0:45</span>
+            <span class="km-kd kd-hard-sm">28%</span>
+            <span class="km-sec">12 leads</span>
+        </div>
+    </div>
+    <p class="slide-note">📊 La page surlignée a un problème : faible durée, faible engagement. À investiguer et améliorer !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Connecter GSC et GA4</h1>
+    <h2>Le duo gagnant</h2>
+    <p class="text-intro">En connectant la Search Console à GA4, vous obtenez le meilleur des deux mondes : les données de requêtes Google + le comportement sur site.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Allez dans Admin > Liens produits</strong>
+                <p>Dans GA4, section Administration, trouvez "Liens Search Console".</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Associez votre propriété Search Console</strong>
+                <p>Sélectionnez le site déjà vérifié dans votre compte Google.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Accédez aux rapports combinés</strong>
+                <p>Un nouveau rapport "Search Console" apparaît dans GA4 avec requêtes + landing pages.</p>
+            </div>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Avantage :</strong> Vous pouvez voir quelles requêtes génèrent les meilleures conversions, pas seulement le plus de trafic !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Les outils SEO professionnels</h1>
+    <h2>Au-delà des outils Google</h2>
+    <p class="text-intro">Les outils tiers offrent des fonctionnalités avancées que Google ne propose pas : suivi de positions, analyse concurrentielle, audit technique...</p>
+    <div class="tools-grid">
+        <div class="tool-card tool-premium">
+            <h3>🟠 Ahrefs</h3>
+            <p>Le roi des backlinks et de l'analyse concurrentielle</p>
+            <p class="text-muted">Backlinks, positions, Content Explorer, Site Audit</p>
+            <p class="text-accent">~99€/mois (Lite)</p>
+        </div>
+        <div class="tool-card tool-premium">
+            <h3>🟣 SEMrush</h3>
+            <p>Suite complète all-in-one</p>
+            <p class="text-muted">SEO, SEA, réseaux sociaux, contenu, PR</p>
+            <p class="text-accent">~130€/mois (Pro)</p>
+        </div>
+        <div class="tool-card tool-premium">
+            <h3>🟢 Moz Pro</h3>
+            <p>Interface accessible, bon pour débuter</p>
+            <p class="text-muted">DA/PA, rank tracking, crawl, recherche mots-clés</p>
+            <p class="text-accent">~99$/mois (Standard)</p>
+        </div>
+        <div class="tool-card tool-premium">
+            <h3>🔵 Screaming Frog</h3>
+            <p>Le meilleur crawler technique</p>
+            <p class="text-muted">Audit on-page, redirections, données structurées</p>
+            <p class="text-accent">~209€/an (ou gratuit limité)</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Outils gratuits de qualité</h1>
+    <h2>Pour les budgets serrés</h2>
+    <p class="text-intro">Pas de budget pour les outils premium ? Ces alternatives gratuites couvrent l'essentiel.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>🔍 Google Search Console</h3>
+            <p>Indispensable et gratuit</p>
+            <p class="text-muted">Performances, indexation, Core Web Vitals</p>
+            <p class="text-accent">100% gratuit</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Google Analytics 4</h3>
+            <p>Analyse du comportement utilisateur</p>
+            <p class="text-muted">Trafic, engagement, conversions</p>
+            <p class="text-accent">100% gratuit</p>
+        </div>
+        <div class="tool-card">
+            <h3>⚡ PageSpeed Insights</h3>
+            <p>Audit de performance</p>
+            <p class="text-muted">Core Web Vitals, recommandations techniques</p>
+            <p class="text-accent">100% gratuit</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔗 Ahrefs Webmaster Tools</h3>
+            <p>Version gratuite limitée d'Ahrefs</p>
+            <p class="text-muted">Backlinks de votre site, audit technique basique</p>
+            <p class="text-accent">Gratuit (site vérifié)</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Combo gagnant gratuit :</strong> GSC + GA4 + PageSpeed + Screaming Frog (500 URLs gratuites) couvrent 80% des besoins.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Ahrefs vs SEMrush</h1>
+    <h2>Le match des géants</h2>
+    <p class="text-intro">Les deux outils leaders ont chacun leurs forces. Voici une comparaison pour vous aider à choisir.</p>
+    <div class="comparison-table">
+        <div class="comparison-col" style="border-color: rgba(255, 165, 0, 0.4);">
+            <h3 style="color: #ffa500;">🟠 Ahrefs</h3>
+            <ul>
+                <li><strong>Force :</strong> Base de backlinks la plus complète</li>
+                <li><strong>Content Explorer</strong> : trouvez le contenu viral</li>
+                <li><strong>Interface</strong> : simple et efficace</li>
+                <li><strong>Site Audit</strong> : excellent crawler</li>
+            </ul>
+            <p class="text-accent mt-md">→ Idéal pour le netlinking et l'analyse concurrentielle</p>
+        </div>
+        <div class="comparison-col" style="border-color: rgba(167, 139, 250, 0.4);">
+            <h3 style="color: #a78bfa;">🟣 SEMrush</h3>
+            <ul>
+                <li><strong>Force :</strong> Suite tout-en-un (SEO + SEA + Social)</li>
+                <li><strong>Writing Assistant</strong> : aide à la rédaction SEO</li>
+                <li><strong>Position Tracking</strong> : très détaillé</li>
+                <li><strong>Projets clients</strong> : gestion multi-sites</li>
+            </ul>
+            <p class="text-accent mt-md">→ Idéal pour les agences et le marketing global</p>
+        </div>
+    </div>
+    <p class="slide-note">📊 Les deux offrent des essais gratuits. Testez-les sur votre site avant de vous engager !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🕷️ Screaming Frog SEO Spider</h1>
+    <h2>Le crawler technique de référence</h2>
+    <p class="text-intro"><strong>Screaming Frog</strong> est un logiciel qui "crawle" votre site comme le ferait Googlebot, révélant tous les problèmes techniques.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>🔍 Ce qu'il détecte</h3>
+            <p>Erreurs 404, redirections en chaîne, pages orphelines, contenu dupliqué, balises manquantes...</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Données extraites</h3>
+            <p>Titles, meta descriptions, H1-H6, images (alt), liens internes/externes, hreflang...</p>
+        </div>
+        <div class="tool-card">
+            <h3>⚡ Intégrations</h3>
+            <p>GA4, Search Console, PageSpeed, Ahrefs pour enrichir les données.</p>
+        </div>
+        <div class="tool-card">
+            <h3>💾 Export</h3>
+            <p>Tout est exportable en CSV/Excel pour analyse approfondie.</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Version gratuite :</strong> Jusqu'à 500 URLs crawlées, suffisant pour les petits sites. Au-delà, licence à ~209€/an.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Construire un tableau de bord</h1>
+    <h2>Centraliser vos KPIs</h2>
+    <p class="text-intro">Un <strong>tableau de bord SEO</strong> (dashboard) regroupe vos métriques clés en un seul endroit pour un suivi efficace.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Définissez vos KPIs prioritaires</strong>
+                <p>Choisissez 5-10 métriques maximum. Trop de données = paralysie de l'analyse.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Choisissez votre outil de dashboard</strong>
+                <p>Google Looker Studio (gratuit), Google Sheets, Data Studio, Databox, AgencyAnalytics...</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Connectez vos sources de données</strong>
+                <p>GSC, GA4, Ahrefs/SEMrush, CRM... via connecteurs ou API.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Automatisez les mises à jour</strong>
+                <p>Le dashboard doit se rafraîchir automatiquement (quotidien ou hebdomadaire).</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Exemple de tableau de bord</h1>
+    <h2>Les métriques essentielles</h2>
+    <p class="text-intro">Voici une structure de dashboard SEO couvrant les aspects clés de la performance.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>📈 Visibilité</h3>
+            <p><strong>Impressions</strong> (GSC)</p>
+            <p><strong>Positions moyennes</strong> (GSC/outil)</p>
+            <p><strong>Mots-clés top 10</strong></p>
+            <p class="text-muted mt-sm">→ Votre présence dans les SERP</p>
+        </div>
+        <div class="intent-card">
+            <h3>🚗 Trafic</h3>
+            <p><strong>Clics organiques</strong> (GSC)</p>
+            <p><strong>Utilisateurs organic</strong> (GA4)</p>
+            <p><strong>Sessions par page</strong></p>
+            <p class="text-muted mt-sm">→ Combien de visiteurs ?</p>
+        </div>
+        <div class="intent-card">
+            <h3>🎯 Engagement</h3>
+            <p><strong>Taux d'engagement</strong> (GA4)</p>
+            <p><strong>Durée moyenne</strong></p>
+            <p><strong>Pages par session</strong></p>
+            <p class="text-muted mt-sm">→ Qualité du trafic</p>
+        </div>
+        <div class="intent-card">
+            <h3>💰 Conversions</h3>
+            <p><strong>Objectifs atteints</strong> (GA4)</p>
+            <p><strong>Taux de conversion</strong></p>
+            <p><strong>Revenus (e-commerce)</strong></p>
+            <p class="text-muted mt-sm">→ ROI du SEO</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Google Looker Studio</h1>
+    <h2>Créer des dashboards gratuits</h2>
+    <p class="text-intro"><strong>Looker Studio</strong> (ex-Data Studio) est l'outil gratuit de Google pour créer des tableaux de bord interactifs connectés à vos données.</p>
+    <ul>
+        <li><strong>🔗 Connecteurs natifs</strong> : GSC, GA4, Google Sheets, BigQuery...</li>
+        <li><strong>📊 Visualisations</strong> : graphiques, tableaux, jauges, cartes géographiques...</li>
+        <li><strong>🎨 Personnalisation</strong> : couleurs, logos, mise en page flexible</li>
+        <li><strong>🔄 Temps réel</strong> : données actualisées automatiquement</li>
+        <li><strong>📤 Partage</strong> : lien public, PDF programmé, intégration dans site</li>
+    </ul>
+    <div class="slide-diagram mt-lg">
+        <div class="step" style="font-size: 0.9rem;">GSC + GA4</div>
+        <span class="arrow">→</span>
+        <div class="step" style="background: rgba(66, 133, 244, 0.2); border-color: #4285f4;">Looker Studio</div>
+        <span class="arrow">→</span>
+        <div class="step" style="font-size: 0.9rem;">Dashboard SEO</div>
+    </div>
+    <p class="slide-tip">💡 <strong>Astuce :</strong> Cherchez "Looker Studio SEO template" sur Google pour trouver des modèles prêts à l'emploi que vous pouvez copier et personnaliser.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔄 Mettre en place un reporting</h1>
+    <h2>Fréquence et contenu</h2>
+    <p class="text-intro">Un bon <strong>reporting SEO</strong> communique les progrès et les actions aux parties prenantes de manière claire et régulière.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>📅 Reporting hebdomadaire</h3>
+            <ul>
+                <li>Clics et impressions (tendance)</li>
+                <li>Variations de positions majeures</li>
+                <li>Problèmes techniques détectés</li>
+                <li>Actions réalisées cette semaine</li>
+            </ul>
+            <p class="text-muted mt-md">→ Pour l'équipe SEO interne</p>
+        </div>
+        <div class="comparison-col">
+            <h3>📊 Reporting mensuel</h3>
+            <ul>
+                <li>Synthèse des KPIs vs mois précédent</li>
+                <li>Évolution des positions par groupe</li>
+                <li>Analyse des pages top performers</li>
+                <li>Backlinks acquis / perdus</li>
+                <li>Recommandations et plan d'action</li>
+            </ul>
+            <p class="text-muted mt-md">→ Pour la direction / clients</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Structure d'un rapport SEO</h1>
+    <h2>Ce qu'il doit contenir</h2>
+    <p class="text-intro">Un rapport SEO efficace raconte une histoire : où en sommes-nous ? Qu'avons-nous fait ? Quels résultats ? Que faire ensuite ?</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Résumé exécutif (Executive Summary)</strong>
+                <p>3-5 points clés : tendance globale, victoires, alertes. Pour ceux qui n'ont pas le temps de tout lire.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>KPIs et tendances</strong>
+                <p>Graphiques de trafic, positions, conversions. Comparaison période précédente et N-1.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Actions réalisées</strong>
+                <p>Optimisations effectuées, contenus publiés, liens acquis, bugs corrigés.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Recommandations et prochaines étapes</strong>
+                <p>Quelles actions sont prévues ? Quels objectifs pour la prochaine période ?</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ Erreurs de mesure courantes</h1>
+    <h2>Les pièges à éviter</h2>
+    <p class="text-intro">La mesure SEO est truffée de pièges. Voici les erreurs les plus fréquentes.</p>
+    <div class="intent-grid">
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">📊 Obsession du ranking</h3>
+            <p>Se focaliser sur les positions au détriment du trafic et des conversions</p>
+            <p class="text-muted">→ Position 1 sans clics = inutile</p>
+        </div>
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">📈 Ignorer la saisonnalité</h3>
+            <p>Comparer décembre à novembre sans tenir compte des fêtes</p>
+            <p class="text-muted">→ Comparez avec N-1 (même période l'année précédente)</p>
+        </div>
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">🔢 Vanity metrics</h3>
+            <p>Célébrer des métriques qui flattent l'ego mais ne génèrent pas de business</p>
+            <p class="text-muted">→ 10M d'impressions mais 0 conversion ?</p>
+        </div>
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">⏱️ Impatience</h3>
+            <p>Juger les résultats après 2 semaines</p>
+            <p class="text-muted">→ Le SEO prend 3-6 mois minimum</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📉 Analyser une chute de trafic</h1>
+    <h2>Diagnostic méthodique</h2>
+    <p class="text-intro">Panique ! Votre trafic organique a chuté. Voici la méthodologie pour identifier la cause.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Vérifiez l'étendue du problème</strong>
+                <p>Tout le site ou certaines pages ? Tous les pays/appareils ? Toutes les requêtes ou certaines ?</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Corrélation avec une update Google ?</strong>
+                <p>Consultez les calendriers d'updates (Search Engine Roundtable, semrush.com/sensor).</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Problème technique ?</strong>
+                <p>Vérifiez la GSC : erreurs d'indexation, blocage robots.txt, problème serveur ?</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Changements récents sur le site ?</strong>
+                <p>Migration, refonte, modification de contenus, redirections cassées ?</p>
+            </div>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Checklist :</strong> GSC > Messages (pénalité manuelle ?) → Indexation → Performances filtrées par page/requête.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Définir des objectifs SMART</h1>
+    <h2>Des objectifs mesurables et atteignables</h2>
+    <p class="text-intro">Un objectif SEO doit être <strong>SMART</strong> : Spécifique, Mesurable, Atteignable, Réaliste, Temporel.</p>
+    <div class="comparison-table">
+        <div class="comparison-col" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">❌ Mauvais objectif</h3>
+            <p class="text-center" style="font-size: 1.2rem; padding: 20px 0 !important;">"Améliorer le SEO"</p>
+            <ul>
+                <li>Pas spécifique</li>
+                <li>Pas mesurable</li>
+                <li>Pas de deadline</li>
+            </ul>
+        </div>
+        <div class="comparison-col" style="border-color: rgba(52, 168, 83, 0.4);">
+            <h3 style="color: #34a853;">✅ Bon objectif</h3>
+            <p class="text-center" style="font-size: 1.1rem; padding: 20px 0 !important;">"Augmenter le trafic organique de 30% d'ici 6 mois"</p>
+            <ul>
+                <li>Spécifique : trafic organique</li>
+                <li>Mesurable : +30%</li>
+                <li>Temporel : 6 mois</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Exemples d'objectifs SMART :</strong><br>• Passer 20 mots-clés du top 20 au top 10 en 3 mois<br>• Augmenter le CTR moyen de 2.5% à 4% sur les pages blog<br>• Générer 50 leads/mois via le trafic organique</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Attribution et ROI du SEO</h1>
+    <h2>Prouver la valeur business</h2>
+    <p class="text-intro">L'<strong>attribution</strong> consiste à déterminer quel canal marketing a contribué à une conversion. Le SEO est souvent sous-évalué car il intervient tôt dans le parcours client.</p>
+    <div class="slide-diagram">
+        <div class="step" style="font-size: 0.8rem; padding: 15px;">Recherche Google<br><small>(SEO)</small></div>
+        <span class="arrow">→</span>
+        <div class="step" style="font-size: 0.8rem; padding: 15px;">Retargeting pub<br><small>(Paid)</small></div>
+        <span class="arrow">→</span>
+        <div class="step" style="font-size: 0.8rem; padding: 15px;">Email<br><small>(Newsletter)</small></div>
+        <span class="arrow">→</span>
+        <div class="step" style="font-size: 0.8rem; padding: 15px; background: rgba(52, 168, 83, 0.2); border-color: #34a853;">Achat ✓</div>
+    </div>
+    <p class="text-intro mt-lg">Dans cet exemple, le dernier clic (email) reçoit souvent tout le crédit, alors que le SEO a initié le parcours.</p>
+    <p class="slide-warning">⚠️ <strong>GA4 par défaut :</strong> utilise l'attribution "data-driven" qui répartit le crédit entre les canaux. Vérifiez vos paramètres d'attribution !</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>💰 Calculer le ROI du SEO</h1>
+    <h2>Donner une valeur monétaire</h2>
+    <p class="text-intro">Calculer le <strong>ROI</strong> (Return on Investment) du SEO permet de justifier les investissements auprès de la direction.</p>
+    <div class="code-block">
+        <span class="code-comment">Méthode 1 : Équivalent SEA (trafic payant)</span><br><br>
+        <span class="code-value-green">Valeur SEO</span> = <span class="code-value-blue">Clics organiques</span> × <span class="code-value-orange">CPC moyen du secteur</span><br><br>
+        <span class="code-comment">Exemple : 10 000 clics × 1,50€ CPC = <span class="code-value-green">15 000€/mois</span> de valeur</span>
+    </div>
+    <div class="code-block mt-md">
+        <span class="code-comment">Méthode 2 : Revenus attribués</span><br><br>
+        <span class="code-value-green">ROI SEO</span> = (<span class="code-value-blue">Revenus organic</span> - <span class="code-value-red">Coûts SEO</span>) ÷ <span class="code-value-red">Coûts SEO</span> × 100<br><br>
+        <span class="code-comment">Exemple : (50 000€ - 5 000€) ÷ 5 000€ × 100 = <span class="code-value-green">900% ROI</span></span>
+    </div>
+    <p class="slide-tip">💡 <strong>Coûts SEO à inclure :</strong> outils, rédaction, développement technique, consulting, temps interne.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛡️ Checklist Mesure & Analyse</h1>
+    <h2>Vérifiez votre dispositif</h2>
+    <ul>
+        <li>☐ <strong>Search Console</strong> : configurée et vérifiée pour tous vos domaines ?</li>
+        <li>☐ <strong>Google Analytics 4</strong> : installé avec les conversions configurées ?</li>
+        <li>☐ <strong>GSC + GA4 liés</strong> : connexion établie pour les rapports combinés ?</li>
+        <li>☐ <strong>Suivi de positions</strong> : outil configuré pour vos mots-clés prioritaires ?</li>
+        <li>☐ <strong>Dashboard</strong> : tableau de bord centralisé avec vos KPIs ?</li>
+        <li>☐ <strong>Reporting</strong> : calendrier de reporting établi (hebdo/mensuel) ?</li>
+        <li>☐ <strong>Alertes</strong> : notifications configurées pour les chutes de trafic ?</li>
+        <li>☐ <strong>Objectifs SMART</strong> : objectifs définis et suivis ?</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Récap' Chapitre 2 (Jour 3)</h1>
+    <h2>Ce qu'il faut absolument retenir</h2>
+    <ul>
+        <li>📈 <strong>KPIs essentiels</strong> : positions, impressions, clics, CTR, pages indexées, domaines référents</li>
+        <li>🔍 <strong>Search Console</strong> : outil gratuit indispensable — performances, indexation, Core Web Vitals, liens</li>
+        <li>📊 <strong>Google Analytics 4</strong> : mesure le comportement post-clic — engagement, conversions, parcours</li>
+        <li>🛠️ <strong>Outils pro</strong> : Ahrefs, SEMrush, Screaming Frog pour aller plus loin</li>
+        <li>📋 <strong>Dashboard</strong> : centralisez vos KPIs dans Looker Studio ou équivalent</li>
+        <li>🔄 <strong>Reporting</strong> : communiquez régulièrement les progrès et recommandations</li>
+        <li>💰 <strong>ROI</strong> : donnez une valeur monétaire au SEO (équivalent SEA, revenus attribués)</li>
+        <li>🎯 <strong>Objectifs SMART</strong> : spécifiques, mesurables, atteignables, réalistes, temporels</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Exercice pratique</h1>
+    <h2>Créez votre premier dashboard SEO</h2>
+    <ul>
+        <li><strong>1.</strong> Connectez-vous à <a href="https://lookerstudio.google.com" style="color: #00d4aa;">Looker Studio</a> avec votre compte Google</li>
+        <li><strong>2.</strong> Créez un nouveau rapport et ajoutez la source "Search Console"</li>
+        <li><strong>3.</strong> Ajoutez un graphique temporel : clics + impressions sur 90 jours</li>
+        <li><strong>4.</strong> Ajoutez un tableau : top 10 requêtes par clics</li>
+        <li><strong>5.</strong> Ajoutez un tableau : top 10 pages par clics</li>
+        <li><strong>6.</strong> Connectez GA4 et ajoutez : utilisateurs organic + taux d'engagement</li>
+        <li><strong>7.</strong> Personnalisez les couleurs et ajoutez votre logo</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Bonus :</strong> Programmez l'envoi automatique du rapport par email chaque lundi à votre équipe.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Chapitre 3</h1>
+    <h2>Méthodologie et gestion de projet SEO</h2>
+    <p class="text-intro">Le SEO n'est pas une action ponctuelle, c'est un <strong>processus continu</strong>. Comme tout projet, il nécessite une méthodologie rigoureuse, une planification claire et une priorisation intelligente des actions.</p>
+    <div class="slide-agenda">
+        <p>🔍 L'audit SEO : diagnostic complet du site</p>
+        <p>📊 La roadmap SEO : planifier sur 6-12 mois</p>
+        <p>⚡ Prioriser avec la matrice Impact/Effort</p>
+        <p>🔄 Les sprints SEO : méthodologie agile</p>
+        <p>👥 Gérer les parties prenantes et ressources</p>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Qu'est-ce qu'un audit SEO ?</h1>
+    <h2>Le diagnostic complet de votre présence organique</h2>
+    <p class="text-intro">Un <strong>audit SEO</strong> est une analyse exhaustive de tous les facteurs qui influencent le référencement de votre site. C'est comme un bilan de santé complet : on examine tout pour identifier les problèmes et les opportunités.</p>
+    <div class="slide-diagram">
+        <span class="step">État actuel</span>
+        <span class="arrow">→</span>
+        <span class="step">Diagnostic</span>
+        <span class="arrow">→</span>
+        <span class="step">Recommandations</span>
+        <span class="arrow">→</span>
+        <span class="step">Plan d'action</span>
+    </div>
+    <p class="slide-tip">💡 Un audit SEO doit être réalisé <strong>avant de commencer</strong> toute stratégie, puis mis à jour régulièrement (tous les 6-12 mois ou après des changements majeurs).</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔍 Les 4 piliers de l'audit SEO</h1>
+    <h2>Une analyse à 360° de votre site</h2>
+    <p class="text-intro">Un audit complet couvre quatre domaines essentiels. Négliger l'un d'entre eux, c'est construire sur des fondations instables.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>⚙️ Technique</h3>
+            <p>Crawlabilité, indexation, vitesse</p>
+            <p>Architecture, redirections, erreurs</p>
+            <p class="text-accent mt-sm">→ Le site est-il <strong>accessible</strong> aux moteurs ?</p>
+        </div>
+        <div class="intent-card">
+            <h3>📝 Contenu</h3>
+            <p>Qualité, pertinence, optimisation</p>
+            <p>Duplication, cannibalisation, gaps</p>
+            <p class="text-accent mt-sm">→ Le contenu <strong>répond-il aux besoins</strong> ?</p>
+        </div>
+        <div class="intent-card">
+            <h3>🔗 Netlinking</h3>
+            <p>Profil de backlinks, autorité</p>
+            <p>Liens toxiques, opportunités</p>
+            <p class="text-accent mt-sm">→ Le site est-il <strong>crédible</strong> aux yeux de Google ?</p>
+        </div>
+        <div class="intent-card">
+            <h3>🎯 Concurrence</h3>
+            <p>Benchmark, positionnement</p>
+            <p>Gaps de mots-clés, stratégies</p>
+            <p class="text-accent mt-sm">→ Où en êtes-vous <strong>vs la concurrence</strong> ?</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚙️ Audit technique : la checklist</h1>
+    <h2>Ce que vous devez vérifier</h2>
+    <p class="text-intro">L'audit technique identifie tous les <strong>freins techniques</strong> qui empêchent Google de crawler, indexer et comprendre votre site correctement.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>🕷️ Crawlabilité</h3>
+            <ul>
+                <li>Robots.txt bien configuré ?</li>
+                <li>Sitemap XML à jour et soumis ?</li>
+                <li>Pas de pages orphelines ?</li>
+                <li>Pas de boucles de redirections ?</li>
+                <li>Profondeur de clic raisonnable ?</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>📦 Indexation</h3>
+            <ul>
+                <li>Pages importantes indexées ?</li>
+                <li>Pas de noindex par erreur ?</li>
+                <li>Canonicals correctement définis ?</li>
+                <li>Pas de contenu dupliqué massif ?</li>
+                <li>Erreurs 4xx/5xx identifiées ?</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-note">📊 <strong>Outils recommandés :</strong> Screaming Frog, Sitebulb, Google Search Console, Ahrefs Site Audit</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚙️ Audit technique : performance</h1>
+    <h2>La vitesse et l'expérience utilisateur</h2>
+    <p class="text-intro">Les <strong>Core Web Vitals</strong> sont devenus des facteurs de classement. Un site lent perd des visiteurs ET des positions.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>⚡ LCP (Largest Contentful Paint)</h3>
+            <p>Temps de chargement du plus gros élément visible</p>
+            <p class="text-accent">Objectif : < 2.5 secondes</p>
+        </div>
+        <div class="tool-card">
+            <h3>🖱️ INP (Interaction to Next Paint)</h3>
+            <p>Réactivité aux interactions utilisateur</p>
+            <p class="text-accent">Objectif : < 200 millisecondes</p>
+        </div>
+        <div class="tool-card">
+            <h3>📐 CLS (Cumulative Layout Shift)</h3>
+            <p>Stabilité visuelle de la page</p>
+            <p class="text-accent">Objectif : < 0.1</p>
+        </div>
+        <div class="tool-card">
+            <h3>📱 Mobile-Friendly</h3>
+            <p>Adaptation aux écrans mobiles</p>
+            <p class="text-accent">Test : Mobile-Friendly Test de Google</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Outil clé :</strong> PageSpeed Insights (pagespeed.web.dev) donne un score et des recommandations concrètes.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 Audit contenu : évaluer la qualité</h1>
+    <h2>Chaque page a-t-elle une raison d'exister ?</h2>
+    <p class="text-intro">L'audit de contenu identifie les pages qui performent, celles qui sous-performent, et celles qui nuisent au site. L'objectif : <strong>garder le meilleur, améliorer ou supprimer le reste</strong>.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Inventaire complet</strong>
+                <p>Listez toutes les URLs avec leurs métriques (trafic, positions, backlinks, conversions).</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Classification</strong>
+                <p>Catégorisez : Garder / Améliorer / Fusionner / Supprimer (méthode "Content Pruning").</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Analyse qualitative</strong>
+                <p>Vérifiez : pertinence, profondeur, fraîcheur, optimisation on-page, intention couverte.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Gap analysis</strong>
+                <p>Identifiez les sujets non couverts que vos concurrents traitent (Content Gap).</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📝 La matrice d'audit de contenu</h1>
+    <h2>Décider du sort de chaque page</h2>
+    <p class="text-intro">Utilisez une matrice <strong>Trafic × Qualité</strong> pour classer vos contenus et décider quoi en faire.</p>
+    <div class="priority-matrix">
+        <div class="matrix-quadrant matrix-q1">
+            <h4 style="color: #34a853;">🌟 Stars</h4>
+            <p style="color: #ccc !important;">Fort trafic + Haute qualité</p>
+            <p class="text-muted">→ <strong>Garder</strong> et mettre à jour régulièrement</p>
+        </div>
+        <div class="matrix-quadrant matrix-q2">
+            <h4 style="color: #4285f4;">🔧 À optimiser</h4>
+            <p style="color: #ccc !important;">Faible trafic + Haute qualité</p>
+            <p class="text-muted">→ <strong>Améliorer</strong> SEO et promotion</p>
+        </div>
+        <div class="matrix-quadrant matrix-q3">
+            <h4 style="color: #fbbc04;">⚠️ À revoir</h4>
+            <p style="color: #ccc !important;">Fort trafic + Faible qualité</p>
+            <p class="text-muted">→ <strong>Réécrire</strong> pour convertir le trafic</p>
+        </div>
+        <div class="matrix-quadrant matrix-q4">
+            <h4 style="color: #ea4335;">🗑️ Candidats suppression</h4>
+            <p style="color: #ccc !important;">Faible trafic + Faible qualité</p>
+            <p class="text-muted">→ <strong>Supprimer</strong> ou fusionner</p>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ <strong>Attention :</strong> Avant de supprimer, vérifiez si la page a des backlinks. Si oui, redirigez-la (301) vers une page pertinente.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔗 Audit netlinking : profil de liens</h1>
+    <h2>La crédibilité externe de votre site</h2>
+    <p class="text-intro">L'audit netlinking analyse tous les <strong>backlinks</strong> (liens entrants) pointant vers votre site pour évaluer leur qualité et identifier les risques.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📊 Métriques à analyser</h3>
+            <p><strong>Nombre total</strong> de domaines référents</p>
+            <p><strong>Autorité</strong> des sites qui vous lient (DR/DA)</p>
+            <p><strong>Ancres</strong> utilisées (diversité, sur-optimisation ?)</p>
+        </div>
+        <div class="tool-card">
+            <h3>✅ Signaux positifs</h3>
+            <p>Liens depuis des sites <strong>thématiquement proches</strong></p>
+            <p>Liens <strong>éditoriaux</strong> dans du contenu de qualité</p>
+            <p>Croissance <strong>naturelle</strong> et régulière</p>
+        </div>
+        <div class="tool-card">
+            <h3>⚠️ Signaux d'alerte</h3>
+            <p>Pics soudains de liens (achat de liens ?)</p>
+            <p>Liens depuis des <strong>sites spam</strong> ou PBN</p>
+            <p>Ancres <strong>exactes</strong> sur-représentées</p>
+        </div>
+        <div class="tool-card">
+            <h3>🛠️ Actions correctives</h3>
+            <p><strong>Désavouer</strong> les liens toxiques (outil GSC)</p>
+            <p>Contacter les webmasters pour <strong>retrait</strong></p>
+            <p>Diversifier les <strong>ancres naturellement</strong></p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🎯 Audit concurrentiel</h1>
+    <h2>Apprendre de ceux qui réussissent</h2>
+    <p class="text-intro">L'analyse de la <strong>concurrence SEO</strong> révèle ce qui fonctionne dans votre secteur et identifie les opportunités que vous manquez.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Identifier vos vrais concurrents SEO</strong>
+                <p>Ce ne sont pas forcément vos concurrents business ! Cherchez qui se positionne sur vos mots-clés cibles.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Analyser leur visibilité</strong>
+                <p>Trafic organique estimé, nombre de mots-clés positionnés, évolution dans le temps.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Étudier leur stratégie de contenu</strong>
+                <p>Quels sujets couvrent-ils ? Quelle fréquence de publication ? Quels formats ?</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Analyser leur profil de backlinks</strong>
+                <p>D'où viennent leurs liens ? Quelles techniques utilisent-ils pour les acquérir ?</p>
+            </div>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Content Gap :</strong> Les mots-clés où vos concurrents se positionnent mais pas vous = opportunités prioritaires.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Livrables de l'audit SEO</h1>
+    <h2>Que doit contenir un bon audit ?</h2>
+    <p class="text-intro">Un audit SEO professionnel produit un <strong>document actionnable</strong>, pas juste une liste de problèmes. Voici les éléments essentiels.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>📋 Structure du rapport</h3>
+            <ul>
+                <li><strong>Executive Summary</strong> : synthèse en 1 page</li>
+                <li><strong>Score global</strong> : note sur 100 ou A-F</li>
+                <li><strong>Analyse détaillée</strong> : par pilier</li>
+                <li><strong>Recommandations</strong> : priorisées</li>
+                <li><strong>Annexes</strong> : données brutes, exports</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>✅ Chaque recommandation doit avoir</h3>
+            <ul>
+                <li><strong>Problème</strong> identifié clairement</li>
+                <li><strong>Impact</strong> estimé (faible/moyen/élevé)</li>
+                <li><strong>Effort</strong> requis (faible/moyen/élevé)</li>
+                <li><strong>Priorité</strong> (P1, P2, P3)</li>
+                <li><strong>Action</strong> concrète à réaliser</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-note">📊 Un bon audit peut contenir 50-200+ recommandations. La valeur est dans la <strong>priorisation</strong>, pas le volume.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🗓️ La roadmap SEO</h1>
+    <h2>Planifier sur 6-12 mois</h2>
+    <p class="text-intro">Une <strong>roadmap SEO</strong> transforme les recommandations de l'audit en plan d'action concret, étalé dans le temps avec des jalons mesurables.</p>
+    <div class="slide-diagram">
+        <span class="step" style="font-size: 0.9rem;">Audit<br><small>Mois 0</small></span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.9rem;">Quick Wins<br><small>Mois 1-2</small></span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.9rem;">Fondations<br><small>Mois 3-4</small></span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.9rem;">Croissance<br><small>Mois 5-12</small></span>
+    </div>
+    <ul class="mt-lg">
+        <li><strong>Quick Wins</strong> : corrections faciles à fort impact (balises, erreurs 404...)</li>
+        <li><strong>Fondations</strong> : travail technique et architectural</li>
+        <li><strong>Croissance</strong> : création de contenu, netlinking, optimisations continues</li>
+    </ul>
+    <p class="slide-warning">⚠️ Le SEO prend du temps. Ne promettez jamais de résultats avant 3-6 mois minimum.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Exemple de roadmap SEO</h1>
+    <h2>Visualiser le plan sur 6 mois</h2>
+    <p class="text-intro">Voici un exemple de roadmap type pour un projet SEO de refonte/amélioration.</p>
+    <div class="keyword-map-table">
+        <div class="km-header">
+            <span>Phase</span>
+            <span>Période</span>
+            <span>Focus</span>
+            <span>Priorité</span>
+            <span>Livrables</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kw">Audit</span>
+            <span class="km-url">Semaine 1-2</span>
+            <span>Diagnostic complet</span>
+            <span class="km-kd kd-hard-sm">P0</span>
+            <span class="km-sec">Rapport d'audit</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kw">Quick Wins</span>
+            <span class="km-url">Mois 1</span>
+            <span>Corrections rapides</span>
+            <span class="km-kd kd-hard-sm">P1</span>
+            <span class="km-sec">50+ corrections</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kw">Technique</span>
+            <span class="km-url">Mois 2-3</span>
+            <span>Performance, structure</span>
+            <span class="km-kd kd-medium-sm">P1</span>
+            <span class="km-sec">Site optimisé</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kw">Contenu</span>
+            <span class="km-url">Mois 3-6</span>
+            <span>Création, optimisation</span>
+            <span class="km-kd kd-medium-sm">P2</span>
+            <span class="km-sec">20+ articles</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kw">Netlinking</span>
+            <span class="km-url">Mois 4-6</span>
+            <span>Acquisition de liens</span>
+            <span class="km-kd kd-easy-sm">P2</span>
+            <span class="km-sec">30+ backlinks</span>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚡ La matrice Impact/Effort</h1>
+    <h2>Prioriser intelligemment les actions</h2>
+    <p class="text-intro">Face à 100+ recommandations, par où commencer ? La matrice <strong>Impact/Effort</strong> (ou matrice d'Eisenhower adaptée) permet de prioriser rationnellement.</p>
+    <div class="priority-matrix">
+        <div class="matrix-quadrant matrix-q1">
+            <h4 style="color: #34a853;">🚀 Quick Wins</h4>
+            <p style="color: #ccc !important;">Fort impact + Faible effort</p>
+            <p class="text-muted">→ À faire <strong>immédiatement</strong></p>
+        </div>
+        <div class="matrix-quadrant matrix-q2">
+            <h4 style="color: #4285f4;">📋 Projets majeurs</h4>
+            <p style="color: #ccc !important;">Fort impact + Fort effort</p>
+            <p class="text-muted">→ À <strong>planifier</strong> soigneusement</p>
+        </div>
+        <div class="matrix-quadrant matrix-q3">
+            <h4 style="color: #fbbc04;">✏️ Fill-ins</h4>
+            <p style="color: #ccc !important;">Faible impact + Faible effort</p>
+            <p class="text-muted">→ À faire <strong>si temps disponible</strong></p>
+        </div>
+        <div class="matrix-quadrant matrix-q4">
+            <h4 style="color: #ea4335;">🗑️ Time sinks</h4>
+            <p style="color: #ccc !important;">Faible impact + Fort effort</p>
+            <p class="text-muted">→ À <strong>éviter</strong> ou reporter</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚡ Exemples de Quick Wins SEO</h1>
+    <h2>Les actions à fort ROI immédiat</h2>
+    <p class="text-intro">Les <strong>Quick Wins</strong> sont des optimisations rapides à mettre en place qui peuvent avoir un impact significatif. Commencez toujours par là.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📝 Balises Title/Meta</h3>
+            <p>Optimiser les titles des pages qui rankent en position 5-15</p>
+            <p class="text-accent">Impact : CTR +20-50%</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔗 Liens internes</h3>
+            <p>Ajouter des liens vers les pages importantes depuis les articles existants</p>
+            <p class="text-accent">Impact : +positions en 2-4 semaines</p>
+        </div>
+        <div class="tool-card">
+            <h3>🚫 Erreurs 404</h3>
+            <p>Corriger ou rediriger les pages en erreur qui reçoivent du trafic/liens</p>
+            <p class="text-accent">Impact : récupération de link juice</p>
+        </div>
+        <div class="tool-card">
+            <h3>📱 Mobile issues</h3>
+            <p>Corriger les problèmes d'ergonomie mobile signalés par GSC</p>
+            <p class="text-accent">Impact : amélioration UX + rankings</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Règle d'or :</strong> Un Quick Win doit prendre moins de 2h à implémenter et montrer des résultats en moins de 4 semaines.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔄 Méthodologie Agile pour le SEO</h1>
+    <h2>Les sprints SEO</h2>
+    <p class="text-intro">La méthodologie <strong>Agile</strong>, initialement conçue pour le développement logiciel, s'adapte parfaitement au SEO. Elle permet une exécution structurée et des ajustements rapides.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>📋 Sprint SEO (2-4 semaines)</h3>
+            <ul>
+                <li><strong>Planning</strong> : définir les tâches du sprint</li>
+                <li><strong>Backlog</strong> : liste priorisée des actions</li>
+                <li><strong>Daily standup</strong> : point quotidien (5 min)</li>
+                <li><strong>Review</strong> : bilan en fin de sprint</li>
+                <li><strong>Rétrospective</strong> : amélioration continue</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>✅ Avantages pour le SEO</h3>
+            <ul>
+                <li>Flexibilité face aux updates Google</li>
+                <li>Visibilité sur l'avancement</li>
+                <li>Priorisation continue</li>
+                <li>Livraisons régulières de valeur</li>
+                <li>Adaptation aux résultats mesurés</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-note">📊 Outils recommandés : Trello, Asana, Monday, Notion, Jira pour gérer votre backlog et vos sprints.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔄 Structure d'un sprint SEO</h1>
+    <h2>Exemple concret sur 2 semaines</h2>
+    <p class="text-intro">Voici comment structurer un sprint SEO type avec les différentes phases et activités.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Jour 1 : Sprint Planning</strong>
+                <p>Sélectionner les tâches du backlog à traiter. Définir les objectifs mesurables du sprint.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Jours 2-9 : Exécution</strong>
+                <p>Réaliser les tâches : optimisations techniques, rédaction, outreach... Points quotidiens de 5 min.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Jour 10 : Sprint Review</strong>
+                <p>Présenter ce qui a été fait. Mesurer les premiers résultats. Démonstration aux parties prenantes.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Jour 10 : Rétrospective</strong>
+                <p>Qu'est-ce qui a bien fonctionné ? Qu'améliorer ? Ajuster pour le prochain sprint.</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Le backlog SEO</h1>
+    <h2>Votre liste de tâches priorisée</h2>
+    <p class="text-intro">Le <strong>backlog</strong> est la liste centralisée de toutes les actions SEO à réaliser, classées par priorité. C'est votre source unique de vérité.</p>
+    <div class="keyword-map-table">
+        <div class="km-header">
+            <span>Priorité</span>
+            <span>Tâche</span>
+            <span>Type</span>
+            <span>Effort</span>
+            <span>Statut</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kd kd-hard-sm">P1</span>
+            <span class="km-kw">Corriger erreurs 404 critiques</span>
+            <span class="km-url">Technique</span>
+            <span class="km-vol">2h</span>
+            <span style="color: #34a853;">✓ Done</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kd kd-hard-sm">P1</span>
+            <span class="km-kw">Optimiser titles pages catégories</span>
+            <span class="km-url">On-page</span>
+            <span class="km-vol">4h</span>
+            <span style="color: #fbbc04;">⏳ En cours</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kd kd-medium-sm">P2</span>
+            <span class="km-kw">Rédiger article "Guide X"</span>
+            <span class="km-url">Contenu</span>
+            <span class="km-vol">8h</span>
+            <span style="color: #888;">○ À faire</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kd kd-medium-sm">P2</span>
+            <span class="km-kw">Outreach 10 sites pour backlinks</span>
+            <span class="km-url">Netlinking</span>
+            <span class="km-vol">6h</span>
+            <span style="color: #888;">○ À faire</span>
+        </div>
+        <div class="km-row">
+            <span class="km-kd kd-easy-sm">P3</span>
+            <span class="km-kw">Ajouter FAQ Schema aux articles</span>
+            <span class="km-url">Données struct.</span>
+            <span class="km-vol">3h</span>
+            <span style="color: #888;">○ À faire</span>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>👥 Les parties prenantes SEO</h1>
+    <h2>Qui est impliqué dans un projet SEO ?</h2>
+    <p class="text-intro">Le SEO est <strong>transversal</strong> : il implique de nombreuses équipes. Identifier les parties prenantes et leurs rôles est crucial pour l'exécution.</p>
+    <div class="intent-grid">
+        <div class="intent-card">
+            <h3>👨‍💻 Équipe technique/Dev</h3>
+            <p>Implémente les corrections techniques</p>
+            <p>Performance, architecture, données structurées</p>
+            <p class="text-accent mt-sm">→ Dépendance <strong>critique</strong></p>
+        </div>
+        <div class="intent-card">
+            <h3>✍️ Équipe contenu/Rédaction</h3>
+            <p>Crée et optimise les contenus</p>
+            <p>Respect des briefs SEO, qualité éditoriale</p>
+            <p class="text-accent mt-sm">→ Collaboration <strong>quotidienne</strong></p>
+        </div>
+        <div class="intent-card">
+            <h3>📈 Direction/Marketing</h3>
+            <p>Valide la stratégie et les budgets</p>
+            <p>Attend des résultats business mesurables</p>
+            <p class="text-accent mt-sm">→ Reporting <strong>régulier</strong></p>
+        </div>
+        <div class="intent-card">
+            <h3>🎨 UX/Design</h3>
+            <p>Impacte l'expérience utilisateur</p>
+            <p>Conversion, ergonomie, Core Web Vitals</p>
+            <p class="text-accent mt-sm">→ Coordination <strong>importante</strong></p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤝 Collaborer avec les développeurs</h1>
+    <h2>La clé d'un SEO technique réussi</h2>
+    <p class="text-intro">Les développeurs sont vos alliés les plus importants pour le SEO technique. Voici comment établir une collaboration efficace.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>✅ Bonnes pratiques</h3>
+            <ul>
+                <li><strong>Documenter clairement</strong> chaque demande</li>
+                <li><strong>Expliquer le "pourquoi"</strong> SEO</li>
+                <li><strong>Prioriser</strong> vos demandes (pas tout en P1)</li>
+                <li><strong>Respecter</strong> leurs contraintes techniques</li>
+                <li><strong>Célébrer</strong> les victoires ensemble</li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>❌ À éviter</h3>
+            <ul>
+                <li>Demandes floues ("améliorer le SEO")</li>
+                <li>Urgences permanentes</li>
+                <li>Ignorer les contraintes de sprint</li>
+                <li>Ne pas tester les implémentations</li>
+                <li>Blâmer en cas de problème</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Pro tip :</strong> Créez un template de "ticket SEO" avec : URL concernée, problème, solution attendue, impact estimé, priorité.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✍️ Briefer les rédacteurs</h1>
+    <h2>Le brief SEO : structure et contenu</h2>
+    <p class="text-intro">Un <strong>brief SEO</strong> guide les rédacteurs pour créer du contenu optimisé tout en restant qualitatif pour les lecteurs.</p>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">1</span>
+            <div class="step-content">
+                <strong>Mot-clé principal + secondaires</strong>
+                <p>Le sujet central et les variations à couvrir naturellement dans le texte.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">2</span>
+            <div class="step-content">
+                <strong>Intention de recherche</strong>
+                <p>Que veut l'utilisateur ? Informatif, commercial, transactionnel ?</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">3</span>
+            <div class="step-content">
+                <strong>Structure recommandée (H1, H2, H3)</strong>
+                <p>Plan détaillé basé sur l'analyse des top résultats et des questions fréquentes.</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">4</span>
+            <div class="step-content">
+                <strong>Longueur cible et éléments à inclure</strong>
+                <p>Nombre de mots, images, tableaux, FAQ, liens internes à insérer.</p>
+            </div>
+        </div>
+    </div>
+    <p class="slide-note">📊 <strong>Outils de brief :</strong> Surfer SEO, Frase, Clearscope génèrent des briefs automatisés basés sur l'analyse SERP.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📋 Template de brief SEO</h1>
+    <h2>Les éléments essentiels</h2>
+    <p class="text-intro">Voici les informations à inclure systématiquement dans chaque brief de contenu SEO.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>📝 Informations générales</h3>
+            <ul>
+                <li><strong>Titre suggéré</strong> (optimisé SEO)</li>
+                <li><strong>URL cible</strong></li>
+                <li><strong>Mot-clé principal</strong> + volume</li>
+                <li><strong>Mots-clés secondaires</strong> (5-10)</li>
+                <li><strong>Longueur cible</strong> (mots)</li>
+                <li><strong>Persona cible</strong></li>
+            </ul>
+        </div>
+        <div class="comparison-col">
+            <h3>📐 Éléments structurels</h3>
+            <ul>
+                <li><strong>H1</strong> : titre principal</li>
+                <li><strong>H2/H3</strong> : plan détaillé</li>
+                <li><strong>Meta description</strong> suggérée</li>
+                <li><strong>Liens internes</strong> à inclure</li>
+                <li><strong>CTA</strong> (appel à l'action)</li>
+                <li><strong>FAQ</strong> à traiter</li>
+            </ul>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Bonus :</strong> Incluez 3-5 liens vers les articles concurrents top-positionnés comme référence de qualité attendue.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📈 Reporter à la direction</h1>
+    <h2>Communiquer les résultats SEO</h2>
+    <p class="text-intro">La direction veut des <strong>résultats business</strong>, pas des métriques techniques. Adaptez votre communication à votre audience.</p>
+    <div class="comparison-table">
+        <div class="comparison-col" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">❌ Langage technique</h3>
+            <p style="font-size: 1rem !important; padding: 15px 0 !important;">"Nous avons amélioré le crawl budget en réduisant les chaînes de redirections et optimisé le TTI sur mobile."</p>
+            <p class="text-muted">→ Incompréhensible pour un DG</p>
+        </div>
+        <div class="comparison-col" style="border-color: rgba(52, 168, 83, 0.4);">
+            <h3 style="color: #34a853;">✅ Langage business</h3>
+            <p style="font-size: 1rem !important; padding: 15px 0 !important;">"Le trafic organique a augmenté de 35%, générant 500 leads supplémentaires, soit un équivalent de 15 000€ de valeur publicitaire."</p>
+            <p class="text-muted">→ Impact clair et chiffré</p>
+        </div>
+    </div>
+    <p class="slide-warning">⚠️ <strong>Règle d'or :</strong> Parlez d'argent, de clients, de croissance. Pas de positions, d'indexation ou de backlinks.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⏰ Gestion du temps SEO</h1>
+    <h2>Répartir les efforts efficacement</h2>
+    <p class="text-intro">Le temps est la ressource la plus précieuse en SEO. Voici comment un consultant/équipe devrait idéalement répartir son temps.</p>
+    <div class="longtail-diagram">
+        <div class="market-share">
+            <div class="share-bar">
+                <span class="share-label">Contenu</span>
+                <div class="share-fill share-fill-google" style="width: 35%;"></div>
+                <span class="share-value">35%</span>
+            </div>
+            <div class="share-bar">
+                <span class="share-label">Technique</span>
+                <div class="share-fill share-fill-bing" style="width: 25%;"></div>
+                <span class="share-value">25%</span>
+            </div>
+            <div class="share-bar">
+                <span class="share-label">Netlinking</span>
+                <div class="share-fill share-fill-yandex" style="width: 20%;"></div>
+                <span class="share-value">20%</span>
+            </div>
+            <div class="share-bar">
+                <span class="share-label">Analyse</span>
+                <div class="share-fill share-fill-yahoo" style="width: 15%;"></div>
+                <span class="share-value">15%</span>
+            </div>
+            <div class="share-bar">
+                <span class="share-label">Reporting</span>
+                <div class="share-fill share-fill-duckduckgo" style="width: 5%;"></div>
+                <span class="share-value">5%</span>
+            </div>
+        </div>
+    </div>
+    <p class="slide-note">📊 Ces proportions varient selon la maturité SEO du site. Un site neuf aura plus de technique, un site établi plus de contenu.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🛠️ Outils de gestion de projet SEO</h1>
+    <h2>Organiser et suivre les actions</h2>
+    <p class="text-intro">Les bons outils facilitent la collaboration, le suivi et la livraison. Voici les catégories essentielles.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>📋 Gestion de tâches</h3>
+            <p><strong>Trello, Asana, Monday, Notion</strong></p>
+            <p class="text-muted">Backlog, sprints, assignation, deadlines</p>
+        </div>
+        <div class="tool-card">
+            <h3>📊 Tableaux de bord</h3>
+            <p><strong>Looker Studio, Google Sheets, Databox</strong></p>
+            <p class="text-muted">KPIs, visualisation, rapports automatisés</p>
+        </div>
+        <div class="tool-card">
+            <h3>📝 Documentation</h3>
+            <p><strong>Notion, Confluence, Google Docs</strong></p>
+            <p class="text-muted">Audits, briefs, procédures, wiki SEO</p>
+        </div>
+        <div class="tool-card">
+            <h3>💬 Communication</h3>
+            <p><strong>Slack, Teams, Discord</strong></p>
+            <p class="text-muted">Échanges rapides, alertes, channels dédiés</p>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>Conseil :</strong> Un outil simple bien utilisé vaut mieux qu'un outil complexe mal maîtrisé. Commencez par Google Sheets + Trello.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🔄 Le cycle SEO continu</h1>
+    <h2>Amélioration permanente</h2>
+    <p class="text-intro">Le SEO n'est jamais "fini". C'est un <strong>cycle d'amélioration continue</strong> qui s'adapte aux évolutions de Google, de la concurrence et de votre business.</p>
+    <div class="slide-diagram" style="flex-wrap: wrap;">
+        <span class="step" style="font-size: 0.85rem;">Analyser</span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.85rem;">Planifier</span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.85rem;">Exécuter</span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.85rem;">Mesurer</span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.85rem;">Ajuster</span>
+        <span class="arrow">→</span>
+        <span class="step" style="font-size: 0.85rem; background: rgba(0, 212, 170, 0.3);">🔄 Répéter</span>
+    </div>
+    <ul class="mt-lg">
+        <li><strong>Analyser</strong> : données, concurrence, opportunités</li>
+        <li><strong>Planifier</strong> : prioriser, roadmap, backlog</li>
+        <li><strong>Exécuter</strong> : sprints, implémentation</li>
+        <li><strong>Mesurer</strong> : KPIs, résultats</li>
+        <li><strong>Ajuster</strong> : itérer, optimiser</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>⚠️ Erreurs de gestion projet SEO</h1>
+    <h2>Les pièges à éviter</h2>
+    <p class="text-intro">Voici les erreurs les plus courantes dans la gestion de projets SEO et comment les éviter.</p>
+    <div class="intent-grid">
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">🎯 Pas d'objectifs clairs</h3>
+            <p>"Améliorer le SEO" n'est pas un objectif</p>
+            <p class="text-muted">→ Définissez des objectifs SMART mesurables</p>
+        </div>
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">📋 Pas de priorisation</h3>
+            <p>Tout faire en même temps = rien de bien fait</p>
+            <p class="text-muted">→ Utilisez la matrice Impact/Effort</p>
+        </div>
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">🏃 Impatience</h3>
+            <p>Attendre des résultats après 2 semaines</p>
+            <p class="text-muted">→ Le SEO prend 3-6 mois minimum</p>
+        </div>
+        <div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+            <h3 style="color: #ea4335;">📊 Pas de suivi</h3>
+            <p>Agir sans mesurer les résultats</p>
+            <p class="text-muted">→ Dashboard + reporting régulier</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📅 Checklist lancement projet SEO</h1>
+    <h2>Les étapes incontournables</h2>
+    <p class="text-intro">Avant de vous lancer, assurez-vous d'avoir coché toutes ces cases pour un projet SEO bien structuré.</p>
+    <ul>
+        <li>☐ <strong>Audit complet</strong> réalisé (technique, contenu, netlinking, concurrence)</li>
+        <li>☐ <strong>Objectifs SMART</strong> définis et validés par la direction</li>
+        <li>☐ <strong>KPIs</strong> identifiés avec baseline (point de départ)</li>
+        <li>☐ <strong>Roadmap</strong> 6-12 mois établie avec jalons</li>
+        <li>☐ <strong>Backlog</strong> créé et priorisé</li>
+        <li>☐ <strong>Ressources</strong> allouées (budget, équipe, outils)</li>
+        <li>☐ <strong>Parties prenantes</strong> identifiées et briefées</li>
+        <li>☐ <strong>Outils de tracking</strong> configurés (GSC, GA4, rank tracker)</li>
+        <li>☐ <strong>Dashboard</strong> de suivi créé</li>
+        <li>☐ <strong>Calendrier de reporting</strong> défini</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>💼 SEO en interne vs agence</h1>
+    <h2>Quelle organisation choisir ?</h2>
+    <p class="text-intro">Faut-il internaliser le SEO ou faire appel à une agence ? Chaque option a ses avantages selon votre contexte.</p>
+    <div class="comparison-table">
+        <div class="comparison-col">
+            <h3>🏢 SEO en interne</h3>
+            <ul>
+                <li><strong>+</strong> Connaissance profonde du business</li>
+                <li><strong>+</strong> Réactivité maximale</li>
+                <li><strong>+</strong> Intégration avec les équipes</li>
+                <li><strong>-</strong> Coût fixe (salaires)</li>
+                <li><strong>-</strong> Risque de "tunnel vision"</li>
+                <li><strong>-</strong> Formation continue nécessaire</li>
+            </ul>
+            <p class="text-accent mt-md">→ Idéal si SEO = avantage concurrentiel clé</p>
+        </div>
+        <div class="comparison-col">
+            <h3>🏛️ Agence SEO</h3>
+            <ul>
+                <li><strong>+</strong> Expertise multi-secteurs</li>
+                <li><strong>+</strong> Accès aux meilleurs outils</li>
+                <li><strong>+</strong> Vision externe objective</li>
+                <li><strong>-</strong> Moins de disponibilité</li>
+                <li><strong>-</strong> Courbe d'apprentissage métier</li>
+                <li><strong>-</strong> Coût variable (forfaits)</li>
+            </ul>
+            <p class="text-accent mt-md">→ Idéal pour expertise ponctuelle ou scaling</p>
+        </div>
+    </div>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🤝 Modèle hybride</h1>
+    <h2>Le meilleur des deux mondes</h2>
+    <p class="text-intro">De nombreuses entreprises optent pour un <strong>modèle hybride</strong> : un responsable SEO interne + support agence pour l'expertise et les ressources complémentaires.</p>
+    <div class="topic-cluster-diagram">
+        <div class="pillar-page" style="background: linear-gradient(135deg, rgba(52, 168, 83, 0.3), rgba(52, 168, 83, 0.1)); border-color: #34a853;">
+            <strong style="color: #34a853;">🏢 INTERNE</strong>
+            <p>Responsable SEO</p>
+            <p class="text-muted" style="font-size: 0.85rem !important;">Stratégie, pilotage, coordination</p>
+        </div>
+        <div class="cluster-links">
+            <span>↔</span>
+            <span>↔</span>
+        </div>
+        <div class="cluster-pages" style="gap: 12px;">
+            <div class="cluster-page" style="background: rgba(124, 58, 237, 0.15); border-color: rgba(124, 58, 237, 0.4); color: #a78bfa;">Agence technique</div>
+            <div class="cluster-page" style="background: rgba(124, 58, 237, 0.15); border-color: rgba(124, 58, 237, 0.4); color: #a78bfa;">Rédacteurs freelance</div>
+            <div class="cluster-page" style="background: rgba(124, 58, 237, 0.15); border-color: rgba(124, 58, 237, 0.4); color: #a78bfa;">Consultant netlinking</div>
+        </div>
+    </div>
+    <p class="slide-tip">💡 <strong>L'interne pilote, l'externe exécute.</strong> Le responsable SEO gère la stratégie et coordonne les prestataires spécialisés.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>📊 Estimer le budget SEO</h1>
+    <h2>Les postes de dépenses à prévoir</h2>
+    <p class="text-intro">Un budget SEO réaliste doit couvrir plusieurs postes. Voici une répartition type pour une stratégie complète.</p>
+    <div class="tools-grid">
+        <div class="tool-card">
+            <h3>🛠️ Outils (~15-20%)</h3>
+            <p>Ahrefs/SEMrush : 100-400€/mois</p>
+            <p>Screaming Frog : ~200€/an</p>
+            <p class="text-muted">+ outils complémentaires</p>
+        </div>
+        <div class="tool-card">
+            <h3>✍️ Contenu (~40-50%)</h3>
+            <p>Rédaction : 0.10-0.50€/mot</p>
+            <p>Soit 100-500€/article de qualité</p>
+            <p class="text-muted">Le poste le plus important</p>
+        </div>
+        <div class="tool-card">
+            <h3>🔗 Netlinking (~20-30%)</h3>
+            <p>Outreach, RP digitales</p>
+            <p>Articles sponsorisés (si autorisé)</p>
+            <p class="text-muted">Variable selon stratégie</p>
+        </div>
+        <div class="tool-card">
+            <h3>👨‍💻 Expertise (~10-20%)</h3>
+            <p>Consultant/Agence : 500-2000€/jour</p>
+            <p>Audit initial, accompagnement</p>
+            <p class="text-muted">Selon niveau d'externalisation</p>
+        </div>
+    </div>
+    <p class="slide-note">📊 <strong>Budget minimum réaliste :</strong> 1000-2000€/mois pour un site PME souhaitant des résultats significatifs.</p>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>✅ Récap' Chapitre 3</h1>
+    <h2>Ce qu'il faut absolument retenir</h2>
+    <ul>
+        <li>🔍 <strong>Audit SEO</strong> : point de départ obligatoire — technique, contenu, netlinking, concurrence</li>
+        <li>📊 <strong>Roadmap</strong> : planifier sur 6-12 mois avec Quick Wins → Fondations → Croissance</li>
+        <li>⚡ <strong>Priorisation</strong> : matrice Impact/Effort pour traiter d'abord les Quick Wins</li>
+        <li>🔄 <strong>Sprints SEO</strong> : méthode agile en cycles de 2-4 semaines</li>
+        <li>📋 <strong>Backlog</strong> : liste centralisée et priorisée de toutes les actions</li>
+        <li>👥 <strong>Parties prenantes</strong> : dev, contenu, direction — adaptez votre communication</li>
+        <li>✍️ <strong>Briefs SEO</strong> : guidez les rédacteurs avec des briefs structurés</li>
+        <li>🔄 <strong>Cycle continu</strong> : Analyser → Planifier → Exécuter → Mesurer → Ajuster → Répéter</li>
+    </ul>
+</div>`,
+
+                `<div class="slide-seo">
+    <h1>🧠 Exercice pratique</h1>
+    <h2>Créez votre backlog SEO</h2>
+    <ul>
+        <li><strong>1.</strong> Choisissez un site (le vôtre ou un site exemple)</li>
+        <li><strong>2.</strong> Identifiez 20 actions SEO potentielles (utilisez les chapitres précédents)</li>
+        <li><strong>3.</strong> Pour chaque action, évaluez :</li>
+        <ul style="margin-left: 20px;">
+            <li>Impact potentiel (1-5)</li>
+            <li>Effort requis (1-5)</li>
+            <li>Calcul : Score = Impact / Effort</li>
+        </ul>
+        <li><strong>4.</strong> Classez les actions par score décroissant</li>
+        <li><strong>5.</strong> Sélectionnez les 5 premières pour votre "Sprint 1"</li>
+        <li><strong>6.</strong> Estimez le temps nécessaire et les ressources</li>
+    </ul>
+    <p class="slide-tip">💡 <strong>Template :</strong> Utilisez Google Sheets ou Notion pour créer votre backlog. Colonnes : Action | Type | Impact | Effort | Score | Statut | Assigné</p>
 </div>`
             ]
         }
