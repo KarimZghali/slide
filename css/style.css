@@ -253,6 +253,120 @@ body {
     color: #888;
 }
 
+/* Wrapper du compteur */
+.slide-counter-wrapper {
+    position: relative;
+}
+
+/* Compteur cliquable */
+.slide-counter-clickable {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    user-select: none;
+}
+
+.slide-counter-clickable:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Sélecteur de slide (picker) */
+.slide-picker {
+    position: absolute;
+    bottom: calc(100% + 12px);
+    left: 50%;
+    transform: translateX(-50%) scale(0.95);
+    background: rgba(30, 30, 50, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease;
+    z-index: 100;
+}
+
+.slide-picker.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) scale(1);
+}
+
+.slide-picker label {
+    font-size: 0.9rem;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.slide-picker-input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.slide-picker input[type="number"] {
+    width: 70px;
+    padding: 8px 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.slide-picker input[type="number"]:focus {
+    border-color: #4a90d9;
+}
+
+/* Cacher les spinners sur l'input number */
+.slide-picker input[type="number"]::-webkit-outer-spin-button,
+.slide-picker input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.slide-picker input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.slide-picker-separator {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+#slide-picker-total {
+    color: #888;
+    font-size: 1.1rem;
+    min-width: 30px;
+}
+
+.slide-picker-btn {
+    background: #4a90d9;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+    width: 100%;
+}
+
+.slide-picker-btn:hover {
+    background: #3a7bc8;
+}
+
 /* ==================== BARRE DE PROGRESSION ==================== */
 .progress-bar {
     width: 96%;
@@ -529,6 +643,243 @@ body {
     color: #fff;
     font-weight: 600;
     min-width: 50px;
+}
+
+/* ==================== CLASSES UTILITAIRES SLIDES ==================== */
+
+/* Textes */
+.text-intro {
+    color: #aaa;
+    margin-bottom: 16px;
+}
+
+.text-intro-lg {
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+.text-muted {
+    color: #888;
+}
+
+.text-light {
+    color: #ccc;
+}
+
+.text-accent {
+    color: #00d4aa;
+}
+
+.text-info {
+    color: #7eb8ff;
+}
+
+.text-warning-color {
+    color: #fbbf24;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-sm {
+    margin-top: 8px;
+}
+
+.mt-md {
+    margin-top: 16px;
+}
+
+.mt-lg {
+    margin-top: 20px;
+}
+
+.mt-xl {
+    margin-top: 24px;
+}
+
+.mb-md {
+    margin-bottom: 12px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+/* Blocs de code */
+.code-block {
+    background: #1a1a2e;
+    padding: 16px;
+    border-radius: 8px;
+    font-family: 'SF Mono', Monaco, monospace;
+    font-size: 0.9rem;
+    margin: 16px 0;
+    overflow-x: auto;
+}
+
+.code-block-sm {
+    background: #1a1a2e;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-family: 'SF Mono', Monaco, monospace;
+    font-size: 0.85rem;
+    margin-bottom: 16px;
+}
+
+.code-comment {
+    color: #888;
+}
+
+.code-keyword {
+    color: #7eb8ff;
+}
+
+.code-value-green {
+    color: #00d4aa;
+}
+
+.code-value-orange {
+    color: #ffaa00;
+}
+
+.code-value-red {
+    color: #ea4335;
+}
+
+.code-value-blue {
+    color: #4285f4;
+}
+
+/* Labels pour directives */
+.label-disallow {
+    color: #ea4335;
+    font-weight: bold;
+}
+
+.label-allow {
+    color: #34a853;
+    font-weight: bold;
+}
+
+.label-sitemap {
+    color: #4285f4;
+    font-weight: bold;
+}
+
+/* Market share - couleurs des barres */
+.share-fill-google {
+    background: linear-gradient(90deg, #4285f4, #34a853);
+}
+
+.share-fill-bing {
+    background: #00a4ef;
+}
+
+.share-fill-yandex {
+    background: #ff0000;
+}
+
+.share-fill-yahoo {
+    background: #720e9e;
+}
+
+.share-fill-duckduckgo {
+    background: #de5833;
+}
+
+.share-fill-baidu {
+    background: #2932e1;
+}
+
+.share-fill-good {
+    background: #34a853;
+}
+
+.share-fill-ok {
+    background: #fbbc04;
+}
+
+.share-fill-bad {
+    background: #ea4335;
+}
+
+/* Largeurs des barres (en %) */
+.w-100 { width: 100%; }
+.w-50 { width: 50%; }
+.w-30 { width: 30%; }
+.w-20 { width: 20%; }
+.w-4 { width: 4.4%; }
+.w-3 { width: 2.8%; }
+.w-1-5 { width: 1.4%; }
+.w-1 { width: 0.9%; }
+.w-0-7 { width: 0.7%; }
+
+/* Flex utilities */
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-sm {
+    gap: 8px;
+}
+
+.gap-md {
+    gap: 12px;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* Core Web Vitals */
+.cwv-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cwv-lcp {
+    background: #4285f4;
+}
+
+.cwv-inp {
+    background: #ea4335;
+}
+
+.cwv-cls {
+    background: #34a853;
+}
+
+/* Architecture du site */
+.step-home {
+    width: 120px;
+}
+
+.step-sm {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+}
+
+.arch-categories {
+    display: flex;
+    gap: 20px;
+}
+
+.arch-pages {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* URL examples */
+.url-bad {
+    color: #ea4335;
+    margin-bottom: 8px;
+}
+
+.url-good {
+    color: #34a853;
 }
 
 /* ==================== RESPONSIVE ==================== */

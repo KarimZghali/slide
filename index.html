@@ -13,7 +13,7 @@
         <div class="theme-list" id="theme-list">
             <!-- Rempli dynamiquement par JS -->
         </div>
-    </div>
+    </div>sommaire-formation-seo.md
 
     <!-- Container des slides (caché au départ) -->
     <div class="slideshow-container" id="slideshow-container" style="display: none;">
@@ -31,7 +31,19 @@
         <!-- Navigation -->
         <div class="nav-controls">
             <button id="prev-btn" onclick="changeSlide(-1)">← Précédent</button>
-            <span id="slide-counter">1 / 1</span>
+            <div class="slide-counter-wrapper">
+                <span id="slide-counter" class="slide-counter-clickable" title="Cliquer pour aller à une slide (ou appuyer sur G)">1 / 1</span>
+                <!-- Sélecteur de slide -->
+                <div class="slide-picker" id="slide-picker">
+                    <label>Aller à la slide :</label>
+                    <div class="slide-picker-input-group">
+                        <input type="number" id="slide-picker-input" min="1" max="1" value="1">
+                        <span class="slide-picker-separator">/</span>
+                        <span id="slide-picker-total">1</span>
+                    </div>
+                    <button id="slide-picker-go" class="slide-picker-btn">OK</button>
+                </div>
+            </div>
             <button id="next-btn" onclick="changeSlide(1)">Suivant →</button>
         </div>
     </div>

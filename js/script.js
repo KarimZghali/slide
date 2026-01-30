@@ -114,6 +114,9 @@ document.addEventListener('keydown', (e) => {
     // Ignorer si on est dans le menu des thèmes
     if (!currentTheme) return;
 
+    // Ignorer si on est dans un input
+    if (e.target.tagName === 'INPUT') return;
+
     switch(e.key) {
         case 'ArrowRight':
         case ' ':
@@ -136,10 +139,137 @@ document.addEventListener('keydown', (e) => {
             break;
         case 'Escape':
             e.preventDefault();
-            showThemeMenu();
+            if (slidePickerVisible) {
+                hideSlidePicker();
+            } else {
+                showThemeMenu();
+            }
+            break;
+        case 'g':
+            // Raccourci "g" pour ouvrir le sélecteur de slide
+            if (!slidePickerVisible) {
+                e.preventDefault();
+                showSlidePicker();
+            }
             break;
     }
 });
 
+// Navigation à la molette de souris
+let wheelThrottle = false;
+document.addEventListener('wheel', (e) => {
+    // Ignorer si on est dans le menu des thèmes
+    if (!currentTheme) return;
+
+    // Ignorer si on est dans le picker
+    if (slidePickerVisible) return;
+
+    // Ignorer si on scroll dans le contenu de la slide
+    const slideContentEl = document.getElementById('slide-content');
+    if (slideContentEl && slideContentEl.contains(e.target)) {
+        // Permettre le scroll normal si le contenu déborde
+        const hasOverflow = slideContentEl.scrollHeight > slideContentEl.clientHeight;
+        if (hasOverflow) {
+            // Vérifier si on est au début ou à la fin du scroll
+            const atTop = slideContentEl.scrollTop === 0;
+            const atBottom = slideContentEl.scrollTop + slideContentEl.clientHeight >= slideContentEl.scrollHeight - 1;
+
+            // Si on scroll vers le haut et on n'est pas en haut, laisser scroller
+            if (e.deltaY < 0 && !atTop) return;
+            // Si on scroll vers le bas et on n'est pas en bas, laisser scroller
+            if (e.deltaY > 0 && !atBottom) return;
+        }
+    }
+
+    // Throttle pour éviter les changements trop rapides
+    if (wheelThrottle) return;
+    wheelThrottle = true;
+    setTimeout(() => { wheelThrottle = false; }, 300);
+
+    if (e.deltaY > 0) {
+        changeSlide(1);  // Scroll vers le bas = slide suivante
+    } else if (e.deltaY < 0) {
+        changeSlide(-1); // Scroll vers le haut = slide précédente
+    }
+}, { passive: true });
+
+// ==================== SÉLECTEUR DE SLIDE ====================
+let slidePickerVisible = false;
+
+// Afficher le sélecteur de slide
+function showSlidePicker() {
+    if (!currentTheme) return;
+
+    slidePickerVisible = true;
+    const picker = document.getElementById('slide-picker');
+    const input = document.getElementById('slide-picker-input');
+
+    picker.classList.add('visible');
+    input.value = currentSlideIndex + 1;
+    input.max = slidesContent.length;
+    input.select();
+    input.focus();
+
+    // Mettre à jour le total
+    document.getElementById('slide-picker-total').textContent = slidesContent.length;
+}
+
+// Masquer le sélecteur de slide
+function hideSlidePicker() {
+    slidePickerVisible = false;
+    const picker = document.getElementById('slide-picker');
+    picker.classList.remove('visible');
+}
+
+// Aller à la slide sélectionnée
+function goToSelectedSlide() {
+    const input = document.getElementById('slide-picker-input');
+    const slideNum = parseInt(input.value, 10);
+
+    if (!isNaN(slideNum) && slideNum >= 1 && slideNum <= slidesContent.length) {
+        goToSlide(slideNum - 1);
+    }
+    hideSlidePicker();
+}
+
+// Initialiser les événements du picker
+function initSlidePicker() {
+    const counter = document.getElementById('slide-counter');
+    const picker = document.getElementById('slide-picker');
+    const input = document.getElementById('slide-picker-input');
+    const goBtn = document.getElementById('slide-picker-go');
+
+    // Clic sur le compteur pour ouvrir le picker
+    counter.addEventListener('click', () => {
+        if (slidePickerVisible) {
+            hideSlidePicker();
+        } else {
+            showSlidePicker();
+        }
+    });
+
+    // Bouton Go
+    goBtn.addEventListener('click', goToSelectedSlide);
+
+    // Entrée dans l'input
+    input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            goToSelectedSlide();
+        } else if (e.key === 'Escape') {
+            e.preventDefault();
+            hideSlidePicker();
+        }
+    });
+
+    // Clic en dehors pour fermer
+    document.addEventListener('click', (e) => {
+        if (slidePickerVisible && !picker.contains(e.target) && e.target !== counter) {
+            hideSlidePicker();
+        }
+    });
+}
+
 // Démarrer
 init();
+initSlidePicker();
