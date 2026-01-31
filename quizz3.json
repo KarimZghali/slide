@@ -1,0 +1,556 @@
+{
+  "titre": "Quiz - Chapitre 3 : Les nouveaux formats et la recherche moderne",
+  "description": "Questions sur le Jour 1, Chapitre 3 de la formation SEO - La recherche vocale, le SEO video, Google Discover/News, l'IA generative et la SGE",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Quel pourcentage des recherches integre desormais une composante vocale ?",
+      "reponses": [
+        "Plus de 20%",
+        "Plus de 50%",
+        "Plus de 70%",
+        "Plus de 90%"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 2,
+      "question": "Quelle est la principale difference entre une requete textuelle et une requete vocale ?",
+      "reponses": [
+        "Les requetes vocales sont plus courtes",
+        "Les requetes vocales sont plus longues et conversationnelles",
+        "Les requetes vocales utilisent uniquement des mots-cles",
+        "Il n'y a aucune difference"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 3,
+      "question": "Quel pourcentage des recherches vocales est effectue sur mobile ?",
+      "reponses": [
+        "50%",
+        "60%",
+        "70%",
+        "80%"
+      ],
+      "bonne_reponse": 3
+    },
+    {
+      "id": 4,
+      "question": "Quel pourcentage des recherches vocales est de nature locale ?",
+      "reponses": [
+        "20%",
+        "30%",
+        "40%",
+        "60%"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 5,
+      "question": "Quelle est la longueur moyenne ideale d'une reponse pour un Featured Snippet ?",
+      "reponses": [
+        "15 mots",
+        "29 mots",
+        "50 mots",
+        "100 mots"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 6,
+      "question": "Qu'est-ce que la Position Zero ?",
+      "reponses": [
+        "Le premier resultat payant",
+        "Le Featured Snippet au-dessus des resultats organiques",
+        "Le resultat en bas de page",
+        "Le Knowledge Panel"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 7,
+      "question": "Quel type de Featured Snippet est adapte aux definitions et explications courtes ?",
+      "reponses": [
+        "Liste a puces",
+        "Tableau",
+        "Paragraphe",
+        "Liste numerotee"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 8,
+      "question": "Quel type de Featured Snippet est adapte aux processus etape par etape ?",
+      "reponses": [
+        "Paragraphe",
+        "Tableau",
+        "Liste a puces",
+        "Liste numerotee"
+      ],
+      "bonne_reponse": 3
+    },
+    {
+      "id": 9,
+      "question": "Quelle est la position de YouTube parmi les sites les plus visites au monde ?",
+      "reponses": [
+        "1er",
+        "2eme",
+        "3eme",
+        "5eme"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 10,
+      "question": "Combien d'utilisateurs actifs mensuels compte YouTube ?",
+      "reponses": [
+        "500 millions",
+        "1 milliard",
+        "2 milliards",
+        "3 milliards"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 11,
+      "question": "Quelle est la longueur maximale recommandee pour un titre YouTube ?",
+      "reponses": [
+        "40 caracteres",
+        "50 caracteres",
+        "60 caracteres",
+        "80 caracteres"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 12,
+      "question": "Combien de tags sont recommandes pour une video YouTube ?",
+      "reponses": [
+        "1-3",
+        "5-10",
+        "15-20",
+        "Plus de 30"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 13,
+      "question": "Quel format est recommande pour les miniatures YouTube ?",
+      "reponses": [
+        "4:3",
+        "1:1",
+        "16:9",
+        "21:9"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 14,
+      "question": "Quel est le facteur numero 1 de l'algorithme YouTube ?",
+      "reponses": [
+        "Le nombre de likes",
+        "Le Watch Time (temps de visionnage)",
+        "Le nombre de commentaires",
+        "Le nombre d'abonnes"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 15,
+      "question": "Quel taux de retention minimum faut-il viser sur YouTube ?",
+      "reponses": [
+        "Plus de 25%",
+        "Plus de 50%",
+        "Plus de 75%",
+        "Plus de 90%"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 16,
+      "question": "Qu'est-ce que le 'Session Watch Time' sur YouTube ?",
+      "reponses": [
+        "Le temps de visionnage d'une seule video",
+        "Le temps passe sur YouTube apres avoir vu votre video",
+        "Le temps moyen par session utilisateur",
+        "Le temps avant le premier clic"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 17,
+      "question": "Quel balisage Schema utiliser pour les videos ?",
+      "reponses": [
+        "VideoSchema",
+        "MediaObject",
+        "VideoObject",
+        "MovieClip"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 18,
+      "question": "Que sont les 'Key Moments' dans les resultats Google ?",
+      "reponses": [
+        "Les moments cles d'une video bases sur les timestamps",
+        "Les videos les plus populaires",
+        "Les moments de forte audience",
+        "Les publicites dans les videos"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "id": 19,
+      "question": "Qu'est-ce que Google Discover ?",
+      "reponses": [
+        "Un moteur de recherche alternatif",
+        "Un flux de contenu personnalise sans requete de l'utilisateur",
+        "Un outil d'analyse SEO",
+        "Une extension Chrome"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 20,
+      "question": "Quelle est la largeur minimale recommandee pour les images sur Google Discover ?",
+      "reponses": [
+        "600px",
+        "800px",
+        "1200px",
+        "1920px"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 21,
+      "question": "Quelle caracteristique distingue Google Discover de Google Search ?",
+      "reponses": [
+        "Discover utilise uniquement des mots-cles",
+        "Discover suggere du contenu base sur les centres d'interet",
+        "Discover est plus lent",
+        "Discover n'affiche que des videos"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 22,
+      "question": "Quel type de trafic genere Google Discover ?",
+      "reponses": [
+        "Trafic stable et previsible",
+        "Trafic volatile mais potentiellement massif",
+        "Trafic uniquement mobile",
+        "Trafic exclusivement payant"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 23,
+      "question": "Pendant combien de temps un article peut-il figurer dans un sitemap Google News ?",
+      "reponses": [
+        "24 heures",
+        "2 jours",
+        "1 semaine",
+        "1 mois"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 24,
+      "question": "Quel critere n'est PAS une exigence pour Google News ?",
+      "reponses": [
+        "Contenu original",
+        "Equipe editoriale identifiee",
+        "Au moins 1000 articles publies",
+        "Mentions legales visibles"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 25,
+      "question": "Quel namespace XML est utilise pour les sitemaps Google News ?",
+      "reponses": [
+        "xmlns:news",
+        "xmlns:google-news",
+        "xmlns:article",
+        "xmlns:press"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "id": 26,
+      "question": "Qu'est-ce que la SGE (Search Generative Experience) ?",
+      "reponses": [
+        "Un nouveau moteur de recherche",
+        "Une reponse IA integree directement dans les resultats Google",
+        "Un plugin Chrome",
+        "Un outil de generation de contenu"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 27,
+      "question": "Quel pourcentage des recherches sont des 'Zero-Click Searches' ?",
+      "reponses": [
+        "Environ 25%",
+        "Environ 45%",
+        "Environ 65%",
+        "Environ 85%"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 28,
+      "question": "Qu'est-ce qu'une 'Zero-Click Search' ?",
+      "reponses": [
+        "Une recherche sans resultats",
+        "Une recherche ou l'utilisateur obtient sa reponse sans cliquer sur un site",
+        "Une recherche vocale",
+        "Une recherche payante"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 29,
+      "question": "Quelle strategie est recommandee face a l'IA generative ?",
+      "reponses": [
+        "Creer du contenu generique facilement resumable",
+        "Creer du contenu 'non-resumable' (outils, donnees exclusives)",
+        "Arreter de publier du contenu",
+        "Se concentrer uniquement sur la publicite payante"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 30,
+      "question": "Pourquoi l'experience personnelle est-elle importante face a l'IA ?",
+      "reponses": [
+        "L'IA prefere les temoignages",
+        "L'IA ne peut pas avoir VECU l'experience decrite",
+        "Les experiences sont mieux referencees",
+        "Google valorise les recits personnels"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 31,
+      "question": "Quel type de contenu devrait viser pour eviter la cannibalisation par l'IA ?",
+      "reponses": [
+        "Definitions simples",
+        "Listes de faits",
+        "Comparatifs, guides approfondis, tutoriels",
+        "Actualites breves"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 32,
+      "question": "Quel schema de donnees structurees est adapte aux questions/reponses ?",
+      "reponses": [
+        "HowTo",
+        "FAQPage",
+        "Review",
+        "Event"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 33,
+      "question": "Quel schema de donnees structurees affiche des etapes avec images dans Google ?",
+      "reponses": [
+        "FAQPage",
+        "Article",
+        "HowTo",
+        "Recipe"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 34,
+      "question": "Quel element booste le CTR grace aux etoiles dans les SERPs ?",
+      "reponses": [
+        "FAQPage",
+        "HowTo",
+        "Review",
+        "Event"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 35,
+      "question": "Qu'est-ce que le Knowledge Graph de Google ?",
+      "reponses": [
+        "Un outil d'analyse",
+        "Une base de donnees reliant les entites entre elles",
+        "Un graphique de performance",
+        "Un type de Featured Snippet"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 36,
+      "question": "Quel element aide a entrer dans le Knowledge Graph ?",
+      "reponses": [
+        "Beaucoup de publicites",
+        "Wikipedia, Wikidata, Google Business Profile",
+        "Un grand nombre de pages",
+        "Des liens payants"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 37,
+      "question": "Qu'est-ce qu'un Knowledge Panel ?",
+      "reponses": [
+        "Un encadre affichant les informations d'une entite reconnue",
+        "Un tableau de bord Google",
+        "Une page Wikipedia",
+        "Un type de publicite"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "id": 38,
+      "question": "Quel outil Google permet de valider les donnees structurees ?",
+      "reponses": [
+        "Google Analytics",
+        "Google Search Console",
+        "Rich Results Test",
+        "PageSpeed Insights"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 39,
+      "question": "Quel est le paradoxe du Featured Snippet ?",
+      "reponses": [
+        "Il est difficile a obtenir mais inutile",
+        "Il peut reduire les clics mais capte 100% des reponses vocales",
+        "Il n'apparait que sur mobile",
+        "Il est toujours payant"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 40,
+      "question": "Quel type de requete est particulierement adapte a la recherche vocale ?",
+      "reponses": [
+        "Requetes de navigation de marque",
+        "Requetes avec des mots-cles courts",
+        "Requetes formulees sous forme de questions",
+        "Requetes techniques complexes"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 41,
+      "question": "Quelle structure de contenu est recommandee pour les pages FAQ ?",
+      "reponses": [
+        "Questions en H1, reponses en H2",
+        "Questions en H2, reponses courtes en paragraphe",
+        "Tout en paragraphes sans hierarchie",
+        "Questions et reponses dans des tableaux"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 42,
+      "question": "Pourquoi optimiser sa fiche Google Business pour la recherche vocale ?",
+      "reponses": [
+        "Car 40% des recherches vocales sont locales",
+        "Car c'est obligatoire pour le SEO",
+        "Car Google penalise les fiches non optimisees",
+        "Car cela ameliore la vitesse du site"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "id": 43,
+      "question": "Qu'est-ce que le 'Clickbait' sur YouTube et pourquoi l'eviter ?",
+      "reponses": [
+        "Un format publicitaire qui augmente les revenus",
+        "Un titre accrocheur qui decoit et fait baisser la retention",
+        "Une technique pour gagner des abonnes",
+        "Une strategie recommandee par YouTube"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 44,
+      "question": "Quelle longueur de description est recommandee pour une video YouTube ?",
+      "reponses": [
+        "50-100 mots",
+        "200-300 mots",
+        "500-600 mots",
+        "Plus de 1000 mots"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 45,
+      "question": "Quelles requetes sont qualifiees de 'video-friendly' par Google ?",
+      "reponses": [
+        "Definitions et concepts abstraits",
+        "Tutoriels, how-to, reviews, demonstrations",
+        "Actualites et breaking news",
+        "Recherches de produits"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 46,
+      "question": "Quelle tendance SEO concerne la fin des cookies tiers ?",
+      "reponses": [
+        "Mobile-only",
+        "Multimodal",
+        "Privacy-first",
+        "IA omniprésente"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 47,
+      "question": "Que signifie 'recherche multimodale' ?",
+      "reponses": [
+        "Recherche sur plusieurs moteurs",
+        "Recherche combinant image, voix et video",
+        "Recherche en plusieurs langues",
+        "Recherche sur plusieurs appareils"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 48,
+      "question": "Quelle strategie est recommandee pour construire un trafic independant de Google ?",
+      "reponses": [
+        "Acheter des liens",
+        "Construire une communaute (newsletter, forum, Discord)",
+        "Publier plus de contenu",
+        "Utiliser uniquement les reseaux sociaux"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 49,
+      "question": "Pourquoi les sous-titres manuels sont-ils recommandes sur YouTube ?",
+      "reponses": [
+        "Ils sont obligatoires",
+        "Ils sont plus precis que les sous-titres automatiques",
+        "Ils augmentent automatiquement les vues",
+        "Ils permettent la monetisation"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 50,
+      "question": "Quel element NE fait PAS partie de la checklist des nouveaux formats SEO ?",
+      "reponses": [
+        "Contenu FAQ et langage naturel",
+        "Images HD pour Google Discover",
+        "Backlinks payants",
+        "Donnees structurees FAQPage et HowTo"
+      ],
+      "bonne_reponse": 2
+    }
+  ]
+}
