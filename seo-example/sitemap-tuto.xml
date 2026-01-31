@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+============================================
+SITEMAP XML - EXEMPLE SEO
+============================================
+
+Le sitemap XML aide les moteurs de recherche à découvrir
+et comprendre la structure de votre site.
+
+AVANTAGES :
+- Découverte rapide des nouvelles pages
+- Indication de la fréquence de mise à jour
+- Priorité relative des pages
+- Informations sur les images et vidéos
+
+OÙ SOUMETTRE :
+- Google Search Console
+- Bing Webmaster Tools
+- Référencé dans robots.txt
+
+DOCUMENTATION :
+https://www.sitemaps.org/protocol.html
+
+============================================
+-->
+
+<!--
+URLSET - ÉLÉMENT RACINE
+=======================
+Contient toutes les URLs du site.
+Le namespace xmlns est obligatoire.
+On peut ajouter des namespaces pour images, vidéos, news.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!--
+    ============================================
+    PAGE D'ACCUEIL
+    ============================================
+    La page d'accueil a généralement la priorité la plus haute.
+    -->
+    <url>
+        <!--
+        LOC - URL DE LA PAGE (OBLIGATOIRE)
+        ==================================
+        URL complète et absolue de la page.
+        Doit commencer par http:// ou https://
+        Maximum 2048 caractères.
+        -->
+        <loc>https://www.lepaindore.fr/</loc>
+        
+        <!--
+        LASTMOD - DATE DE DERNIÈRE MODIFICATION (RECOMMANDÉ)
+        ====================================================
+        Format : YYYY-MM-DD ou YYYY-MM-DDThh:mm:ss+TZ
+        Aide Google à savoir si la page a changé depuis le dernier crawl.
+        IMPORTANT : Doit refléter une vraie modification de contenu !
+        -->
+        <lastmod>2026-01-30</lastmod>
+        
+        <!--
+        CHANGEFREQ - FRÉQUENCE DE CHANGEMENT (OPTIONNEL)
+        ================================================
+        Valeurs : always, hourly, daily, weekly, monthly, yearly, never
+        C'est une INDICATION, pas une garantie de crawl.
+        Google tend à ignorer cette valeur et utilise ses propres algorithmes.
+        -->
+        <changefreq>weekly</changefreq>
+        
+        <!--
+        PRIORITY - PRIORITÉ RELATIVE (OPTIONNEL)
+        ========================================
+        Valeur entre 0.0 et 1.0 (défaut : 0.5)
+        Priorité RELATIVE aux autres pages de VOTRE site.
+        N'affecte pas le classement par rapport aux autres sites !
+        Google tend à ignorer cette valeur également.
+        -->
+        <priority>1.0</priority>
+
+        <!--
+        IMAGES DANS LE SITEMAP
+        ======================
+        Permet de référencer les images importantes de la page.
+        Aide Google Images à indexer vos images.
+        Maximum 1000 images par URL.
+        -->
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/boulangerie.jpg</image:loc>
+            <!--
+            IMAGE:TITLE - Titre de l'image (optionnel mais recommandé)
+            -->
+            <image:title>Façade de la Boulangerie Le Pain Doré à Paris</image:title>
+            <!--
+            IMAGE:CAPTION - Légende/description (optionnel)
+            -->
+            <image:caption>Vue extérieure de notre boulangerie artisanale dans le 11ème arrondissement de Paris</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/pains.webp</image:loc>
+            <image:title>Assortiment de pains artisanaux au levain</image:title>
+            <image:caption>Notre sélection de pains bio au levain naturel</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/viennoiserie.webp</image:loc>
+            <image:title>Viennoiseries pur beurre</image:title>
+            <image:caption>Croissants et pains au chocolat artisanaux</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/patisseries.webp</image:loc>
+            <image:title>Pâtisseries artisanales</image:title>
+            <image:caption>Assortiment de pâtisseries maison</image:caption>
+        </image:image>
+    </url>
+
+    <!--
+    ============================================
+    PAGE SERVICES
+    ============================================
+    -->
+    <url>
+        <loc>https://www.lepaindore.fr/services.html</loc>
+        <lastmod>2026-01-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+        
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/pains2.jpg</image:loc>
+            <image:title>Pains frais prêts à la livraison</image:title>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/patisserie.webp</image:loc>
+            <image:title>Pâtisseries pour buffet traiteur</image:title>
+        </image:image>
+    </url>
+
+    <!--
+    ============================================
+    PAGE CONTACT
+    ============================================
+    -->
+    <url>
+        <loc>https://www.lepaindore.fr/contact.html</loc>
+        <lastmod>2026-01-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <!--
+        Priorité légèrement inférieure car moins "commerciale"
+        mais toujours importante pour le SEO local.
+        -->
+        <priority>0.7</priority>
+    </url>
+
+    <!--
+    ============================================
+    PAGES LÉGALES (PRIORITÉ BASSE)
+    ============================================
+    Ces pages sont nécessaires mais n'ont pas besoin
+    d'être fortement crawlées.
+    -->
+    <url>
+        <loc>https://www.lepaindore.fr/mentions-legales.html</loc>
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://www.lepaindore.fr/politique-confidentialite.html</loc>
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <url>
+        <loc>https://www.lepaindore.fr/cgv.html</loc>
+        <lastmod>2026-01-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+
+    <!--
+    ============================================
+    PAGES DE BLOG (EXEMPLE)
+    ============================================
+    Les articles de blog ont une fréquence de changement
+    "never" une fois publiés (sauf mise à jour).
+    -->
+    <url>
+        <loc>https://www.lepaindore.fr/blog/nouvelle-gamme-pains-speciaux.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.6</priority>
+        
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/pains.webp</image:loc>
+            <image:title>Nouvelle gamme de pains spéciaux</image:title>
+        </image:image>
+    </url>
+
+    <url>
+        <loc>https://www.lepaindore.fr/blog/atelier-pain-fevrier.html</loc>
+        <lastmod>2026-01-10</lastmod>
+        <changefreq>never</changefreq>
+        <priority>0.6</priority>
+    </url>
+
+    <!--
+    ============================================
+    PAGES D'ATELIERS (EXEMPLE)
+    ============================================
+    -->
+    <url>
+        <loc>https://www.lepaindore.fr/ateliers/pain-levain-fevrier.html</loc>
+        <lastmod>2026-01-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://www.lepaindore.fr/ateliers/viennoiseries-fevrier.html</loc>
+        <lastmod>2026-01-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!--
+    ============================================
+    PAGE PLAN DU SITE HTML
+    ============================================
+    Utile pour les utilisateurs et le SEO.
+    -->
+    <url>
+        <loc>https://www.lepaindore.fr/sitemap.html</loc>
+        <lastmod>2026-01-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.4</priority>
+    </url>
+
+</urlset>
+
+<!--
+============================================
+NOTES ET BONNES PRATIQUES
+============================================
+
+1. LIMITES DU SITEMAP :
+   - Maximum 50 000 URLs par fichier
+   - Maximum 50 Mo non compressé
+   - Si plus, utiliser un sitemap index
+
+2. SITEMAP INDEX (pour les gros sites) :
+   <?xml version="1.0" encoding="UTF-8"?>
+   <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+       <sitemap>
+           <loc>https://www.example.com/sitemap-pages.xml</loc>
+           <lastmod>2026-01-30</lastmod>
+       </sitemap>
+       <sitemap>
+           <loc>https://www.example.com/sitemap-posts.xml</loc>
+           <lastmod>2026-01-30</lastmod>
+       </sitemap>
+   </sitemapindex>
+
+3. CE QU'IL NE FAUT PAS INCLURE :
+   - Pages avec noindex
+   - Pages en erreur (404, 500)
+   - Pages dupliquées (non canoniques)
+   - Pages de résultats de recherche
+   - Pages nécessitant une authentification
+   - URLs avec paramètres de session
+
+4. VALIDATION :
+   - Utiliser un validateur XML
+   - Tester dans Google Search Console
+   - Vérifier régulièrement les erreurs
+
+5. SITEMAP DYNAMIQUE :
+   Pour les gros sites, générer automatiquement
+   le sitemap via le CMS ou un script.
+   WordPress : plugin Yoast ou Rank Math
+   
+6. COMPRESSION :
+   Les sitemaps peuvent être compressés en .gz
+   Google accepte sitemap.xml.gz
+
+7. FRÉQUENCE DE SOUMISSION :
+   Pas besoin de resoumettre après chaque modification
+   si le fichier est déjà indexé. Google le re-crawle
+   régulièrement.
+
+============================================
+-->

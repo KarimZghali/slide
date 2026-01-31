@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /recherche
+# $ pour signifier "la fin de la chaîne".
+Disallow: /*.pdf$
+
+Sitemap: https://www.lepaindore.fr/sitemap.xml

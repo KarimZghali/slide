@@ -89,7 +89,7 @@ On peut ajouter des namespaces pour images, vidéos, news.
         Maximum 1000 images par URL.
         -->
         <image:image>
-            <image:loc>https://www.lepaindore.fr/images/facade.jpg</image:loc>
+            <image:loc>https://www.lepaindore.fr/images/boulangerie.jpg</image:loc>
             <!--
             IMAGE:TITLE - Titre de l'image (optionnel mais recommandé)
             -->
@@ -99,11 +99,23 @@ On peut ajouter des namespaces pour images, vidéos, news.
             -->
             <image:caption>Vue extérieure de notre boulangerie artisanale dans le 11ème arrondissement de Paris</image:caption>
         </image:image>
-        
+
         <image:image>
-            <image:loc>https://www.lepaindore.fr/images/pain-levain-bio.webp</image:loc>
-            <image:title>Pain au levain bio artisanal</image:title>
-            <image:caption>Notre pain signature au levain naturel, cuit au four à bois</image:caption>
+            <image:loc>https://www.lepaindore.fr/images/pains.webp</image:loc>
+            <image:title>Assortiment de pains artisanaux au levain</image:title>
+            <image:caption>Notre sélection de pains bio au levain naturel</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/viennoiserie.webp</image:loc>
+            <image:title>Viennoiseries pur beurre</image:title>
+            <image:caption>Croissants et pains au chocolat artisanaux</image:caption>
+        </image:image>
+
+        <image:image>
+            <image:loc>https://www.lepaindore.fr/images/patisseries.webp</image:loc>
+            <image:title>Pâtisseries artisanales</image:title>
+            <image:caption>Assortiment de pâtisseries maison</image:caption>
         </image:image>
     </url>
 
@@ -119,13 +131,13 @@ On peut ajouter des namespaces pour images, vidéos, news.
         <priority>0.8</priority>
         
         <image:image>
-            <image:loc>https://www.lepaindore.fr/images/livraison-velo.webp</image:loc>
-            <image:title>Livraison à vélo cargo de pain frais</image:title>
+            <image:loc>https://www.lepaindore.fr/images/pains2.jpg</image:loc>
+            <image:title>Pains frais prêts à la livraison</image:title>
         </image:image>
-        
+
         <image:image>
-            <image:loc>https://www.lepaindore.fr/images/buffet-traiteur.webp</image:loc>
-            <image:title>Buffet petit-déjeuner traiteur</image:title>
+            <image:loc>https://www.lepaindore.fr/images/patisserie.webp</image:loc>
+            <image:title>Pâtisseries pour buffet traiteur</image:title>
         </image:image>
     </url>
 
@@ -187,7 +199,7 @@ On peut ajouter des namespaces pour images, vidéos, news.
         <priority>0.6</priority>
         
         <image:image>
-            <image:loc>https://www.lepaindore.fr/images/blog/pains-speciaux.jpg</image:loc>
+            <image:loc>https://www.lepaindore.fr/images/pains.webp</image:loc>
             <image:title>Nouvelle gamme de pains spéciaux</image:title>
         </image:image>
     </url>

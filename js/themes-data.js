@@ -2097,21 +2097,6 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🧠 Exercice pratique</h1>
-    <h2>Auditez une page de votre site</h2>
-    <ul>
-        <li><strong>1.</strong> Choisissez une page importante (page d'accueil, top produit, article clé)</li>
-        <li><strong>2.</strong> Vérifiez le Title et la Meta Description avec un outil comme Yoast ou SERP Simulator</li>
-        <li><strong>3.</strong> Analysez la structure Hn avec l'extension Chrome "HeadingsMap"</li>
-        <li><strong>4.</strong> Passez les images au crible : poids, format, attribut alt</li>
-        <li><strong>5.</strong> Comptez les liens internes sortants et entrants</li>
-        <li><strong>6.</strong> Testez les données structurées avec Rich Results Test</li>
-    </ul>
-    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> La rédaction SEO et le content marketing — créer du contenu qui convertit.</p>
-</div>`,
-
-
-                `<div class="slide-seo">
     <h1>✍️ Chapitre 2</h1>
     <h2>Stratégie de contenu et Copywriting SEO</h2>
     <p class="text-intro">Créer du contenu optimisé ne suffit pas. Il faut créer du contenu qui <strong>captive, convainc et convertit</strong>. Le copywriting SEO est l'art de concilier les exigences des moteurs de recherche avec les attentes des humains.</p>
@@ -2360,6 +2345,42 @@ const THEMES_DATA = {
             <div class="step-content">
                 <strong>Action (CTA)</strong>
                 <p>"Demandez votre audit gratuit → Recevez votre rapport personnalisé sous 48h"</p>
+            </div>
+        </div>
+    </div>
+</div>`,
+
+
+                `<div class="slide-seo">
+    <h1>🎯 PAS en pratique</h1>
+    <h2>Exemple appliqué au Coaching "Focus Mastery"</h2>
+    <div class="process-steps">
+        <div class="process-step">
+            <span class="step-number">P</span>
+            <div class="step-content">
+                <strong>Problème (Identification)</strong>
+                <p>"Vous travaillez 10h par jour, mais vos projets n'avancent pas. Vous finissez vos journées épuisé avec le sentiment de n'avoir fait qu'éteindre des incendies."</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">A</span>
+            <div class="step-content">
+                <strong>Agitation (Amplification)</strong>
+                <p>"Ce stress permanent vous mène droit au burnout et empoisonne vos soirées en famille. Pendant que vous stagnez, vos concurrents, eux, prennent le large."</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">S</span>
+            <div class="step-content">
+                <strong>Solution (Présentation)</strong>
+                <p>"La méthode 'Focus Mastery' : 4 semaines pour automatiser l'inutile, déléguer le reste et récupérer enfin 10h de liberté par semaine."</p>
+            </div>
+        </div>
+        <div class="process-step">
+            <span class="step-number">!</span>
+            <div class="step-content">
+                <strong>Action (CTA)</strong>
+                <p>"Réservez votre appel stratégique offert → Reprenez le contrôle de votre agenda dès aujourd'hui."</p>
             </div>
         </div>
     </div>
@@ -2772,9 +2793,9 @@ const THEMES_DATA = {
     <ul>
         <li><strong>1.</strong> Choisissez un mot-clé longue traîne de votre secteur</li>
         <li><strong>2.</strong> Analysez les 5 premiers résultats Google : format, longueur, angles</li>
-        <li><strong>3.</strong> Créez un plan avec H1, H2, H3 incluant les questions "People Also Ask"</li>
+        <li><strong>3.</strong> Créez un plan avec H1, H2, H3 incluant les questions "People Also Ask" (Les gens demandent aussi)</li>
         <li><strong>4.</strong> Rédigez l'introduction en utilisant la formule AIDA ou PAS</li>
-        <li><strong>5.</strong> Enrichissez le champ sémantique avec 1.fr ou les recherches associées</li>
+        <li><strong>5.</strong> Enrichissez le champ sémantique</li>
         <li><strong>6.</strong> Ajoutez un CTA adapté à l'intention de recherche</li>
     </ul>
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Les nouveaux formats et la recherche moderne — recherche vocale, vidéo, IA et E-E-A-T.</p>
@@ -3689,7 +3710,7 @@ const THEMES_DATA = {
         <li><strong>📈 Croissance progressive</strong> : acquisition régulière, pas de pics suspects</li>
         <li><strong>🎯 Pertinence thématique</strong> : majorité de liens depuis des sites de votre secteur</li>
         <li><strong>🌍 Diversité géographique</strong> : liens depuis plusieurs pays (si pertinent)</li>
-        <li><strong>📊 Mix DoFollow/NoFollow</strong> : ratio naturel (60-80% / 20-40%)</li>
+        <li><strong>📊 Mix DoFollow/NoFollow</strong> : ratio naturel</li>
         <li><strong>🔤 Variété d'ancres</strong> : pas de sur-optimisation sur un mot-clé</li>
         <li><strong>🏠 Diversité de domaines</strong> : beaucoup de sources différentes</li>
         <li><strong>📍 Liens contextuels</strong> : dans le contenu éditorial, pas juste en footer</li>
@@ -3791,7 +3812,7 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🏗️ La technique Skyscraper</h1>
+    <h1>🏗️ La technique Skyscraper (rappel)</h1>
     <h2>Surpasser la concurrence</h2>
     <p class="text-intro">La technique <strong>Skyscraper</strong> (gratte-ciel), popularisée par Brian Dean de Backlinko, consiste à créer un contenu meilleur que tout ce qui existe déjà.</p>
     <div class="skyscraper-steps">
@@ -3822,7 +3843,7 @@ const THEMES_DATA = {
         <div class="comparison-col">
             <h3>✅ Les bonnes pratiques</h3>
             <ul>
-                <li>Choisir des sites de qualité (DA > 30)</li>
+                <li>Choisir des sites de qualité </li>
                 <li>Écrire du contenu vraiment utile aux lecteurs</li>
                 <li>Lien naturel dans le contexte de l'article</li>
                 <li>Varier les sites et les ancres</li>
@@ -3919,7 +3940,7 @@ const THEMES_DATA = {
             <p class="text-accent">→ Demandez un lien en échange</p>
         </div>
     </div>
-    <p class="slide-tip">💡 <strong>Outil :</strong> Configurez des alertes Google pour votre marque ("votre marque" -site:votresite.com) pour détecter les mentions.</p>
+    <p class="slide-tip">💡 <strong>Outil :</strong> Configurez des alertes Google pour votre marque ("votre marque" site:votresite.com) pour détecter les mentions.</p>
 </div>`,
 
                 `<div class="slide-seo">
@@ -4029,126 +4050,6 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>🛠️ Outils d'analyse des backlinks</h1>
-    <h2>Les indispensables pour votre stratégie</h2>
-    <div class="tools-grid">
-        <div class="tool-card tool-premium">
-            <h3>🟠 Ahrefs</h3>
-            <p>La référence pour l'analyse de backlinks. Base de données massive, très précis.</p>
-            <p class="text-accent">À partir de ~99$/mois</p>
-        </div>
-        <div class="tool-card tool-premium">
-            <h3>🔷 SEMrush</h3>
-            <p>Suite complète avec analyse de backlinks, audit de toxicité, comparaison concurrentielle.</p>
-            <p class="text-accent">À partir de ~120€/mois</p>
-        </div>
-        <div class="tool-card tool-premium">
-            <h3>🟣 Moz Link Explorer</h3>
-            <p>Analyse DA/PA, spam score, découverte d'opportunités de liens.</p>
-            <p class="text-accent">À partir de ~99$/mois</p>
-        </div>
-        <div class="tool-card">
-            <h3>👑 Majestic</h3>
-            <p>Trust Flow / Citation Flow, analyse historique des liens, très technique.</p>
-            <p class="text-muted">Version gratuite limitée disponible</p>
-        </div>
-    </div>
-</div>`,
-
-                `<div class="slide-seo">
-    <h1>🔍 Google Search Console</h1>
-    <h2>L'outil gratuit et officiel</h2>
-    <p class="text-intro">La <strong>Search Console</strong> offre un rapport de liens gratuit et officiel, directement depuis les données de Google.</p>
-    <ul>
-        <li><strong>Liens externes</strong> : les sites qui font le plus de liens vers vous</li>
-        <li><strong>Pages les plus liées</strong> : vos pages qui reçoivent le plus de backlinks</li>
-        <li><strong>Textes d'ancrage</strong> : les ancres les plus utilisées pour vous linker</li>
-        <li><strong>Sites avec les liens les plus importants</strong> : les domaines référents principaux</li>
-    </ul>
-    <p class="slide-note">📝 <strong>Accès :</strong> Search Console > Liens (dans le menu de gauche). Export possible au format CSV.</p>
-    <p class="slide-tip">💡 <strong>Limitation :</strong> Données moins complètes que les outils payants, mais 100% fiables car venant de Google directement.</p>
-</div>`,
-
-                `<div class="slide-seo">
-    <h1>📊 Métriques à surveiller</h1>
-    <h2>Votre tableau de bord netlinking</h2>
-    <div class="metrics-list">
-        <p><span class="metric-label">Domaines référents</span> Nombre de sites uniques qui vous font des liens — la métrique la plus importante</p>
-        <p><span class="metric-label">Nouveaux / Perdus</span> Balance des liens gagnés vs perdus chaque mois</p>
-        <p><span class="metric-label">DR/DA moyen</span> Autorité moyenne des sites qui vous linkent</p>
-        <p><span class="metric-label">Ratio DoFollow</span> Pourcentage de liens DoFollow vs NoFollow</p>
-        <p><span class="metric-label">Distribution d'ancres</span> Répartition entre ancres de marque, exactes, génériques</p>
-        <p><span class="metric-label">Vélocité des liens</span> Rythme d'acquisition de nouveaux liens dans le temps</p>
-    </div>
-</div>`,
-
-                `<div class="slide-seo">
-    <h1>🆚 Analyse concurrentielle</h1>
-    <h2>Espionner les backlinks des concurrents</h2>
-    <p class="text-intro">Analysez les backlinks de vos concurrents pour découvrir des opportunités et comprendre leur stratégie.</p>
-    <div class="process-steps">
-        <div class="process-step">
-            <span class="step-number">1</span>
-            <div class="step-content">
-                <strong>Identifiez vos concurrents SEO</strong>
-                <p>Pas forcément vos concurrents business, mais ceux qui rankent sur vos mots-clés.</p>
-            </div>
-        </div>
-        <div class="process-step">
-            <span class="step-number">2</span>
-            <div class="step-content">
-                <strong>Exportez leurs backlinks</strong>
-                <p>Utilisez Ahrefs/SEMrush pour télécharger leur profil de liens complet.</p>
-            </div>
-        </div>
-        <div class="process-step">
-            <span class="step-number">3</span>
-            <div class="step-content">
-                <strong>Analysez les sources communes</strong>
-                <p>Quels sites linkent plusieurs concurrents mais pas vous ? = opportunités prioritaires.</p>
-            </div>
-        </div>
-        <div class="process-step">
-            <span class="step-number">4</span>
-            <div class="step-content">
-                <strong>Étudiez leur contenu le plus linké</strong>
-                <p>Quel type de contenu attire le plus de liens ? Inspirez-vous en pour votre stratégie.</p>
-            </div>
-        </div>
-    </div>
-    <p class="slide-tip">💡 <strong>Outil gratuit :</strong> Ahrefs offre un checker de backlinks gratuit limité sur <a href="https://ahrefs.com/backlink-checker" style="color: #00d4aa;">ahrefs.com/backlink-checker</a></p>
-</div>`,
-
-                `<div class="slide-seo">
-    <h1>📅 Planifier sa stratégie</h1>
-    <h2>Un plan d'action réaliste</h2>
-    <p class="text-intro">Le netlinking est un marathon, pas un sprint. Voici un plan de développement progressif.</p>
-    <div class="comparison-table">
-        <div class="comparison-col">
-            <h3>🌱 Phase 1 : Fondations</h3>
-            <ul>
-                <li>Auditer votre profil actuel</li>
-                <li>Nettoyer les liens toxiques</li>
-                <li>Créer 2-3 contenus "link bait"</li>
-                <li>Récupérer les mentions non-liées</li>
-            </ul>
-            <p class="text-muted mt-md">Objectif : 5-10 liens/mois</p>
-        </div>
-        <div class="comparison-col">
-            <h3>🌳 Phase 2 : Croissance</h3>
-            <ul>
-                <li>Lancer une campagne guest blogging</li>
-                <li>Mettre en place la Digital PR</li>
-                <li>Développer des partenariats</li>
-                <li>Publier des études originales</li>
-            </ul>
-            <p class="text-muted mt-md">Objectif : 15-30 liens/mois</p>
-        </div>
-    </div>
-    <p class="slide-warning">⚠️ <strong>Patience :</strong> Les effets du netlinking prennent 3-6 mois pour être visibles. Ne vous découragez pas si les résultats ne sont pas immédiats.</p>
-</div>`,
-
-                `<div class="slide-seo">
     <h1>💡 Bonnes pratiques résumées</h1>
     <h2>Les règles d'or du netlinking</h2>
     <ul>
@@ -4162,20 +4063,6 @@ const THEMES_DATA = {
     </ul>
 </div>`,
 
-                `<div class="slide-seo">
-    <h1>🛡️ Checklist Netlinking</h1>
-    <h2>Vérifiez votre stratégie</h2>
-    <ul>
-        <li>☐ <strong>Audit initial</strong> : analysé votre profil de backlinks actuel ?</li>
-        <li>☐ <strong>Liens toxiques</strong> : identifié et désavoué les liens nuisibles ?</li>
-        <li>☐ <strong>Concurrents</strong> : étudié les backlinks de vos 3-5 principaux concurrents ?</li>
-        <li>☐ <strong>Contenu linkable</strong> : créé au moins un contenu "aimant à liens" ?</li>
-        <li>☐ <strong>Mentions</strong> : configuré des alertes pour votre marque ?</li>
-        <li>☐ <strong>Outreach</strong> : mis en place un processus de prospection ?</li>
-        <li>☐ <strong>Suivi</strong> : défini des KPIs et un tableau de bord ?</li>
-        <li>☐ <strong>Diversification</strong> : utilisé plusieurs stratégies d'acquisition ?</li>
-    </ul>
-</div>`,
 
                 `<div class="slide-seo">
     <h1>✅ Récap' Chapitre 1 (Jour 3)</h1>
@@ -4186,26 +4073,12 @@ const THEMES_DATA = {
         <li>⚖️ <strong>DoFollow vs NoFollow</strong> : seuls les DoFollow transmettent le "jus de lien"</li>
         <li>🔤 <strong>Ancres</strong> : variez les textes de liens, évitez la sur-optimisation</li>
         <li>🏗️ <strong>Profil sain</strong> : diversité de sources, croissance naturelle, pertinence</li>
-        <li>🎯 <strong>Stratégies White Hat</strong> : contenu de qualité, guest blogging, Digital PR</li>
-        <li>⛔ <strong>Black Hat à éviter</strong> : achat de liens, PBN, spam automatisé</li>
+        <li>🎯 <strong>Stratégies White Hat</strong> : contenu de qualité, guest blogging, Digital PR (mentions et des liens depuis des sites de médias)</li>
+        <li>⛔ <strong>Black Hat à éviter</strong> : achat de liens, PBN (fermes à liens), spam automatisé</li>
         <li>🛠️ <strong>Outils</strong> : Ahrefs, SEMrush, Search Console pour analyser et suivre</li>
     </ul>
+     <p class="slide-tip">💡 <strong>Rappel :</strong> DA (Domain Authority) Score de 0 à 100 basé sur le nombre et la qualité des liens entrants + âge du domaine | DR (Domain Rating) Score de 0 à 100 Basé sur la force du profil de backlinks (quantité × qualité)</p>
 </div>`,
-
-                `<div class="slide-seo">
-    <h1>🧠 Exercice pratique</h1>
-    <h2>Auditez votre profil de backlinks</h2>
-    <ul>
-        <li><strong>1.</strong> Allez dans la Search Console > Liens : combien de domaines référents avez-vous ?</li>
-        <li><strong>2.</strong> Utilisez le <a href="https://ahrefs.com/backlink-checker" style="color: #00d4aa;">Backlink Checker d'Ahrefs</a> (gratuit) sur votre site</li>
-        <li><strong>3.</strong> Analysez les ancres : sont-elles diversifiées ou sur-optimisées ?</li>
-        <li><strong>4.</strong> Comparez avec un concurrent : quel écart en domaines référents ?</li>
-        <li><strong>5.</strong> Identifiez 3 sites de votre secteur où vous pourriez obtenir un lien</li>
-        <li><strong>6.</strong> Recherchez votre marque sur Google : des mentions sans lien ?</li>
-    </ul>
-    <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Mesure de performance et outils d'analyse — comment savoir si vos efforts SEO portent leurs fruits.</p>
-</div>`,
-
                 `<div class="slide-seo">
     <h1>📊 Jour 3 – Chapitre 2</h1>
     <h2>Mesure de performance et outils d'analyse</h2>
@@ -5017,21 +4890,6 @@ const THEMES_DATA = {
         <li>💰 <strong>ROI</strong> : donnez une valeur monétaire au SEO (équivalent SEA, revenus attribués)</li>
         <li>🎯 <strong>Objectifs SMART</strong> : spécifiques, mesurables, atteignables, réalistes, temporels</li>
     </ul>
-</div>`,
-
-                `<div class="slide-seo">
-    <h1>🧠 Exercice pratique</h1>
-    <h2>Créez votre premier dashboard SEO</h2>
-    <ul>
-        <li><strong>1.</strong> Connectez-vous à <a href="https://lookerstudio.google.com" style="color: #00d4aa;">Looker Studio</a> avec votre compte Google</li>
-        <li><strong>2.</strong> Créez un nouveau rapport et ajoutez la source "Search Console"</li>
-        <li><strong>3.</strong> Ajoutez un graphique temporel : clics + impressions sur 90 jours</li>
-        <li><strong>4.</strong> Ajoutez un tableau : top 10 requêtes par clics</li>
-        <li><strong>5.</strong> Ajoutez un tableau : top 10 pages par clics</li>
-        <li><strong>6.</strong> Connectez GA4 et ajoutez : utilisateurs organic + taux d'engagement</li>
-        <li><strong>7.</strong> Personnalisez les couleurs et ajoutez votre logo</li>
-    </ul>
-    <p class="slide-tip">💡 <strong>Bonus :</strong> Programmez l'envoi automatique du rapport par email chaque lundi à votre équipe.</p>
 </div>`,
 
                 `<div class="slide-seo">
