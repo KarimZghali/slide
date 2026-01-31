@@ -5,8 +5,8 @@ const THEMES_DATA = {
             "id": "seo",
             "title": "SEO",
             "description": "Formation complète au référencement naturel",
-            "tp" : "/TP-SEO/tp.html",
-            "ressources" : "/SEO/seo-example.zip",
+            "tp" : "TP/TP-SEO/tp.html",
+            "ressources" : "ressources/SEO/seo-example.zip",
             "slides": [
                 `<div class="slide-seo">
     <h1>🚀 Formation SEO</h1>

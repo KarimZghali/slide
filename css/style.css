@@ -76,6 +76,50 @@ body {
     font-size: 0.85rem;
 }
 
+.theme-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.theme-links {
+    display: flex;
+    gap: 8px;
+}
+
+.theme-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.theme-link-tp {
+    background: rgba(76, 175, 80, 0.2);
+    color: #81c784;
+}
+
+.theme-link-tp:hover {
+    background: rgba(76, 175, 80, 0.4);
+    color: #a5d6a7;
+}
+
+.theme-link-ressources {
+    background: rgba(255, 152, 0, 0.2);
+    color: #ffb74d;
+}
+
+.theme-link-ressources:hover {
+    background: rgba(255, 152, 0, 0.4);
+    color: #ffd54f;
+}
+
 /* ==================== CONTAINER SLIDES ==================== */
 .slideshow-container {
     width: 96%;

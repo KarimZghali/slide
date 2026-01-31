@@ -25,13 +25,26 @@ function init() {
 
 // Afficher la liste des thèmes
 function renderThemeList() {
-    themeList.innerHTML = themes.map(theme => `
+    themeList.innerHTML = themes.map(theme => {
+        const links = [];
+        if (theme.tp) {
+            links.push(`<a href="${theme.tp}" class="theme-link theme-link-tp" onclick="event.stopPropagation()">📝 TP</a>`);
+        }
+        if (theme.ressources) {
+            links.push(`<a href="${theme.ressources}" class="theme-link theme-link-ressources" onclick="event.stopPropagation()" download>📦 Ressources</a>`);
+        }
+        const linksHtml = links.length > 0 ? `<div class="theme-links">${links.join('')}</div>` : '';
+
+        return `
         <div class="theme-card" onclick="selectTheme('${theme.id}')">
             <h3>${theme.title}</h3>
             <p>${theme.description}</p>
-            <span class="slide-count">${theme.slides.length} slide${theme.slides.length > 1 ? 's' : ''}</span>
+            <div class="theme-card-footer">
+                <span class="slide-count">${theme.slides.length} slide${theme.slides.length > 1 ? 's' : ''}</span>
+                ${linksHtml}
+            </div>
         </div>
-    `).join('');
+    `}).join('');
 }
 
 // Sélectionner un thème et charger ses slides
