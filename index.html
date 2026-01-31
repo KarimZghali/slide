@@ -13,12 +13,15 @@
         <div class="theme-list" id="theme-list">
             <!-- Rempli dynamiquement par JS -->
         </div>
-    </div>sommaire-formation-seo.md
+    </div>
 
     <!-- Container des slides (caché au départ) -->
     <div class="slideshow-container" id="slideshow-container" style="display: none;">
         <!-- Bouton retour -->
         <button class="back-btn" id="back-btn" onclick="showThemeMenu()">← Retour aux thèmes</button>
+
+        <!-- Bouton Sommaire -->
+        <button class="sommaire-btn" id="sommaire-btn" title="Sommaire (S)">☰ Sommaire</button>
         
         <!-- Titre du thème -->
         <h2 class="theme-title" id="theme-title"></h2>
@@ -45,6 +48,17 @@
                 </div>
             </div>
             <button id="next-btn" onclick="changeSlide(1)">Suivant →</button>
+        </div>
+
+        <!-- Overlay Sommaire -->
+        <div class="sommaire-overlay" id="sommaire-overlay">
+            <div class="sommaire-content">
+                <h3>Sommaire</h3>
+                <ul id="sommaire-list">
+                    <!-- Généré dynamiquement -->
+                </ul>
+                <button class="sommaire-close" id="sommaire-close">Fermer (Échap)</button>
+            </div>
         </div>
     </div>
 

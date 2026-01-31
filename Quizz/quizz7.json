@@ -1,0 +1,554 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Qu'est-ce que le netlinking ?",
+            "reponses": [
+                "Une technique de création de contenu",
+                "Une stratégie d'acquisition de backlinks (liens entrants)",
+                "Un outil d'analyse SEO",
+                "Une méthode de référencement payant"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 2,
+            "question": "Qui a inventé le PageRank et en quelle année ?",
+            "reponses": [
+                "Sergey Brin en 2000",
+                "Bill Gates en 1995",
+                "Larry Page en 1998",
+                "Mark Zuckerberg en 2004"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 3,
+            "question": "Qu'est-ce qu'un backlink ?",
+            "reponses": [
+                "Un lien interne entre pages de votre site",
+                "Un lien hypertexte sur un site externe qui pointe vers votre site",
+                "Un lien cassé sur une page web",
+                "Un lien vers les réseaux sociaux"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 4,
+            "question": "Quel terme désigne la transmission de valeur d'un lien vers une page ?",
+            "reponses": [
+                "Link power",
+                "Link value",
+                "Link juice (jus de lien)",
+                "Link transfer"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 5,
+            "question": "Quels sont les 3 principaux avantages des backlinks mentionnés dans le cours ?",
+            "reponses": [
+                "Design, vitesse, accessibilité",
+                "Facteur de classement, découverte/crawl, trafic référent",
+                "Sécurité, confidentialité, performance",
+                "Contenu, images, vidéos"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 6,
+            "question": "Qu'est-ce que l'autorité de domaine (Domain Authority) ?",
+            "reponses": [
+                "Une métrique officielle de Google",
+                "Le nombre total de pages d'un site",
+                "Un score estimant la capacité d'un site à bien se positionner, basé sur son profil de backlinks",
+                "Le temps de chargement d'un site"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 7,
+            "question": "Quelle entreprise a créé la métrique DA (Domain Authority) ?",
+            "reponses": [
+                "Google",
+                "Ahrefs",
+                "SEMrush",
+                "Moz"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 8,
+            "question": "Quelle entreprise a créé la métrique DR (Domain Rating) ?",
+            "reponses": [
+                "Ahrefs",
+                "Moz",
+                "Majestic",
+                "Google"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 9,
+            "question": "Que mesurent les métriques TF et CF de Majestic ?",
+            "reponses": [
+                "TF = trafic, CF = conversions",
+                "TF = qualité/confiance, CF = quantité/influence",
+                "TF = temps de chargement, CF = crawl fréquence",
+                "TF = texte formaté, CF = contenu frais"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 10,
+            "question": "Pourquoi l'échelle d'autorité (DA/DR) est-elle dite logarithmique ?",
+            "reponses": [
+                "Parce qu'elle va de 0 à 1000",
+                "Parce que passer de 20 à 30 est facile, mais de 70 à 80 demande un effort considérable",
+                "Parce qu'elle est calculée par un logarithme naturel",
+                "Parce qu'elle change chaque jour"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 11,
+            "question": "Quel est le DR approximatif de Wikipedia selon le cours ?",
+            "reponses": [
+                "50 DR",
+                "70 DR",
+                "93 DR",
+                "100 DR"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 12,
+            "question": "Quel type de lien transmet le 'jus de lien' (PageRank) ?",
+            "reponses": [
+                "NoFollow",
+                "Sponsored",
+                "UGC",
+                "DoFollow"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 13,
+            "question": "Quel attribut doit-on utiliser pour un lien payant ou sponsorisé ?",
+            "reponses": [
+                "rel=\"nofollow\"",
+                "rel=\"ugc\"",
+                "rel=\"sponsored\"",
+                "rel=\"paid\""
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 14,
+            "question": "Que signifie UGC dans rel=\"ugc\" ?",
+            "reponses": [
+                "Universal Google Content",
+                "User Generated Content",
+                "Unified Global Connection",
+                "Unique Guided Content"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 15,
+            "question": "Depuis quelle année Google traite-t-il les nofollow comme des 'indices' plutôt que des directives strictes ?",
+            "reponses": [
+                "2015",
+                "2017",
+                "2019",
+                "2021"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 16,
+            "question": "Quel est le ratio naturel typique DoFollow/NoFollow dans un profil de liens ?",
+            "reponses": [
+                "DoFollow 60-80%, NoFollow 20-40%",
+                "DoFollow 95%, NoFollow 5%",
+                "DoFollow 50%, NoFollow 50%",
+                "DoFollow 30%, NoFollow 70%"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 17,
+            "question": "Qu'est-ce que l'ancre de lien (Anchor Text) ?",
+            "reponses": [
+                "L'URL de destination du lien",
+                "Le texte cliquable du lien",
+                "L'attribut rel du lien",
+                "La balise HTML du lien"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 18,
+            "question": "Quel type d'ancre représente 'cliquez ici' ou 'en savoir plus' ?",
+            "reponses": [
+                "Ancre exacte",
+                "Ancre de marque",
+                "Ancre partielle",
+                "Ancre générique"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 19,
+            "question": "Quel pourcentage d'ancres exactes est recommandé dans un profil naturel ?",
+            "reponses": [
+                "30-40%",
+                "20-25%",
+                "5-10%",
+                "50-60%"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 20,
+            "question": "Quel type d'ancre devrait représenter 30-40% du profil de liens ?",
+            "reponses": [
+                "Ancres exactes",
+                "Ancres génériques",
+                "Marque / URL",
+                "Longue traîne"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 21,
+            "question": "Pourquoi un profil avec 80% d'ancres exactes est-il problématique ?",
+            "reponses": [
+                "C'est trop diversifié",
+                "C'est un signal de manipulation pour Google (Penguin)",
+                "Les ancres exactes ne sont pas indexées",
+                "Google préfère les ancres longues"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 22,
+            "question": "Entre 100 backlinks de 5 domaines et 50 backlinks de 45 domaines, lequel est préférable ?",
+            "reponses": [
+                "100 backlinks de 5 domaines car il y a plus de liens",
+                "50 backlinks de 45 domaines car le profil est plus diversifié",
+                "Les deux sont équivalents",
+                "Aucun, il faut au moins 200 backlinks"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 23,
+            "question": "Quel est l'impact d'un premier lien depuis un nouveau domaine par rapport au 20ème lien depuis le même site ?",
+            "reponses": [
+                "Ils ont le même impact",
+                "Le 20ème lien a plus d'impact",
+                "Le premier lien depuis un nouveau domaine a beaucoup plus d'impact",
+                "Seuls les liens DoFollow comptent"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 24,
+            "question": "Quel signal indique une croissance anormale suspecte du profil de liens ?",
+            "reponses": [
+                "10 liens par mois",
+                "1000 liens en une semaine sur un nouveau site",
+                "Des liens depuis des sites de la même thématique",
+                "Un mélange DoFollow/NoFollow"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 25,
+            "question": "Qu'est-ce que le 'Link Baiting' ?",
+            "reponses": [
+                "Acheter des liens sur des sites populaires",
+                "Créer du contenu si utile/original que d'autres sites veulent naturellement le citer",
+                "Échanger des liens entre sites partenaires",
+                "Spammer des commentaires avec des liens"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 26,
+            "question": "Qui a popularisé la technique Skyscraper ?",
+            "reponses": [
+                "Neil Patel",
+                "Matt Cutts",
+                "Brian Dean de Backlinko",
+                "Rand Fishkin"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 27,
+            "question": "Quelles sont les 3 étapes de la technique Skyscraper ?",
+            "reponses": [
+                "Écrire, publier, partager",
+                "Trouver, améliorer, promouvoir",
+                "Analyser, copier, modifier",
+                "Rechercher, contacter, négocier"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 28,
+            "question": "Qu'est-ce que le Guest Blogging ?",
+            "reponses": [
+                "Inviter des blogueurs sur son site",
+                "Rédiger des articles pour d'autres sites en échange d'un lien",
+                "Commenter sur d'autres blogs",
+                "Créer un réseau de blogs personnels"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 29,
+            "question": "Qu'est-ce que le Broken Link Building ?",
+            "reponses": [
+                "Créer des liens cassés intentionnellement",
+                "Réparer les liens cassés de son propre site",
+                "Trouver des liens cassés sur d'autres sites et proposer son contenu en remplacement",
+                "Supprimer les liens toxiques"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 30,
+            "question": "Quel est le taux de réussite typique du Broken Link Building ?",
+            "reponses": [
+                "50-70%",
+                "30-40%",
+                "5-15%",
+                "80-90%"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 31,
+            "question": "Qu'est-ce que la Digital PR ?",
+            "reponses": [
+                "La publicité sur les réseaux sociaux",
+                "Obtenir des mentions et liens depuis des sites de médias grâce à des histoires intéressantes",
+                "Le référencement payant",
+                "La création de communiqués de presse PDF"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 32,
+            "question": "Que signifie HARO dans le contexte de la Digital PR ?",
+            "reponses": [
+                "High Authority Ranking Optimization",
+                "Help A Reporter Out",
+                "Hyperlink Authority Rating Online",
+                "Homepage Article Reach Outreach"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 33,
+            "question": "Qu'est-ce que la Link Reclamation ?",
+            "reponses": [
+                "Acheter des liens perdus",
+                "Identifier et récupérer des opportunités de liens perdues ou jamais obtenues",
+                "Supprimer les mauvais liens",
+                "Créer de nouveaux liens"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 34,
+            "question": "Qu'est-ce qu'un PBN (Private Blog Network) ?",
+            "reponses": [
+                "Un réseau de blogs professionnels légitimes",
+                "Un réseau de sites créés uniquement pour faire des liens",
+                "Un groupe de blogueurs partenaires",
+                "Un outil d'analyse de backlinks"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 35,
+            "question": "Quelle technique Black Hat consiste à payer pour obtenir des liens DoFollow ?",
+            "reponses": [
+                "Guest blogging",
+                "Link baiting",
+                "Achat de liens",
+                "Broken link building"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 36,
+            "question": "Quel algorithme de Google détecte les liens artificiels ?",
+            "reponses": [
+                "Panda",
+                "Hummingbird",
+                "Penguin",
+                "BERT"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 37,
+            "question": "Quelle est la différence entre une pénalité algorithmique et manuelle ?",
+            "reponses": [
+                "Aucune différence",
+                "Algorithmique = automatique par l'algo / Manuelle = un employé Google examine le site",
+                "Algorithmique = temporaire / Manuelle = permanente",
+                "Algorithmique = pour les petits sites / Manuelle = pour les grands sites"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 38,
+            "question": "Où peut-on vérifier si un site a reçu une pénalité manuelle ?",
+            "reponses": [
+                "Google Analytics",
+                "Google Ads",
+                "Search Console > Sécurité et actions manuelles",
+                "Google My Business"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 39,
+            "question": "Qu'est-ce que le fichier Disavow ?",
+            "reponses": [
+                "Un fichier qui liste tous vos backlinks",
+                "Un fichier permettant de dire à Google d'ignorer certains liens toxiques",
+                "Un fichier de configuration du site",
+                "Un rapport d'analyse SEO"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 40,
+            "question": "Que faut-il faire avant de soumettre un fichier Disavow ?",
+            "reponses": [
+                "Supprimer tout le contenu du site",
+                "Contacter les webmasters pour demander le retrait des liens",
+                "Créer de nouveaux backlinks",
+                "Changer le nom de domaine"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 41,
+            "question": "Quel critère N'est PAS un critère de qualité d'un bon backlink ?",
+            "reponses": [
+                "Pertinence thématique",
+                "Autorité du domaine source",
+                "Nombre de publicités sur le site source",
+                "Emplacement du lien sur la page"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 42,
+            "question": "Où un lien éditorial a-t-il le plus de valeur ?",
+            "reponses": [
+                "Dans le footer",
+                "Dans la sidebar",
+                "Dans le contenu éditorial de la page",
+                "Dans les commentaires"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 43,
+            "question": "Quel outil permet de créer des alertes pour détecter les mentions de sa marque ?",
+            "reponses": [
+                "Google Analytics",
+                "Google Ads",
+                "Google Alerts",
+                "Google Search Console"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 44,
+            "question": "Pourquoi l'échange de liens réciproques massif (A→B et B→A) est-il déconseillé ?",
+            "reponses": [
+                "Car c'est illégal",
+                "Car c'est détectable par Google et peu efficace",
+                "Car les liens ne fonctionnent que dans un sens",
+                "Car cela coûte trop cher"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 45,
+            "question": "Selon le cours, quel est le principe fondateur de Google concernant les liens ?",
+            "reponses": [
+                "Plus il y a de liens, mieux c'est",
+                "Le web est un graphe géant de pages interconnectées, les liens révèlent la structure de confiance",
+                "Seuls les liens payants comptent",
+                "Les liens n'ont plus d'importance depuis 2020"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 46,
+            "question": "Quel type de contenu est décrit comme 'aimant à liens' ?",
+            "reponses": [
+                "Les pages produits",
+                "Les mentions légales",
+                "Les études/données originales, outils gratuits, guides ultimes, infographies",
+                "Les pages de contact"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 47,
+            "question": "Quelle règle d'or est recommandée si vous hésitez sur l'ancre à utiliser ?",
+            "reponses": [
+                "Utiliser toujours le mot-clé exact",
+                "Ne pas mettre de lien",
+                "Choisir le nom de marque ou une ancre naturelle",
+                "Utiliser une URL complète"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 48,
+            "question": "Quel score DR typique a une PME établie selon le cours ?",
+            "reponses": [
+                "5-15 DR",
+                "25-40 DR",
+                "61-80 DR",
+                "90-100 DR"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 49,
+            "question": "Comment Google appelle-t-il les liens NoFollow depuis 2019 ?",
+            "reponses": [
+                "Des blocages",
+                "Des indices (hints)",
+                "Des interdictions",
+                "Des obligations"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 50,
+            "question": "Quelle affirmation résume le mieux la stratégie de netlinking idéale ?",
+            "reponses": [
+                "Acquérir le maximum de liens le plus vite possible",
+                "Qualité > Quantité : 10 liens de sites autoritaires valent mieux que 100 liens de spam",
+                "Seuls les liens DoFollow ont de la valeur",
+                "Acheter des liens est la méthode la plus efficace"
+            ],
+            "bonne_reponse": 1
+        }
+    ]
+}

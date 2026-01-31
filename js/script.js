@@ -42,6 +42,9 @@ function selectTheme(themeId) {
     // Les slides sont déjà dans les données
     slidesContent = currentTheme.slides;
 
+    // Construire la liste des chapitres pour le sommaire
+    buildChapterList();
+
     // Afficher le diaporama
     currentSlideIndex = 0;
     themeTitle.textContent = currentTheme.title;
@@ -139,7 +142,9 @@ document.addEventListener('keydown', (e) => {
             break;
         case 'Escape':
             e.preventDefault();
-            if (slidePickerVisible) {
+            if (sommaireVisible) {
+                hideSommaire();
+            } else if (slidePickerVisible) {
                 hideSlidePicker();
             } else {
                 showThemeMenu();
@@ -147,9 +152,16 @@ document.addEventListener('keydown', (e) => {
             break;
         case 'g':
             // Raccourci "g" pour ouvrir le sélecteur de slide
-            if (!slidePickerVisible) {
+            if (!slidePickerVisible && !sommaireVisible) {
                 e.preventDefault();
                 showSlidePicker();
+            }
+            break;
+        case 's':
+            // Raccourci "s" pour ouvrir le sommaire
+            if (!sommaireVisible && !slidePickerVisible) {
+                e.preventDefault();
+                showSommaire();
             }
             break;
     }
@@ -195,6 +207,10 @@ document.addEventListener('wheel', (e) => {
 
 // ==================== SÉLECTEUR DE SLIDE ====================
 let slidePickerVisible = false;
+
+// ==================== SOMMAIRE ====================
+let sommaireVisible = false;
+let chaptersIndex = []; // [{index: 0, title: "..."}, ...]
 
 // Afficher le sélecteur de slide
 function showSlidePicker() {
@@ -270,6 +286,90 @@ function initSlidePicker() {
     });
 }
 
+// ==================== FONCTIONS SOMMAIRE ====================
+
+// Parser les slides pour trouver les chapitres
+function buildChapterList() {
+    chaptersIndex = [];
+    const sommaireBtn = document.getElementById('sommaire-btn');
+
+    slidesContent.forEach((slide, index) => {
+        // Chercher class="chapitre" dans h1 ou h2
+        const match = slide.match(/<h[12][^>]*class="chapitre"[^>]*>([^<]+)<\/h[12]>/i);
+        if (match) {
+            chaptersIndex.push({
+                index: index,
+                title: match[1].trim()
+            });
+        }
+    });
+
+    // Masquer le bouton si aucun chapitre
+    if (chaptersIndex.length === 0) {
+        sommaireBtn.classList.add('hidden');
+    } else {
+        sommaireBtn.classList.remove('hidden');
+        renderSommaire();
+    }
+}
+
+// Générer le HTML du sommaire
+function renderSommaire() {
+    const list = document.getElementById('sommaire-list');
+    list.innerHTML = chaptersIndex.map((ch) =>
+        `<li onclick="goToChapter(${ch.index})">
+            <span>${ch.title}</span>
+            <span class="slide-num">slide ${ch.index + 1}</span>
+        </li>`
+    ).join('');
+}
+
+// Naviguer vers un chapitre
+function goToChapter(index) {
+    goToSlide(index);
+    hideSommaire();
+}
+
+// Afficher le sommaire
+function showSommaire() {
+    if (!currentTheme || chaptersIndex.length === 0) return;
+    sommaireVisible = true;
+    document.getElementById('sommaire-overlay').classList.add('visible');
+}
+
+// Masquer le sommaire
+function hideSommaire() {
+    sommaireVisible = false;
+    document.getElementById('sommaire-overlay').classList.remove('visible');
+}
+
+// Initialiser les événements du sommaire
+function initSommaire() {
+    const sommaireBtn = document.getElementById('sommaire-btn');
+    const sommaireClose = document.getElementById('sommaire-close');
+    const sommaireOverlay = document.getElementById('sommaire-overlay');
+
+    // Clic sur le bouton sommaire
+    sommaireBtn.addEventListener('click', () => {
+        if (sommaireVisible) {
+            hideSommaire();
+        } else {
+            showSommaire();
+        }
+    });
+
+    // Bouton fermer
+    sommaireClose.addEventListener('click', hideSommaire);
+
+    // Clic en dehors pour fermer
+    sommaireOverlay.addEventListener('click', (e) => {
+        if (e.target === sommaireOverlay) {
+            hideSommaire();
+        }
+    });
+}
+
 // Démarrer
 init();
 initSlidePicker();
+initSommaire();

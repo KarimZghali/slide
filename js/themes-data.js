@@ -8,7 +8,7 @@ const THEMES_DATA = {
             "slides": [
                 `<div class="slide-seo">
     <h1>🚀 Formation SEO</h1>
-    <h2>Jour 1 – Fondations & Architecture Technique</h2>
+    <h2 class="chapitre">Fondations & Architecture Technique</h2>
     <p class="slide-subtitle">Comprendre comment Google voit le monde</p>
     <p class="mt-xl text-info"><strong>SEO</strong> = <em>Search Engine Optimization</em><br><span class="text-muted">(Optimisation pour les Moteurs de Recherche)</span></p>
     <p class="mt-lg text-muted">Chaque jour, <strong>8,5 milliards de recherches</strong> sont effectuées sur Google.<br>Le SEO, c'est l'art de capter une part de ce trafic... gratuitement.</p>
@@ -80,7 +80,7 @@ const THEMES_DATA = {
 
                 `<div class="slide-seo">
     <h1>📚 Chapitre 1</h1>
-    <h2>Comprendre l'écosystème des moteurs de recherche</h2>
+    <h2 class="chapitre">1 | Comprendre l'écosystème des moteurs de recherche</h2>
     <p class="text-intro">Avant d'optimiser, il faut comprendre la machine. Comment Google trouve-t-il vos pages ? Comment décide-t-il de leur pertinence ? Et surtout, qu'attend-il de vous ?</p>
     <div class="slide-agenda">
         <p>🔍 Le triptyque : Crawl, Indexation, Classement</p>
@@ -354,10 +354,12 @@ const THEMES_DATA = {
     </ul>
     <p class="slide-tip">💡 <strong>Exercice :</strong> Tapez votre mot-clé principal dans Google. Analysez les 10 premiers résultats. Sont-ils des articles ? Des pages produits ? Des vidéos ? C'est ce que Google attend de vous.</p>
 </div>`,
-
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 2 ------------------ //
+// --------------------------------------------- //
                 `<div class="slide-seo">
     <h1>🔧 Chapitre 2</h1>
-    <h2>L'Audit Technique : La base de l'édifice</h2>
+    <h2 class="chapitre">2 | L'Audit Technique : La base de l'édifice</h2>
     <p class="text-intro">Un contenu excellent sur un site techniquement défaillant, c'est comme un chef étoilé qui cuisine dans une cuisine insalubre. Personne n'y goûtera jamais.</p>
     <div class="slide-agenda">
         <p>🤖 Explorabilité et indexabilité (Robots.txt, Sitemap)</p>
@@ -811,9 +813,13 @@ const THEMES_DATA = {
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> La recherche de mots-clés et l'étude sémantique — comment choisir les batailles à mener.</p>
 </div>`,
 
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 3 ------------------ //
+// --------------------------------------------- //
+
                 `<div class="slide-seo">
     <h1>🔑 Chapitre 3</h1>
-    <h2>La recherche de mots-clés et l'étude sémantique</h2>
+    <h2 class="chapitre">3 | La recherche de mots-clés et l'étude sémantique</h2>
     <p class="text-intro">Avant de créer du contenu, il faut savoir sur quoi se positionner. La recherche de mots-clés est le <strong>GPS de votre stratégie SEO</strong> : elle vous dit où aller et comment y arriver.</p>
     <div class="slide-agenda">
         <p>📊 Typologie des mots-clés (courte traîne vs longue traîne)</p>
@@ -1425,20 +1431,14 @@ const THEMES_DATA = {
     <p class="mt-lg text-muted">Aujourd'hui, nous allons apprendre à optimiser chaque page pour qu'elle atteigne son plein potentiel dans les résultats de recherche.</p>
 </div>`,
 
-                `<div class="slide-seo">
-    <h1>📋 Programme du Jour 2</h1>
-    <h2>Ce que nous allons couvrir</h2>
-    <div class="slide-agenda">
-        <p>📝 <strong>Chapitre 1 :</strong> L'optimisation on-page (balises, structure, contenu)</p>
-        <p>✍️ <strong>Chapitre 2 :</strong> La rédaction SEO et le content marketing</p>
-        <p>🔗 <strong>Chapitre 3 :</strong> Le netlinking et l'autorité de domaine</p>
-    </div>
-    <p class="slide-tip">💡 L'optimisation on-page, c'est tout ce que vous contrôlez directement sur votre site. C'est la base de votre stratégie SEO.</p>
-</div>`,
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 4 ------------------ //
+// --------------------------------------------- //
+
 
                 `<div class="slide-seo">
-    <h1>📝 Chapitre 1</h1>
-    <h2>L'optimisation on-page</h2>
+    <h1>📝 Chapitre 4</h1>
+    <h2 class="chapitre">4 | L'optimisation on-page</h2>
     <p class="text-intro">L'optimisation on-page (ou "on-site") regroupe toutes les techniques d'optimisation appliquées <strong>directement sur vos pages web</strong>. C'est le premier levier d'action du SEO car vous en avez le contrôle total.</p>
     <div class="slide-agenda">
         <p>🏷️ Les balises Title et Meta Description</p>
@@ -2083,7 +2083,7 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>✅ Récap' Chapitre 1 (Jour 2)</h1>
+    <h1>✅ Récap' Chapitre 4</h1>
     <h2>Ce qu'il faut absolument retenir</h2>
     <ul>
         <li>🏷️ <strong>Title & Meta Description</strong> : votre vitrine dans les SERP, optimisez le CTR</li>
@@ -2096,9 +2096,14 @@ const THEMES_DATA = {
     <p class="slide-tip">💡 L'optimisation on-page est le fondement de votre SEO. Sans elle, même les meilleurs backlinks ne suffiront pas.</p>
 </div>`,
 
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 5 ------------------ //
+// --------------------------------------------- //
+
+
                 `<div class="slide-seo">
-    <h1>✍️ Chapitre 2</h1>
-    <h2>Stratégie de contenu et Copywriting SEO</h2>
+    <h1>✍️ Chapitre 5</h1>
+    <h2 class="chapitre">5 | Stratégie de contenu et Copywriting SEO</h2>
     <p class="text-intro">Créer du contenu optimisé ne suffit pas. Il faut créer du contenu qui <strong>captive, convainc et convertit</strong>. Le copywriting SEO est l'art de concilier les exigences des moteurs de recherche avec les attentes des humains.</p>
     <div class="slide-agenda">
         <p>📝 Les fondamentaux de la rédaction SEO</p>
@@ -2774,7 +2779,7 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>✅ Récap' Chapitre 2 (Jour 2)</h1>
+    <h1>✅ Récap' Chapitre 5</h1>
     <h2>Ce qu'il faut absolument retenir</h2>
     <ul>
         <li>✍️ <strong>Copywriting SEO</strong> : écrire pour les humains ET pour Google, pas l'un ou l'autre</li>
@@ -2801,11 +2806,14 @@ const THEMES_DATA = {
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Les nouveaux formats et la recherche moderne — recherche vocale, vidéo, IA et E-E-A-T.</p>
 </div>`,
 
-                // ==================== CHAPITRE 3 : LES NOUVEAUX FORMATS ET LA RECHERCHE MODERNE ====================
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 6 ------------------ //
+// --------------------------------------------- //
+
 
                 `<div class="slide-seo">
-    <h1>🚀 Chapitre 3</h1>
-    <h2>Les nouveaux formats et la recherche moderne</h2>
+    <h1>🚀 Chapitre 6</h1>
+    <h2 class="chapitre">6 | Les nouveaux formats et la recherche moderne</h2>
     <p class="text-intro">Le SEO évolue constamment. Au-delà des résultats textuels classiques, Google propose désormais de <strong>nombreux formats</strong> qui transforment la manière dont les utilisateurs trouvent l'information. Maîtriser ces nouveaux canaux est essentiel pour rester compétitif.</p>
     <div class="slide-agenda">
         <p>🎤 La recherche vocale et les assistants virtuels</p>
@@ -3329,7 +3337,7 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>✅ Récap' Chapitre 3 (Jour 2)</h1>
+    <h1>✅ Récap' Chapitre 6</h1>
     <h2>Ce qu'il faut absolument retenir</h2>
     <ul>
         <li>🎤 <strong>Recherche vocale</strong> : questions longues, langage naturel, SEO local</li>
@@ -3356,9 +3364,13 @@ const THEMES_DATA = {
     <p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Le netlinking et l'autorité de domaine — comment obtenir des backlinks de qualité.</p>
 </div>`,
 
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 7 ------------------ //
+// --------------------------------------------- //
+
                 `<div class="slide-seo">
-    <h1>🔗 Jour 3 – Le Netlinking</h1>
-    <h2>Chapitre 1 : Bâtir l'autorité du domaine</h2>
+    <h1>🔗 Chapitre 7 - Le Netlinking</h1>
+    <h2 class="chapitre">7 | Bâtir l'autorité du domaine</h2>
     <p class="slide-subtitle">L'art de gagner la confiance de Google grâce aux liens</p>
     <p class="mt-xl text-info"><strong>Netlinking</strong> = Stratégie d'acquisition de <em>backlinks</em> (liens entrants)<br><span class="text-muted">Aussi appelé "link building" ou "off-page SEO"</span></p>
     <p class="mt-lg text-muted">Si le contenu est le <strong>roi</strong>, les liens sont la <strong>monnaie</strong> du web.<br>Ils représentent des votes de confiance d'un site vers un autre.</p>
@@ -4065,7 +4077,7 @@ const THEMES_DATA = {
 
 
                 `<div class="slide-seo">
-    <h1>✅ Récap' Chapitre 1 (Jour 3)</h1>
+    <h1>✅ Récap' Chapitre 7</h1>
     <h2>Ce qu'il faut absolument retenir</h2>
     <ul>
         <li>🔗 <strong>Backlinks</strong> : liens entrants = votes de confiance entre sites</li>
@@ -4079,9 +4091,14 @@ const THEMES_DATA = {
     </ul>
      <p class="slide-tip">💡 <strong>Rappel :</strong> DA (Domain Authority) Score de 0 à 100 basé sur le nombre et la qualité des liens entrants + âge du domaine | DR (Domain Rating) Score de 0 à 100 Basé sur la force du profil de backlinks (quantité × qualité)</p>
 </div>`,
+
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 8 ------------------ //
+// --------------------------------------------- //
+
                 `<div class="slide-seo">
-    <h1>📊 Jour 3 – Chapitre 2</h1>
-    <h2>Mesure de performance et outils d'analyse</h2>
+    <h1>📊 Chapitre 8</h1>
+    <h2 class="chapitre">8 | Mesure de performance et outils d'analyse</h2>
     <p class="slide-subtitle">Ce qui ne se mesure pas ne s'améliore pas</p>
     <p class="mt-xl text-info"><strong>Analytics SEO</strong> = Collecte et analyse des données pour évaluer et optimiser votre stratégie<br><span class="text-muted">Le tableau de bord de votre visibilité en ligne</span></p>
     <p class="mt-lg text-muted">Le SEO sans mesure, c'est comme conduire les yeux fermés.<br>Les données vous montrent ce qui fonctionne... et ce qui doit changer.</p>
@@ -4878,7 +4895,7 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>✅ Récap' Chapitre 2 (Jour 3)</h1>
+    <h1>✅ Récap' Chapitre 8</h1>
     <h2>Ce qu'il faut absolument retenir</h2>
     <ul>
         <li>📈 <strong>KPIs essentiels</strong> : positions, impressions, clics, CTR, pages indexées, domaines référents</li>
@@ -4892,9 +4909,13 @@ const THEMES_DATA = {
     </ul>
 </div>`,
 
+// ----------------------------------------------- //
+// ---------------- CHAPITRE 9 ------------------ //
+// --------------------------------------------- //
+
                 `<div class="slide-seo">
-    <h1>📋 Chapitre 3</h1>
-    <h2>Méthodologie et gestion de projet SEO</h2>
+    <h1>📋 Chapitre 9</h1>
+    <h2 class="chapitre">9 | Méthodologie et gestion de projet SEO</h2>
     <p class="text-intro">Le SEO n'est pas une action ponctuelle, c'est un <strong>processus continu</strong>. Comme tout projet, il nécessite une méthodologie rigoureuse, une planification claire et une priorisation intelligente des actions.</p>
     <div class="slide-agenda">
         <p>🔍 L'audit SEO : diagnostic complet du site</p>
@@ -5791,7 +5812,7 @@ const THEMES_DATA = {
 </div>`,
 
                 `<div class="slide-seo">
-    <h1>✅ Récap' Chapitre 3</h1>
+    <h1>✅ Récap' Chapitre 9</h1>
     <h2>Ce qu'il faut absolument retenir</h2>
     <ul>
         <li>🔍 <strong>Audit SEO</strong> : point de départ obligatoire — technique, contenu, netlinking, concurrence</li>

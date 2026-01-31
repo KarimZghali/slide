@@ -1,0 +1,389 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Qu'est-ce que l'optimisation on-page ?",
+            "reponses": [
+                "L'acquisition de backlinks",
+                "Les techniques appliquées directement sur vos pages web",
+                "La gestion des réseaux sociaux",
+                "Les mentions de marque externes"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 2,
+            "question": "Quelle est la longueur idéale d'une balise Title ?",
+            "reponses": [
+                "30-40 caractères",
+                "70-80 caractères",
+                "50-60 caractères",
+                "100-120 caractères"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 3,
+            "question": "Où doit-on placer le mot-clé principal dans la balise Title ?",
+            "reponses": [
+                "À la fin",
+                "Au milieu",
+                "Peu importe la position",
+                "Au début"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 4,
+            "question": "Quelle est la longueur recommandée pour une meta description ?",
+            "reponses": [
+                "150-160 caractères",
+                "200-250 caractères",
+                "50-100 caractères",
+                "300-350 caractères"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 5,
+            "question": "La meta description est-elle un facteur de classement direct pour Google ?",
+            "reponses": [
+                "Oui, c'est le facteur le plus important",
+                "Oui, mais seulement pour les pages e-commerce",
+                "Non, mais elle influence le taux de clic (CTR)",
+                "Non, Google l'ignore complètement"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 6,
+            "question": "Quel est le CTR moyen approximatif de la position 1 dans les SERP ?",
+            "reponses": [
+                "~15%",
+                "~50%",
+                "~5%",
+                "~28%"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 7,
+            "question": "Combien de balises H1 doit-on avoir par page ?",
+            "reponses": [
+                "Autant que nécessaire",
+                "Minimum 2",
+                "Une seule",
+                "Maximum 5"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 8,
+            "question": "Quelle est la différence principale entre la balise Title et le H1 ?",
+            "reponses": [
+                "Le Title apparaît dans les résultats de recherche, le H1 sur la page",
+                "Le H1 est plus important pour le SEO",
+                "Le Title peut contenir plus de caractères",
+                "Il n'y a aucune différence"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 9,
+            "question": "Quel pourcentage du poids d'une page web les images représentent-elles en moyenne ?",
+            "reponses": [
+                "10%",
+                "25%",
+                "75%",
+                "50%"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 10,
+            "question": "Quel format d'image offre une compression 30% meilleure que JPEG à qualité égale ?",
+            "reponses": [
+                "PNG",
+                "GIF",
+                "WebP",
+                "BMP"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 11,
+            "question": "Quelle est la longueur maximale recommandée pour l'attribut alt d'une image ?",
+            "reponses": [
+                "50 caractères",
+                "200 caractères",
+                "125 caractères",
+                "Pas de limite"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 12,
+            "question": "Qu'est-ce que le lazy loading ?",
+            "reponses": [
+                "Un format de compression d'images",
+                "Le chargement des images uniquement quand elles arrivent dans la zone visible",
+                "Une technique de préchargement de toutes les images",
+                "Un outil de test de performance"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 13,
+            "question": "Doit-on appliquer le lazy loading aux images 'above the fold' ?",
+            "reponses": [
+                "Oui, toujours",
+                "Seulement sur mobile",
+                "Non, car cela dégrade le LCP",
+                "Uniquement pour les images de plus de 100Ko"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 14,
+            "question": "Qu'est-ce que le 'jus de lien' (link juice) ?",
+            "reponses": [
+                "Un outil SEO payant",
+                "Le nombre total de liens sur une page",
+                "La valeur SEO transmise d'une page à une autre via un lien",
+                "Le texte d'ancrage d'un lien"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 15,
+            "question": "Qu'est-ce qu'une page orpheline ?",
+            "reponses": [
+                "Une page sans contenu",
+                "Une page non indexée par Google",
+                "Une page qui n'est liée par aucune autre page du site",
+                "Une page avec des erreurs 404"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 16,
+            "question": "Quel texte d'ancrage est recommandé pour un lien interne ?",
+            "reponses": [
+                "Cliquez ici",
+                "En savoir plus",
+                "L'URL complète de la page",
+                "Guide complet des chaussures de running"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 17,
+            "question": "Qu'est-ce que Schema.org ?",
+            "reponses": [
+                "Un outil de Google Analytics",
+                "Un vocabulaire standard pour les données structurées",
+                "Un plugin WordPress",
+                "Un format d'image optimisé"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 18,
+            "question": "Quel type de schema permet d'afficher des questions/réponses dans les SERP ?",
+            "reponses": [
+                "Product",
+                "Article",
+                "FAQPage",
+                "BreadcrumbList"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 19,
+            "question": "Quel est l'impact moyen sur le CTR des résultats avec étoiles (avis) ?",
+            "reponses": [
+                "+10% CTR",
+                "+35% CTR",
+                "+50% CTR",
+                "+5% CTR"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 20,
+            "question": "Dans les 100 premiers mots du contenu, que doit-on inclure ?",
+            "reponses": [
+                "Le nom de l'auteur",
+                "Un lien externe",
+                "Le mot-clé principal",
+                "Une image"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 21,
+            "question": "Quelle longueur de contenu est recommandée pour un guide complet (page pilier) ?",
+            "reponses": [
+                "300-500 mots",
+                "500-800 mots",
+                "2000+ mots",
+                "100-200 mots"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 22,
+            "question": "Que signifie E-E-A-T ?",
+            "reponses": [
+                "Experience, Expertise, Authoritativeness, Trustworthiness",
+                "Engagement, Expertise, Authority, Traffic",
+                "Experience, Engagement, Analytics, Testing",
+                "Expertise, Efficiency, Accessibility, Technology"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 23,
+            "question": "Que signifie YMYL ?",
+            "reponses": [
+                "Your Marketing, Your Links",
+                "Your Money, Your Life",
+                "Your Media, Your Layout",
+                "Your Metrics, Your Landing"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 24,
+            "question": "Quel outil gratuit de Google permet de tester les résultats enrichis ?",
+            "reponses": [
+                "Google Analytics",
+                "Google Ads",
+                "Rich Results Test",
+                "Google Trends"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 25,
+            "question": "Quel outil peut crawler votre site pour visualiser le maillage interne (gratuit jusqu'à 500 URLs) ?",
+            "reponses": [
+                "Google Analytics",
+                "Screaming Frog",
+                "Canva",
+                "Mailchimp"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 26,
+            "question": "Quel format d'image est idéal pour les logos et icônes vectorielles ?",
+            "reponses": [
+                "JPEG",
+                "PNG",
+                "WebP",
+                "SVG"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 27,
+            "question": "Google affiche-t-il toujours votre meta description dans les résultats de recherche ?",
+            "reponses": [
+                "Oui, toujours",
+                "Non, il peut choisir d'afficher un autre texte",
+                "Seulement si elle fait moins de 100 caractères",
+                "Uniquement pour les sites en HTTPS"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 28,
+            "question": "Quel élément n'est PAS considéré comme on-page ?",
+            "reponses": [
+                "Les balises Title",
+                "Les données structurées",
+                "Les backlinks",
+                "Le maillage interne"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 29,
+            "question": "Quel attribut HTML natif permet le chargement différé des images ?",
+            "reponses": [
+                "defer=\"true\"",
+                "async=\"lazy\"",
+                "loading=\"lazy\"",
+                "src=\"lazy\""
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 30,
+            "question": "Pourquoi les pages orphelines posent-elles un problème SEO ?",
+            "reponses": [
+                "Elles sont automatiquement supprimées par Google",
+                "Elles consomment trop de bande passante",
+                "Googlebot ne peut pas les découvrir en suivant les liens",
+                "Elles ralentissent le chargement du site"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 31,
+            "question": "Quelle est la valeur de loading recommandée pour une image hero/banner importante ?",
+            "reponses": [
+                "loading=\"lazy\"",
+                "loading=\"defer\"",
+                "loading=\"async\"",
+                "loading=\"eager\""
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 32,
+            "question": "Quel symbole technique obligatoire est utilisé dans les données structurées JSON-LD ?",
+            "reponses": [
+                "Le symbole #",
+                "Le symbole @",
+                "Le symbole $",
+                "Le symbole %"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 33,
+            "question": "Quel type de contenu nécessite des critères E-E-A-T particulièrement stricts ?",
+            "reponses": [
+                "Les articles de divertissement",
+                "Les pages de contact",
+                "Les sujets YMYL (santé, finance, juridique)",
+                "Les pages de mentions légales"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 34,
+            "question": "Quel est un bon exemple de nom de fichier image pour le SEO ?",
+            "reponses": [
+                "IMG_2847.jpg",
+                "photo.jpg",
+                "chaussures-running-nike-pegasus.jpg",
+                "image1.png"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 35,
+            "question": "Que doit-on inclure dans une page pour améliorer les signaux de confiance E-E-A-T ?",
+            "reponses": [
+                "Plus de publicités",
+                "Des pop-ups d'inscription",
+                "Des pages auteur avec biographies et qualifications",
+                "Des animations JavaScript"
+            ],
+            "bonne_reponse": 2
+        }
+    ]
+}

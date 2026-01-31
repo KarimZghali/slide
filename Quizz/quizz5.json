@@ -1,0 +1,334 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Qu'est-ce que le copywriting SEO ?",
+            "reponses": [
+                "Une technique de référencement payant",
+                "L'art de créer du contenu qui ranke ET convertit",
+                "La rédaction exclusive pour les réseaux sociaux",
+                "L'optimisation technique des serveurs"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 2,
+            "question": "Quelle est la première étape de toute rédaction SEO ?",
+            "reponses": [
+                "Choisir les images",
+                "Écrire le titre",
+                "Comprendre l'intention de recherche de l'utilisateur",
+                "Calculer la densité de mots-clés"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 3,
+            "question": "Combien de secondes avez-vous pour convaincre le lecteur de rester sur votre page ?",
+            "reponses": [
+                "3 secondes",
+                "10 secondes",
+                "30 secondes",
+                "1 minute"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 4,
+            "question": "Qu'est-ce que la pyramide inversée en rédaction ?",
+            "reponses": [
+                "Commencer par les détails et finir par l'essentiel",
+                "Une technique de mise en page triangulaire",
+                "Présenter l'information la plus importante en premier",
+                "Alterner entre texte et images"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 5,
+            "question": "Combien de mots environ doit contenir la réponse pour viser un Featured Snippet ?",
+            "reponses": [
+                "10-20 mots",
+                "40-60 mots",
+                "100-150 mots",
+                "200-300 mots"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 6,
+            "question": "Que signifie l'acronyme AIDA en copywriting ?",
+            "reponses": [
+                "Action, Intérêt, Désir, Attention",
+                "Analyse, Information, Données, Action",
+                "Attention, Intérêt, Désir, Action",
+                "Audience, Impact, Design, Analyse"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 7,
+            "question": "Que signifie l'acronyme PAS en copywriting ?",
+            "reponses": [
+                "Problème, Agitation, Solution",
+                "Plan, Action, Suivi",
+                "Produit, Avantage, Service",
+                "Promotion, Analyse, Stratégie"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 8,
+            "question": "Que signifie BAB en copywriting ?",
+            "reponses": [
+                "Buy, Act, Believe",
+                "Brand, Audience, Benefit",
+                "Budget, Action, Business",
+                "Before, After, Bridge"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 9,
+            "question": "Qu'est-ce que les 'power words' ?",
+            "reponses": [
+                "Des mots-clés principaux",
+                "Des termes techniques SEO",
+                "Des mots qui déclenchent une réponse émotionnelle",
+                "Des balises HTML spéciales"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 10,
+            "question": "Qu'est-ce que le keyword stuffing ?",
+            "reponses": [
+                "Une technique recommandée par Google",
+                "L'utilisation de synonymes",
+                "Le bourrage excessif de mots-clés",
+                "L'optimisation des balises meta"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 11,
+            "question": "Quelle est la densité de mot-clé idéale selon les pratiques modernes ?",
+            "reponses": [
+                "Exactement 2%",
+                "Entre 3 et 5%",
+                "Il n'y a pas de pourcentage magique, écrire naturellement",
+                "Minimum 10%"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 12,
+            "question": "Qu'est-ce qu'un persona en marketing de contenu ?",
+            "reponses": [
+                "Un algorithme de Google",
+                "Une représentation fictive du client idéal",
+                "Un type de contenu viral",
+                "Un outil d'analyse SEO"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 13,
+            "question": "Quelles sont les trois phases principales du parcours utilisateur (Customer Journey) ?",
+            "reponses": [
+                "Recherche, Achat, Retour",
+                "Découverte, Considération, Décision",
+                "Attention, Intérêt, Conversion",
+                "Visite, Inscription, Paiement"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 14,
+            "question": "Quelle est la fréquence de publication considérée comme optimale pour la plupart des sites ?",
+            "reponses": [
+                "1 article par jour",
+                "3-5 articles par semaine",
+                "1 article par semaine",
+                "1 article par mois"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 15,
+            "question": "Qu'est-ce que le recyclage de contenu ?",
+            "reponses": [
+                "Supprimer les anciens contenus",
+                "Copier le contenu des concurrents",
+                "Réutiliser et adapter ses contenus existants dans différents formats",
+                "Publier le même article plusieurs fois"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 16,
+            "question": "Que signifie CTA ?",
+            "reponses": [
+                "Content Traffic Analysis",
+                "Call-to-Action (Appel à l'action)",
+                "Click Through Average",
+                "Conversion Tracking Algorithm"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 17,
+            "question": "Quel est le 2ème moteur de recherche au monde selon le cours ?",
+            "reponses": [
+                "Bing",
+                "Yahoo",
+                "YouTube",
+                "DuckDuckGo"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 18,
+            "question": "Qu'est-ce qu'un 'linkbait' ?",
+            "reponses": [
+                "Un lien cassé",
+                "Un contenu spécialement conçu pour attirer des liens naturels",
+                "Une technique de spam",
+                "Un type de backlink payant"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 19,
+            "question": "Combien de mots minimum doit contenir une page pilier ?",
+            "reponses": [
+                "500 mots",
+                "1000 mots",
+                "2000 mots",
+                "3000 mots"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 20,
+            "question": "Quelle technique d'accroche utilise une donnée chiffrée pour capter l'attention ?",
+            "reponses": [
+                "La question",
+                "La statistique choc",
+                "Le problème",
+                "La promesse"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 21,
+            "question": "Combien de mots doit idéalement contenir l'introduction d'un article SEO ?",
+            "reponses": [
+                "50-75 mots",
+                "100-150 mots",
+                "200-250 mots",
+                "300-400 mots"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 22,
+            "question": "Selon le cours, qu'est-ce qui est préférable entre qualité et quantité de publication ?",
+            "reponses": [
+                "Publier beaucoup même si la qualité est moyenne",
+                "1 article excellent par mois vaut mieux que 4 médiocres par semaine",
+                "La quantité est toujours plus importante",
+                "Il faut publier au moins 5 articles par jour"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 23,
+            "question": "Qu'est-ce que le champ sémantique en SEO ?",
+            "reponses": [
+                "La liste des mots-clés à densité exacte",
+                "L'ensemble des mots et expressions qui gravitent autour d'un sujet",
+                "Les balises HTML d'une page",
+                "Le nombre de caractères d'un article"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 24,
+            "question": "Pour trouver des contenus à optimiser en priorité (quick wins), quelle plage de positions faut-il cibler dans Search Console ?",
+            "reponses": [
+                "Position 1-3",
+                "Position 5-15",
+                "Position 50-100",
+                "Position 100+"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 25,
+            "question": "Quel est le bon usage de l'IA en rédaction SEO ?",
+            "reponses": [
+                "Publier directement sans relecture",
+                "Générer du contenu de masse sans valeur",
+                "Brainstorming, idéation et création de structures",
+                "Copier les concurrents automatiquement"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 26,
+            "question": "Quelle est une erreur courante de copywriting à éviter ?",
+            "reponses": [
+                "Utiliser la voix active",
+                "Parler de soi au lieu des bénéfices pour le client",
+                "Utiliser des paragraphes courts",
+                "Inclure des preuves sociales"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 27,
+            "question": "Combien de phrases maximum doit contenir un paragraphe pour une bonne lisibilité ?",
+            "reponses": [
+                "2-3 phrases",
+                "5-6 phrases",
+                "8-10 phrases",
+                "Pas de limite"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 28,
+            "question": "Quel type de contenu est adapté à la phase 'Découverte' du parcours client ?",
+            "reponses": [
+                "Pages produits avec prix",
+                "Offres promotionnelles",
+                "Articles de blog éducatifs",
+                "Formulaires de commande"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 29,
+            "question": "Quel élément facilite la navigation dans un article long et génère des sitelinks ?",
+            "reponses": [
+                "Les images",
+                "La table des matières",
+                "Le footer",
+                "Les publicités"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 30,
+            "question": "Que doit-on vérifier avant de publier un contenu selon la checklist SEO ?",
+            "reponses": [
+                "Uniquement l'orthographe",
+                "Intention, titre, accroche, structure, sémantique, médias, liens, CTA et relecture",
+                "Seulement la densité de mots-clés",
+                "Le nombre de mots uniquement"
+            ],
+            "bonne_reponse": 1
+        }
+    ]
+}

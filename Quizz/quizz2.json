@@ -1,0 +1,446 @@
+{
+  "titre": "Quiz - Chapitre 2 : L'Audit Technique - La base de l'édifice",
+  "description": "Questions sur le Chapitre 2 de la formation SEO - Robots.txt, Sitemap, Core Web Vitals, Mobile-First et Architecture",
+  "questions": [
+    {
+      "id": 1,
+      "question": "Où doit se trouver le fichier robots.txt sur un site web ?",
+      "reponses": [
+        "Dans le dossier /admin/",
+        "À la racine du site",
+        "Dans le dossier /css/",
+        "N'importe où sur le serveur"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 2,
+      "question": "Que signifie la directive 'User-agent: *' dans un fichier robots.txt ?",
+      "reponses": [
+        "S'applique uniquement à Google",
+        "Bloque tous les robots",
+        "S'applique à tous les robots",
+        "Désactive le fichier robots.txt"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 3,
+      "question": "Quelle directive du robots.txt interdit l'accès à un chemin ?",
+      "reponses": [
+        "Block",
+        "Deny",
+        "Disallow",
+        "Forbid"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 4,
+      "question": "Le fichier robots.txt est-il une barrière de sécurité absolue ?",
+      "reponses": [
+        "Oui, aucun robot ne peut l'ignorer",
+        "Non, c'est une convention que les robots malveillants peuvent ignorer",
+        "Oui, car il est protégé par mot de passe",
+        "Oui, car il utilise le chiffrement SSL"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 5,
+      "question": "Quelle erreur courante avec robots.txt peut empêcher tout crawl du site ?",
+      "reponses": [
+        "Allow: /",
+        "Disallow: /",
+        "Sitemap: /sitemap.xml",
+        "User-agent: Googlebot"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 6,
+      "question": "Pourquoi ne faut-il pas bloquer le CSS et le JavaScript avec robots.txt ?",
+      "reponses": [
+        "Parce que cela ralentit le site",
+        "Parce que Google doit pouvoir rendre les pages correctement",
+        "Parce que cela supprime le CSS du site",
+        "Parce que cela est illégal"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 7,
+      "question": "Qu'est-ce qu'un Sitemap XML ?",
+      "reponses": [
+        "Un fichier de style CSS pour le site",
+        "Un fichier listant toutes les URLs importantes du site",
+        "Un fichier de configuration du serveur",
+        "Un fichier JavaScript pour la navigation"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 8,
+      "question": "Quelle balise du Sitemap est obligatoire ?",
+      "reponses": [
+        "<lastmod>",
+        "<changefreq>",
+        "<loc>",
+        "<priority>"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 9,
+      "question": "Quelles balises du Sitemap Google ignore-t-il généralement ?",
+      "reponses": [
+        "<loc> et <lastmod>",
+        "<changefreq> et <priority>",
+        "<url> et <urlset>",
+        "Toutes les balises"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 10,
+      "question": "Où soumettre son Sitemap pour un crawl plus rapide ?",
+      "reponses": [
+        "Google Analytics",
+        "Google Ads",
+        "Google Search Console",
+        "Google Maps"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 11,
+      "question": "Quelle balise HTML permet de contrôler l'indexation page par page ?",
+      "reponses": [
+        "<meta name=\"keywords\">",
+        "<meta name=\"description\">",
+        "<meta name=\"robots\">",
+        "<meta name=\"author\">"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 12,
+      "question": "Quelle est la différence entre robots.txt et la balise meta robots ?",
+      "reponses": [
+        "Robots.txt bloque le crawl, meta robots contrôle l'indexation",
+        "Ce sont des synonymes",
+        "Robots.txt est plus récent",
+        "Meta robots bloque le crawl, robots.txt contrôle l'indexation"
+      ],
+      "bonne_reponse": 0
+    },
+    {
+      "id": 13,
+      "question": "Dans quels cas utiliser 'noindex' sur une page ?",
+      "reponses": [
+        "Sur la page d'accueil",
+        "Sur les pages de résultats de recherche interne ou pages de remerciement",
+        "Sur toutes les pages produits",
+        "Sur les articles de blog"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 14,
+      "question": "Que signifie LCP dans les Core Web Vitals ?",
+      "reponses": [
+        "Large Content Processing",
+        "Largest Contentful Paint",
+        "Last Content Page",
+        "Loading Content Performance"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 15,
+      "question": "Quel est le seuil de LCP considéré comme 'bon' ?",
+      "reponses": [
+        "≤ 1 seconde",
+        "≤ 2,5 secondes",
+        "≤ 4 secondes",
+        "≤ 5 secondes"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 16,
+      "question": "Qu'est-ce qu'une 'Image Hero' ?",
+      "reponses": [
+        "Une image d'un super-héros",
+        "Le premier grand visuel en haut d'une page web",
+        "Une image optimisée pour le SEO",
+        "Une image de fond du site"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 17,
+      "question": "Que mesure l'INP (Interaction to Next Paint) ?",
+      "reponses": [
+        "La vitesse de chargement des images",
+        "Le temps de réponse visuelle après une interaction utilisateur",
+        "Le nombre de clics sur une page",
+        "La taille des fichiers JavaScript"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 18,
+      "question": "Quelle métrique INP a remplacée en 2024 ?",
+      "reponses": [
+        "LCP",
+        "CLS",
+        "FID (First Input Delay)",
+        "TTFB"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 19,
+      "question": "Quel est le seuil de INP considéré comme 'bon' ?",
+      "reponses": [
+        "≤ 100ms",
+        "≤ 200ms",
+        "≤ 500ms",
+        "≤ 1000ms"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 20,
+      "question": "Qu'est-ce qu'un Web Worker ?",
+      "reponses": [
+        "Un employé qui code en JavaScript",
+        "Un script JS qui s'exécute en arrière-plan dans un thread séparé",
+        "Un outil de Google pour webmasters",
+        "Un type de cookie"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 21,
+      "question": "Que mesure le CLS (Cumulative Layout Shift) ?",
+      "reponses": [
+        "La vitesse de chargement",
+        "La stabilité visuelle de la page",
+        "Le nombre de liens sur la page",
+        "La taille des polices"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 22,
+      "question": "Quel est le seuil de CLS considéré comme 'bon' ?",
+      "reponses": [
+        "≤ 0,05",
+        "≤ 0,1",
+        "≤ 0,25",
+        "≤ 0,5"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 23,
+      "question": "Quelle est la principale cause de mauvais CLS ?",
+      "reponses": [
+        "Trop de texte sur la page",
+        "Images/vidéos sans dimensions fixes ou publicités qui se chargent tard",
+        "Trop de liens internes",
+        "Un certificat SSL expiré"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 24,
+      "question": "Quel outil Google intégré à Chrome permet d'analyser les performances ?",
+      "reponses": [
+        "Google Analytics",
+        "Lighthouse",
+        "Google Ads",
+        "Search Console"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 25,
+      "question": "Quelle est la différence entre les données 'lab' et 'terrain' en termes de performance ?",
+      "reponses": [
+        "Lab = données réelles, Terrain = données simulées",
+        "Lab = données simulées, Terrain = données de vrais utilisateurs",
+        "Ce sont des synonymes",
+        "Lab = données mobiles, Terrain = données desktop"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 26,
+      "question": "Depuis quelle année Google utilise-t-il principalement la version mobile pour l'indexation ?",
+      "reponses": [
+        "2015",
+        "2017",
+        "2019",
+        "2021"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 27,
+      "question": "Quel pourcentage du trafic web vient des mobiles ?",
+      "reponses": [
+        "30%",
+        "45%",
+        "60%+",
+        "80%"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 28,
+      "question": "Quelle approche de design est recommandée par Google : Responsive ou site mobile séparé (m.) ?",
+      "reponses": [
+        "Site mobile séparé (m.)",
+        "Responsive design",
+        "Application mobile native",
+        "Les deux sont équivalentes"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 29,
+      "question": "Quelle taille minimale recommandée pour les boutons tactiles sur mobile ?",
+      "reponses": [
+        "24x24 pixels",
+        "36x36 pixels",
+        "48x48 pixels",
+        "64x64 pixels"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 30,
+      "question": "Quelle balise meta est essentielle pour le responsive design ?",
+      "reponses": [
+        "<meta name=\"description\">",
+        "<meta name=\"viewport\">",
+        "<meta name=\"robots\">",
+        "<meta name=\"keywords\">"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 31,
+      "question": "Quelle est la 'règle des 3 clics' en architecture de site ?",
+      "reponses": [
+        "L'utilisateur doit cliquer 3 fois pour acheter",
+        "Toute page importante devrait être accessible en 3 clics max depuis l'accueil",
+        "Google crawle maximum 3 pages par visite",
+        "Il faut 3 liens minimum par page"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 32,
+      "question": "Quel caractère utiliser pour séparer les mots dans une URL ?",
+      "reponses": [
+        "Underscore (_)",
+        "Tiret (-)",
+        "Point (.)",
+        "Espace"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 33,
+      "question": "Quelle URL est la mieux optimisée pour le SEO ?",
+      "reponses": [
+        "monsite.fr/p?id=12847&cat=3",
+        "monsite.fr/CHAUSSURES/Running",
+        "monsite.fr/chaussures/baskets-running-homme",
+        "monsite.fr/produit_chaussure_123"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 34,
+      "question": "À quoi sert la balise canonical ?",
+      "reponses": [
+        "À bloquer les robots",
+        "À indiquer quelle URL est 'la vraie' en cas de contenu dupliqué",
+        "À améliorer la vitesse du site",
+        "À ajouter des mots-clés"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 35,
+      "question": "Depuis quelle année Google favorise-t-il les sites HTTPS ?",
+      "reponses": [
+        "2010",
+        "2014",
+        "2018",
+        "2020"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 36,
+      "question": "Que signifie HTTP/2 et pourquoi nécessite-t-il HTTPS ?",
+      "reponses": [
+        "C'est un type de sitemap qui requiert SSL",
+        "C'est un protocole plus rapide qui nécessite une connexion sécurisée",
+        "C'est une mise à jour de Google Chrome",
+        "C'est un format d'URL moderne"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 37,
+      "question": "Quelle redirection utiliser pour les anciennes URLs ?",
+      "reponses": [
+        "Redirection 302 (temporaire)",
+        "Redirection 301 (permanente)",
+        "Redirection 404",
+        "Redirection 500"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 38,
+      "question": "Quels sont les 3 Core Web Vitals ?",
+      "reponses": [
+        "SEO, SEA, SMO",
+        "HTML, CSS, JavaScript",
+        "LCP, INP, CLS",
+        "HTTP, HTTPS, FTP"
+      ],
+      "bonne_reponse": 2
+    },
+    {
+      "id": 39,
+      "question": "Qu'est-ce que le 'lazy loading' ?",
+      "reponses": [
+        "Un site qui se charge lentement",
+        "Une technique qui charge les images seulement quand elles deviennent visibles",
+        "Un type d'erreur JavaScript",
+        "Une pénalité Google"
+      ],
+      "bonne_reponse": 1
+    },
+    {
+      "id": 40,
+      "question": "Qu'est-ce qu'un CDN (Content Delivery Network) ?",
+      "reponses": [
+        "Un type de certificat SSL",
+        "Un réseau de serveurs distribués géographiquement pour servir le contenu plus rapidement",
+        "Un outil d'analyse de mots-clés",
+        "Un format d'image optimisé"
+      ],
+      "bonne_reponse": 1
+    }
+  ]
+}

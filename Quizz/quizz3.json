@@ -1,0 +1,334 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "question": "Qu'est-ce qu'un mot-clé en SEO ?",
+            "reponses": [
+                "Un mot de passe pour accéder à Google",
+                "Le terme ou l'expression que les internautes tapent dans un moteur de recherche",
+                "Un code secret utilisé par les algorithmes",
+                "Le nom de domaine d'un site web"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 2,
+            "question": "Quelle est la caractéristique principale des mots-clés de courte traîne ?",
+            "reponses": [
+                "Faible volume de recherches",
+                "Intention très précise",
+                "1-2 mots maximum avec forte concurrence",
+                "Taux de conversion élevé"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 3,
+            "question": "Quel pourcentage du trafic de recherche provient des requêtes longue traîne ?",
+            "reponses": [
+                "30%",
+                "50%",
+                "60%",
+                "70%"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 4,
+            "question": "Quelle est la principale caractéristique des mots-clés longue traîne ?",
+            "reponses": [
+                "3+ mots avec intention précise et concurrence modérée",
+                "Volume de recherches très élevé",
+                "Concurrence féroce",
+                "1 mot unique"
+            ],
+            "bonne_reponse": 0
+        },
+        {
+            "id": 5,
+            "question": "Plus un mot-clé est précis, que se passe-t-il avec le taux de conversion ?",
+            "reponses": [
+                "Il diminue",
+                "Il reste stable",
+                "Il augmente",
+                "Il devient imprévisible"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 6,
+            "question": "Qu'est-ce que le 'sweet spot' en recherche de mots-clés ?",
+            "reponses": [
+                "Le mot-clé le plus recherché",
+                "Le mot-clé le moins concurrentiel",
+                "L'équilibre entre volume suffisant et concurrence assez faible",
+                "Le mot-clé avec le meilleur taux de rebond"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 7,
+            "question": "Que signifie KD (Keyword Difficulty) ?",
+            "reponses": [
+                "Keyword Data",
+                "Un score de 0 à 100 estimant la difficulté de se positionner",
+                "Keyword Duration",
+                "Le coût par clic d'un mot-clé"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 8,
+            "question": "Un KD de 0-30 est considéré comme :",
+            "reponses": [
+                "Difficile",
+                "Moyen",
+                "Impossible",
+                "Facile"
+            ],
+            "bonne_reponse": 3
+        },
+        {
+            "id": 9,
+            "question": "Quel outil gratuit de Google donne les volumes de recherche et tendances saisonnières ?",
+            "reponses": [
+                "Google Analytics",
+                "Google Keyword Planner",
+                "Google Maps",
+                "Google Drive"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 10,
+            "question": "Que montre Google Trends ?",
+            "reponses": [
+                "Le nombre exact de recherches mensuelles",
+                "Les backlinks d'un site",
+                "L'évolution de l'intérêt pour un terme dans le temps",
+                "Le prix des enchères publicitaires"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 11,
+            "question": "Combien de recherches gratuites par jour offre AnswerThePublic ?",
+            "reponses": [
+                "1",
+                "3",
+                "5",
+                "10"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 12,
+            "question": "Quel est le prix de départ mensuel approximatif de SEMrush ?",
+            "reponses": [
+                "29€",
+                "50€",
+                "120€",
+                "200€"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 13,
+            "question": "Qu'est-ce que le Content Gap Analysis ?",
+            "reponses": [
+                "Analyser la longueur de son contenu",
+                "Trouver les mots-clés sur lesquels les concurrents rankent mais pas vous",
+                "Mesurer le temps de chargement des pages",
+                "Compter le nombre de pages d'un site"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 14,
+            "question": "Qu'est-ce que la technique Skyscraper ?",
+            "reponses": [
+                "Construire un site très haut dans les résultats",
+                "Créer le contenu le plus complet et qualitatif sur un sujet",
+                "Utiliser beaucoup de mots-clés",
+                "Acheter des backlinks"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 15,
+            "question": "Qui a inventé la technique Skyscraper ?",
+            "reponses": [
+                "Matt Cutts",
+                "Rand Fishkin",
+                "Brian Dean (Backlinko)",
+                "Neil Patel"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 16,
+            "question": "Qu'est-ce que le Keyword Mapping ?",
+            "reponses": [
+                "Créer une carte géographique des recherches",
+                "L'attribution de mots-clés spécifiques à des pages spécifiques",
+                "Dessiner le parcours utilisateur",
+                "Lister tous les mots-clés existants"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 17,
+            "question": "Quelle est la règle d'or du Keyword Mapping ?",
+            "reponses": [
+                "1 page = 10 mots-clés",
+                "1 page = 1 intention = 1 groupe de mots-clés",
+                "Toutes les pages ciblent le même mot-clé",
+                "Plus il y a de mots-clés, mieux c'est"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 18,
+            "question": "Qu'est-ce que la cannibalisation de mots-clés ?",
+            "reponses": [
+                "Quand un concurrent vole vos mots-clés",
+                "Quand plusieurs pages de votre site ciblent le même mot-clé",
+                "Quand Google supprime vos mots-clés",
+                "Quand les mots-clés sont trop longs"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 19,
+            "question": "Qu'est-ce qu'un cluster sémantique ?",
+            "reponses": [
+                "Un groupe de sites concurrents",
+                "Un groupe de mots-clés partageant la même intention de recherche",
+                "Un type de backlink",
+                "Une erreur technique SEO"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 20,
+            "question": "Dans l'architecture Topic Clusters, qu'est-ce qu'une page pilier ?",
+            "reponses": [
+                "La page d'accueil",
+                "Une page courte de 200 mots",
+                "Un guide complet couvrant tout le sujet (3000+ mots)",
+                "Une page de contact"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 21,
+            "question": "Combien de mots-clés secondaires recommande-t-on par page ?",
+            "reponses": [
+                "1",
+                "3-5",
+                "10-15",
+                "20+"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 22,
+            "question": "Dans la matrice Opportunité/Effort, quelle est la Priorité 1 ?",
+            "reponses": [
+                "Volume élevé + KD très élevé",
+                "Volume faible + KD faible",
+                "Volume correct + KD faible (Quick wins)",
+                "Volume élevé + KD moyen"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 23,
+            "question": "Que signifie un score de 50 sur Google Trends ?",
+            "reponses": [
+                "50 recherches par mois",
+                "Moitié moins de recherches que le pic",
+                "50% de chances de ranker",
+                "Le mot-clé est à moitié optimisé"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 24,
+            "question": "Quel outil est considéré comme la référence pour l'analyse de backlinks ?",
+            "reponses": [
+                "Google Analytics",
+                "Ubersuggest",
+                "Ahrefs",
+                "Google Trends"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 25,
+            "question": "Qu'indique une enchère suggérée élevée dans Google Keyword Planner ?",
+            "reponses": [
+                "Le mot-clé est peu recherché",
+                "Le mot-clé a une forte valeur commerciale",
+                "Le mot-clé est facile à positionner",
+                "Le mot-clé est obsolète"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 26,
+            "question": "Quelle stratégie est recommandée pour débuter en SEO ?",
+            "reponses": [
+                "Cibler uniquement les mots-clés courte traîne",
+                "Commencer par la longue traîne puis attaquer progressivement les termes plus concurrentiels",
+                "Ignorer la recherche de mots-clés",
+                "Copier exactement les concurrents"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 27,
+            "question": "Google Search Console montre :",
+            "reponses": [
+                "Les mots-clés de vos concurrents",
+                "Les requêtes réelles qui amènent du trafic sur votre site",
+                "Le prix des publicités",
+                "Les tendances mondiales de recherche"
+            ],
+            "bonne_reponse": 1
+        },
+        {
+            "id": 28,
+            "question": "Un volume de recherche de 0 signifie :",
+            "reponses": [
+                "Qu'il n'y a absolument aucune recherche",
+                "Que le mot-clé est interdit",
+                "Que l'outil a un seuil de détection et qu'il peut y avoir 10-50 recherches/mois",
+                "Que Google a supprimé ce mot-clé"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 29,
+            "question": "Quel est l'avantage principal d'Ubersuggest par rapport aux autres outils payants ?",
+            "reponses": [
+                "Il est le plus complet",
+                "Il a le plus de fonctionnalités",
+                "Son rapport qualité/prix et possibilité d'achat à vie",
+                "Il est le plus ancien"
+            ],
+            "bonne_reponse": 2
+        },
+        {
+            "id": 30,
+            "question": "Dans l'exemple du cours, quel taux de conversion est associé au mot-clé 'ordinateur portable gamer pas cher 2026' ?",
+            "reponses": [
+                "0,5%",
+                "1,5%",
+                "3%",
+                "8%"
+            ],
+            "bonne_reponse": 3
+        }
+    ]
+}
