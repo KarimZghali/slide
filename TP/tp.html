@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet SEO - Création et Optimisation d'un Site Web</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #64748b;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --bg-code: #334155;
+            --text-primary: #f1f5f9;
+            --text-secondary: #94a3b8;
+            --border: #334155;
+            --accent-gradient: linear-gradient(135deg, #2563eb, #7c3aed);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        .nav-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border);
+            z-index: 1000;
+            padding: 1rem 2rem;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            transition: all 0.2s;
+        }
+
+        .nav-links a:hover {
+            background: var(--bg-card);
+            color: var(--text-primary);
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 6rem 2rem 4rem;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 3rem 0 4rem;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 3rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: var(--accent-gradient);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.125rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.75rem;
+            border-bottom: 2px solid var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        h2 .phase-badge {
+            background: var(--accent-gradient);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            font-weight: 600;
+            margin: 2rem 0 1rem;
+            color: var(--primary);
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .card-icon.blue { background: rgba(37, 99, 235, 0.2); }
+        .card-icon.green { background: rgba(16, 185, 129, 0.2); }
+        .card-icon.orange { background: rgba(245, 158, 11, 0.2); }
+        .card-icon.purple { background: rgba(124, 58, 237, 0.2); }
+
+        /* Info boxes */
+        .info-box {
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-left: 4px solid;
+        }
+
+        .info-box.context {
+            background: rgba(37, 99, 235, 0.1);
+            border-color: var(--primary);
+        }
+
+        .info-box.tip {
+            background: rgba(16, 185, 129, 0.1);
+            border-color: var(--success);
+        }
+
+        .info-box.warning {
+            background: rgba(245, 158, 11, 0.1);
+            border-color: var(--warning);
+        }
+
+        .info-box.danger {
+            background: rgba(239, 68, 68, 0.1);
+            border-color: var(--danger);
+        }
+
+        .info-box-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 1rem 0 1rem 1.5rem;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            padding-left: 0.5rem;
+        }
+
+        li::marker {
+            color: var(--primary);
+        }
+
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .checklist li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.5rem 0;
+            padding-left: 0;
+        }
+
+        .checklist li::before {
+            content: "☐";
+            color: var(--primary);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: var(--bg-code);
+            color: var(--text-primary);
+            font-weight: 600;
+            text-align: left;
+            padding: 1rem;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 0.875rem 1rem;
+            border-top: 1px solid var(--border);
+            color: var(--text-secondary);
+        }
+
+        tr:hover td {
+            background: rgba(37, 99, 235, 0.05);
+        }
+
+        /* Code blocks */
+        pre {
+            background: var(--bg-code);
+            border-radius: 12px;
+            padding: 1.25rem;
+            overflow-x: auto;
+            margin: 1.5rem 0;
+            border: 1px solid var(--border);
+        }
+
+        code {
+            font-family: 'Fira Code', 'Consolas', monospace;
+            font-size: 0.875rem;
+            color: #e2e8f0;
+        }
+
+        p code, li code {
+            background: var(--bg-code);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* Blockquote */
+        blockquote {
+            background: var(--bg-card);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        /* Links */
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--primary-dark);
+            text-decoration: underline;
+        }
+
+        /* Thematic list */
+        .theme-list {
+            display: grid;
+            gap: 0.75rem;
+            margin: 1.5rem 0;
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .theme-list li {
+            background: var(--bg-card);
+            padding: 0.875rem 1.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 0;
+            padding-left: 1.25rem;
+        }
+
+        .theme-list li::before {
+            content: "→";
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        /* Livrables */
+        .livrable {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(124, 58, 237, 0.1));
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .livrable-title {
+            color: var(--primary);
+            font-weight: 700;
+            font-size: 1rem;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Steps */
+        .step {
+            background: var(--bg-card);
+            border-radius: 12px;
+            padding: 1.75rem;
+            margin: 2rem 0;
+            border: 1px solid var(--border);
+            position: relative;
+        }
+
+        .step::before {
+            content: attr(data-step);
+            position: absolute;
+            top: -12px;
+            left: 20px;
+            background: var(--accent-gradient);
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .step h3 {
+            margin-top: 0.5rem;
+        }
+
+        /* Comparison */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .comparison-bad, .comparison-good {
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .comparison-bad {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+
+        .comparison-good {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .comparison-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .comparison-bad .comparison-label { color: var(--danger); }
+        .comparison-good .comparison-label { color: var(--success); }
+
+        /* Tree structure */
+        .tree {
+            background: var(--bg-code);
+            border-radius: 12px;
+            padding: 1.5rem;
+            font-family: 'Fira Code', monospace;
+            font-size: 0.875rem;
+            line-height: 1.8;
+            color: #94a3b8;
+            margin: 1.5rem 0;
+        }
+
+        .tree .folder { color: #fbbf24; }
+        .tree .file { color: #60a5fa; }
+
+        /* Phase header */
+        .phase-header {
+            background: var(--accent-gradient);
+            border-radius: 16px;
+            padding: 2rem;
+            margin: 3rem 0 2rem;
+            text-align: center;
+        }
+
+        .phase-header h2 {
+            color: white;
+            border: none;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+        }
+
+        .phase-header h2 .phase-badge {
+            background: rgba(255,255,255,0.2);
+        }
+
+        /* Separator */
+        hr {
+            border: none;
+            height: 1px;
+            background: var(--border);
+            margin: 3rem 0;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 3rem 0;
+            margin-top: 4rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .footer p {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-header {
+                padding: 1rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .container {
+                padding: 5rem 1rem 2rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            h2 {
+                font-size: 1.35rem;
+            }
+
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.8rem;
+            }
+
+            th, td {
+                padding: 0.5rem;
+            }
+        }
+
+        /* Scroll to top */
+        .scroll-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: var(--accent-gradient);
+            color: white;
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 0.3s;
+            border: none;
+            font-size: 1.25rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+        }
+
+        .scroll-top:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-header">
+        <div class="nav-content">
+            <span class="nav-title">📚 Projet SEO</span>
+            <div class="nav-links">
+                <a href="#phase1">Phase 1</a>
+                <a href="#phase2">Phase 2</a>
+                <a href="#phase3">Phase 3</a>
+                <a href="#phase4">Phase 4</a>
+                <a href="#phase5">Phase 5</a>
+                <a href="#ressources">Ressources</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Hero -->
+        <header class="hero">
+            <span class="hero-badge">TP Complet</span>
+            <h1>Projet SEO<br>Création et Optimisation d'un Site Web</h1>
+            <p>Devenez consultant SEO junior en créant et optimisant un site vitrine complet de A à Z.</p>
+        </header>
+
+        <!-- Contexte -->
+        <section>
+            <h2>📋 Contexte du projet</h2>
+
+            <div class="info-box context">
+                <div class="info-box-title">🎯 Votre mission</div>
+                <p style="margin-bottom: 0;">Vous êtes consultant SEO junior dans une agence web. Un client fictif vous confie la création et l'optimisation SEO complète d'un <strong>site vitrine de 5 à 8 pages</strong> pour son activité.</p>
+            </div>
+
+            <h3>Thématiques au choix</h3>
+            <ul class="theme-list">
+                <li>Restaurant / Café local</li>
+                <li>Artisan (plombier, électricien, menuisier...)</li>
+                <li>Coach sportif / Bien-être</li>
+                <li>Photographe professionnel</li>
+                <li>Association locale</li>
+                <li>Autre (à valider avec votre formateur)</li>
+            </ul>
+        </section>
+
+        <!-- Livrables -->
+        <section>
+            <h2>📦 Livrables attendus</h2>
+            <p>À la fin du projet, vous devrez remettre :</p>
+
+            <div class="card">
+                <h4>1. Le site web publié</h4>
+                <p>URL fonctionnelle sur le serveur</p>
+            </div>
+
+            <div class="card">
+                <h4>2. Un dossier de documentation comprenant :</h4>
+                <ul>
+                    <li>Votre recherche de mots-clés (tableau)</li>
+                    <li>Votre Keyword Map</li>
+                    <li>Votre audit technique (captures d'écran)</li>
+                    <li>Vos données structurées JSON-LD</li>
+                    <li>Captures d'écran des outils (PageSpeed, Search Console...)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Outils -->
+        <section>
+            <h2>🛠️ Outils gratuits à utiliser</h2>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Outil</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Google Keyword Planner</strong></td>
+                            <td>Recherche de mots-clés</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Trends</strong></td>
+                            <td>Tendances saisonnières</td>
+                        </tr>
+                        <tr>
+                            <td><strong>AnswerThePublic</strong></td>
+                            <td>Questions des utilisateurs</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ubersuggest (version gratuite)</strong></td>
+                            <td>Analyse mots-clés</td>
+                        </tr>
+                        <tr>
+                            <td><strong>PageSpeed Insights</strong></td>
+                            <td>Performance</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Lighthouse (Chrome DevTools)</strong></td>
+                            <td>Audit technique</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Search Console</strong></td>
+                            <td>Indexation et performances</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Google Analytics 4</strong></td>
+                            <td>Comportement utilisateur</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Rich Results Test</strong></td>
+                            <td>Validation données structurées</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Schema Markup Validator</strong></td>
+                            <td>Validation Schema.org</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mobile-Friendly Test</strong></td>
+                            <td>Test responsive</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Screaming Frog (gratuit &lt; 500 URLs)</strong></td>
+                            <td>Crawl du site</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- PHASE 1 -->
+        <div class="phase-header" id="phase1">
+            <h2><span class="phase-badge">Phase 1</span> Stratégie et Recherche</h2>
+        </div>
+
+        <!-- Étape 1.1 -->
+        <section>
+            <div class="step" data-step="Étape 1.1">
+                <h3>Définir votre persona</h3>
+                <p>Avant de créer du contenu, vous devez comprendre votre cible.</p>
+
+                <h4>À faire :</h4>
+                <p>Créez une fiche persona avec :</p>
+                <ul>
+                    <li>Prénom fictif et âge</li>
+                    <li>Métier / Situation</li>
+                    <li>Objectifs (que cherche-t-il ?)</li>
+                    <li>Frustrations (quels problèmes rencontre-t-il ?)</li>
+                    <li>Questions qu'il se pose</li>
+                    <li>Canaux utilisés (Google, réseaux sociaux...)</li>
+                </ul>
+
+                <h4>Exemple pour un plombier :</h4>
+                <blockquote>
+                    <em>Marie, 45 ans, propriétaire d'une maison à Lyon. Elle cherche un plombier fiable pour une fuite urgente. Elle a peur de se faire arnaquer sur les prix. Elle tape sur Google "plombier urgence Lyon avis".</em>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Étape 1.2 -->
+        <section>
+            <div class="step" data-step="Étape 1.2">
+                <h3>Recherche de mots-clés</h3>
+                <p><strong>Objectif :</strong> Identifier 15-20 mots-clés pertinents pour votre site.</p>
+
+                <h4>Instructions :</h4>
+
+                <div class="card">
+                    <h4>1. Brainstorming initial</h4>
+                    <p>Listez 10 termes que votre client potentiel pourrait rechercher</p>
+                </div>
+
+                <div class="card">
+                    <h4>2. Utilisez Google Keyword Planner</h4>
+                    <ul>
+                        <li>Allez sur <a href="https://ads.google.com/intl/fr_fr/home/tools/keyword-planner/" target="_blank">Google Keyword Planner</a></li>
+                        <li>Entrez vos termes de brainstorming</li>
+                        <li>Notez pour chaque mot-clé :
+                            <ul>
+                                <li>Volume de recherche mensuel</li>
+                                <li>Niveau de concurrence (faible/moyen/élevé)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Explorez les suggestions Google</h4>
+                    <ul>
+                        <li>Tapez vos mots-clés dans Google</li>
+                        <li>Notez les suggestions de l'autocomplétion</li>
+                        <li>Notez les "Recherches associées" en bas de page</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Utilisez AnswerThePublic</h4>
+                    <ul>
+                        <li>Allez sur <a href="https://answerthepublic.com" target="_blank">answerthepublic.com</a></li>
+                        <li>Entrez votre mot-clé principal</li>
+                        <li>Récupérez les questions (qui, quoi, où, quand, comment, pourquoi)</li>
+                    </ul>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Tableau de mots-clés</div>
+                    <p>Créez un tableau avec les colonnes suivantes :</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mot-clé</th>
+                                <th>Volume</th>
+                                <th>Concurrence</th>
+                                <th>Type</th>
+                                <th>Intention</th>
+                                <th>Page cible</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>plombier lyon</td>
+                                <td>2400</td>
+                                <td>Élevée</td>
+                                <td>Courte</td>
+                                <td>Transactionnelle</td>
+                                <td>Accueil</td>
+                            </tr>
+                            <tr>
+                                <td>plombier urgence lyon 24h</td>
+                                <td>320</td>
+                                <td>Moyenne</td>
+                                <td>Longue</td>
+                                <td>Transactionnelle</td>
+                                <td>Services</td>
+                            </tr>
+                            <tr>
+                                <td>comment déboucher évier</td>
+                                <td>1900</td>
+                                <td>Faible</td>
+                                <td>Longue</td>
+                                <td>Informationnelle</td>
+                                <td>Blog</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>Types d'intention :</h4>
+                <ul>
+                    <li><strong>Informationnelle</strong> : l'utilisateur cherche une information ("comment faire...")</li>
+                    <li><strong>Transactionnelle</strong> : l'utilisateur veut acheter/contacter ("plombier pas cher")</li>
+                    <li><strong>Navigationnelle</strong> : l'utilisateur cherche un site précis ("leroy merlin plomberie")</li>
+                    <li><strong>Commerciale</strong> : l'utilisateur compare ("meilleur plombier lyon avis")</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Étape 1.3 -->
+        <section>
+            <div class="step" data-step="Étape 1.3">
+                <h3>Analyse de la concurrence</h3>
+                <p><strong>Objectif :</strong> Comprendre ce que font vos concurrents pour les surpasser.</p>
+
+                <h4>Instructions :</h4>
+
+                <div class="card">
+                    <h4>1. Identifiez 3 concurrents</h4>
+                    <p>Qui apparaissent en première page sur vos mots-clés cibles</p>
+                </div>
+
+                <div class="card">
+                    <h4>2. Pour chaque concurrent, analysez :</h4>
+                    <ul>
+                        <li>Structure du site (combien de pages, quelles rubriques)</li>
+                        <li>Longueur des contenus</li>
+                        <li>Présence de blog</li>
+                        <li>Types de contenus (texte, images, vidéos)</li>
+                        <li>Points forts / Points faibles</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Content Gap Analysis</h4>
+                    <ul>
+                        <li>Quels sujets couvrent-ils que vous pourriez aussi couvrir ?</li>
+                        <li>Quels sujets ne couvrent-ils PAS ? (opportunité !)</li>
+                    </ul>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Fiche d'analyse concurrentielle</div>
+                </div>
+
+<pre><code>CONCURRENT 1 : [Nom du site]
+URL :
+Position sur [mot-clé principal] :
+Nombre de pages :
+Points forts :
+Points faibles :
+Ce que je peux faire mieux :</code></pre>
+            </div>
+        </section>
+
+        <!-- Étape 1.4 -->
+        <section>
+            <div class="step" data-step="Étape 1.4">
+                <h3>Architecture du site et Keyword Map</h3>
+                <p><strong>Objectif :</strong> Planifier la structure de votre site et attribuer un mot-clé par page.</p>
+
+                <div class="info-box warning">
+                    <div class="info-box-title">⚠️ Règles importantes</div>
+                    <ul style="margin-bottom: 0;">
+                        <li><strong>1 mot-clé principal = 1 page</strong> (éviter la cannibalisation)</li>
+                        <li>Chaque page a aussi 2-3 mots-clés secondaires</li>
+                        <li>Structure en moins de 3 clics depuis l'accueil</li>
+                    </ul>
+                </div>
+
+                <h4>Structure recommandée (5-8 pages) :</h4>
+
+                <div class="tree">
+<span class="folder">Accueil (/)</span>
+├── <span class="file">Services (/services)</span>
+│   └── <span class="file">[Service spécifique] (/services/nom-service)</span>
+├── <span class="file">À propos (/a-propos)</span>
+├── <span class="file">Contact (/contact)</span>
+├── <span class="folder">Blog (/blog)</span>
+│   └── <span class="file">[Article 1] (/blog/titre-article)</span>
+│   └── <span class="file">[Article 2] (/blog/titre-article-2)</span>
+└── <span class="file">Mentions légales (/mentions-legales)</span>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Keyword Map</div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Page</th>
+                                <th>URL</th>
+                                <th>Mot-clé principal</th>
+                                <th>Mots-clés secondaires</th>
+                                <th>Intention</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accueil</td>
+                                <td>/</td>
+                                <td>plombier lyon</td>
+                                <td>plombier lyon 7, artisan plombier</td>
+                                <td>Transactionnelle</td>
+                            </tr>
+                            <tr>
+                                <td>Services</td>
+                                <td>/services</td>
+                                <td>dépannage plomberie</td>
+                                <td>fuite eau, débouchage</td>
+                                <td>Transactionnelle</td>
+                            </tr>
+                            <tr>
+                                <td>À propos</td>
+                                <td>/a-propos</td>
+                                <td>entreprise plomberie lyon</td>
+                                <td>plombier professionnel</td>
+                                <td>Informationnelle</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHASE 2 -->
+        <div class="phase-header" id="phase2">
+            <h2><span class="phase-badge">Phase 2</span> Création du Site</h2>
+        </div>
+
+        <!-- Étape 2.1 -->
+        <section>
+            <div class="step" data-step="Étape 2.1">
+                <h3>Structure HTML et hiérarchie des titres</h3>
+                <p><strong>Objectif :</strong> Créer une structure HTML sémantique et optimisée.</p>
+
+                <h4>Règles à respecter :</h4>
+                <ol>
+                    <li><strong>Un seul H1 par page</strong> - unique et contenant le mot-clé principal</li>
+                    <li><strong>Hiérarchie logique</strong> : H1 → H2 → H3 (ne pas sauter de niveau)</li>
+                    <li><strong>Balise viewport</strong> obligatoire pour le responsive :</li>
+                </ol>
+
+<pre><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+
+                <h4>Template HTML de base :</h4>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;[Mot-clé principal] | [Nom de marque]&lt;/title&gt;
+    &lt;meta name="description" content="[Description 150-160 caractères avec mot-clé et CTA]"&gt;
+    &lt;meta name="robots" content="index, follow"&gt;
+    &lt;link rel="canonical" href="[URL complète de la page]"&gt;
+    &lt;link rel="stylesheet" href="css/style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;nav&gt;
+            &lt;!-- Navigation principale --&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;h1&gt;[Titre unique avec mot-clé]&lt;/h1&gt;
+
+        &lt;section&gt;
+            &lt;h2&gt;[Sous-titre]&lt;/h2&gt;
+            &lt;p&gt;[Contenu - mot-clé dans les 100 premiers mots]&lt;/p&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;!-- Coordonnées, liens légaux --&gt;
+    &lt;/footer&gt;
+
+    &lt;script src="js/script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            </div>
+        </section>
+
+        <!-- Étape 2.2 -->
+        <section>
+            <div class="step" data-step="Étape 2.2">
+                <h3>Optimisation des balises Title et Meta Description</h3>
+                <p><strong>Objectif :</strong> Créer des balises qui favorisent le clic dans les résultats Google.</p>
+
+                <h4>Règles pour le Title :</h4>
+                <ul>
+                    <li><strong>50-60 caractères</strong> maximum</li>
+                    <li>Mot-clé principal <strong>au début</strong></li>
+                    <li>Format recommandé : <code>[Mot-clé] - [Bénéfice] | [Marque]</code></li>
+                    <li>Doit donner envie de cliquer</li>
+                </ul>
+
+                <h4>Règles pour la Meta Description :</h4>
+                <ul>
+                    <li><strong>150-160 caractères</strong></li>
+                    <li>Inclure le mot-clé (sera mis en gras par Google)</li>
+                    <li>Ajouter un <strong>Call-to-Action</strong> (Découvrez, Contactez, Obtenez...)</li>
+                    <li>Mettre en avant un <strong>bénéfice</strong> ou une <strong>différenciation</strong></li>
+                </ul>
+
+                <h4>Exemples :</h4>
+
+                <div class="card">
+                    <h4>Page Accueil - Plombier Lyon :</h4>
+<pre><code>&lt;title&gt;Plombier Lyon - Dépannage 24h/24 &amp; Devis Gratuit | ProPlomb&lt;/title&gt;
+&lt;meta name="description" content="Plombier à Lyon, intervention en urgence 24h/24. Devis gratuit en 30 min. Plus de 500 clients satisfaits. Contactez-nous au 04 XX XX XX XX."&gt;</code></pre>
+                </div>
+
+                <div class="card">
+                    <h4>Page Services :</h4>
+<pre><code>&lt;title&gt;Dépannage Plomberie Lyon - Fuite, Débouchage, Chauffe-eau | ProPlomb&lt;/title&gt;
+&lt;meta name="description" content="Services de plomberie à Lyon : réparation fuite d'eau, débouchage canalisation, installation chauffe-eau. Intervention rapide. Demandez votre devis gratuit !"&gt;</code></pre>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Tableau des balises</div>
+                    <p>Complétez ce tableau pour chaque page :</p>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Page</th>
+                                <th>Title (50-60 car.)</th>
+                                <th>Meta Description (150-160 car.)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Accueil</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Services</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>À propos</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Contact</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Blog Article 1</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 2.3 -->
+        <section>
+            <div class="step" data-step="Étape 2.3">
+                <h3>Rédaction du contenu SEO</h3>
+                <p><strong>Objectif :</strong> Rédiger du contenu optimisé pour le référencement ET pour l'utilisateur.</p>
+
+                <h4>Structure d'une page de contenu :</h4>
+
+                <div class="card">
+                    <h4>1. Accroche (Hook) - 2-3 phrases percutantes</h4>
+                    <ul>
+                        <li>Question qui interpelle</li>
+                        <li>Statistique choc</li>
+                        <li>Problème identifié</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. Introduction (100-150 mots)</h4>
+                    <ul>
+                        <li>Présente le sujet</li>
+                        <li>Inclut le mot-clé principal</li>
+                        <li>Annonce ce que le lecteur va apprendre</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Corps du contenu</h4>
+                    <ul>
+                        <li>Paragraphes courts (2-3 phrases)</li>
+                        <li>Sous-titres (H2, H3) avec mots-clés</li>
+                        <li>Listes à puces pour la lisibilité</li>
+                        <li>Champ sémantique riche (synonymes, termes associés)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Conclusion avec CTA</h4>
+                    <ul>
+                        <li>Résumé des points clés</li>
+                        <li>Appel à l'action clair</li>
+                    </ul>
+                </div>
+
+                <h4>Longueur recommandée par type de page :</h4>
+                <ul>
+                    <li>Page d'accueil : 300-500 mots</li>
+                    <li>Page service : 500-800 mots</li>
+                    <li>Article de blog : 1000-1500 mots</li>
+                    <li>Page À propos : 300-500 mots</li>
+                </ul>
+
+                <h4>Techniques de copywriting à utiliser :</h4>
+
+                <div class="info-box tip">
+                    <div class="info-box-title">💡 Formule PAS (Problem - Agitate - Solution)</div>
+                    <ol>
+                        <li><strong>Problème</strong> : "Vous avez une fuite d'eau en pleine nuit ?"</li>
+                        <li><strong>Agitation</strong> : "Chaque minute compte. Les dégâts des eaux peuvent coûter des milliers d'euros..."</li>
+                        <li><strong>Solution</strong> : "Notre équipe intervient 24h/24 en moins d'une heure à Lyon."</li>
+                    </ol>
+                </div>
+
+                <h4>Bonnes pratiques :</h4>
+                <ul>
+                    <li>Utilisez le "vous" pour parler au lecteur</li>
+                    <li>Voix active plutôt que passive</li>
+                    <li>Mettez en avant les bénéfices, pas les caractéristiques</li>
+                    <li>Évitez le jargon technique</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Étape 2.4 -->
+        <section>
+            <div class="step" data-step="Étape 2.4">
+                <h3>Optimisation des images</h3>
+                <p><strong>Objectif :</strong> Des images qui ne ralentissent pas le site et qui sont compréhensibles par Google.</p>
+
+                <h4>Checklist images :</h4>
+
+                <div class="card">
+                    <h4>1. Nommage du fichier</h4>
+                    <div class="comparison">
+                        <div class="comparison-bad">
+                            <div class="comparison-label">❌ Mauvais</div>
+                            <code>IMG_20240315_143022.jpg</code>
+                        </div>
+                        <div class="comparison-good">
+                            <div class="comparison-label">✅ Bon</div>
+                            <code>plombier-intervention-urgence-lyon.jpg</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4>2. Attribut alt (obligatoire)</h4>
+                    <p>Description de l'image en 5-10 mots. Inclure le mot-clé si pertinent.</p>
+                    <div class="comparison">
+                        <div class="comparison-bad">
+                            <div class="comparison-label">❌ Mauvais</div>
+                            <code>alt="image"</code> ou <code>alt=""</code>
+                        </div>
+                        <div class="comparison-good">
+                            <div class="comparison-label">✅ Bon</div>
+                            <code>alt="Plombier réparant une fuite sous un évier à Lyon"</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <h4>3. Compression</h4>
+                    <ul>
+                        <li>Utilisez <a href="https://squoosh.app/" target="_blank">squoosh.app</a> ou <a href="https://tinypng.com/" target="_blank">tinypng.com</a></li>
+                        <li>Objectif : &lt; 100 Ko par image</li>
+                        <li>Format WebP recommandé (30% plus léger)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Dimensions</h4>
+                    <ul>
+                        <li>Adapter à la taille d'affichage réelle</li>
+                        <li>Ne pas afficher une image 4000px en 400px</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>5. Lazy loading (pour images hors écran)</h4>
+<pre><code>&lt;img src="image.webp" alt="Description" loading="lazy" width="800" height="600"&gt;</code></pre>
+                    <div class="info-box warning" style="margin-top: 1rem; margin-bottom: 0;">
+                        <div class="info-box-title">⚠️ Attention</div>
+                        <p style="margin-bottom: 0;">Ne PAS mettre <code>loading="lazy"</code> sur l'image principale visible en haut de page (LCP)</p>
+                    </div>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Tableau des images</div>
+                </div>
+
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nom fichier</th>
+                                <th>Alt text</th>
+                                <th>Poids original</th>
+                                <th>Poids compressé</th>
+                                <th>Page</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 2.5 -->
+        <section>
+            <div class="step" data-step="Étape 2.5">
+                <h3>Maillage interne</h3>
+                <p><strong>Objectif :</strong> Créer des liens entre vos pages pour aider Google à comprendre la structure.</p>
+
+                <h4>Règles du maillage interne :</h4>
+                <ol>
+                    <li><strong>Liens contextuels</strong> dans le contenu (pas seulement dans le menu)</li>
+                    <li><strong>Ancres descriptives</strong> :
+                        <div class="comparison" style="margin-top: 0.5rem;">
+                            <div class="comparison-bad">
+                                <div class="comparison-label">❌ Mauvais</div>
+                                "Cliquez ici" / "En savoir plus"
+                            </div>
+                            <div class="comparison-good">
+                                <div class="comparison-label">✅ Bon</div>
+                                "Découvrez nos services de dépannage plomberie"
+                            </div>
+                        </div>
+                    </li>
+                    <li><strong>Logique de silo</strong> :
+                        <ul>
+                            <li>La page d'accueil lie vers les pages principales</li>
+                            <li>Les pages de services lient vers les articles de blog connexes</li>
+                            <li>Les articles de blog lient vers les pages de services</li>
+                        </ul>
+                    </li>
+                    <li><strong>Aucune page orpheline</strong> : chaque page doit recevoir au moins 1 lien interne</li>
+                </ol>
+
+                <h4>Exemple de maillage :</h4>
+<pre><code>[Accueil] → lien vers [Services] "nos prestations de plomberie"
+[Accueil] → lien vers [Blog Article] "conseils pour éviter les fuites"
+[Services] → lien vers [Contact] "demandez un devis gratuit"
+[Blog Article] → lien vers [Services] "faites appel à un professionnel"</code></pre>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Schéma de maillage</div>
+                    <p style="margin-bottom: 0;">Dessinez un schéma montrant les liens entre vos pages (peut être fait sur papier ou avec un outil comme draw.io).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 2.6 -->
+        <section>
+            <div class="step" data-step="Étape 2.6">
+                <h3>Données structurées (Schema.org)</h3>
+                <p><strong>Objectif :</strong> Aider Google à mieux comprendre votre contenu et obtenir des rich snippets.</p>
+
+                <h4>Types de Schema à implémenter :</h4>
+
+                <div class="card">
+                    <h4>1. LocalBusiness (pour toutes les pages)</h4>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ProPlomb Lyon",
+  "description": "Plombier professionnel à Lyon, dépannage 24h/24",
+  "url": "https://votre-site.fr",
+  "telephone": "+33-4-XX-XX-XX-XX",
+  "email": "contact@votre-site.fr",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Rue Example",
+    "addressLocality": "Lyon",
+    "postalCode": "69001",
+    "addressCountry": "FR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.764043,
+    "longitude": 4.835659
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "19:00"
+  },
+  "priceRange": "€€"
+}
+&lt;/script&gt;</code></pre>
+                </div>
+
+                <div class="card">
+                    <h4>2. BreadcrumbList (fil d'Ariane)</h4>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Accueil",
+      "item": "https://votre-site.fr/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://votre-site.fr/services"
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+                </div>
+
+                <div class="card">
+                    <h4>3. FAQPage (pour page FAQ ou sections FAQ)</h4>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quel est le tarif d'une intervention de plomberie ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le tarif dépend de la nature de l'intervention. Comptez entre 80€ et 150€ pour un dépannage simple. Nous proposons un devis gratuit avant toute intervention."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Intervenez-vous en urgence le week-end ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, nous intervenons 7j/7 et 24h/24 pour les urgences plomberie à Lyon et ses environs."
+      }
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+                </div>
+
+                <div class="card">
+                    <h4>4. Article (pour les articles de blog)</h4>
+<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Comment déboucher un évier naturellement",
+  "description": "Découvrez 5 méthodes naturelles pour déboucher votre évier sans produits chimiques.",
+  "author": {
+    "@type": "Person",
+    "name": "Jean Dupont"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ProPlomb Lyon"
+  },
+  "datePublished": "2024-03-15",
+  "dateModified": "2024-03-20"
+}
+&lt;/script&gt;</code></pre>
+                </div>
+
+                <h4>Validation :</h4>
+                <ol>
+                    <li>Allez sur <a href="https://search.google.com/test/rich-results" target="_blank">Rich Results Test</a></li>
+                    <li>Entrez l'URL de votre page ou collez le code HTML</li>
+                    <li>Vérifiez qu'il n'y a pas d'erreurs</li>
+                </ol>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Fichiers JSON-LD</div>
+                    <p style="margin-bottom: 0;">Fournissez le code JSON-LD pour chaque page dans votre documentation.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHASE 3 -->
+        <div class="phase-header" id="phase3">
+            <h2><span class="phase-badge">Phase 3</span> Optimisation Technique</h2>
+        </div>
+
+        <!-- Étape 3.1 -->
+        <section>
+            <div class="step" data-step="Étape 3.1">
+                <h3>Création du fichier robots.txt</h3>
+                <p><strong>Objectif :</strong> Indiquer aux robots ce qu'ils peuvent et ne peuvent pas crawler.</p>
+
+                <p><strong>Emplacement :</strong> À la racine du site (<code>/robots.txt</code>)</p>
+
+                <h4>Contenu recommandé :</h4>
+<pre><code># Robots.txt pour [Nom du site]
+
+User-agent: *
+Allow: /
+
+# Bloquer les pages non pertinentes pour le SEO
+Disallow: /admin/
+Disallow: /merci/
+Disallow: /confirmation/
+Disallow: /*?*
+Disallow: /search/
+
+# Référence au sitemap
+Sitemap: https://votre-site.fr/sitemap.xml</code></pre>
+
+                <h4>Explications :</h4>
+                <ul>
+                    <li><code>User-agent: *</code> → règles pour tous les robots</li>
+                    <li><code>Allow: /</code> → autoriser tout par défaut</li>
+                    <li><code>Disallow:</code> → chemins à ne pas crawler</li>
+                    <li><code>Sitemap:</code> → chemin vers votre sitemap</li>
+                </ul>
+
+                <div class="info-box danger">
+                    <div class="info-box-title">🚫 Points de vigilance</div>
+                    <ul style="margin-bottom: 0;">
+                        <li>❌ Ne jamais bloquer les fichiers CSS et JS</li>
+                        <li>❌ Ne jamais bloquer les pages importantes par erreur</li>
+                        <li>✅ Tester dans Google Search Console</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 3.2 -->
+        <section>
+            <div class="step" data-step="Étape 3.2">
+                <h3>Création du fichier sitemap.xml</h3>
+                <p><strong>Objectif :</strong> Lister toutes les pages importantes pour faciliter l'indexation.</p>
+
+                <p><strong>Emplacement :</strong> À la racine du site (<code>/sitemap.xml</code>)</p>
+
+                <h4>Structure :</h4>
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+
+  &lt;url&gt;
+    &lt;loc&gt;https://votre-site.fr/&lt;/loc&gt;
+    &lt;lastmod&gt;2024-03-20&lt;/lastmod&gt;
+    &lt;changefreq&gt;weekly&lt;/changefreq&gt;
+    &lt;priority&gt;1.0&lt;/priority&gt;
+  &lt;/url&gt;
+
+  &lt;url&gt;
+    &lt;loc&gt;https://votre-site.fr/services&lt;/loc&gt;
+    &lt;lastmod&gt;2024-03-15&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.8&lt;/priority&gt;
+  &lt;/url&gt;
+
+  &lt;url&gt;
+    &lt;loc&gt;https://votre-site.fr/a-propos&lt;/loc&gt;
+    &lt;lastmod&gt;2024-03-10&lt;/lastmod&gt;
+    &lt;changefreq&gt;monthly&lt;/changefreq&gt;
+    &lt;priority&gt;0.6&lt;/priority&gt;
+  &lt;/url&gt;
+
+  &lt;url&gt;
+    &lt;loc&gt;https://votre-site.fr/contact&lt;/loc&gt;
+    &lt;lastmod&gt;2024-03-10&lt;/lastmod&gt;
+    &lt;changefreq&gt;yearly&lt;/changefreq&gt;
+    &lt;priority&gt;0.7&lt;/priority&gt;
+  &lt;/url&gt;
+
+  &lt;url&gt;
+    &lt;loc&gt;https://votre-site.fr/blog/comment-deboucher-evier&lt;/loc&gt;
+    &lt;lastmod&gt;2024-03-18&lt;/lastmod&gt;
+    &lt;changefreq&gt;yearly&lt;/changefreq&gt;
+    &lt;priority&gt;0.6&lt;/priority&gt;
+  &lt;/url&gt;
+
+&lt;/urlset&gt;</code></pre>
+
+                <h4>Règles :</h4>
+                <ul>
+                    <li><code>&lt;loc&gt;</code> : URL absolue (obligatoire)</li>
+                    <li><code>&lt;lastmod&gt;</code> : date de dernière modification (format YYYY-MM-DD)</li>
+                    <li><code>&lt;changefreq&gt;</code> : fréquence de mise à jour (always, hourly, daily, weekly, monthly, yearly, never)</li>
+                    <li><code>&lt;priority&gt;</code> : importance relative (0.0 à 1.0)</li>
+                </ul>
+
+                <div class="info-box warning">
+                    <div class="info-box-title">⚠️ À ne PAS inclure dans le sitemap</div>
+                    <ul style="margin-bottom: 0;">
+                        <li>Pages en <code>noindex</code></li>
+                        <li>Pages de remerciement</li>
+                        <li>Pages dupliquées</li>
+                        <li>Pages d'erreur</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 3.3 -->
+        <section>
+            <div class="step" data-step="Étape 3.3">
+                <h3>Balises d'indexation</h3>
+                <p><strong>Objectif :</strong> Contrôler ce que Google peut indexer.</p>
+
+                <h4>Pages à indexer (par défaut) :</h4>
+<pre><code>&lt;meta name="robots" content="index, follow"&gt;</code></pre>
+
+                <h4>Pages à NE PAS indexer :</h4>
+<pre><code>&lt;meta name="robots" content="noindex, nofollow"&gt;</code></pre>
+
+                <p><strong>Appliquer noindex sur :</strong></p>
+                <ul>
+                    <li>Page de remerciement après formulaire</li>
+                    <li>Page de mentions légales (optionnel)</li>
+                    <li>Page de résultats de recherche interne</li>
+                    <li>Pages de test / staging</li>
+                </ul>
+
+                <h4>Balise canonical (éviter le contenu dupliqué) :</h4>
+                <p>Sur chaque page, ajoutez :</p>
+<pre><code>&lt;link rel="canonical" href="https://votre-site.fr/page-courante"&gt;</code></pre>
+                <p>Cela indique à Google quelle est l'URL "officielle" de la page.</p>
+            </div>
+        </section>
+
+        <!-- Étape 3.4 -->
+        <section>
+            <div class="step" data-step="Étape 3.4">
+                <h3>Optimisation des performances</h3>
+                <p><strong>Objectif :</strong> Obtenir de bons scores Core Web Vitals.</p>
+
+                <h4>Testez votre site :</h4>
+                <ol>
+                    <li><strong>PageSpeed Insights</strong> : <a href="https://pagespeed.web.dev/" target="_blank">pagespeed.web.dev</a></li>
+                    <li><strong>Lighthouse</strong> : DevTools Chrome (F12) > onglet Lighthouse</li>
+                </ol>
+
+                <h4>Objectifs Core Web Vitals :</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Métrique</th>
+                                <th style="color: #10b981;">Bon</th>
+                                <th style="color: #f59e0b;">À améliorer</th>
+                                <th style="color: #ef4444;">Mauvais</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>LCP</strong> (Largest Contentful Paint)</td>
+                                <td>≤ 2.5s</td>
+                                <td>2.5-4s</td>
+                                <td>> 4s</td>
+                            </tr>
+                            <tr>
+                                <td><strong>INP</strong> (Interaction to Next Paint)</td>
+                                <td>≤ 200ms</td>
+                                <td>200-500ms</td>
+                                <td>> 500ms</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CLS</strong> (Cumulative Layout Shift)</td>
+                                <td>≤ 0.1</td>
+                                <td>0.1-0.25</td>
+                                <td>> 0.25</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>Actions d'optimisation :</h4>
+
+                <div class="card">
+                    <h4>Pour le LCP (temps de chargement) :</h4>
+                    <ul>
+                        <li>Compresser les images (&lt; 100 Ko)</li>
+                        <li>Utiliser le format WebP</li>
+                        <li>Minifier CSS et JS</li>
+                        <li>Mettre le CSS critique en inline</li>
+                        <li>Utiliser un hébergement rapide</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Pour l'INP (interactivité) :</h4>
+                    <ul>
+                        <li>Différer les scripts non critiques : <code>&lt;script defer src="..."&gt;</code></li>
+                        <li>Éviter les animations JavaScript lourdes</li>
+                        <li>Réduire le JavaScript inutile</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>Pour le CLS (stabilité visuelle) :</h4>
+                    <ul>
+                        <li>Définir width et height sur les images :</li>
+                    </ul>
+<pre><code>&lt;img src="image.jpg" width="800" height="600" alt="..."&gt;</code></pre>
+                    <ul>
+                        <li>Réserver l'espace pour les publicités/widgets</li>
+                        <li>Éviter les insertions de contenu au-dessus du contenu existant</li>
+                    </ul>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Capture d'écran PageSpeed</div>
+                    <p style="margin-bottom: 0;">Faites une capture d'écran des scores PageSpeed pour la version mobile ET desktop.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 3.5 -->
+        <section>
+            <div class="step" data-step="Étape 3.5">
+                <h3>Responsive et Mobile-First</h3>
+                <p><strong>Objectif :</strong> Un site parfaitement utilisable sur mobile.</p>
+
+                <h4>Checklist Mobile :</h4>
+                <ul class="checklist">
+                    <li>Texte lisible sans zoom (minimum 16px)</li>
+                    <li>Boutons/liens assez grands (minimum 48x48px avec espacement)</li>
+                    <li>Pas de scroll horizontal</li>
+                    <li>Images qui s'adaptent à l'écran</li>
+                    <li>Menu de navigation fonctionnel sur mobile</li>
+                    <li>Formulaires faciles à remplir</li>
+                </ul>
+
+                <h4>Test :</h4>
+                <p><strong>Chrome DevTools</strong> : F12 > icône mobile en haut à gauche</p>
+
+                <h4>CSS responsive de base :</h4>
+<pre><code>/* Mobile first */
+.container {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* Tablette */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* Images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}</code></pre>
+            </div>
+        </section>
+
+        <!-- Étape 3.6 -->
+        <section>
+            <div class="step" data-step="Étape 3.6">
+                <h3>Structure des URLs</h3>
+                <p><strong>Objectif :</strong> Des URLs propres et optimisées.</p>
+
+                <h4>Bonnes pratiques :</h4>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Règle</th>
+                                <th style="color: #ef4444;">Mauvais</th>
+                                <th style="color: #10b981;">Bon</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mots-clés</td>
+                                <td><code>/page1.html</code></td>
+                                <td><code>/services-plomberie</code></td>
+                            </tr>
+                            <tr>
+                                <td>Séparateur</td>
+                                <td><code>/services_plomberie</code></td>
+                                <td><code>/services-plomberie</code></td>
+                            </tr>
+                            <tr>
+                                <td>Casse</td>
+                                <td><code>/Services-Plomberie</code></td>
+                                <td><code>/services-plomberie</code></td>
+                            </tr>
+                            <tr>
+                                <td>Longueur</td>
+                                <td><code>/nos-services-de-plomberie-professionnelle-a-lyon</code></td>
+                                <td><code>/services-plomberie-lyon</code></td>
+                            </tr>
+                            <tr>
+                                <td>Caractères</td>
+                                <td><code>/services-plomberie-à-lyon</code></td>
+                                <td><code>/services-plomberie-lyon</code></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>Checklist URLs :</h4>
+                <ul class="checklist">
+                    <li>Utiliser uniquement des minuscules</li>
+                    <li>Utiliser des tirets (-) pour séparer les mots</li>
+                    <li>Inclure le mot-clé principal</li>
+                    <li>Garder l'URL courte (&lt; 75 caractères)</li>
+                    <li>Éviter les accents et caractères spéciaux</li>
+                    <li>Éviter les paramètres inutiles (?id=123)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- PHASE 4 -->
+        <div class="phase-header" id="phase4">
+            <h2><span class="phase-badge">Phase 4</span> Publication et Mesure</h2>
+        </div>
+
+        <!-- Étape 4.1 -->
+        <section>
+            <div class="step" data-step="Étape 4.1">
+                <h3>Publication avec FileZilla</h3>
+
+                <h4>Instructions :</h4>
+
+                <div class="card">
+                    <h4>1. Connexion au serveur</h4>
+                    <ul>
+                        <li>Ouvrez FileZilla</li>
+                        <li>Hôte : [fourni par votre hébergeur]</li>
+                        <li>Identifiant : [votre login]</li>
+                        <li>Mot de passe : [votre mot de passe]</li>
+                        <li>Port : 21 (ou 22 pour SFTP)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. Transfert des fichiers</h4>
+                    <ul>
+                        <li>À gauche : vos fichiers locaux</li>
+                        <li>À droite : le serveur</li>
+                        <li>Glissez-déposez tous vos fichiers vers le dossier <code>www</code> ou <code>public_html</code></li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Vérification</h4>
+                    <ul>
+                        <li>Accédez à votre URL</li>
+                        <li>Testez toutes les pages</li>
+                        <li>Vérifiez que les images s'affichent</li>
+                        <li>Testez sur mobile</li>
+                    </ul>
+                </div>
+
+                <h4>Structure sur le serveur :</h4>
+                <div class="tree">
+<span class="folder">public_html/</span>
+├── <span class="file">index.html</span>
+├── <span class="file">services.html</span>
+├── <span class="file">a-propos.html</span>
+├── <span class="file">contact.html</span>
+├── <span class="folder">blog/</span>
+│   └── <span class="file">article-1.html</span>
+├── <span class="folder">css/</span>
+│   └── <span class="file">style.css</span>
+├── <span class="folder">js/</span>
+│   └── <span class="file">script.js</span>
+├── <span class="folder">images/</span>
+│   └── [vos images]
+├── <span class="file">robots.txt</span>
+└── <span class="file">sitemap.xml</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 4.2 -->
+        <section>
+            <div class="step" data-step="Étape 4.2">
+                <h3>Configuration Google Search Console</h3>
+
+                <h4>Instructions :</h4>
+
+                <div class="card">
+                    <h4>1. Créer un compte</h4>
+                    <p>Allez sur <a href="https://search.google.com/search-console/" target="_blank">Google Search Console</a></p>
+                </div>
+
+                <div class="card">
+                    <h4>2. Ajouter une propriété</h4>
+                    <ul>
+                        <li>Type "Préfixe d'URL"</li>
+                        <li>Entrez l'URL complète de votre site</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Vérification</h4>
+                    <ul>
+                        <li>Méthode recommandée : fichier HTML</li>
+                        <li>Téléchargez le fichier fourni par Google</li>
+                        <li>Uploadez-le à la racine de votre site via FileZilla</li>
+                        <li>Cliquez sur "Vérifier"</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Soumettre le sitemap</h4>
+                    <ul>
+                        <li>Allez dans "Sitemaps"</li>
+                        <li>Entrez <code>sitemap.xml</code></li>
+                        <li>Cliquez sur "Envoyer"</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>5. Demander l'indexation</h4>
+                    <ul>
+                        <li>Allez dans "Inspection de l'URL"</li>
+                        <li>Entrez l'URL de votre page d'accueil</li>
+                        <li>Cliquez sur "Demander une indexation"</li>
+                        <li>Répétez pour vos pages principales</li>
+                    </ul>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Capture d'écran</div>
+                    <ul style="margin-bottom: 0;">
+                        <li>Capture de la Search Console montrant le sitemap soumis</li>
+                        <li>Capture de l'inspection d'URL</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Étape 4.3 -->
+        <section>
+            <div class="step" data-step="Étape 4.3">
+                <h3>Configuration Google Analytics 4</h3>
+
+                <h4>Instructions :</h4>
+
+                <div class="card">
+                    <h4>1. Créer un compte</h4>
+                    <p>Allez sur <a href="https://analytics.google.com/" target="_blank">Google Analytics</a></p>
+                </div>
+
+                <div class="card">
+                    <h4>2. Créer une propriété</h4>
+                    <ul>
+                        <li>Nom de la propriété : [Nom de votre site]</li>
+                        <li>Fuseau horaire : France</li>
+                        <li>Devise : EUR</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Créer un flux de données</h4>
+                    <ul>
+                        <li>Type : Web</li>
+                        <li>URL : [votre URL]</li>
+                        <li>Nom : [Nom du site]</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Installer le code</h4>
+                    <p>Copiez le code Google Tag fourni et collez-le dans le <code>&lt;head&gt;</code> de TOUTES vos pages, juste après la balise <code>&lt;head&gt;</code> :</p>
+<pre><code>&lt;!-- Google tag (gtag.js) --&gt;
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+&lt;/script&gt;</code></pre>
+                </div>
+
+                <div class="card">
+                    <h4>5. Connecter Search Console à GA4</h4>
+                    <ul>
+                        <li>Dans GA4 : Admin > Associations de produits > Search Console</li>
+                        <li>Suivez les instructions pour lier les deux comptes</li>
+                    </ul>
+                </div>
+
+                <h4>Vérification :</h4>
+                <ul>
+                    <li>Ouvrez votre site dans un onglet</li>
+                    <li>Dans GA4, allez dans "Rapports" > "Temps réel"</li>
+                    <li>Vous devriez voir votre visite</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Étape 4.4 -->
+        <section>
+            <div class="step" data-step="Étape 4.4">
+                <h3>Audit avec les outils gratuits</h3>
+                <p>Réalisez les audits suivants et documentez les résultats :</p>
+
+                <div class="card">
+                    <h4>1. PageSpeed Insights</h4>
+                    <ul>
+                        <li>URL : <a href="https://pagespeed.web.dev/" target="_blank">pagespeed.web.dev</a></li>
+                        <li>Testez votre page d'accueil</li>
+                        <li>Capture des scores mobile ET desktop</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>2. Rich Results Test</h4>
+                    <ul>
+                        <li>URL : <a href="https://search.google.com/test/rich-results" target="_blank">Rich Results Test</a></li>
+                        <li>Testez vos données structurées</li>
+                        <li>Capture du résultat</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>3. Mobile-Friendly Test</h4>
+                    <ul>
+                        <li>URL : <a href="https://search.google.com/test/mobile-friendly" target="_blank">Mobile-Friendly Test</a></li>
+                        <li>Testez votre page d'accueil</li>
+                        <li>Capture du résultat</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h4>4. Lighthouse (Chrome DevTools)</h4>
+                    <ul>
+                        <li>Ouvrez Chrome > F12 > Onglet Lighthouse</li>
+                        <li>Lancez l'audit "Performance, Accessibility, Best Practices, SEO"</li>
+                        <li>Capture des scores</li>
+                    </ul>
+                </div>
+
+                <div class="livrable">
+                    <div class="livrable-title">📄 Livrable : Document d'audit</div>
+                    <p>Créez un document avec :</p>
+                    <ul style="margin-bottom: 0;">
+                        <li>Captures d'écran de chaque outil</li>
+                        <li>Score obtenu</li>
+                        <li>3 points d'amélioration identifiés par outil</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHASE 5 -->
+        <div class="phase-header" id="phase5">
+            <h2><span class="phase-badge">Phase 5</span> Documentation Finale</h2>
+        </div>
+
+        <section>
+            <h2>📁 Dossier à rendre</h2>
+            <p>Votre dossier final doit contenir :</p>
+
+            <div class="card">
+                <h4>1. Rapport de stratégie</h4>
+                <ul class="checklist">
+                    <li>Fiche persona</li>
+                    <li>Tableau de recherche de mots-clés (15-20 mots-clés)</li>
+                    <li>Analyse des 3 concurrents</li>
+                    <li>Keyword Map complet</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>2. Documentation technique</h4>
+                <ul class="checklist">
+                    <li>Tableau des balises Title et Meta Description</li>
+                    <li>Code JSON-LD de toutes les données structurées</li>
+                    <li>Contenu du robots.txt</li>
+                    <li>Contenu du sitemap.xml</li>
+                    <li>Schéma de maillage interne</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>3. Audit de performance</h4>
+                <ul class="checklist">
+                    <li>Captures PageSpeed Insights (mobile + desktop)</li>
+                    <li>Capture Rich Results Test</li>
+                    <li>Capture Mobile-Friendly Test</li>
+                    <li>Capture Lighthouse</li>
+                    <li>Liste des améliorations à apporter</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>4. Preuves de configuration</h4>
+                <ul class="checklist">
+                    <li>Capture Google Search Console (propriété vérifiée)</li>
+                    <li>Capture du sitemap soumis</li>
+                    <li>Capture Google Analytics 4 (temps réel)</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>5. URL du site publié</h4>
+                <ul class="checklist">
+                    <li>Lien vers le site fonctionnel</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Ressources -->
+        <section id="ressources">
+            <h2>📚 Ressources complémentaires</h2>
+
+            <div class="card">
+                <h4>Documentation officielle</h4>
+                <ul>
+                    <li><a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank">Guide SEO Google</a></li>
+                    <li><a href="https://schema.org/" target="_blank">Documentation Schema.org</a></li>
+                    <li><a href="https://web.dev/vitals/" target="_blank">Guide Core Web Vitals</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Outils gratuits</h4>
+                <ul>
+                    <li><a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank">Google Keyword Planner</a></li>
+                    <li><a href="https://trends.google.fr/" target="_blank">Google Trends</a></li>
+                    <li><a href="https://answerthepublic.com/" target="_blank">AnswerThePublic</a></li>
+                    <li><a href="https://neilpatel.com/ubersuggest/" target="_blank">Ubersuggest</a></li>
+                    <li><a href="https://pagespeed.web.dev/" target="_blank">PageSpeed Insights</a></li>
+                    <li><a href="https://search.google.com/test/rich-results" target="_blank">Rich Results Test</a></li>
+                    <li><a href="https://validator.schema.org/" target="_blank">Schema Markup Validator</a></li>
+                    <li><a href="https://squoosh.app/" target="_blank">Squoosh (compression images)</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h4>Générateurs</h4>
+                <ul>
+                    <li><a href="https://www.seoptimer.com/robots-txt-generator" target="_blank">Générateur de robots.txt</a></li>
+                    <li><a href="https://www.xml-sitemaps.com/" target="_blank">Générateur de sitemap</a></li>
+                    <li><a href="https://technicalseo.com/tools/schema-markup-generator/" target="_blank">Générateur de Schema.org</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>🚀 Bon courage pour votre projet SEO !</p>
+        </footer>
+    </div>
+
+    <!-- Scroll to top button -->
+    <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑</button>
+
+    <script>
+        // Scroll to top button visibility
+        const scrollBtn = document.querySelector('.scroll-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                scrollBtn.classList.add('visible');
+            } else {
+                scrollBtn.classList.remove('visible');
+            }
+        });
+
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
