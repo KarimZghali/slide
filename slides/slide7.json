@@ -1,0 +1,726 @@
+[
+
+  `<div class="slide-seo">
+<h1>🔗 Chapitre 7 - Le Netlinking</h1>
+<h2 class="chapitre">7 | Bâtir l'autorité du domaine</h2>
+<p class="slide-subtitle">L'art de gagner la confiance de Google grâce aux liens</p>
+<p class="mt-xl text-info"><strong>Netlinking</strong> = Stratégie d'acquisition de <em>backlinks</em> (liens entrants)<br><span class="text-muted">Aussi appelé "link building" ou "off-page SEO"</span></p>
+<p class="mt-lg text-muted">Si le contenu est le <strong>roi</strong>, les liens sont la <strong>monnaie</strong> du web.<br>Ils représentent des votes de confiance d'un site vers un autre.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📚 Au programme</h1>
+<h2>Ce que vous allez apprendre</h2>
+<div class="slide-agenda">
+<p>🔗 Comprendre les backlinks et leur importance</p>
+<p>📊 L'autorité de domaine : définition et métriques</p>
+<p>⚖️ Liens DoFollow vs NoFollow : quelles différences ?</p>
+<p>🏗️ Le profil de liens idéal</p>
+<p>🛠️ Stratégies d'acquisition de backlinks</p>
+<p>⚠️ Les pratiques à éviter (Black Hat)</p>
+<p>📈 Outils d'analyse des backlinks</p>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔗 Qu'est-ce qu'un backlink ?</h1>
+<h2>Le pilier fondamental du netlinking</h2>
+<p class="text-intro">Un <strong>backlink</strong> (ou lien entrant, lien retour) est un lien hypertexte situé sur un site externe qui pointe vers une page de votre site. C'est l'équivalent digital d'une recommandation.</p>
+<div class="slide-diagram">
+<div class="step" style="background: rgba(124, 58, 237, 0.2); border-color: #7c3aed;">Site A</div>
+<span class="arrow">→</span>
+<div class="step" style="font-size: 1.5rem;">🔗</div>
+<span class="arrow">→</span>
+<div class="step" style="background: rgba(0, 212, 170, 0.2); border-color: #00d4aa;">Votre site</div>
+</div>
+<p class="slide-tip">💡 <strong>Analogie :</strong> Imaginez chaque backlink comme une citation dans un article scientifique. Plus vous êtes cité par des sources réputées, plus votre travail est considéré comme fiable.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📜 L'histoire du PageRank</h1>
+<h2>Pourquoi les liens sont-ils si importants ?</h2>
+<p class="text-intro">En 1998, Larry Page (co-fondateur de Google) a révolutionné la recherche en inventant le <strong>PageRank</strong>, un algorithme qui évalue l'importance d'une page web en fonction des liens qu'elle reçoit.</p>
+<ul>
+<li>Chaque lien = un "vote" en faveur de la page cible</li>
+<li>Un vote depuis un site autoritaire vaut plus qu'un vote depuis un petit blog</li>
+<li>Le "jus de lien" (<strong>link juice</strong>) se transmet de page en page</li>
+</ul>
+<p class="slide-quote">"Le web est un graphe géant de pages interconnectées. Les liens révèlent la structure de confiance."<br><small>— Principe fondateur de Google</small></p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>⚡ Pourquoi les backlinks comptent ?</h1>
+<h2>Les 3 raisons majeures</h2>
+<div class="intent-grid">
+<div class="intent-card">
+<h3>🏆 Facteur de classement</h3>
+<p>Les backlinks restent l'un des 3 principaux facteurs de ranking de Google</p>
+<p class="text-accent mt-sm">→ Plus de liens de qualité = meilleures positions</p>
+</div>
+<div class="intent-card">
+<h3>🕷️ Découverte & Crawl</h3>
+<p>Googlebot découvre de nouvelles pages en suivant les liens</p>
+<p class="text-accent mt-sm">→ Liens = chemins pour les robots</p>
+</div>
+<div class="intent-card">
+<h3>🚗 Trafic référent</h3>
+<p>Les visiteurs cliquent sur les liens et arrivent sur votre site</p>
+<p class="text-accent mt-sm">→ Source de trafic qualifié gratuit</p>
+</div>
+<div class="intent-card">
+<h3>🎖️ Crédibilité</h3>
+<p>Être cité par des sites reconnus renforce votre légitimité</p>
+<p class="text-accent mt-sm">→ E-E-A-T et confiance utilisateur</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📊 L'autorité de domaine</h1>
+<h2>Mesurer la "puissance" d'un site</h2>
+<p class="text-intro">L'<strong>autorité de domaine</strong> (Domain Authority / Domain Rating) est un score qui estime la capacité d'un site à bien se positionner dans les résultats de recherche, basé principalement sur son profil de backlinks.</p>
+<div class="comparison-table">
+<div class="comparison-col">
+<h3>📏 Ce que ça mesure</h3>
+<ul>
+<li>Quantité de backlinks</li>
+<li>Qualité des sites qui font des liens</li>
+<li>Diversité des domaines référents</li>
+<li>Ancienneté du profil de liens</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h3>⚠️ Ce que ça n'est PAS</h3>
+<ul>
+<li>Une métrique officielle de Google</li>
+<li>Un indicateur absolu de ranking</li>
+<li>Un score comparable entre outils</li>
+<li>Une garantie de succès SEO</li>
+</ul>
+</div>
+</div>
+<p class="slide-warning">⚠️ Google n'utilise pas de score "Domain Authority". Ce sont des métriques créées par des outils tiers (Moz, Ahrefs, SEMrush) pour estimer l'autorité.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔢 Les différentes métriques</h1>
+<h2>DA, DR, TF... Décryptage</h2>
+<p class="text-intro">Chaque outil SEO a créé sa propre métrique d'autorité. Elles sont calculées différemment mais mesurent un concept similaire.</p>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>🟣 DA (Domain Authority)</h3>
+<p>Créé par <strong>Moz</strong>. Score de 0 à 100.</p>
+<p class="text-muted">Basé sur le nombre et la qualité des liens entrants + âge du domaine</p>
+</div>
+<div class="tool-card">
+<h3>🟠 DR (Domain Rating)</h3>
+<p>Créé par <strong>Ahrefs</strong>. Score de 0 à 100.</p>
+<p class="text-muted">Basé sur la force du profil de backlinks (quantité × qualité)</p>
+</div>
+<div class="tool-card">
+<h3>🔵 AS (Authority Score)</h3>
+<p>Créé par <strong>SEMrush</strong>. Score de 0 à 100.</p>
+<p class="text-muted">Combine liens, trafic organique et signaux de spam</p>
+</div>
+<div class="tool-card">
+<h3>🟢 TF / CF (Trust & Citation Flow)</h3>
+<p>Créé par <strong>Majestic</strong>. Deux scores complémentaires.</p>
+<p class="text-muted">TF = qualité/confiance • CF = quantité/influence</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📈 Échelle d'autorité</h1>
+<h2>Interpréter les scores (DR/DA)</h2>
+<p class="text-intro">L'échelle est <strong>logarithmique</strong> : passer de 20 à 30 est facile, mais de 70 à 80 demande un effort considérable.</p>
+<div class="kd-scale">
+<div class="kd-item kd-easy">
+<span class="kd-score">0-30</span>
+<span class="kd-label">Débutant</span>
+<p class="kd-desc">Nouveaux sites, blogs personnels, peu de backlinks</p>
+</div>
+<div class="kd-item kd-medium">
+<span class="kd-score">31-60</span>
+<span class="kd-label">Intermédiaire</span>
+<p class="kd-desc">PME établies, sites de niche, quelques années d'existence</p>
+</div>
+<div class="kd-item kd-hard">
+<span class="kd-score">61-100</span>
+<span class="kd-label">Autoritaire</span>
+<p class="kd-desc">Médias, grandes marques, sites gouvernementaux, Wikipedia</p>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Exemples :</strong> Wikipedia ≈ 93 DR, LeMonde.fr ≈ 90 DR, une PME typique ≈ 25-40 DR, un nouveau blog ≈ 5-15 DR</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔍 DoFollow vs NoFollow</h1>
+<h2>Tous les liens ne se valent pas</h2>
+<p class="text-intro">L'attribut <strong>rel</strong> d'un lien indique à Google comment traiter ce lien. Comprendre la différence est essentiel pour votre stratégie de netlinking.</p>
+<div class="comparison-table">
+<div class="comparison-col" style="border-color: rgba(0, 212, 170, 0.4);">
+<h3 style="color: #00d4aa;">✅ DoFollow (par défaut)</h3>
+<ul>
+<li>Transmet le "jus de lien" (PageRank)</li>
+<li>Compte comme un vote de confiance</li>
+<li>Aide au référencement de la page cible</li>
+<li>C'est le comportement par défaut d'un lien</li>
+</ul>
+<div class="code-block-sm mt-md">
+<code>&lt;a href="url"&gt;Lien&lt;/a&gt;</code>
+</div>
+</div>
+<div class="comparison-col" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🚫 NoFollow</h3>
+<ul>
+<li>Ne transmet PAS de jus de lien</li>
+<li>Demande à Google de ne pas le suivre</li>
+<li>Utilisé pour les liens sponsorisés/pubs</li>
+<li>Toujours utile pour le trafic et la notoriété</li>
+</ul>
+<div class="code-block-sm mt-md">
+<code>&lt;a href="url" <span class="code-value-red">rel="nofollow"</span>&gt;Lien&lt;/a&gt;</code>
+</div>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🏷️ Les attributs de liens modernes</h1>
+<h2>Google a enrichi le vocabulaire en 2019</h2>
+<p class="text-intro">Google a introduit de nouveaux attributs pour mieux comprendre la nature des liens. Ces attributs sont des "indications" (hints), pas des directives strictes.</p>
+<div class="intent-grid">
+<div class="intent-card">
+<h3 style="color: #ea4335;">rel="nofollow"</h3>
+<p>Lien que vous ne voulez pas endosser</p>
+<p class="text-muted">Ex : commentaires utilisateurs, liens douteux</p>
+</div>
+<div class="intent-card">
+<h3 style="color: #fbbc04;">rel="sponsored"</h3>
+<p>Lien payant ou sponsorisé</p>
+<p class="text-muted">Ex : publicités, partenariats rémunérés</p>
+</div>
+<div class="intent-card">
+<h3 style="color: #4285f4;">rel="ugc"</h3>
+<p>User Generated Content</p>
+<p class="text-muted">Ex : commentaires, forums, publications utilisateurs</p>
+</div>
+<div class="intent-card">
+<h3 style="color: #00d4aa;">(aucun attribut)</h3>
+<p>DoFollow par défaut</p>
+<p class="text-muted">Lien éditorial, recommandation naturelle</p>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Depuis 2019 :</strong> Google traite les nofollow comme des "indices" et peut choisir de les suivre quand même. Le nofollow n'est plus un blocage absolu.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>⚖️ Faut-il ignorer les liens NoFollow ?</h1>
+<h2>La vraie valeur des liens NoFollow</h2>
+<p class="text-intro">Non ! Les liens nofollow ont toujours de la valeur, même s'ils ne transmettent pas de jus de lien directement.</p>
+<div class="comparison-table">
+<div class="comparison-col">
+<h3>👍 Avantages des liens NoFollow</h3>
+<ul>
+<li><strong>Trafic référent</strong> : les gens cliquent quand même !</li>
+<li><strong>Notoriété</strong> : visibilité sur des sites populaires</li>
+<li><strong>Diversité</strong> : un profil 100% dofollow est suspect</li>
+<li><strong>Signaux indirects</strong> : Google peut les prendre en compte</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h3>📊 Ratio naturel typique</h3>
+<div class="market-share mt-md">
+<div class="share-bar">
+<span class="share-label">DoFollow</span>
+<span class="share-fill share-fill-good" style="width: 70%;"></span>
+<span class="share-value">60-80%</span>
+</div>
+<div class="share-bar">
+<span class="share-label">NoFollow</span>
+<span class="share-fill share-fill-ok" style="width: 30%;"></span>
+<span class="share-value">20-40%</span>
+</div>
+</div>
+<p class="text-muted mt-md">Un profil naturel contient les deux types de liens.</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🏗️ Anatomie d'un bon backlink</h1>
+<h2>Les critères de qualité</h2>
+<p class="text-intro">Tous les backlinks ne se valent pas. Voici les caractéristiques d'un lien de haute qualité.</p>
+<ul>
+<li><strong>🎯 Pertinence thématique</strong> : le site source parle d'un sujet lié au vôtre</li>
+<li><strong>🏆 Autorité du domaine</strong> : plus le site source est autoritaire, plus le lien a de poids</li>
+<li><strong>📍 Emplacement sur la page</strong> : un lien dans le contenu éditorial > footer/sidebar</li>
+<li><strong>🔤 Ancre de lien</strong> : le texte cliquable donne du contexte à Google</li>
+<li><strong>👥 Trafic du site source</strong> : un lien depuis un site actif a plus de valeur</li>
+<li><strong>✅ DoFollow</strong> : pour transmettre le maximum de jus de lien</li>
+<li><strong>🆕 Unicité</strong> : un premier lien depuis un domaine a plus d'impact que le 10ème</li>
+</ul>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔤 L'ancre de lien (Anchor Text)</h1>
+<h2>Le texte qui fait toute la différence</h2>
+<p class="text-intro">L'<strong>ancre de lien</strong> est le texte cliquable du lien. Elle donne à Google un indice sur le contenu de la page cible.</p>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>🎯 Ancre exacte</h3>
+<p>"chaussures de running"</p>
+<p class="text-muted">Mot-clé exact visé. Puissant mais risqué si sur-optimisé.</p>
+</div>
+<div class="tool-card">
+<h3>🔄 Ancre partielle</h3>
+<p>"meilleures chaussures pour courir"</p>
+<p class="text-muted">Variation du mot-clé. Plus naturel.</p>
+</div>
+<div class="tool-card">
+<h3>🏷️ Ancre de marque</h3>
+<p>"Nike" ou "guide Nike Running"</p>
+<p class="text-muted">Nom de marque/site. Très sûr et naturel.</p>
+</div>
+<div class="tool-card">
+<h3>📄 Ancre générique</h3>
+<p>"cliquez ici", "en savoir plus", "ce site"</p>
+<p class="text-muted">Aucune valeur sémantique mais très naturel.</p>
+</div>
+</div>
+<p class="slide-warning">⚠️ <strong>Attention :</strong> un profil avec 80% d'ancres exactes est un signal de manipulation pour Google (Penguin). Variez vos ancres !</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📊 Profil d'ancres idéal</h1>
+<h2>La diversité est la clé</h2>
+<p class="text-intro">Un profil de liens naturel présente une grande variété d'ancres. Voici une distribution recommandée :</p>
+<div class="market-share">
+<div class="share-bar">
+<span class="share-label">Marque / URL</span>
+<span class="share-fill share-fill-google" style="width: 40%;"></span>
+<span class="share-value">30-40%</span>
+</div>
+<div class="share-bar">
+<span class="share-label">Génériques</span>
+<span class="share-fill share-fill-bing" style="width: 25%;"></span>
+<span class="share-value">20-25%</span>
+</div>
+<div class="share-bar">
+<span class="share-label">Partielles</span>
+<span class="share-fill share-fill-good" style="width: 20%;"></span>
+<span class="share-value">15-20%</span>
+</div>
+<div class="share-bar">
+<span class="share-label">Exactes</span>
+<span class="share-fill share-fill-bad" style="width: 10%;"></span>
+<span class="share-value">5-10%</span>
+</div>
+<div class="share-bar">
+<span class="share-label">Longue traîne</span>
+<span class="share-fill share-fill-ok" style="width: 15%;"></span>
+<span class="share-value">10-15%</span>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Règle d'or :</strong> Si vous hésitez sur l'ancre à utiliser, choisissez le nom de marque ou une ancre naturelle. Mieux vaut être trop prudent que sur-optimisé.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🎯 Domaines référents vs Backlinks</h1>
+<h2>Une distinction cruciale</h2>
+<p class="text-intro">Ne confondez pas le <strong>nombre de backlinks</strong> avec le <strong>nombre de domaines référents</strong>. La diversité des sources compte plus que la quantité brute.</p>
+<div class="comparison-table">
+<div class="comparison-col">
+<h3>🔗 Exemple A</h3>
+<p class="text-center" style="font-size: 2rem; margin: 20px 0 !important;">100 backlinks</p>
+<p class="text-center">provenant de <strong style="color: #ea4335;">5 domaines</strong></p>
+<p class="text-muted text-center mt-md">= 20 liens par site en moyenne<br>Profil concentré, potentiellement manipulé</p>
+</div>
+<div class="comparison-col" style="border-color: rgba(0, 212, 170, 0.4);">
+<h3>🔗 Exemple B</h3>
+<p class="text-center" style="font-size: 2rem; margin: 20px 0 !important;">50 backlinks</p>
+<p class="text-center">provenant de <strong style="color: #00d4aa;">45 domaines</strong></p>
+<p class="text-muted text-center mt-md">= 1-2 liens par site en moyenne<br>Profil diversifié, plus naturel</p>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Le profil B est meilleur !</strong> Un premier lien depuis un nouveau domaine a beaucoup plus d'impact que le 20ème lien depuis le même site.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🏗️ Le profil de liens idéal</h1>
+<h2>Caractéristiques d'un profil sain</h2>
+<ul>
+<li><strong>📈 Croissance progressive</strong> : acquisition régulière, pas de pics suspects</li>
+<li><strong>🎯 Pertinence thématique</strong> : majorité de liens depuis des sites de votre secteur</li>
+<li><strong>🌍 Diversité géographique</strong> : liens depuis plusieurs pays (si pertinent)</li>
+<li><strong>📊 Mix DoFollow/NoFollow</strong> : ratio naturel</li>
+<li><strong>🔤 Variété d'ancres</strong> : pas de sur-optimisation sur un mot-clé</li>
+<li><strong>🏠 Diversité de domaines</strong> : beaucoup de sources différentes</li>
+<li><strong>📍 Liens contextuels</strong> : dans le contenu éditorial, pas juste en footer</li>
+</ul>
+<p class="slide-quote">"Un bon profil de liens ressemble à ce qui se passerait naturellement si votre contenu était excellent et que les gens le découvraient organiquement."</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📉 Signaux d'un profil toxique</h1>
+<h2>Les red flags à éviter</h2>
+<p class="text-intro">Google détecte les manipulations. Voici les signaux qui peuvent déclencher une pénalité algorithmique (Penguin) ou manuelle.</p>
+<div class="intent-grid">
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">📊 Croissance anormale</h3>
+<p>1000 liens en une semaine sur un nouveau site</p>
+<p class="text-muted">→ Signal d'achat de liens massif</p>
+</div>
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🔤 Sur-optimisation</h3>
+<p>90% des ancres = même mot-clé exact</p>
+<p class="text-muted">→ Manipulation évidente</p>
+</div>
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🗑️ Sites de spam</h3>
+<p>Liens depuis des fermes de liens, PBN, sites piratés</p>
+<p class="text-muted">→ Association à des réseaux toxiques</p>
+</div>
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🌐 Liens hors-thématique</h3>
+<p>Site de cuisine vers site de prêts immobiliers</p>
+<p class="text-muted">→ Aucune logique éditoriale</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🛠️ Stratégies d'acquisition</h1>
+<h2>Les méthodes White Hat (légitimes)</h2>
+<p class="text-intro">Voici les techniques approuvées par Google pour obtenir des backlinks naturellement.</p>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">1</span>
+<div class="step-content">
+<strong>Contenu de qualité (Link Baiting)</strong>
+<p>Créez du contenu tellement bon que les gens veulent naturellement le partager et le citer.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">2</span>
+<div class="step-content">
+<strong>Guest Blogging (Articles invités)</strong>
+<p>Rédigez des articles pour des blogs/sites de votre secteur en échange d'un lien vers votre site.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">3</span>
+<div class="step-content">
+<strong>Relations Presse (Digital PR)</strong>
+<p>Contactez les journalistes et médias pour qu'ils parlent de votre entreprise/produit.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">4</span>
+<div class="step-content">
+<strong>Broken Link Building</strong>
+<p>Trouvez des liens cassés sur d'autres sites et proposez votre contenu en remplacement.</p>
+</div>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🎣 Le Link Baiting</h1>
+<h2>Créer du contenu "aimant à liens"</h2>
+<p class="text-intro">Le <strong>link baiting</strong> consiste à créer du contenu si utile, original ou divertissant que les autres sites voudront naturellement le citer.</p>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>📊 Études et données originales</h3>
+<p>Publiez des statistiques exclusives, sondages, analyses de votre secteur.</p>
+<p class="text-accent">→ Les journalistes adorent les chiffres inédits</p>
+</div>
+<div class="tool-card">
+<h3>🛠️ Outils gratuits</h3>
+<p>Créez des calculateurs, générateurs, templates téléchargeables.</p>
+<p class="text-accent">→ Les gens citent les outils qu'ils utilisent</p>
+</div>
+<div class="tool-card">
+<h3>📚 Guides ultimes</h3>
+<p>Créez LA ressource de référence sur un sujet (5000+ mots, exhaustif).</p>
+<p class="text-accent">→ Devient une référence citée par tous</p>
+</div>
+<div class="tool-card">
+<h3>📈 Infographies</h3>
+<p>Visualisez des données complexes de manière attrayante.</p>
+<p class="text-accent">→ Facilement partagées et intégrées</p>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Conseil :</strong> Investissez 10x plus de temps dans un contenu exceptionnel plutôt que de créer 10 contenus moyens. C'est l'excellence qui attire les liens.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🏗️ La technique Skyscraper (rappel)</h1>
+<h2>Surpasser la concurrence</h2>
+<p class="text-intro">La technique <strong>Skyscraper</strong> (gratte-ciel), popularisée par Brian Dean de Backlinko, consiste à créer un contenu meilleur que tout ce qui existe déjà.</p>
+<div class="skyscraper-steps">
+<div class="skyscraper-step">
+<span class="emoji">🔍</span>
+<h3>1. Trouver</h3>
+<p>Identifiez un contenu populaire qui a beaucoup de backlinks</p>
+</div>
+<div class="skyscraper-step">
+<span class="emoji">🏗️</span>
+<h3>2. Améliorer</h3>
+<p>Créez quelque chose de 10x meilleur (plus complet, plus récent, mieux designé)</p>
+</div>
+<div class="skyscraper-step">
+<span class="emoji">📧</span>
+<h3>3. Promouvoir</h3>
+<p>Contactez les sites qui linkent l'original pour leur proposer votre version</p>
+</div>
+</div>
+<p class="slide-quote">"Pourquoi linker vers un immeuble de 10 étages quand il y a un gratte-ciel de 50 étages juste à côté ?"<br><small>— Brian Dean, Backlinko</small></p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>✍️ Le Guest Blogging</h1>
+<h2>Écrire pour obtenir des liens</h2>
+<p class="text-intro">Le <strong>guest blogging</strong> (articles invités) consiste à rédiger des articles de qualité pour d'autres sites en échange d'un lien retour vers votre site.</p>
+<div class="comparison-table">
+<div class="comparison-col">
+<h3>✅ Les bonnes pratiques</h3>
+<ul>
+<li>Choisir des sites de qualité </li>
+<li>Écrire du contenu vraiment utile aux lecteurs</li>
+<li>Lien naturel dans le contexte de l'article</li>
+<li>Varier les sites et les ancres</li>
+<li>Cibler des sites de votre thématique</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h3>❌ Ce qu'il faut éviter</h3>
+<ul>
+<li>Sites "fermes à articles" de mauvaise qualité</li>
+<li>Articles de 300 mots bâclés</li>
+<li>Ancres sur-optimisées à chaque fois</li>
+<li>100 articles invités en un mois</li>
+<li>Payer pour publier (sauf transparence)</li>
+</ul>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Comment trouver des opportunités :</strong> Recherchez "votre thématique" + "écrire pour nous" ou "article invité" ou "contribuer"</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔧 Broken Link Building</h1>
+<h2>Transformer les erreurs 404 en opportunités</h2>
+<p class="text-intro">Le <strong>broken link building</strong> consiste à trouver des liens cassés (404) sur d'autres sites et proposer votre contenu comme remplacement.</p>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">1</span>
+<div class="step-content">
+<strong>Trouvez des pages de ressources</strong>
+<p>Recherchez des pages qui listent des ressources/liens dans votre secteur.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">2</span>
+<div class="step-content">
+<strong>Identifiez les liens cassés</strong>
+<p>Utilisez Check My Links (extension Chrome) ou Ahrefs pour scanner les liens morts.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">3</span>
+<div class="step-content">
+<strong>Créez ou trouvez un contenu de remplacement</strong>
+<p>Votre contenu doit être aussi bon ou meilleur que la ressource disparue.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">4</span>
+<div class="step-content">
+<strong>Contactez le webmaster</strong>
+<p>"J'ai remarqué un lien cassé sur votre page. J'ai une ressource similaire qui pourrait remplacer."</p>
+</div>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Taux de réussite typique :</strong> 5-15% des contacts aboutissent à un lien. C'est un jeu de volume !</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📰 Digital PR (Relations Presse)</h1>
+<h2>Obtenir des liens depuis les médias</h2>
+<p class="text-intro">La <strong>Digital PR</strong> consiste à obtenir des mentions et des liens depuis des sites de médias et d'actualités grâce à des histoires intéressantes.</p>
+<ul>
+<li><strong>🎯 Communiqués de presse</strong> : annonces officielles (lancements, levées de fonds, partenariats)</li>
+<li><strong>📊 Études et sondages</strong> : publiez des données exclusives que les journalistes peuvent reprendre</li>
+<li><strong>💬 Expert sourcing</strong> : positionnez-vous comme expert pour être cité (HARO, Qwoted, SourceBottle)</li>
+<li><strong>📅 Newsjacking</strong> : réagissez à l'actualité avec votre angle d'expert</li>
+</ul>
+<p class="slide-note">📝 <strong>HARO (Help A Reporter Out)</strong> : service gratuit où des journalistes cherchent des experts à citer. Inscrivez-vous sur <a href="https://www.helpareporter.com" style="color: #00d4aa;">helpareporter.com</a></p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔄 Link Reclamation</h1>
+<h2>Récupérer des liens perdus</h2>
+<p class="text-intro">La <strong>récupération de liens</strong> consiste à identifier et récupérer des opportunités de liens que vous avez "perdues" ou jamais eues.</p>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>🔍 Mentions non-liées</h3>
+<p>Quelqu'un cite votre marque mais sans lien ?</p>
+<p class="text-accent">→ Contactez-les pour demander un lien</p>
+</div>
+<div class="tool-card">
+<h3>🔗 Liens cassés vers vous</h3>
+<p>Des liens vers vos anciennes pages 404 ?</p>
+<p class="text-accent">→ Redirigez ou demandez la correction</p>
+</div>
+<div class="tool-card">
+<h3>📦 Liens vers des concurrents disparus</h3>
+<p>Un concurrent a fermé, ses pages sont 404 ?</p>
+<p class="text-accent">→ Proposez votre contenu en remplacement</p>
+</div>
+<div class="tool-card">
+<h3>🖼️ Utilisation de vos images</h3>
+<p>Quelqu'un utilise votre infographie sans crédit ?</p>
+<p class="text-accent">→ Demandez un lien en échange</p>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Outil :</strong> Configurez des alertes Google pour votre marque ("votre marque" site:votresite.com) pour détecter les mentions.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🤝 Partenariats et échanges</h1>
+<h2>Stratégies relationnelles</h2>
+<p class="text-intro">Les relations professionnelles peuvent générer des opportunités de liens naturels.</p>
+<ul>
+<li><strong>🏢 Fournisseurs et clients</strong> : page "Nos clients" ou "Nos partenaires" avec liens</li>
+<li><strong>🎓 Associations et fédérations</strong> : adhérez à des organisations de votre secteur</li>
+<li><strong>🎤 Événements et conférences</strong> : intervenez comme speaker pour obtenir un lien depuis le site de l'événement</li>
+<li><strong>💡 Interviews et podcasts</strong> : participez à des podcasts/interviews = lien dans les notes</li>
+<li><strong>📚 Témoignages</strong> : laissez des témoignages clients en échange d'un lien</li>
+</ul>
+<p class="slide-warning">⚠️ <strong>Attention :</strong> L'échange de liens réciproques massif (A→B et B→A) est détectable par Google et peu efficace. Privilégiez les relations naturelles.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>⛔ Techniques Black Hat</h1>
+<h2>Ce qu'il faut absolument éviter</h2>
+<p class="text-intro">Ces techniques violent les guidelines de Google et peuvent entraîner des pénalités sévères (chute de positions ou désindexation).</p>
+<div class="intent-grid">
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">💰 Achat de liens</h3>
+<p>Payer pour obtenir des liens DoFollow</p>
+<p class="text-muted">→ Pénalité manuelle potentielle</p>
+</div>
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🕸️ PBN (Private Blog Network)</h3>
+<p>Réseau de sites créés uniquement pour faire des liens</p>
+<p class="text-muted">→ Désindexation du réseau + pénalité</p>
+</div>
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🤖 Liens automatisés</h3>
+<p>Spam de commentaires, profils forums, signatures</p>
+<p class="text-muted">→ Liens ignorés ou pénalisés</p>
+</div>
+<div class="intent-card" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🔁 Schémas de liens</h3>
+<p>Échanges massifs, roues de liens, triangulations</p>
+<p class="text-muted">→ Patterns détectables par l'algo</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔨 Les pénalités Google</h1>
+<h2>Quand le netlinking tourne mal</h2>
+<p class="text-intro">Google peut sanctionner les sites qui manipulent leur profil de liens. Deux types de pénalités existent :</p>
+<div class="comparison-table">
+<div class="comparison-col" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">🤖 Pénalité algorithmique</h3>
+<ul>
+<li><strong>Penguin</strong> : détecte les liens artificiels</li>
+<li>Appliquée automatiquement par l'algorithme</li>
+<li>Chute progressive des positions</li>
+<li>Récupération lente après nettoyage</li>
+</ul>
+</div>
+<div class="comparison-col" style="border-color: rgba(234, 67, 53, 0.4);">
+<h3 style="color: #ea4335;">👤 Pénalité manuelle</h3>
+<ul>
+<li>Un employé de Google examine votre site</li>
+<li>Notification dans la Search Console</li>
+<li>Chute brutale et immédiate</li>
+<li>Nécessite une demande de réexamen</li>
+</ul>
+</div>
+</div>
+<p class="slide-warning">⚠️ <strong>Vérifiez régulièrement :</strong> Search Console > Sécurité et actions manuelles > Actions manuelles</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🧹 Le fichier Disavow</h1>
+<h2>Désavouer les mauvais liens</h2>
+<p class="text-intro">Le <strong>fichier de désaveu</strong> (Disavow) permet de dire à Google d'ignorer certains liens toxiques pointant vers votre site.</p>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">1</span>
+<div class="step-content">
+<strong>Identifiez les liens toxiques</strong>
+<p>Utilisez Ahrefs, SEMrush ou la Search Console pour repérer les liens suspects.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">2</span>
+<div class="step-content">
+<strong>Essayez de les supprimer d'abord</strong>
+<p>Contactez les webmasters pour demander le retrait des liens.</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">3</span>
+<div class="step-content">
+<strong>Créez le fichier Disavow</strong>
+<p>Listez les domaines/URLs à désavouer dans un fichier .txt</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">4</span>
+<div class="step-content">
+<strong>Soumettez à Google</strong>
+<p>Via l'outil Disavow Links dans la Search Console.</p>
+</div>
+</div>
+</div>
+<p class="slide-warning">⚠️ <strong>Attention :</strong> Le Disavow est un outil puissant. N'y mettez que des liens vraiment toxiques, pas les liens "moyens".</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>💡 Bonnes pratiques résumées</h1>
+<h2>Les règles d'or du netlinking</h2>
+<ul>
+<li>✅ <strong>Qualité > Quantité</strong> : 10 liens de sites autoritaires > 100 liens de spam</li>
+<li>✅ <strong>Pertinence thématique</strong> : privilégiez les liens de sites de votre secteur</li>
+<li>✅ <strong>Diversifiez vos ancres</strong> : évitez la sur-optimisation sur un mot-clé</li>
+<li>✅ <strong>Croissance naturelle</strong> : acquisition régulière et progressive</li>
+<li>✅ <strong>Contenu exceptionnel</strong> : la meilleure stratégie est de mériter les liens</li>
+<li>✅ <strong>Surveillez votre profil</strong> : audit régulier pour détecter les liens toxiques</li>
+<li>✅ <strong>Pensez long terme</strong> : construisez des relations, pas juste des liens</li>
+</ul>
+</div>`,
+
+
+`<div class="slide-seo">
+<h1>✅ Récap' Chapitre 7</h1>
+<h2>Ce qu'il faut absolument retenir</h2>
+<ul>
+<li>🔗 <strong>Backlinks</strong> : liens entrants = votes de confiance entre sites</li>
+<li>📊 <strong>Autorité</strong> : DA/DR mesurent la "puissance" SEO d'un domaine</li>
+<li>⚖️ <strong>DoFollow vs NoFollow</strong> : seuls les DoFollow transmettent le "jus de lien"</li>
+<li>🔤 <strong>Ancres</strong> : variez les textes de liens, évitez la sur-optimisation</li>
+<li>🏗️ <strong>Profil sain</strong> : diversité de sources, croissance naturelle, pertinence</li>
+<li>🎯 <strong>Stratégies White Hat</strong> : contenu de qualité, guest blogging, Digital PR (mentions et des liens depuis des sites de médias)</li>
+<li>⛔ <strong>Black Hat à éviter</strong> : achat de liens, PBN (fermes à liens), spam automatisé</li>
+<li>🛠️ <strong>Outils</strong> : Ahrefs, SEMrush, Search Console pour analyser et suivre</li>
+</ul>
+<p class="slide-tip">💡 <strong>Rappel :</strong> DA (Domain Authority) Score de 0 à 100 basé sur le nombre et la qualité des liens entrants + âge du domaine | DR (Domain Rating) Score de 0 à 100 Basé sur la force du profil de backlinks (quantité × qualité)</p>
+</div>`
+]

@@ -1,0 +1,708 @@
+[
+
+
+  `<div class="slide-seo">
+<h1>✍️ Chapitre 5</h1>
+<h2 class="chapitre">5 | Stratégie de contenu et Copywriting SEO</h2>
+<p class="text-intro">Créer du contenu optimisé ne suffit pas. Il faut créer du contenu qui <strong>captive, convainc et convertit</strong>. Le copywriting SEO est l'art de concilier les exigences des moteurs de recherche avec les attentes des humains.</p>
+<div class="slide-agenda">
+<p>📝 Les fondamentaux de la rédaction SEO</p>
+<p>🎯 Le copywriting orienté conversion</p>
+<p>📅 La stratégie éditoriale et le calendrier de contenu</p>
+<p>🔄 Le recyclage et l'optimisation de contenu existant</p>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📝 Qu'est-ce que le copywriting SEO ?</h1>
+<h2>L'alliance de deux disciplines</h2>
+<p class="text-intro">Le <strong>copywriting SEO</strong> combine l'art de la rédaction persuasive (copywriting) avec les techniques d'optimisation pour les moteurs de recherche (SEO). L'objectif : créer du contenu qui <strong>ranke ET convertit</strong>.</p>
+<div class="comparison-table">
+<div class="comparison-col">
+<h3>✍️ Copywriting classique</h3>
+<ul>
+<li>Focus sur la persuasion</li>
+<li>Déclencheur émotionnel</li>
+<li>Appel à l'action clair</li>
+<li>Bénéfices avant fonctionnalités</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h3>🔍 SEO classique</h3>
+<ul>
+<li>Focus sur les mots-clés</li>
+<li>Structure technique</li>
+<li>Densité et sémantique</li>
+<li>Optimisation des balises</li>
+</ul>
+</div>
+</div>
+<p class="slide-highlight mt-lg">Copywriting SEO = Persuader les humains + Satisfaire Google</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🎯 L'intention avant les mots-clés</h1>
+<h2>Écrire pour l'utilisateur, pas pour l'algorithme</h2>
+<p class="text-intro">La première étape de toute rédaction SEO est de comprendre <strong>pourquoi</strong> l'utilisateur effectue cette recherche. Que veut-il vraiment ? Quel problème cherche-t-il à résoudre ?</p>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">1</span>
+<div class="step-content">
+<strong>Identifier l'intention</strong>
+<p>Informationnelle ? Transactionnelle ? Commerciale ? Navigationnelle ?</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">2</span>
+<div class="step-content">
+<strong>Analyser les SERP</strong>
+<p>Quel type de contenu Google affiche-t-il ? Articles ? Vidéos ? Pages produits ?</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">3</span>
+<div class="step-content">
+<strong>Définir l'angle</strong>
+<p>Comment apporter plus de valeur que les contenus existants ?</p>
+</div>
+</div>
+</div>
+<p class="slide-tip">💡 Si vous écrivez un article "comment choisir un matelas" mais que l'utilisateur veut acheter immédiatement, vous avez raté l'intention.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📐 La structure d'un contenu SEO efficace</h1>
+<h2>L'anatomie d'un article qui performe</h2>
+<p class="text-intro">Un contenu bien structuré facilite la lecture humaine ET l'analyse par Google. Voici les éléments essentiels d'une structure gagnante.</p>
+<ul>
+<li><strong>Titre accrocheur (H1)</strong> : promet une valeur claire, inclut le mot-clé</li>
+<li><strong>Introduction percutante</strong> : accroche + problème + promesse de solution (100-150 mots)</li>
+<li><strong>Table des matières</strong> : facilite la navigation et génère des sitelinks</li>
+<li><strong>Sections claires (H2/H3)</strong> : un sujet par section, titres explicites</li>
+<li><strong>Paragraphes courts</strong> : 2-3 phrases max, une idée par paragraphe</li>
+<li><strong>Éléments visuels</strong> : images, schémas, tableaux pour aérer</li>
+<li><strong>Conclusion + CTA</strong> : résumé et appel à l'action</li>
+</ul>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🎣 L'accroche : les premières secondes décisives</h1>
+<h2>Capturer l'attention immédiatement</h2>
+<p class="text-intro">Vous avez <strong>3 secondes</strong> pour convaincre le lecteur de rester. L'accroche (ou "hook") est le premier paragraphe qui décide si l'utilisateur continue ou repart.</p>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>❓ La question</h3>
+<p>"Vous perdez du trafic sans comprendre pourquoi ? Votre site souffre peut-être d'un problème invisible..."</p>
+</div>
+<div class="tool-card">
+<h3>📊 La statistique choc</h3>
+<p>"75% des utilisateurs ne vont jamais au-delà de la première page Google. Êtes-vous dans les 25% ?"</p>
+</div>
+<div class="tool-card">
+<h3>😱 Le problème</h3>
+<p>"Chaque jour, vous perdez des clients qui ne trouvent pas votre site. Voici comment y remédier."</p>
+</div>
+<div class="tool-card">
+<h3>🎯 La promesse</h3>
+<p>"Dans les 10 prochaines minutes, vous allez apprendre à doubler votre trafic organique."</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔺 La pyramide inversée</h1>
+<h2>L'essentiel d'abord, les détails ensuite</h2>
+<p class="text-intro">Empruntée au journalisme, la <strong>pyramide inversée</strong> consiste à présenter l'information la plus importante en premier, puis à développer progressivement les détails.</p>
+<div class="slide-diagram flex-col gap-sm items-center">
+<span class="step" style="width: 80%; background: linear-gradient(135deg, rgba(0, 212, 170, 0.4) 0%, rgba(124, 58, 237, 0.4) 100%);">🎯 Information clé / Réponse principale</span>
+<span class="step" style="width: 65%; opacity: 0.8;">📋 Détails importants</span>
+<span class="step step-sm" style="width: 50%; opacity: 0.6;">📝 Contexte et exemples</span>
+<span class="step step-sm" style="width: 35%; opacity: 0.4;">🔍 Détails complémentaires</span>
+</div>
+<p class="slide-tip">💡 <strong>Pourquoi ?</strong> L'utilisateur trouve immédiatement sa réponse (satisfaction). S'il veut en savoir plus, il continue. Sinon, il a quand même eu ce qu'il cherchait.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📊 Le format "Featured Snippet"</h1>
+<h2>Viser la position zéro</h2>
+<p class="text-intro">Le <strong>Featured Snippet</strong> (ou position zéro) est l'encadré qui apparaît au-dessus des résultats naturels. Il répond directement à la question de l'utilisateur. Voici comment l'obtenir :</p>
+<ul>
+<li><strong>Répondez directement</strong> : la réponse en 40-60 mots juste après la question en H2</li>
+<li><strong>Utilisez des listes</strong> : Google adore les listes numérotées et à puces</li>
+<li><strong>Créez des tableaux</strong> : comparatifs, données structurées</li>
+<li><strong>Posez la question exacte</strong> : "Qu'est-ce que le SEO ?" puis répondez</li>
+<li><strong>Soyez concis</strong> : le snippet affiche ~50 mots max</li>
+</ul>
+<p class="slide-warning">⚠️ Le Featured Snippet peut parfois réduire les clics (la réponse est déjà visible). Mais il renforce considérablement votre autorité.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>✍️ Les techniques de copywriting SEO</h1>
+<h2>Écrire pour convaincre</h2>
+<p class="text-intro">Au-delà de la structure, le <strong>style d'écriture</strong> influence l'engagement et les conversions. Voici les principes fondamentaux du copywriting appliqués au SEO.</p>
+<div class="intent-grid">
+<div class="intent-card">
+<h3>🗣️ Voix active</h3>
+<p>"Optimisez votre site" plutôt que "Votre site doit être optimisé"</p>
+<p class="text-accent mt-sm">→ Plus direct, plus engageant</p>
+</div>
+<div class="intent-card">
+<h3>👤 Le "vous"</h3>
+<p>Adressez-vous directement au lecteur</p>
+<p class="text-accent mt-sm">→ Crée une connexion personnelle</p>
+</div>
+<div class="intent-card">
+<h3>💬 Langage simple</h3>
+<p>Évitez le jargon, expliquez les termes techniques</p>
+<p class="text-accent mt-sm">→ Accessible à tous</p>
+</div>
+<div class="intent-card">
+<h3>🎯 Bénéfices</h3>
+<p>"Gagnez du temps" plutôt que "Fonctionnalité d'automatisation"</p>
+<p class="text-accent mt-sm">→ Ce que l'utilisateur y gagne</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🧲 Les mots puissants (Power Words)</h1>
+<h2>Déclencher l'émotion et l'action</h2>
+<p class="text-intro">Les <strong>power words</strong> sont des mots qui déclenchent une réponse émotionnelle chez le lecteur. Ils augmentent le CTR dans les titres et l'engagement dans le contenu.</p>
+<div class="comparison-table">
+<div class="comparison-col">
+<h3>⚡ Urgence / Rareté</h3>
+<ul>
+<li>Maintenant, Immédiatement</li>
+<li>Limité, Exclusif, Dernier</li>
+<li>Ne manquez pas, Urgent</li>
+<li>Aujourd'hui seulement</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h3>✨ Valeur / Bénéfice</h3>
+<ul>
+<li>Gratuit, Bonus, Cadeau</li>
+<li>Garanti, Prouvé, Testé</li>
+<li>Secret, Révélé, Découvrez</li>
+<li>Facile, Simple, Rapide</li>
+</ul>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Attention :</strong> n'abusez pas ! Trop de power words = spam. Utilisez-les stratégiquement dans les titres.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📝 Les formules de copywriting éprouvées</h1>
+<h2>AIDA, PAS, BAB : des structures qui fonctionnent</h2>
+<p class="text-intro">Ces formules sont utilisées depuis des décennies en publicité. Elles structurent votre argumentaire pour maximiser l'impact.</p>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">AIDA</span>
+<div class="step-content">
+<strong>Attention → Intérêt → Désir → Action</strong>
+<p>Captez l'attention, suscitez l'intérêt, créez le désir, incitez à l'action</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">PAS</span>
+<div class="step-content">
+<strong>Problem → Agitation → Solution</strong>
+<p>Identifiez le problème, amplifiez la douleur, présentez la solution</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">BAB</span>
+<div class="step-content">
+<strong>Before → After → Bridge</strong>
+<p>Montrez la situation actuelle, la situation idéale, puis le chemin pour y arriver</p>
+</div>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🎯 AIDA en pratique</h1>
+<h2>Exemple appliqué à une landing page SEO</h2>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">A</span>
+<div class="step-content">
+<strong>Attention (Titre)</strong>
+<p>"Votre site est invisible sur Google ? Découvrez pourquoi 90% des sites n'atteignent jamais la première page."</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">I</span>
+<div class="step-content">
+<strong>Intérêt (Problème)</strong>
+<p>"Chaque jour, des milliers de clients potentiels cherchent vos services... mais trouvent vos concurrents."</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">D</span>
+<div class="step-content">
+<strong>Désir (Solution + Bénéfices)</strong>
+<p>"Notre audit SEO identifie les blocages et vous donne un plan d'action clair. Résultats visibles en 90 jours."</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">A</span>
+<div class="step-content">
+<strong>Action (CTA)</strong>
+<p>"Demandez votre audit gratuit → Recevez votre rapport personnalisé sous 48h"</p>
+</div>
+</div>
+</div>
+</div>`,
+
+
+`<div class="slide-seo">
+<h1>🎯 PAS en pratique</h1>
+<h2>Exemple appliqué au Coaching "Focus Mastery"</h2>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">P</span>
+<div class="step-content">
+<strong>Problème (Identification)</strong>
+<p>"Vous travaillez 10h par jour, mais vos projets n'avancent pas. Vous finissez vos journées épuisé avec le sentiment de n'avoir fait qu'éteindre des incendies."</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">A</span>
+<div class="step-content">
+<strong>Agitation (Amplification)</strong>
+<p>"Ce stress permanent vous mène droit au burnout et empoisonne vos soirées en famille. Pendant que vous stagnez, vos concurrents, eux, prennent le large."</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">S</span>
+<div class="step-content">
+<strong>Solution (Présentation)</strong>
+<p>"La méthode 'Focus Mastery' : 4 semaines pour automatiser l'inutile, déléguer le reste et récupérer enfin 10h de liberté par semaine."</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">!</span>
+<div class="step-content">
+<strong>Action (CTA)</strong>
+<p>"Réservez votre appel stratégique offert → Reprenez le contrôle de votre agenda dès aujourd'hui."</p>
+</div>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📊 Le champ sémantique</h1>
+<h2>Au-delà du mot-clé principal</h2>
+<p class="text-intro">Google ne cherche plus seulement votre mot-clé exact. Il analyse le <strong>champ sémantique</strong> complet de votre page pour évaluer sa pertinence et sa profondeur.</p>
+<p class="text-light"><strong>💡 Champ sémantique :</strong> Ensemble des mots et expressions qui gravitent autour d'un sujet. Pour "running", le champ sémantique inclut : course à pied, jogging, footing, foulée, cardio, endurance, marathon, semi-marathon, chrono, etc.</p>
+<div class="cluster-diagram mt-lg">
+<div class="cluster-center">
+<span class="cluster-main">chaussures running</span>
+</div>
+<div class="cluster-satellites">
+<span class="cluster-sat">amorti</span>
+<span class="cluster-sat">foulée</span>
+<span class="cluster-sat">pronation</span>
+<span class="cluster-sat">drop</span>
+<span class="cluster-sat">semelle</span>
+<span class="cluster-sat">stabilité</span>
+<span class="cluster-sat">légèreté</span>
+<span class="cluster-sat">respirabilité</span>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>⚠️ Le keyword stuffing : l'erreur à éviter</h1>
+<h2>Quand l'optimisation devient sur-optimisation</h2>
+<p class="text-intro">Le <strong>keyword stuffing</strong> (bourrage de mots-clés) consiste à répéter excessivement un mot-clé dans l'espoir d'améliorer le classement. C'est une technique "Black Hat" pénalisée par Google.</p>
+<div class="cannibalization-example">
+<div class="cannibal-bad">
+<h4>❌ Keyword stuffing</h4>
+<p>"Nos <strong>chaussures running</strong> sont les meilleures <strong>chaussures running</strong> du marché. Si vous cherchez des <strong>chaussures running</strong>, nos <strong>chaussures running</strong> sont faites pour vous."</p>
+<p class="result">Résultat : pénalité Google, mauvaise expérience utilisateur</p>
+</div>
+<div class="cannibal-good">
+<h4>✅ Rédaction naturelle</h4>
+<p>"Découvrez notre collection de <strong>chaussures de running</strong>. Que vous soyez débutant ou marathonien confirmé, nos modèles offrent confort, amorti et légèreté pour chaque foulée."</p>
+<p class="result">Résultat : lecture fluide, sémantique riche</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📊 La densité de mot-clé idéale</h1>
+<h2>Mythe ou réalité ?</h2>
+<p class="text-intro">Pendant longtemps, les SEO visaient une "densité de mot-clé" de 2-3%. Cette métrique est aujourd'hui <strong>obsolète</strong>. Google est bien plus sophistiqué.</p>
+<ul>
+<li><strong>Pas de pourcentage magique</strong> : Google ne compte pas les occurrences</li>
+<li><strong>Pertinence contextuelle</strong> : le mot-clé doit apparaître naturellement</li>
+<li><strong>Emplacements stratégiques</strong> : titre, H1, premier paragraphe, conclusion</li>
+<li><strong>Variations et synonymes</strong> : plus importants que la répétition</li>
+</ul>
+<p class="slide-tip">💡 <strong>La vraie règle :</strong> si en relisant votre texte à voix haute, le mot-clé semble forcé ou répétitif, c'est trop. Écrivez naturellement.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📅 La stratégie éditoriale</h1>
+<h2>Planifier pour performer</h2>
+<p class="text-intro">Une <strong>stratégie éditoriale</strong> est un plan qui définit quoi publier, quand, pour qui, et pourquoi. Sans stratégie, vous publiez au hasard. Avec, vous construisez une autorité thématique.</p>
+<div class="intent-grid">
+<div class="intent-card">
+<h3>🎯 Objectifs</h3>
+<p>Que voulez-vous accomplir ?</p>
+<p class="text-accent mt-sm">→ Trafic, leads, ventes, notoriété ?</p>
+</div>
+<div class="intent-card">
+<h3>👥 Audience</h3>
+<p>Pour qui écrivez-vous ?</p>
+<p class="text-accent mt-sm">→ Personas, besoins, questions</p>
+</div>
+<div class="intent-card">
+<h3>📝 Sujets</h3>
+<p>Quels thèmes couvrir ?</p>
+<p class="text-accent mt-sm">→ Clusters thématiques, mots-clés</p>
+</div>
+<div class="intent-card">
+<h3>📊 KPIs</h3>
+<p>Comment mesurer le succès ?</p>
+<p class="text-accent mt-sm">→ Trafic, positions, conversions</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>👤 Les personas : connaître son audience</h1>
+<h2>Écrire pour quelqu'un de précis</h2>
+<p class="text-intro">Un <strong>persona</strong> est une représentation fictive de votre client idéal. Définir vos personas vous aide à créer du contenu qui résonne avec votre audience.</p>
+<div class="code-block">
+<span class="code-comment">/* Exemple de persona */</span><br>
+<span class="code-keyword">Nom :</span> Marie, 35 ans<br>
+<span class="code-keyword">Métier :</span> Responsable marketing PME<br>
+<span class="code-keyword">Objectif :</span> Augmenter la visibilité de son entreprise en ligne<br>
+<span class="code-keyword">Frustrations :</span> Budget limité, peu de temps, jargon technique<br>
+<span class="code-keyword">Questions :</span> "Par où commencer ?", "Combien ça coûte ?", "Combien de temps pour voir des résultats ?"<br>
+<span class="code-keyword">Canaux :</span> LinkedIn, Google, newsletters professionnelles
+</div>
+<p class="slide-tip">💡 Quand vous écrivez, imaginez que vous vous adressez directement à ce persona. Votre ton et votre contenu seront naturellement plus pertinents.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🗺️ Le parcours utilisateur (Customer Journey)</h1>
+<h2>Du contenu pour chaque étape</h2>
+<p class="text-intro">Vos clients potentiels passent par différentes étapes avant d'acheter. Votre contenu doit les accompagner à <strong>chaque phase</strong> de ce parcours.</p>
+<div class="slide-diagram flex-col gap-md">
+<div class="cwv-item">
+<span class="step cwv-lcp" style="width: 170px;">Découverte</span>
+<span class="text-light">L'utilisateur prend conscience d'un besoin → Contenu éducatif, articles de blog</span>
+</div>
+<div class="cwv-item">
+<span class="step cwv-inp" style="width: 170px; background: #fbbc04;">Considération</span>
+<span class="text-light">Il compare les solutions → Guides comparatifs, études de cas, avis</span>
+</div>
+<div class="cwv-item">
+<span class="step cwv-cls" style="width: 170px;">Décision</span>
+<span class="text-light">Il est prêt à acheter → Pages produits, démos, offres, témoignages</span>
+</div>
+</div>
+<p class="slide-tip">💡 Créez du contenu pour chaque étape. Un blog attire en phase "Découverte", vos pages services convertissent en phase "Décision".</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📅 Le calendrier éditorial</h1>
+<h2>Planifier pour ne jamais manquer d'idées</h2>
+<p class="text-intro">Le <strong>calendrier éditorial</strong> est votre outil de planification. Il organise vos publications sur plusieurs semaines/mois et assure une cohérence dans votre stratégie.</p>
+<div class="keyword-map-table">
+<div class="km-header">
+<span>Date</span>
+<span>Titre prévu</span>
+<span>Mot-clé</span>
+<span>Format</span>
+<span>Statut</span>
+</div>
+<div class="km-row">
+<span class="km-url">15/02</span>
+<span class="km-kw">Guide complet du SEO local</span>
+<span class="km-vol">SEO local</span>
+<span class="km-sec">Article pilier</span>
+<span class="km-kd kd-easy-sm">Publié</span>
+</div>
+<div class="km-row">
+<span class="km-url">22/02</span>
+<span class="km-kw">Comment optimiser sa fiche Google Business</span>
+<span class="km-vol">Google Business Profile</span>
+<span class="km-sec">Tutoriel</span>
+<span class="km-kd kd-medium-sm">En cours</span>
+</div>
+<div class="km-row">
+<span class="km-url">01/03</span>
+<span class="km-kw">Les avis clients : impact sur le SEO</span>
+<span class="km-vol">avis clients SEO</span>
+<span class="km-sec">Article</span>
+<span class="km-kd kd-hard-sm">Planifié</span>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📝 Les types de contenu SEO</h1>
+<h2>Diversifier pour maximiser l'impact</h2>
+<p class="text-intro">Tous les contenus ne servent pas le même objectif. Variez les formats pour toucher différentes audiences et intentions de recherche.</p>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>📚 Articles de blog</h3>
+<p>Contenus informatifs, guides, tutoriels. Idéaux pour la longue traîne et le trafic organique.</p>
+<p class="text-muted">Phase : Découverte</p>
+</div>
+<div class="tool-card">
+<h3>📊 Études de cas</h3>
+<p>Démontrez vos résultats concrets. Preuves sociales puissantes pour convaincre.</p>
+<p class="text-muted">Phase : Considération</p>
+</div>
+<div class="tool-card">
+<h3>📋 Pages piliers</h3>
+<p>Contenus exhaustifs (+3000 mots) sur un sujet central. Attirent des backlinks.</p>
+<p class="text-muted">Phase : Découverte</p>
+</div>
+<div class="tool-card">
+<h3>❓ FAQ</h3>
+<p>Réponses aux questions fréquentes. Parfaites pour les Featured Snippets et People Also Ask.</p>
+<p class="text-muted">Toutes phases</p>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📝 Encore plus de formats de contenu</h1>
+<h2>Au-delà du texte classique</h2>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>📊 Infographies</h3>
+<p>Données visuelles partageables. Excellent potentiel de backlinks naturels.</p>
+<p class="text-muted">Trafic référent + social</p>
+</div>
+<div class="tool-card">
+<h3>🎬 Vidéos</h3>
+<p>YouTube est le 2ème moteur de recherche. Intégrez-les dans vos articles.</p>
+<p class="text-muted">Engagement + SEO YouTube</p>
+</div>
+<div class="tool-card">
+<h3>📥 Ebooks / Guides PDF</h3>
+<p>Contenus premium en échange d'un email. Génération de leads.</p>
+<p class="text-muted">Lead magnet</p>
+</div>
+<div class="tool-card">
+<h3>🛠️ Outils gratuits</h3>
+<p>Calculateurs, templates, checklist. Génèrent des backlinks et du trafic récurrent.</p>
+<p class="text-muted">Linkbait + fidélisation</p>
+</div>
+</div>
+<p class="slide-tip">💡 <strong>Linkbait :</strong> Contenu spécialement conçu pour attirer des liens naturels. Les outils gratuits, études originales et infographies sont d'excellents linkbaits.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📈 La fréquence de publication</h1>
+<h2>Qualité vs Quantité : le débat éternel</h2>
+<p class="text-intro">Faut-il publier beaucoup ou publier bien ? La réponse dépend de vos ressources, mais une chose est certaine : la <strong>régularité</strong> est clé.</p>
+<div class="kd-scale">
+<div class="kd-item kd-easy">
+<span class="kd-score">1-2/mois</span>
+<span class="kd-label">Minimum viable</span>
+<p class="kd-desc">Pour maintenir une présence. Contenus longs et approfondis.</p>
+</div>
+<div class="kd-item kd-medium">
+<span class="kd-score">1/semaine</span>
+<span class="kd-label">Rythme optimal</span>
+<p class="kd-desc">Bon équilibre qualité/quantité pour la plupart des sites.</p>
+</div>
+<div class="kd-item kd-hard">
+<span class="kd-score">3-5/semaine</span>
+<span class="kd-label">Intensif</span>
+<p class="kd-desc">Pour les médias et sites à forte audience. Équipe dédiée nécessaire.</p>
+</div>
+</div>
+<p class="slide-warning">⚠️ Mieux vaut 1 article excellent par mois que 4 articles médiocres par semaine. Google privilégie la qualité.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔄 Le recyclage de contenu</h1>
+<h2>Faire plus avec ce que vous avez déjà</h2>
+<p class="text-intro">Créer du contenu from scratch est chronophage. Le <strong>recyclage</strong> consiste à réutiliser et adapter vos contenus existants pour maximiser leur impact.</p>
+<div class="process-steps">
+<div class="process-step">
+<span class="step-number">📝</span>
+<div class="step-content">
+<strong>Article → Infographie</strong>
+<p>Transformez les données d'un article en visuel partageable</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">🎬</span>
+<div class="step-content">
+<strong>Article → Vidéo</strong>
+<p>Convertissez un guide en tutoriel vidéo YouTube</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">📧</span>
+<div class="step-content">
+<strong>Articles → Newsletter</strong>
+<p>Compilez vos meilleurs articles en digest hebdomadaire</p>
+</div>
+</div>
+<div class="process-step">
+<span class="step-number">📱</span>
+<div class="step-content">
+<strong>Article → Posts sociaux</strong>
+<p>Découpez un article en 5-10 posts LinkedIn/Twitter</p>
+</div>
+</div>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🔄 L'optimisation de contenu existant</h1>
+<h2>Le ROI du content refresh</h2>
+<p class="text-intro">Mettre à jour d'anciens contenus est souvent <strong>plus rentable</strong> que d'en créer de nouveaux. Un article qui a déjà de l'autorité peut rapidement remonter avec quelques optimisations.</p>
+<ul>
+<li><strong>Identifier les opportunités</strong> : articles en position 5-20 avec du potentiel</li>
+<li><strong>Actualiser les informations</strong> : dates, statistiques, liens cassés</li>
+<li><strong>Enrichir le contenu</strong> : nouvelles sections, questions fréquentes, exemples</li>
+<li><strong>Améliorer l'optimisation</strong> : title, meta description, maillage interne</li>
+<li><strong>Ajouter des médias</strong> : images, vidéos, infographies</li>
+</ul>
+<p class="slide-tip">💡 <strong>Astuce Search Console :</strong> Filtrez par position 5-15 et impressions élevées. Ce sont vos contenus avec le meilleur potentiel de "quick win".</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>📊 Mesurer la performance du contenu</h1>
+<h2>Les KPIs à suivre</h2>
+<p class="text-intro">Un bon contenu SEO doit être mesuré. Voici les métriques clés pour évaluer la performance de votre stratégie de contenu.</p>
+<div class="metrics-list">
+<p><span class="metric-label">Trafic organique</span> Nombre de visiteurs venant de Google (Search Console, Analytics)</p>
+<p><span class="metric-label">Positions</span> Classement sur vos mots-clés cibles (SEMrush, Ahrefs, Search Console)</p>
+<p><span class="metric-label">CTR</span> Taux de clic dans les résultats de recherche (Search Console)</p>
+<p><span class="metric-label">Temps sur page</span> Engagement des lecteurs (Analytics)</p>
+<p><span class="metric-label">Taux de rebond</span> % de visiteurs qui partent immédiatement (Analytics)</p>
+<p><span class="metric-label">Conversions</span> Actions réalisées (formulaires, achats, inscriptions)</p>
+</div>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🎯 Le CTA : l'appel à l'action</h1>
+<h2>Transformer le lecteur en prospect</h2>
+<p class="text-intro">Un contenu sans <strong>CTA</strong> (Call-to-Action) est une impasse. Chaque page doit guider l'utilisateur vers une action, qu'elle soit directe (achat) ou indirecte (inscription newsletter).</p>
+<div class="tools-grid">
+<div class="tool-card">
+<h3>📝 CTA informatif</h3>
+<p>"Téléchargez notre guide gratuit"</p>
+<p class="text-muted">Phase : Découverte</p>
+</div>
+<div class="tool-card">
+<h3>🔍 CTA comparatif</h3>
+<p>"Demandez une démo personnalisée"</p>
+<p class="text-muted">Phase : Considération</p>
+</div>
+<div class="tool-card">
+<h3>🛒 CTA transactionnel</h3>
+<p>"Ajouter au panier" / "Commencer maintenant"</p>
+<p class="text-muted">Phase : Décision</p>
+</div>
+<div class="tool-card">
+<h3>📧 CTA relationnel</h3>
+<p>"Inscrivez-vous à notre newsletter"</p>
+<p class="text-muted">Toutes phases</p>
+</div>
+</div>
+<p class="slide-tip">💡 Un CTA efficace est visible, clair, et crée un sentiment d'urgence ou de bénéfice immédiat.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>✍️ Les erreurs de copywriting à éviter</h1>
+<h2>Ce qui tue vos conversions</h2>
+<ul>
+<li><strong>Parler de vous au lieu du client</strong> : "Nous sommes les meilleurs" → "Vous allez gagner du temps"</li>
+<li><strong>Être trop technique</strong> : jargon incompréhensible pour votre cible</li>
+<li><strong>Murs de texte</strong> : paragraphes trop longs, pas d'aération</li>
+<li><strong>CTA flou</strong> : "En savoir plus" → "Recevez votre devis gratuit"</li>
+<li><strong>Pas de preuve</strong> : affirmations sans témoignages, chiffres ou études</li>
+<li><strong>Trop de CTAs</strong> : choix paralysant, l'utilisateur ne fait rien</li>
+<li><strong>Oublier le mobile</strong> : texte illisible sur petit écran</li>
+</ul>
+<p class="slide-warning">⚠️ Relisez toujours vos contenus avec les yeux de votre persona. Comprendrait-il ? Serait-il convaincu ?</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🤖 L'IA et la rédaction SEO</h1>
+<h2>ChatGPT, Claude & co : menace ou opportunité ?</h2>
+<p class="text-intro">Les outils d'IA générative révolutionnent la création de contenu. Mais attention : Google sait détecter (et potentiellement pénaliser) le contenu 100% généré par IA sans valeur ajoutée.</p>
+<div class="comparison-table">
+<div class="comparison-col">
+<h3>✅ Bon usage de l'IA</h3>
+<ul>
+<li>Brainstorming et idéation</li>
+<li>Création de structures/plans</li>
+<li>Premier jet à améliorer</li>
+<li>Réécriture et reformulation</li>
+<li>Recherche d'angles</li>
+</ul>
+</div>
+<div class="comparison-col">
+<h3>❌ Mauvais usage de l'IA</h3>
+<ul>
+<li>Publier sans relecture</li>
+<li>Contenu générique sans expertise</li>
+<li>Mass content sans valeur</li>
+<li>Copier des concurrents</li>
+<li>Ignorer les faits et sources</li>
+</ul>
+</div>
+</div>
+<p class="slide-tip">💡 L'IA est un <strong>assistant</strong>, pas un remplaçant. Votre expertise, votre voix et votre vérification des faits restent indispensables.</p>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🛠️ Checklist Rédaction SEO</h1>
+<h2>Avant de publier, vérifiez...</h2>
+<ul>
+<li>☐ <strong>Intention</strong> : le contenu répond-il à l'intention de recherche ?</li>
+<li>☐ <strong>Titre</strong> : accrocheur, inclut le mot-clé, < 60 caractères</li>
+<li>☐ <strong>Accroche</strong> : les 3 premières secondes donnent-elles envie de lire ?</li>
+<li>☐ <strong>Structure</strong> : titres H2/H3 clairs, paragraphes courts</li>
+<li>☐ <strong>Sémantique</strong> : champ lexical riche, pas de keyword stuffing</li>
+<li>☐ <strong>Médias</strong> : images optimisées, vidéos si pertinent</li>
+<li>☐ <strong>Liens</strong> : maillage interne vers contenus connexes</li>
+<li>☐ <strong>CTA</strong> : appel à l'action clair et visible</li>
+<li>☐ <strong>Relecture</strong> : orthographe, clarté, vérification des faits</li>
+</ul>
+</div>`,
+
+`<div class="slide-seo">
+<h1>✅ Récap' Chapitre 5</h1>
+<h2>Ce qu'il faut absolument retenir</h2>
+<ul>
+<li>✍️ <strong>Copywriting SEO</strong> : écrire pour les humains ET pour Google, pas l'un ou l'autre</li>
+<li>🎯 <strong>Intention d'abord</strong> : comprenez ce que veut l'utilisateur avant d'écrire</li>
+<li>📐 <strong>Structure gagnante</strong> : accroche, pyramide inversée, featured snippet</li>
+<li>🧲 <strong>Techniques de persuasion</strong> : AIDA, PAS, power words, bénéfices</li>
+<li>📅 <strong>Stratégie éditoriale</strong> : personas, calendrier, diversité des formats</li>
+<li>🔄 <strong>Content refresh</strong> : optimiser l'existant est souvent plus rentable que créer du neuf</li>
+<li>🎯 <strong>CTA clair</strong> : chaque contenu doit mener à une action</li>
+</ul>
+</div>`,
+
+`<div class="slide-seo">
+<h1>🧠 Exercice pratique</h1>
+<h2>Rédigez un article optimisé</h2>
+<ul>
+<li><strong>1.</strong> Choisissez un mot-clé longue traîne de votre secteur</li>
+<li><strong>2.</strong> Analysez les 5 premiers résultats Google : format, longueur, angles</li>
+<li><strong>3.</strong> Créez un plan avec H1, H2, H3 incluant les questions "People Also Ask" (Les gens demandent aussi)</li>
+<li><strong>4.</strong> Rédigez l'introduction en utilisant la formule AIDA ou PAS</li>
+<li><strong>5.</strong> Enrichissez le champ sémantique</li>
+<li><strong>6.</strong> Ajoutez un CTA adapté à l'intention de recherche</li>
+</ul>
+<p class="slide-tip">💡 <strong>Prochain chapitre :</strong> Les nouveaux formats et la recherche moderne — recherche vocale, vidéo, IA et E-E-A-T.</p>
+</div>`
+]
