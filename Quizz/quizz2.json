@@ -62,7 +62,7 @@
       "question": "Pourquoi ne faut-il pas bloquer le CSS et le JavaScript avec robots.txt ?",
       "reponses": [
         "Parce que cela ralentit le site",
-        "Parce que Google doit pouvoir rendre les pages correctement",
+        "Parce que Google doit pouvoir comprendre les pages correctement",
         "Parce que cela supprime le CSS du site",
         "Parce que cela est illégal"
       ],

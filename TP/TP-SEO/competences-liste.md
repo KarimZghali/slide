@@ -316,7 +316,7 @@
 - [ ] Cibler les questions longue traîne (qui, quoi, où, quand, comment, pourquoi)
 - [ ] Créer des pages FAQ structurées avec balisage Schema FAQPage
 - [ ] Optimiser la fiche Google Business Profile (adresse, horaires, téléphone)
-- [ ] S'assurer que le site est mobile-friendly (80% des recherches vocales sur mobile)
+- [ ] S'assurer que le site est mobile-friendly (de + en + de recherches vocales sur mobile)
 
 ### 2. Featured Snippets (Position Zéro)
 

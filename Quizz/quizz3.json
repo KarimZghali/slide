@@ -46,7 +46,7 @@
         },
         {
             "id": 5,
-            "question": "Plus un mot-clé est précis, que se passe-t-il avec le taux de conversion ?",
+            "question": "Que se passe-t-il avec le taux de conversion plus un mot-clé est précis ?",
             "reponses": [
                 "Il diminue",
                 "Il reste stable",
