@@ -33,7 +33,10 @@ function renderThemeList() {
         if (theme.ressources) {
             links.push(`<a href="${theme.ressources}" class="theme-link theme-link-ressources" onclick="event.stopPropagation()" download>📦 Ressources</a>`);
         }
-        const linksHtml = links.length > 0 ? `<div class="theme-links">${links.join('')}</div>` : '';
+        // Bouton télécharger PDF
+        links.push(`<button class="theme-link theme-link-pdf" onclick="event.stopPropagation(); downloadThemePDF('${theme.id}')">📄 PDF</button>`);
+
+        const linksHtml = `<div class="theme-links">${links.join('')}</div>`;
 
         return `
         <div class="theme-card" onclick="selectTheme('${theme.id}')">
@@ -380,6 +383,108 @@ function initSommaire() {
             hideSommaire();
         }
     });
+}
+
+// ==================== TÉLÉCHARGEMENT PDF ====================
+
+// Télécharger toutes les slides d'un thème en PDF
+async function downloadThemePDF(themeId) {
+    const theme = themes.find(t => t.id === themeId);
+    if (!theme) return;
+
+    // Créer un conteneur temporaire pour le rendu
+    const tempContainer = document.createElement('div');
+    tempContainer.id = 'pdf-render-container';
+    tempContainer.style.cssText = `
+        position: fixed;
+        left: -9999px;
+        top: 0;
+        width: 1280px;
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        padding: 40px;
+        color: #eee;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    `;
+    document.body.appendChild(tempContainer);
+
+    // Copier les styles nécessaires
+    const slideContentDiv = document.createElement('div');
+    slideContentDiv.className = 'slide-content';
+    slideContentDiv.style.cssText = `
+        padding: 40px;
+        min-height: 720px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    `;
+    tempContainer.appendChild(slideContentDiv);
+
+    // Initialiser jsPDF (format paysage A4)
+    const { jsPDF } = window.jspdf;
+    const pdf = new jsPDF({
+        orientation: 'landscape',
+        unit: 'mm',
+        format: 'a4'
+    });
+
+    const pageWidth = pdf.internal.pageSize.getWidth();
+    const pageHeight = pdf.internal.pageSize.getHeight();
+
+    // Afficher un indicateur de progression
+    const progressOverlay = document.createElement('div');
+    progressOverlay.id = 'pdf-progress-overlay';
+    progressOverlay.innerHTML = `
+        <div class="pdf-progress-content">
+            <h3>📄 Génération du PDF...</h3>
+            <p id="pdf-progress-text">Slide 0 / ${theme.slides.length}</p>
+            <div class="pdf-progress-bar">
+                <div class="pdf-progress-fill" id="pdf-progress-fill"></div>
+            </div>
+        </div>
+    `;
+    document.body.appendChild(progressOverlay);
+
+    try {
+        for (let i = 0; i < theme.slides.length; i++) {
+            // Mettre à jour la progression
+            document.getElementById('pdf-progress-text').textContent = `Slide ${i + 1} / ${theme.slides.length}`;
+            document.getElementById('pdf-progress-fill').style.width = `${((i + 1) / theme.slides.length) * 100}%`;
+
+            // Injecter le contenu de la slide
+            slideContentDiv.innerHTML = theme.slides[i];
+
+            // Attendre un peu pour le rendu
+            await new Promise(resolve => setTimeout(resolve, 100));
+
+            // Capturer avec html2canvas
+            const canvas = await html2canvas(tempContainer, {
+                backgroundColor: '#1a1a2e',
+                scale: 2,
+                logging: false,
+                useCORS: true
+            });
+
+            // Ajouter au PDF
+            if (i > 0) {
+                pdf.addPage();
+            }
+
+            const imgData = canvas.toDataURL('image/jpeg', 0.95);
+            pdf.addImage(imgData, 'JPEG', 0, 0, pageWidth, pageHeight);
+        }
+
+        // Télécharger le PDF
+        const filename = `${theme.title.replace(/[^a-zA-Z0-9À-ÿ\s]/g, '').replace(/\s+/g, '-')}.pdf`;
+        pdf.save(filename);
+
+    } catch (error) {
+        console.error('Erreur lors de la génération du PDF:', error);
+        alert('Erreur lors de la génération du PDF. Veuillez réessayer.');
+    } finally {
+        // Nettoyer
+        document.body.removeChild(tempContainer);
+        document.body.removeChild(progressOverlay);
+    }
 }
 
 // Démarrer

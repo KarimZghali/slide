@@ -140,6 +140,66 @@ body {
     color: #ffd54f;
 }
 
+.theme-link-pdf {
+    background: rgba(156, 39, 176, 0.2);
+    color: #ce93d8;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.theme-link-pdf:hover {
+    background: rgba(156, 39, 176, 0.4);
+    color: #e1bee7;
+}
+
+/* ==================== OVERLAY PROGRESSION PDF ==================== */
+#pdf-progress-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.pdf-progress-content {
+    background: rgba(30, 30, 50, 0.98);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 0 16px 64px rgba(0, 0, 0, 0.5);
+}
+
+.pdf-progress-content h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+}
+
+.pdf-progress-content p {
+    color: #aaa;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.pdf-progress-bar {
+    width: 300px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.pdf-progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #9c27b0, #ce93d8);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
 /* ==================== CONTAINER SLIDES ==================== */
 .slideshow-container {
     width: 96%;
